@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details Form</title>
+</head>
+
+<body>
+    <h1>Fill out the form below:</h1>
+    <p>
+        The user is requested to enter the credentials correctly in the form. No further changes will be made after submission.
+    </p>
+    <form action="#" method="POST">
+        Name: <input type="text" name="name" placeholder="Enter your name" minlength="3" maxlength="30"
+            pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required> <br />
+
+        Age: <input type="number" name="age" min="18" max="100" step="1" required
+            title="Please enter age between 18 and 100"> <br />
+
+        Date of Birth: <input type="date" name="dob" required max="2006-01-01" title="Select a valid birth date"> <br />
+
+        City:<select name="city" required>
+            <option value="Vapi">Vapi</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+        </select> <br />
+
+        Gender:
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br />
+
+        Games:
+        <input type="checkbox" name="game" value="Snooker"> Snooker
+        <input type="checkbox" name="game" value="Cricket"> Cricket
+        <input type="checkbox" name="game" value="Table Tennis"> Table Tennis <br />
+
+        Address: <textarea name="address" cols="30" rows="3" maxlength="50" placeholder="Enter your address"
+            required></textarea> <br />
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
