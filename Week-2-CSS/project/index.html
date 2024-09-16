@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./mobilestyle.css">
 
     <style>
         :root {
@@ -13,201 +14,369 @@
             --blue: rgb(38, 155, 245);
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             height: 100%;
             margin: 0;
             box-sizing: border-box;
             overflow-x: hidden;
-        }
-
-        body {
             color: var(--white);
             background-color: #252b43;
-        }
-
-        nav>span {
-            margin-left: 7%;
-            margin-right: 15%;
-            font-weight: bold;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.3rem;
-            padding-top: 0.4rem;
-            cursor: pointer;
-        }
-
-        nav>li {
-            padding-top: 0.5rem;
-            list-style-type: none;
-            margin-left: 1.5rem;
-            margin-right: 1.5rem;
-        }
-
-        nav>li:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        button {
-            cursor: pointer;
-            padding: 0.5rem;
-            font-size: 0.8rem;
-        }
-
-        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        nav {
-            padding: 1.2rem;
-            display: flex;
-            flex-wrap: wrap;
-            position: sticky;
-            top: 0;
-            width: 100%;
-            /* Ensure the navbar stretches across the entire page */
-            z-index: 2;
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Background for visibility */
-        }
-
-        #login {
-            margin-left: 10%;
-            margin-right: 3%;
-            background-color: transparent;
-            color: var(--white);
-            font-weight: bold;
-            padding-left: 1.15rem;
-            padding-right: 1.15rem;
-            border: none;
-        }
-
-        #login:hover{
-            background-color: var(--blue);
-            transition: 0.3s;
-            border: 0px;
-            border-radius: 5px;
-        }
-
-        #signup {
-            background-color: var(--blue);
-            color: var(--white);
-            border-radius: 5px;
-            border-width: 0px;
-            font-weight: bold;
-            padding-left: 1.15rem;
-            padding-right: 1.15rem;
-        }
-
-        #signup:hover{
-            border: 2px solid var(--blue);
-            color: var(--blue);
-            font-weight: bold;
-            background-color: transparent;
-            transition: 0.3s;
-        }
-
-
-        .content {
-            margin-top: 4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            padding: 1rem;
 
         }
 
-        .intro>h1 {
-            width: 80%;
-            font-size: 2.5rem;
-            text-align: center;
-            display: block;
-            margin: auto;
-            width: 30%;
-            margin-bottom: 2rem;
-            margin-top: 1rem;
+        @media only screen and (min-width: 430px) {
+
+            nav {
+                margin-top: 1rem;
+                padding: 1.2rem;
+                display: flex;
+                flex-wrap: wrap;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+                background-color: rgba(11, 3, 29, 0.96);
+            }
+
+            nav>span {
+                margin-left: 7%;
+                margin-right: 15%;
+                font-weight: bold;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.3rem;
+                padding-top: 0.4rem;
+                cursor: pointer;
+            }
+
+            nav>li {
+                padding-top: 0.5rem;
+                list-style-type: none;
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            nav>li:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
+
+            button {
+                cursor: pointer;
+                padding: 0.5rem;
+                font-size: 0.8rem;
+            }
+
+            #login {
+                margin-left: 10%;
+                margin-right: 3%;
+                background-color: transparent;
+                color: var(--white);
+                font-weight: bold;
+                padding-left: 1.15rem;
+                padding-right: 1.15rem;
+                border: none;
+            }
+
+            #login:hover {
+                background-color: var(--blue);
+                transition: 0.3s;
+                border: 0px;
+                border-radius: 5px;
+            }
+
+            #signup {
+                background-color: var(--blue);
+                color: var(--white);
+                border-radius: 5px;
+                border-width: 0px;
+                font-weight: bold;
+                padding-left: 1.15rem;
+                padding-right: 1.15rem;
+            }
+
+            #signup:hover {
+                border: 1px solid var(--blue);
+                color: var(--blue);
+                font-weight: bold;
+                background-color: transparent;
+                transition: 0.3s;
+            }
+
+
+            .content {
+                margin-top: 4rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 1rem;
+
+            }
+
+            .intro>h1 {
+                width: 80%;
+                font-size: 2.5rem;
+                text-align: center;
+                display: block;
+                margin: auto;
+                width: 30%;
+                margin-bottom: 2rem;
+                margin-top: 1rem;
+            }
+
+            .two {
+                text-align: center;
+                display: block;
+                margin: auto;
+                width: 30%;
+                font-size: 1.1rem;
+            }
+
+            #quote {
+                background-color: var(--blue);
+                width: 10%;
+                border-radius: 5px;
+                border-color: transparent;
+                color: var(--white);
+                font-weight: bold;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            #learnmore {
+                background-color: transparent;
+                border-radius: 5px;
+                border: 2px solid var(--blue);
+                color: var(--blue);
+                font-weight: bold;
+                width: 10%;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+            }
+
+            .buttons {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .boxgrid {
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                margin: 3rem auto;
+
+            }
+
+            .boxes {
+                width: 18rem;
+                height: 12rem;
+                background-color: var(--white);
+                color: black;
+                overflow-y: auto;
+                border-radius: 2px;
+                text-align: left;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .boxes>hr {
+                border: none;
+                width: 3rem;
+                height: 2px;
+            }
+
+            .boxes:hover {
+                background-color: var(--blue);
+                color: white;
+                transition: 0.5s;
+
+            }
+
+            .boxes:hover hr {
+                background-color: var(--white);
+                transition: 0.7s;
+            }
+
+            .boxes>hr {
+                background-color: var(--blue);
+            }
         }
 
-        .two {
-            text-align: center;
-            display: block;
-            margin: auto;
-            width: 30%;
-            font-size: 1.1rem;
-        }
 
-        #quote {
-            background-color: var(--blue);
-            width: 10%;
-            border-radius: 5px;
-            border-color: transparent;
-            color: var(--white);
-            font-weight: bold;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
+        @media only screen and (max-width: 415px) {
 
-        #learnmore {
-            background-color: transparent;
-            border-radius: 5px;
-            border: 2px solid var(--blue);
-            color: var(--blue);
-            font-weight: bold;
-            width: 10%;
-            margin-left: 0.5rem;
-            margin-right: 0.5rem;
-        }
+            body {
+                background-color: #252b43;
+            }
 
-        .buttons {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            nav {
+                display: block;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                z-index: 2;
+                background-color: rgba(11, 3, 29, 0.96);
+                box-sizing: border-box;
+                color: var(--white);
+                margin: auto;
+                text-align: center;
 
-        .boxgrid {
+            }
+
+            nav>span {
+                display: block;
+                margin-right: 1%;
+                font-size: 1.5rem;
+                margin: auto;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                cursor: pointer;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
             
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin: 3rem auto;
+            nav>li {
+                /* display: flex; */
+                float: left;
+                margin: 0;
+                padding: 0 1.5rem;
+                font-size: 1rem;
+                list-style-type: none;
+            }
 
-        }
+            nav>li:hover{
+                text-decoration: underline;
+                transition: 0.3s;
+            }
 
-        .boxes {
-            width: 18rem;
-            height: 12rem;
-            background-color: var(--white);
-            color: black;
-            overflow-y: auto;
-            border-radius: 2px;
-            text-align: left;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+            #login,
+            #signup {
+                margin: 1rem 0%;
+                padding: 0, 1.5rem;
+            }
 
-        .boxes>hr {
-            border: none;
-            width: 3rem;
-            height: 2px;
-        }
+            #login{
+                background-color: transparent;
+                color: var(--white);
+                margin-right: 0.5rem;
+                padding: 0.5rem 1.15rem;
+                border: 2px solid var(--white);
+                border-radius: 5px;
+            }
 
-        .boxes:hover{
-            background-color: var(--blue);
-            color: white;
-            transition: 0.5s;
+            #login:hover{
+                background-color: var(--blue);
+                border-radius: 3px;
+            }
+
+            #signup {
+                background-color: var(--blue);
+                color: var(--white);
+                border-radius: 5px;
+                border-width: 0px;
+                font-weight: bold;
+                padding: 0.5rem 1.15rem;
+                margin-left: 0.5rem;
+            }
+
+            #signup:hover {
+                border: 1px solid var(--blue);
+                color: var(--blue);
+                font-weight: bold;
+                background-color: transparent;
+                transition: 0.3s;
+            }
+
+            .content {
+                margin-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                padding: 1rem;
+
+            }
+
+            .buttons{
+                margin-top: 1rem;
+            }
+
+            #quote {
+                background-color: var(--blue);
+                width: 35%;
+                border-radius: 5px;
+                border-color: transparent;
+                color: var(--white);
+                font-weight: bold;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+            }
             
-        }
-        
-        .boxes:hover hr{
-            background-color: var(--white);
-            transition: 0.7s;
-        }
+            #learnmore {
+                background-color: transparent;
+                border-radius: 5px;
+                border: 2px solid var(--blue);
+                color: var(--blue);
+                font-weight: bold;
+                width: 25%;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+                padding: 0.5rem;
+            }
 
-        .boxes>hr {
-            background-color: var(--blue);
-        }
+            .boxgrid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+                margin: 2rem auto;
+            }
 
+            .boxes > h5{
+                text-align: center;
+            }
+
+            .boxes {
+                background-color: var(--white);
+                color: black;
+                overflow-y: auto;
+                border-radius: 4px;
+                text-align: left;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .boxes>hr {
+                text-align: left;
+                border: none;
+                width: 3rem;
+                height: 2px;
+            }
+
+            .boxes:hover {
+                background-color: var(--blue);
+                color: white;
+                transition: 0.5s;
+
+            }
+
+            .boxes:hover hr {
+                background-color: var(--white);
+                transition: 0.7s;
+            }
+
+            .boxes>hr {
+                background-color: var(--blue);
+            }
+        }
     </style>
 </head>
 
@@ -242,6 +411,28 @@
 
 
         <div class="boxgrid">
+
+            <div class="boxes" id="box1">
+                <div id="img-3"></div>
+                <h5>Video Lectures</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box2">
+                <div id="img-1"></div>
+                <h5>Training Courses</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box3">
+                <div id="img-2"></div>
+                <h5>Practical Solutions</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+
+            </div>
 
             <div class="boxes" id="box1">
                 <div id="img-3"></div>
