@@ -24,9 +24,9 @@
             <fieldset>
                 <legend>Personal</legend>
 
-                    <b>Full Name</b>:
-                    <input type="text" name="name" title="Enter your full name" id="name"
-                        pattern="[a-zA-Z\s]+" placeholder="Enter your full name" required autofocus>
+                <b>Full Name</b>:
+                <input type="text" name="name" title="Enter your full name" id="name" pattern="[a-zA-Z\s]+"
+                    placeholder="Enter your full name" required autofocus>
                 <br>
 
                 <label for="email">
@@ -48,14 +48,19 @@
                 </label>
                 <br>
 
+
                 <label for="city">
+                    <datalist id="cityList">
+                        <option value="Vapi"></option>    
+                        <option value="Rajkot"></option>    
+                        <option value="Surat"></option>    
+                        <option value="Ahmedabad"></option>    
+                        <option value="Valsad"></option>    
+                        <option value="Viramgam"></option>    
+                        <option value="Than"></option>    
+                    </datalist>
                     <b>City</b>:
-                    <select>
-                        <option value="Vapi" >Vapi</option>
-                        <option value="Ahmedabad">Ahmedabad</option>
-                        <option value="Surat">Surat</option>
-                        <option value="Rajkot" selected>Rajkot</option>
-                    </select>
+                    <input type="text" list="cityList" placeholder="Type your city name">
                 </label>
                 <br>
 
@@ -109,9 +114,20 @@
         </form>
     </center>
 
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d945969.2831730267!2d71.8746162192827!3d22.15674286067661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e74c03b7749%3A0xab364c66fd4834c!2sBirla%20Vishvakarma%20Mahavidyalaya%20(BVM)!5e0!3m2!1sen!2sin!4v1726511101797!5m2!1sen!2sin" width="200" height="200" style="border:0;"></iframe>
+    <br/>
+    <iframe src="./Login.html" frameborder="0"></iframe>
+
     <footer>
 
         <h2>Get in touch</h2>
+
+        <address>
+            <b>Visit us at:</b><br>
+            BVM College,<br>
+            Anand, Gujarat<br>
+            India - 396191
+        </address>
 
         <ul type="square">
             <li><a href="./index.html">Home</a></li>
