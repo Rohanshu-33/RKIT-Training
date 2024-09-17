@@ -7,6 +7,9 @@
     <title>Student's Arena</title>
 
     <style>
+
+        /* common css for all responsive forms */
+
         :root {
             --white: rgb(212, 212, 212);
             --blue: rgb(38, 155, 245);
@@ -26,6 +29,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
+
+        /*  css styles for general */
 
         @media only screen and (min-width: 430px) {
 
@@ -90,19 +95,20 @@
             #signup {
                 background-color: var(--blue);
                 color: var(--white);
+                border: 0px;
                 border-radius: 5px;
-                border-width: 0px;
                 font-weight: bold;
                 padding-left: 1.15rem;
                 padding-right: 1.15rem;
             }
-
+            
             #signup:hover {
-                border: 1px solid var(--blue);
                 color: var(--blue);
                 font-weight: bold;
                 background-color: transparent;
                 transition: 0.3s;
+                padding-left: 1.15rem;
+                padding-right: 1.15rem;
             }
 
 
@@ -209,6 +215,8 @@
         }
 
 
+        /* css styles for Samsung S20 Ultra */
+
         @media only screen and (max-width: 415px) {
 
             body {
@@ -241,7 +249,6 @@
             }
             
             nav>li {
-                /* display: flex; */
                 float: left;
                 margin: 0;
                 padding: 0 1.5rem;
@@ -379,6 +386,8 @@
 </head>
 
 <body>
+
+    <!-- navbar -->
     <nav>
         <span>Rohanshu</span>
         <li>Home</li>
@@ -390,6 +399,7 @@
         <button id="signup">Join Us &#8594;</button>
     </nav>
 
+    <!-- content part-1 -->
     <div class="content">
         <div class="intro">
             <div style="color: var(--blue); font-weight: bold;">
@@ -408,6 +418,7 @@
         </div>
 
 
+        <!-- content part 2 -->
         <div class="boxgrid">
 
             <div class="boxes" id="box1">
