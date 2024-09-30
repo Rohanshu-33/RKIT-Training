@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/68537c26ee.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --indigo: #6F65FA;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            margin-top: 0.2rem;
+            padding: 1.2rem;
+            display: flex;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            color: white;
+        }
+
+        nav>span {
+            margin-left: 7%;
+            margin-right: 15%;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.3rem;
+            padding-top: 0.4rem;
+            cursor: pointer;
+        }
+
+        nav>li {
+            padding-top: 0.5rem;
+            list-style-type: none;
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        nav>li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            /* background-color: rgba(233, 233, 233, 0.507); */
+            background-color: whitesmoke;
+            width: 60vw;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea {
+            display: block;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid rgba(182, 177, 177, 0.748);
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            width: 100%;
+            color: black;
+        }
+
+        input[type="submit"] {
+            width: 7vw;
+            background-color: var(--indigo);
+            color: white;
+            font-size: 0.9em;
+        }
+
+        input[type="submit"]:hover {
+            cursor: pointer;
+            scale: 1.1;
+            transition: 0.6s;
+        }
+
+        .left,
+        .right {
+            padding: 1rem;
+            height: 70vh;
+            width: 30vw;
+            border: 1px solid transparent;
+            border-radius: 1px;
+        }
+
+        .right {
+            padding-top: 1rem;
+            display: grid;
+            background-color: white !important;
+            justify-content: center;
+            border-radius: 10px;
+            gap: 0;
+        }
+
+
+        .left-container-1>h4 {
+            color: var(--indigo);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .left-container-1>p {
+            color: black;
+            font-size: 0.9rem;
+            margin-top: 1.5vh;
+            margin-bottom: 5vh;
+        }
+
+        .address-info {
+            display: block;
+            flex-direction: column;
+            margin: auto;
+            list-style-type: none;
+            margin-bottom: 5rem;
+        }
+
+        .address-info>li>i {
+            color: var(--indigo);
+            margin-right: 0.5rem;
+        }
+
+        .address-info>li {
+            margin: 1rem;
+            font-size: 0.9rem;
+        }
+
+        #cont-1 {
+            height: 33vh;
+            width: 22vw;
+        }
+
+        .img-div {
+            height: 35vh;
+        }
+
+        .backgroundiv {
+            width: 300vw;
+            height: 90vh;
+            background-color: var(--indigo);
+            transform: rotate(350deg);
+            position: fixed;
+            z-index: -1;
+            top: -60vh;
+            left: -38vw;
+            box-sizing: border-box;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <span>Logo</span>
+        <li>Services</li>
+        <li>Products</li>
+        <li>Pricing</li>
+        <li>Contact Us</li>
+    </nav>
+
+    <div class="backgroundiv"></div>
+
+    <div style="display: flex; justify-content:center; margin-top: 2rem">
+        <div class="contact-box">
+            <div class="left">
+                <div class="left-container-1">
+                    <h4>Get in Touch</h4>
+                    <p>We are here for you! How can we help you?</p>
+                </div>
+
+                <div class="left-container-2">
+                    <form action="#" method="post" enctype="text/plain">
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <textarea name="query" id="query" cols="45" rows="5"
+                            placeholder="Type in your query here..."></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="img-div">
+                    <img id="cont-1" src="contactimg.png" alt="Image">
+                </div>
+
+                <div class="address-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Vallabh Vidyanagar, Anand</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 9999977777</li>
+                    <li><i class="fa-solid fa-envelope"></i> abc@xyz.com</li>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
