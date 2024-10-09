@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS with HTML</title>
+</head>
+<body>
+    <h1>This webpage demonstrates how to include javascript in our html webpage.</h1>
+    <p>JS can be included with the help of <code><b>script</b></code> tag or by importing a js file with the help of its source location.</p>
+
+    <div id="first"></div>
+
+    <script>
+        ele = document.getElementById('first')
+        console.log(ele)
+
+        ele.innerHTML = "Inserting text through js script tag"
+    </script>
+
+    <script src="./js1_intro.js"></script>
+</body>
+</html>
