@@ -3,20 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syntax of JS</title>
+    <title>DOM of JS</title>
 </head>
 <body>
     <div id="first"></div>
+    <div class="c1">first - class c1</div>
+    <div class="c2"></div>
+    <div class="c1">second - class c1</div>
     <script>
         const y = 3;
         const x = 2;
         document.getElementById('first').innerHTML=`Sum of ${x} and ${y} is ${x+y}`
+        
+        let a = document.getElementById('first')
+        console.log(a);
+        a = document.getElementsByClassName('c1')
+        console.log(a);
+        // Output: HTMLCollection(2) [div.c1, div.c1]
+        a[1].innerText = "second"
 
-        // this is a single line comment
-        /*
-        this is a 
-        multi line comment
-        */
+        a = document.getElementsByTagName('div')
+        console.log(a);
+        // Output: HTMLCollection(4) [div#first, div.c1, div.c2, div.c1, first: div#first]
+
+        let node = document.createElement('strong');
+        console.log(node);
+        node.innerHTML = "strong tag appended";
+        document.body.appendChild(node);
+        
+        // node = document.getElementsByTagName('strong')
+        // document.body.removeChild(node[0])
+
+        // document.title = "DOM Manipulation"
+
+        // let para = document.createElement('p')
+        // node = document.createTextNode("Content of paragraph")
+        // para.appendChild(node)
+        // document.body.appendChild(para)
+
+        let b = document.querySelectorAll('div')
+        console.log(b, b.length);
+        // NodeList(4) [div#first, div.c1, div.c2, div.c1]
+
+
+        // The Difference Between an HTMLCollection and a NodeList
     </script>
 </body>
 </html>

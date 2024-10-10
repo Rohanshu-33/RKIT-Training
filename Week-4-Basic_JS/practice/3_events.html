@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body onload="greetUser()">
+    <button onclick="btnClick()">Click Me</button>
+
+    <a href="www.google.com">link</a>
+
+    <h3 onmouseenter="changeColor(this)" onmouseleave="originalColor(this)" >This is a heading. Hover over it.</h3>
+
+    <p id="anchor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ex inventore unde libero alias voluptate! Voluptatibus ipsa, illum totam accusantium dolores enim fuga doloribus laudantium dolor omnis? Officia delectus, aspernatur quas dolorum cupiditate totam. Corrupti commodi repudiandae, tenetur ipsum accusamus quod necessitatibus, soluta totam voluptate odio placeat dolorum hic eaque?</p>
+
+    <script>
+
+        function greetUser(){
+            alert("Welcome to the webpage!!!")
+        }
+
+        function btnClick(){
+            alert("Button got clicked!")
+        }
+
+        function changeColor(id){
+            console.log(id);
+            id.style.color = "red"
+        }
+
+        function originalColor(id){
+            id.style.color = "black"
+        }
+        
+        window.onunload = function(){
+            console.log("bye");
+        }
+
+        document.getElementById("anchor").addEventListener("mouseenter", function(){
+            changeColor(this)
+        })
+
+        document.getElementById("anchor").addEventListener("mouseleave", function(){
+            originalColor(this)
+        })
+
+
+    </script>
+</body>
+</html>
