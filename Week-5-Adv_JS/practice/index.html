@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Arena</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+
+        /* common css for all responsive forms */
+
+        :root {
+            --white: rgb(212, 212, 212);
+            --blue: rgb(38, 155, 245);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: var(--white);
+        }
+
+    </style>
+</head>
+
+<body onload="return checkAuths()">
+
+    <!-- navbar -->
+    <nav>
+        <span>Rohanshu</span>
+        <li>Home</li>
+        <li>Product</li>
+        <li>Pricing</li>
+        <li><a href="contact.html">Contact</a></li>
+
+        <button id="logout" onclick="handleLogout()">Logout</button>
+        <button id="signup">Join Us &#8594;</button>
+    </nav>
+
+    <!-- content part-1 -->
+    <div class="content">
+        <div class="intro">
+            <div style="color: var(--blue); font-weight: bold;">
+                Welcome
+            </div>
+            <h1>Selling on the Internet like a pro</h1>
+        </div>
+
+        <div class="two">
+            We know how large objects will act, but things on a small scale just do not act that way.
+        </div>
+
+        <div class="buttons">
+            <button id="quote">Get Quote Now</button>
+            <button id="learnmore">Learn More</button>
+        </div>
+
+
+        <!-- content part 2 -->
+        <div class="boxgrid">
+
+            <div class="boxes" id="box1">
+                <div id="img-3"></div>
+                <h5>Video Lectures</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box2">
+                <div id="img-1"></div>
+                <h5>Training Courses</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box3">
+                <div id="img-2"></div>
+                <h5>Practical Solutions</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+
+            </div>
+
+            <div class="boxes" id="box1">
+                <div id="img-3"></div>
+                <h5>Video Lectures</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box2">
+                <div id="img-1"></div>
+                <h5>Training Courses</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+            </div>
+
+            <div class="boxes" id="box3">
+                <div id="img-2"></div>
+                <h5>Practical Solutions</h5>
+                <hr />
+                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis non iusto et distinctio.</div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="./02_locals.js"></script>
+</body>
+
+</html>
