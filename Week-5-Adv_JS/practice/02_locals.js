@@ -20,6 +20,8 @@ function handleLogin(){
 
     localStorage.setItem("email", email);
     localStorage.setItem("password", pswd);
+
+    document.cookie = `email=${email}; expires= Wed, 16 Oct 2024 12:00:00 UTC; path=/;`;
     
     return true;
 }
@@ -30,7 +32,7 @@ function checkAuths(){
     const pswd = localStorage.getItem('password');
     
     if(!(email && pswd)){
-        window.location.href = "/practice/login.html";
+        window.location.href = "./login.html";
     }
     return true;
 }
@@ -40,12 +42,12 @@ function checkAuths2(){
     const pswd = localStorage.getItem('password');
     
     if(email && pswd){
-        window.location.href = "/practice/index.html";
+        window.location.href = "./index.html";
     }
     return true;
 }
 
 function handleLogout(){
     localStorage.clear()
-    window.location.href = "/practice/login.html";
+    window.location.href = "./login.html";
 }

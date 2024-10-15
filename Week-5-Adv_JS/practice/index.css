@@ -191,6 +191,28 @@ body {
     .boxes>hr {
         background-color: var(--blue);
     }
+
+    .btn {
+        border: 1px solid;
+        border-radius: 3px;
+        padding: 0.75rem;
+        width: 70%;
+    }
+
+    .btn-outline-success {
+        border-color: green;
+    }
+    .btn-outline-success:hover {
+        background-color: green;
+    }
+
+    .btn-outline-danger {
+        border-color: red;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: red;
+    }
 }
 
 
