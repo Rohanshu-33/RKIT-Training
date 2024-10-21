@@ -38,6 +38,10 @@
             console.log("bye");
         }
 
+        // The below should not be donw as event object will be sent as argument not actual element. so error will come
+        // document.getElementById("anchor").addEventListener("mouseenter", changeColor)
+        // document.getElementById("anchor").addEventListener("mouseleave", originalColor)
+
         document.getElementById("anchor").addEventListener("mouseenter", function(){
             changeColor(this)
         })

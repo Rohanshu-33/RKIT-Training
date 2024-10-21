@@ -1,19 +1,38 @@
-let str = "rohanshu banodha"
-console.log(str);
-console.log(str.charAt(2));
+let str = "rohanshu banodha";
 
-console.log(str.length);
+// Log the original string
+console.log(str); // Output: rohanshu banodha
 
-console.log(str.replace('banodha', 'anil banodha'));
+// Get the character at index 2
+console.log(str.charAt(2)); // Output: 'h'
 
-console.log(str.toUpperCase());
+// Get the length of the string
+console.log(str.length); // Output: 16
 
-console.log(str.endsWith('a'));
+// Replace the substring 'banodha' with 'anil banodha'
+console.log(str.replace('banodha', 'anil banodha')); 
+// Output: rohanshu anil banodha
 
-console.log(str.includes('anil'));
+// Convert the entire string to uppercase
+console.log(str.toUpperCase()); 
+// Output: ROHANSHU BANODHA
 
-console.log(str.repeat(2));
+// Check if the string ends with the letter 'a'
+console.log(str.endsWith('a')); 
+// Output: true
 
-console.log(str.slice(3,12));
+// Check if the string includes the substring 'anil'
+console.log(str.includes('anil')); 
+// Output: false
 
-console.log(str.search('a'));
+// Repeat the string twice
+console.log(str.repeat(2)); 
+// Output: rohanshu banodharohanshu banodha
+
+// Extract a substring starting from index 3 to index 12 (non-inclusive)
+console.log(str.slice(3, 12)); 
+// Output: anshu ban
+
+// Search for the first occurrence of 'a' in the string
+console.log(str.search('a')); 
+// Output: 1 (the first 'a' is at index 1)
