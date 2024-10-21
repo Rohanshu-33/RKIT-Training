@@ -21,3 +21,5 @@ class Dog extends Animal{
 
 const d1 = new Dog("Golden Retriever", 4, "Bark")
 d1.display()
+
+// what is prototypal inheritance
