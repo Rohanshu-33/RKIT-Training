@@ -1,4 +1,5 @@
 // var declarations :
+console.log(a);
 var a = 4
 var b = 5.2
 var name = "rohanshu"
@@ -19,14 +20,14 @@ let i = 7
 let j = 8
 console.log("Sum of i and j is : ", i + j);
 {
-    // let k = 8
+    let k = 8
     i = 8
 }
 console.log("Sum of i and j is : ", i + j);
 // console.log(k);   --> this will give error as let is block scoped.
 
-/* console.log(k);
-let k = 6    --> this will also give error as we cannot access let variables before their initialization */
+// console.log(k);
+// let k = 6    //--> this will also give error as we cannot access let variables before their initialization 
 
 // const declarations :
 const c1 = 3
