@@ -3,18 +3,12 @@
 ## 1. Breakpoints
 
 Breakpoints in Bootstrap allow for responsive design, ensuring layouts adjust at specific screen widths.
-
-- **Extra small devices**: `<576px`
   
-- **Small devices**: `≥576px`
+- **Small devices (sm))**: `≥576px`
 
-- **Medium devices**: `≥768px`
+- **Medium devices (md)**: `≥768px`
 
-- **Large devices**: `≥992px`
-
-- **Extra large devices**: `≥1200px`
-
-- **Extra extra large devices**: `≥1400px`
+- **Large devices (lg)**: `≥992px`
 
 Breakpoints are useful for making layouts responsive across different screen sizes.
 
