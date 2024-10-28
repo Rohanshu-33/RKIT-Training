@@ -38,9 +38,9 @@
             console.log("bye");
         }
 
-        // The below should not be donw as event object will be sent as argument not actual element. so error will come
-        // document.getElementById("anchor").addEventListener("mouseenter", changeColor)
-        // document.getElementById("anchor").addEventListener("mouseleave", originalColor)
+        // The below will give error as we are calling those functions immediately when adding the event listeners, instead we need to pass them as callbacks.
+        // document.getElementById("anchor").addEventListener("mouseenter", changeColor(this))
+        // document.getElementById("anchor").addEventListener("mouseleave", originalColor(this))
 
         document.getElementById("anchor").addEventListener("mouseenter", function(){
             changeColor(this)

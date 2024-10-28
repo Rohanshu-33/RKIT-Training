@@ -22,8 +22,8 @@
         // Output: HTMLCollection(2) [div.c1, div.c1]
         a[1].innerText = "second"
 
-        a = document.getElementsByTagName('div')
-        console.log(a);
+        let aa = document.getElementsByTagName('div')
+        console.log(aa, aa.length);
         // Output: HTMLCollection(4) [div#first, div.c1, div.c2, div.c1, first: div#first]
 
         let node = document.createElement('strong');
@@ -47,6 +47,16 @@
 
 
         // The Difference Between an HTMLCollection and a NodeList
+        let ele = document.createElement("div")
+        ele.className = "c1"
+        ele.innerText = "hlo world"
+        document.body.appendChild(ele)
+
+        console.log("Checking live status now");
+        console.log(a);
+        console.log(b);
+        let c = document.querySelectorAll("div")
+        console.log(c);
         
     </script>
 </body>
