@@ -1,7 +1,3 @@
-Here's a concise documentation for the requested JavaScript topics. You can expand on each section as needed for clarity or depth.
-
----
-
 # JavaScript Documentation
 
 ## 1. Variable Declarations: `let`, `var`, `const`
