@@ -1,3 +1,6 @@
+Here's your updated JavaScript documentation with the Math and Date concepts added:
+
+```markdown
 # JavaScript Documentation
 
 ## 1. Variable Declarations: `let`, `var`, `const`
@@ -216,3 +219,22 @@ window.addEventListener("load", function() {
 
 ### Basic Form Validation
 JavaScript can be used to validate form inputs before they are submitted.
+
+## 11. Math Object
+
+### Common Math Methods
+- **`Math.random()`**: Returns a random number between 0 and 1.
+- **`Math.floor(x)`**: Rounds down to the nearest integer.
+- **`Math.abs(x)`**: Returns the absolute value.
+- **`Math.round(x)`**: Rounds to the nearest integer.
+- **`Math.max(...numbers)`**: Returns the largest of zero or more numbers.
+- **`Math.PI`**: The ratio of the circumference of a circle to its diameter.
+- **`Math.log10(x)`**: Returns the base 10 logarithm of a number.
+- **`Math.trunc(x)`**: Returns the integer part of a number by removing any fractional digits.
+- **`Math.sqrt(x)`**: Returns the square root of a number.
+- **`Math.cos(x)`**: Returns the cosine of a number.
+
+## 12. Date Object
+
+### Creating Dates
+- You can create a date using the `Date` constructor with various parameters.

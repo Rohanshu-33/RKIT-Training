@@ -11,7 +11,7 @@ function validateForm() {
     const emailPattern = /^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]+$/;
     const passwordPattern = /^[^\s]{8,20}$/;
 
-    if (!namePattern.test(name)) {
+    if (!namePattern.test(name.trim())) {
         alert("Enter a valid name (letters and spaces only).");
         return false;
     }

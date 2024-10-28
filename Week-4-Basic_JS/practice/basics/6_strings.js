@@ -36,3 +36,5 @@ console.log(str.slice(3, 12));
 // Search for the first occurrence of 'a' in the string
 console.log(str.search('a')); 
 // Output: 1 (the first 'a' is at index 1)
+let rr = "meet"
+console.log(rr.split("e"));

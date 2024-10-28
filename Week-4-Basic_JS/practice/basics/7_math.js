@@ -1,0 +1,9 @@
+console.log(Math.floor(Math.random()*10));
+console.log(Math.abs(-8));
+console.log(Math.round(9.5));
+console.log(Math.max(6,2,4));
+console.log(Math.PI);
+console.log(Math.log10(10));
+console.log(Math.trunc(2.999999999));
+console.log(Math.sqrt(49));
+console.log(Math.cos(0));
