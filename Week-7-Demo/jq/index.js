@@ -15,13 +15,13 @@ $(document).ready(function () {
     }
     $("#countries").val(country)
 
-    $.each(userFilters, function (index, value) { 
-        if(value !== "general"){   
+    $.each(userFilters, function (index, value) {
+        if (value !== "general") {
             $(`#${value}`).css("background-color", "#a198de")
-            .css("color", "white")
+                .css("color", "white")
 
             $(`#s-${value}`)
-            .css("color", "rgb(151, 12, 200)").css("text-decoration", "underline")
+                .css("color", "rgb(151, 12, 200)").css("text-decoration", "underline")
 
         }
     });
@@ -44,46 +44,31 @@ $(document).ready(function () {
 
     })
 
-    // filter button toggle
-    $(".btn-filters").click(function () {
-        const filterName = $(this).val()
+    // handle toggle
 
+    $(".btn-filters, .span-filters").click(function () {
+        const filterName = $(this).text().toLowerCase()
         if (userFilters.includes(filterName)) {
             //reset
             userFilters = userFilters.filter((fName) => fName !== filterName)
-            $(this).css("background-color", "white")
-            .css("color", "black")
+            $(`.c-${filterName}`).css("background-color", "white")
+                .css("color", "black")
+            $(`.sc-${filterName}`).css("color", "black")
+                .css("text-decoration", "none")
         }
         else {
+            //change colors
             userFilters = userFilters.filter((fName) => fName !== "general")
             userFilters.push(filterName)
-            $(this).css("background-color", "#a198de")
+            $(`.c-${filterName}`).css("background-color", "#a198de")
                 .css("color", "white")
+            $(`.sc-${filterName}`).css("color", "rgb(151, 12, 200)")
+                .css("text-decoration", "underline")
         }
         console.log(userFilters)
         localStorage.setItem("filters", JSON.stringify(userFilters))
         fetchNews()
     })
-
-    // filter span toggle
-
-    $(".span-filters").click(function() {
-        const filterName = $(this).text().toLowerCase()
-        if(userFilters.includes(filterName)){
-            userFilters = userFilters.filter((fName) => fName !== filterName)
-            $(this).css("color", "black").css("text-decoration", "none")
-        }
-        else{
-            userFilters = userFilters.filter((fName) => fName !== "general")
-            userFilters.push(filterName)
-            $(this).css("color", "rgb(151, 12, 200)").css("text-decoration", "underline")
-        }
-        console.log(userFilters)
-        localStorage.setItem("filters", JSON.stringify(userFilters))
-        console.log("phone view");
-        fetchNews()
-    })
-
 
     // fetch news and show in cards
     function fetchNews() {
@@ -92,39 +77,44 @@ $(document).ready(function () {
         // const API_KEY = "461dda6d493047c3afbdbc9be7850b68"
         const API_KEY = "a412525b23d842bdbc032e0a7045a358"
 
-        if(userFilters.length===0){
+        if (userFilters.length === 0) {
             userFilters.push("general")
         }
-        
+
         // array to store all promises from AJAX requests
         const promises = userFilters.map((filter) => {
             return $.ajax({
                 type: "GET",
                 url: `https://newsapi.org/v2/top-headlines?country=${countryCode}&category=${filter}&apiKey=${API_KEY}`
             }).then(
-                response => response.articles,
-                error => {
-                    console.log("Unable to fetch news for category:", filter)
-                    return []
-                }
+                response => response.articles || [],
             )
         })
-    
+
         $.when(...promises).then((...responses) => {
             const newsArrayResponse = responses.flat()
             displayNews(newsArrayResponse)
-        })
-    }    
+        }).catch(error => {
+            console.error("Error fetching news:", error);
+        });
+    }
 
     // display news on right side
     function displayNews(newsArray) {
         console.log("length of response : ", newsArray.length)
         $(".right").empty()
+
+        if (newsArray.length === 0) {
+            $(".right").append("<p>No news available.</p>");
+            $(".main-area").html("<p>No article selected.</p>");
+            return;
+        }
+
         newsArray.forEach((news, key) => {
-            
+
             const title = news.title ? news.title.substring(0, 33) + "..." : "Title not available."
             const description = news.description ? news.description.substring(0, 70) + '...' : "Description not available."
-            
+
             $(".right").append(`
             <div class="card w-100 mt-2 mb-3" style="cursor: pointer;" 
             onclick='showNewsOnMainArea(${JSON.stringify(news)})'>
@@ -132,7 +122,7 @@ $(document).ready(function () {
             <h5 class="card-title">${title}</h5>
             <h6 class="card-subtitle">By ${news.author || "Unknown author"}</h6>
             <p class="card-text">${description}</p>
-            <a href="${news.url}" target="_blank" class="btn btn-primary">See More</a>
+            <a href=${news.url} target="_blank" class="btn btn-primary">See More</a>
             </div>
             </div>`)
         })
@@ -145,14 +135,14 @@ $(document).ready(function () {
 
 })
 
-function showNewsOnMainArea(news){
-    console.log("Clicked.\n",news)
+function showNewsOnMainArea(news) {
+    console.log("Clicked.\n", news)
     $(".main-area").html(`
         <h3 style="overflow: hidden;">${news.title || "Title not available"}</h3>
         <h6 style="overflow: hidden;">By ${news.author || "Unknown author"}</h6>
         <img src=${news.urlToImage} class="img-thumbnail rounded mb-2"/>
         <h6 style="overflow: hidden;">Source: ${news.source.name}</h6>
         <p>${news.content ? news.content.substring(0, news.content.indexOf("[+")) : "Full content not available."}</p>
-        <a href="${news.url}" target="_blank" class="btn btn-primary mt-3">Read Full Article</a>
+        <a href=${news.url} target="_blank" class="btn btn-primary mt-3">Read Full Article</a>
     `)
 }
