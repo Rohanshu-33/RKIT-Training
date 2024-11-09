@@ -21,7 +21,7 @@ function handleLogin(){
     localStorage.setItem("email", email);
     localStorage.setItem("password", pswd);
 
-    document.cookie = `email=${email}; expires= Wed, 16 Oct 2024 12:00:00 UTC; path=/;`;
+    document.cookie = `email=${encodeURIComponent(email)}; expires= Thu, 30 Oct 2024 12:00:00 UTC; path=/;`;
     
     return true;
 }

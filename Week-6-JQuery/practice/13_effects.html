@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="03_effects.js"></script>
+
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(144, 238, 238);
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 0.5rem;
+            margin-top: 1rem;
+            margin-right: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="./contactimg.png" id="img1" alt="Image" height="200" width="200">
+    </div>
+        <br/>
+        <button class="btn" id="btn-show">Show</button>
+        <button class="btn" id="btn-hide">Hide</button>
+        <button class="btn" id="btn-toggle">Toggle</button>
+    
+    
+    <br/>
+    <br/>
+    
+    <div>
+        <img src="./contactimg.png" id="img2" alt="Image" height="200" width="200">
+    </div>
+        <br/>
+        <button class="btn" id="btn-fade-in">Fade In</button>
+        <button class="btn" id="btn-fade-out">Fade Out</button>
+        <button class="btn" id="btn-fade-toggle">Fade Toggle</button>
+
+    <br/>
+    <br/>
+    
+    <div>
+        <img src="./contactimg.png" id="img3" alt="Image" height="200" width="200">
+    </div>
+        <br/>
+        <button class="btn" id="btn-slide-toggle">Slide Toggle</button>
+        <button class="btn" id="btn-animate">Animate</button>
+        <button class="btn" id="btn-finish">Finish</button>
+</body>
+
+</html>

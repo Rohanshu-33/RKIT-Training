@@ -1,4 +1,7 @@
-function validateForm() {
+function validateForm(event) {
+
+    event.preventDefault()
+
     const fullname = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const pswd = document.getElementById("pswd").value;
@@ -47,6 +50,8 @@ function validateForm() {
     }
     gender = male ?  "male" : "female"
     sessionStorage.setItem("gender", gender);
+
+    alert("Successful.")
 
     return true;
 }

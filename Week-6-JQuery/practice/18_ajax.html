@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        div{
+            height: 150px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fetchResults">
+
+    </div>
+    <button id="btn1">Fetch Now</button><br />
+    <button id="btn2">XMLHTTP Fetch</button><br />
+
+    <form id="loginForm" action="#">
+        Email: <input type="email" name="email" id="email"><br />
+        Password: <input type="password" name="pswd" id="pswd"><br />
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+<script>
+
+    $(document).ready(function () {
+
+        // JQuery AJAX Request
+        $("#btn1").click(function () {
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/posts/100",
+                type: "GET",
+                success: function (response) {
+                    console.log(response)
+                    $("#fetchResults").html(`<p>UserId: ${response.userId}<br/>
+                    Post Id: ${response.id}<br/>
+                    Title: ${response.title}<br/>
+                    Body: ${response.body}<br/></p>`)
+                },
+                error: function (error) {
+                    alert("ERROR:\n", error)
+                }
+            })
+        })
+
+        // XMLHTTP AJAX Request
+        $("#btn2").click(function () {
+            let xmlhttp = new XMLHttpRequest()
+            
+            // request not initialized
+            console.log(xmlhttp.readyState)
+
+            xmlhttp.onreadystatechange = function () {
+                // if(this.readyState==1){ // server connection established
+                //     console.log("1", this.responseText);
+                // }
+                // else if(this.readyState==2){ // request received
+                //     console.log("2", this.responseText);
+                // }
+                // else if(this.readyState==3){ // processing request
+                //     console.log("3", this.responseText);
+                // }
+                // else if (this.readyState === 4){ // request finished and response ready
+                //     console.log("Response:\n", this.responseText)
+                // } else {
+                //     console.log("Request failed with status:", this.status)
+                // }
+
+                console.log(this.readyState ,this.responseText)
+            }
+
+            xmlhttp.open("GET", "https://randomuser.me/api/?results=1", true)
+            xmlhttp.send()
+
+        })
+
+        // JQuery POST Request
+        $("#loginForm").submit(function (e) {
+            e.preventDefault()
+
+            const emailPattern = /^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]+$/
+            const passwordPattern = /^[^\s]{8,20}$/
+
+            email = $("#email").val()
+            pswd = $("#pswd").val()
+
+            success = true
+            errors = ""
+
+            if (!emailPattern.test(email)) {
+                errors += "Enter valid email-id.\n"
+                success = false
+            }
+            if (!passwordPattern.test(pswd)) {
+                errors += "Enter password of length 8-20 characters without any whitespace.\n"
+                success = false
+            }
+
+            if (success) {
+
+                data = { "email": email, "password": pswd }
+                $.ajax({
+                    type: "POST",
+                    url: "https://jsonplaceholder.typicode.com/posts/",
+                    data: JSON.stringify(data),
+                    dataType: "json",
+                    success: function (response) {
+                        $("#fetchResults").html(JSON.stringify(response))
+                    },
+                    error: function (error) {
+                        console.error("ERROR in post request.\n", error)
+                        alert("ERROR:\n", error)
+                    }
+                })
+            }
+            else {
+                alert(errors)
+            }
+        })
+
+
+    })
+</script>
+
+</html>

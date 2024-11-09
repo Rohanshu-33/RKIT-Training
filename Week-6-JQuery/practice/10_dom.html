@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="00_dom.js"></script>
+
+    <style>
+        .btn{
+            padding: 0.25rem;
+            font-size: 1rem;
+            margin: 0.25rem;
+        }
+
+        #div1{
+            background-color: aquamarine;
+        }
+
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1" style="background-color: pink;">This is paragraph outside div.</p>
+
+    <div id="div1">
+        <p id="p2">This is paragraph inside div.</p>
+    </div>
+
+    <div id="div2">
+        <button class="btn" id="btn1">Append</button>
+        <button class="btn" id="btn2">Prepend</button>
+        <button class="btn" id="btn3">CSS</button>
+        <button class="btn" id="btn4">After</button>
+        <button class="btn" id="btn5">Empty</button>
+        <button class="btn" id="btn6">Remove</button>
+        <button class="btn" id="btn7">Text</button>
+        <button class="btn" id="btn8">HTML</button>
+        <button class="btn" id="btn9">Val</button>
+        <button class="btn" id="btn10">Add Class</button>
+        <button class="btn" id="btn11">Draggable</button>
+    </div>
+</body>
+</html>

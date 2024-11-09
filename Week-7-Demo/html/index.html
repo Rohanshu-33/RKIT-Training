@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rohanshu-Banodha">
+    <title>NewsBuzz</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../jq/index.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .left {
+            font-size: 1rem;
+            background-color: #dfe7f2;
+        }
+
+        .right {
+            font-size: 1rem;
+            border: 1px solid rgb(81, 12, 119);
+            background-color: whitesmoke;
+            overflow-y: scroll;
+            height: 100%;
+            max-height: 90vh;
+        }
+
+        .blur-border {
+            position: relative;
+            border: 1px solid transparent;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
+        }
+
+        .main-div {
+            border: 0.6rem solid #3c075d;
+            border-radius: 1rem;
+            height: 100%;
+            max-height: 95vh;
+            overflow-y: hidden;
+        }
+
+        .main-area{
+            overflow-y: auto;
+            height: 100%;
+            max-height: 65vh;
+        }
+
+        body {
+            background-color: #c0c8d2;
+        }
+
+        .button-utility {
+            border-radius: 100px;
+            background-color: white;
+        }
+
+        .button-utility:hover {
+            background-color: #a198de;
+            color: white;
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        .card-title,
+        .card-subtitle {
+            overflow: hidden !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="header mb-3"></nav>
+
+    <div class="container-fluid container-lg main-div mb-3">
+        <div class="row">
+            <div class="col-md-8 col-sm-7 left blur-border">
+                <div class="filters mt-3 ms-3 sticky">
+                    <datalist id="Countries">
+                        <option value="India">
+                        <option value="USA">
+                        <option value="UK">
+                        <option value="Russia">
+                    </datalist>
+                    <input class="form-control col-md-4 mb-2" type="text" list="Countries" name="countries"
+                        id="countries" placeholder="Select your Country">
+                    <div class="d-none d-md-block">
+                        <button id="sports" class="btn btn-filters col-md-3 mt-2 col-lg-2 p-2 button-utility c-sports" value="sports">Sports</button>
+                        <button id="business" class="btn btn-filters col-md-3 mt-2 col-lg-2 p-2 button-utility c-business"
+                            value="business">Business</button>
+                        <button id="technology" class="btn btn-filters col-md-3 mt-2 col-lg-2 p-2 button-utility c-technology" value="technology">Technology</button>
+                        <button id="science" class="btn btn-filters col-md-3 mt-2 col-lg-2 p-2 button-utility c-science"
+                            value="science">Science</button>
+                        <button id="health" class="btn btn-filters col-md-3 mt-2 col-lg-2 p-2 button-utility c-health"
+                            value="health">Health</button>
+                    </div>
+                    <div class="d-md-none">
+                        <!-- <datalist id="Filters">
+                            <option value="sports">
+                            <option value="business">
+                            <option value="science">
+                            <option value="technology">
+                            <option value="health">
+                        </datalist>
+                        <input class="form-control col-md-4 mb-2 mt-2" type="text" list="Filters" name="filter" id="filter"
+                            placeholder="Apply Filter"> -->
+                            <span class="me-2 span-filters c-sports" id="s-sports">Sports</span>
+                            <span class="me-2 span-filters c-business" id="s-business">Business</span>
+                            <span class="me-2 span-filters c-science" id="s-science">Science</span>
+                            <span class="me-2 span-filters c-technology" id="s-technology">Technology</span>
+                            <span class="me-2 span-filters c-health" id="s-health">Health</span>
+                    </div>
+                </div>
+                <div class="main-area mt-3 mb-3 d-none d-sm-block me-3 ms-3 p-2 bg-white rounded">
+                    <!-- News will appear here -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-5 right blur-border">
+                <!-- News will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="text-center pb-4 pt-4 mb-4 mt-4 ms-4 border-top">
+            NewsBuzz &copy; 2021 Company, Inc. All rights reserved.
+          </div>
+        </footer>
+</body>
+
+</html>
