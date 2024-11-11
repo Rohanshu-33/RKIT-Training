@@ -1,6 +1,3 @@
-Here's your updated JavaScript documentation with the Math and Date concepts added:
-
-```markdown
 # JavaScript Documentation
 
 ## 1. Variable Declarations: `let`, `var`, `const`

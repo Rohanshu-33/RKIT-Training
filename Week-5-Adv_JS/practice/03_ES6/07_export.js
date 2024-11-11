@@ -19,3 +19,6 @@ export default defaultMessage;
     // default: add,
     // subtract,
 // }
+
+// or
+// exports.add = function(){ }

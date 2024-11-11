@@ -5,7 +5,7 @@ import { add, subtract, PI } from './07_export.js';
 import defaultMessage from './07_export.js';
 
 
-// for CommonJS don't write "type": "module" in pckg.json but write : 
+// for CommonJS don't write "type": "module" in pckg.json.
 // const math_operations = require('08_export.js')
 // math_operations.default(2,3)
 // math_operations.subtract(7,4)

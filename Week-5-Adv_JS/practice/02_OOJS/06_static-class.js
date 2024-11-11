@@ -14,11 +14,11 @@ class Calculator {
     }
 
     static disp(){
-        console.log(`Name of calc is : ${this.model}`);
+        console.log(`Name of calc is : ${this.model} having PI value as ${this.PI}`);
     }
     
     disp(){
-        console.log(`Name of calc is : ${this.model}`);
+        console.log(`Name of calc is : ${this.model} having PI value as ${this.PI}`);
     }
 
     multiply(a, b) {
@@ -34,10 +34,10 @@ console.log(calc.PI); // undefined
 
 console.log(Calculator.add(5, 3)); // gives output
 
-Calculator.disp(); // undefined
+Calculator.disp(); // Name of calc is : undefined
 
 calc.disp(); // gives output
 
-console.log(calc.multiply(5, 3)); // gives output
+// console.log(calc.multiply(5, 3)); // gives output
 
-console.log(calc.add(5, 3)); // error: add is not a function
+// console.log(calc.add(5, 3)); // error: add is not a function

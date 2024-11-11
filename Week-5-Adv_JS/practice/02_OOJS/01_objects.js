@@ -1,25 +1,25 @@
 // JS Objects are a collection of key-value pairs where each key is either property or method.
 
-// const person = {
-//     name: "Rohanshu",
-//     age: 21,
-//     gender: "Male",
-//     greet: function(){
-//         console.log(`Hello ${this.name}`);
-//     }
-// }
+const person = {
+    name: "Rohanshu",
+    age: 21,
+    gender: "Male",
+    greet: function(){
+        console.log(`Hello ${this.name}`);
+    }
+}
 
-// console.log(person.age);
-// person.greet();
+console.log(person.age);
+person.greet();
 
 // const p2 =  new Object(person) // shallow copy is being created here so references are copied as it is.
 // p2.name = "james bond"
 // console.log(person.name);
 
-// const p2 = JSON.parse(JSON.stringify(person))   // deep copy.
-// p2.name="james bond"
-// console.log(person.name);
-// console.log(p2.name);
+const p2 = JSON.parse(JSON.stringify(person))   // deep copy.
+p2.name="james bond"
+console.log(person.name);
+console.log(p2.name);
 
 // keys in object
 
@@ -29,12 +29,12 @@ let obj = {
     "hobbies": [1, 2, 3, 4]
 }
 
-let obj2 = {}
 
 console.log(Object.keys(obj))
 console.log(Object.values(obj))
 console.log(Object.entries(obj))
 
+let obj2 = {}
 
 // performs shallow copy:
 Object.assign(obj2, obj)
