@@ -1,0 +1,15 @@
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.GeneratedMSBuildEditorConfig.editorconfig
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.AssemblyInfoInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.AssemblyInfo.cs
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.csproj.CoreCompileInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.sourcelink.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\bin\Debug\net8.0\ClassesAndObjects.exe
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\bin\Debug\net8.0\ClassesAndObjects.deps.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\bin\Debug\net8.0\ClassesAndObjects.runtimeconfig.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\bin\Debug\net8.0\ClassesAndObjects.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\bin\Debug\net8.0\ClassesAndObjects.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\refint\ClassesAndObjects.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ClassesAndObjects.genruntimeconfig.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\ClassesAndObjects\obj\Debug\net8.0\ref\ClassesAndObjects.dll

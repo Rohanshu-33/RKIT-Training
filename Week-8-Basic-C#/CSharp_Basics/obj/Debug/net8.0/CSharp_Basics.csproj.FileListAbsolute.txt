@@ -1,0 +1,15 @@
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\CSharp_Basics.exe
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\CSharp_Basics.deps.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\CSharp_Basics.runtimeconfig.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\CSharp_Basics.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\CSharp_Basics.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.GeneratedMSBuildEditorConfig.editorconfig
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.AssemblyInfoInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.AssemblyInfo.cs
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.csproj.CoreCompileInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.sourcelink.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\refint\CSharp_Basics.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.genruntimeconfig.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\ref\CSharp_Basics.dll

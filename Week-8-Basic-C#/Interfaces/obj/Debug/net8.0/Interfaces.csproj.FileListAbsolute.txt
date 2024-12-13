@@ -1,0 +1,15 @@
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\bin\Debug\net8.0\Interfaces.exe
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\bin\Debug\net8.0\Interfaces.deps.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\bin\Debug\net8.0\Interfaces.runtimeconfig.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\bin\Debug\net8.0\Interfaces.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\bin\Debug\net8.0\Interfaces.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.AssemblyInfoInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.AssemblyInfo.cs
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.csproj.CoreCompileInputs.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.sourcelink.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\refint\Interfaces.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\Interfaces.genruntimeconfig.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\Interfaces\obj\Debug\net8.0\ref\Interfaces.dll

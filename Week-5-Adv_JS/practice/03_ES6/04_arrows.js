@@ -31,15 +31,15 @@ class Person {
 
         setTimeout(() => {
             console.log(`Hello inside set timeout : ${this.name}`);
-        }, 0);
+        }, 0);  // arrow functions don't have this. so they inherit from lexical scope which is person instance here.
 
         function greet2(){
             console.log(`greeting ${this.name}`);
         }
-        // greet2()
+        greet2()  // no context given. so this refers to global
     }
 }
 
 const person = new Person("Rohanshu");
-person.greet();
+person.greet();  // given context of person instance. thus, this refers to the instance in this regular function
 
