@@ -13,3 +13,7 @@ D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.pdb
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.genruntimeconfig.cache
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\ref\CSharp_Basics.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\MathAssemblyDemo.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\bin\Debug\net8.0\MathAssemblyDemo.pdb
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_Basics.csproj.AssemblyReference.cache
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\CSharp_Basics\obj\Debug\net8.0\CSharp_B.878923AF.Up2Date

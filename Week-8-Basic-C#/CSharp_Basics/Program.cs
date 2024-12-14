@@ -12,8 +12,9 @@ class Program
         //Statements.StatementsMethod();
         //ArraysDemo.ArraysMethod();
         //MethodsDemo.GetAllMethods();
-        Enumeratorss.EnumsDemo();
-        
+        //Enumeratorss.EnumsDemo();
+        //ReferencesToAssemblies.ReferencesDemo();
+        DataTableDemo.DataTableMethod();
         Console.ReadKey();
     }
 }
