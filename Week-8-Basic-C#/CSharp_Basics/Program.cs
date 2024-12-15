@@ -14,7 +14,13 @@ class Program
         //MethodsDemo.GetAllMethods();
         //Enumeratorss.EnumsDemo();
         //ReferencesToAssemblies.ReferencesDemo();
-        DataTableDemo.DataTableMethod();
+        //DataTableDemo.DataTableMethod();
+        //ExceptionDemo.ExceptionMethod();
+        //StringClassDemo.StringClassMethods();
+        //DateTimeClassDemo.DateTimeClassMethods();
+        //FileHandlingDemo.FileMethods();
+        //FileHandlingDemo2.FileMethods();
+
         Console.ReadKey();
     }
 }
