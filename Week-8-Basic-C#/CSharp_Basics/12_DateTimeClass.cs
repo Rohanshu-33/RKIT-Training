@@ -65,7 +65,7 @@ namespace CSharp_Basics
             //DayOfWeek dayOfWeek = DateTime.Today.DayOfWeek;
             //Console.WriteLine(dayOfWeek);
 
-            //string formattedDate = DateTime.Now.ToString("yyyy/MM/dd HH-mm-ss");
+            //string formattedDate = DateTime.Now.ToString("dd/MM/yyyy HH-mm-ss");
             //Console.WriteLine("Formatted Date: " + formattedDate);
 
             //TimeSpan tmp = DateTime.Now.TimeOfDay;

@@ -15,7 +15,7 @@ namespace CollectionsApp
             }
 
             // Add a new element (creates a new array)
-            var newArray = immutableArray.Add(6);
+            ImmutableArray<int> newArray = immutableArray.Add(6);
             Console.WriteLine("\nAfter adding 6, New Array:");
             foreach (var item in newArray)
             {
@@ -36,7 +36,7 @@ namespace CollectionsApp
             }
 
             // Replace an element (creates a new array)
-            var replacedArray = removedArray.Replace(4, 10);
+            var replacedArray = removedArray.Replace(4, 10); // 1st occurence
             Console.WriteLine("\nAfter replacing 4 with 10:");
             foreach (var item in replacedArray)
             {

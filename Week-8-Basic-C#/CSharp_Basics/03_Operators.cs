@@ -45,7 +45,7 @@ namespace CSharp_Basic
             Console.WriteLine("a | b = " + (a | b));
             Console.WriteLine("a >> 2 = " + (a >> 2));
             Console.WriteLine("b << 3 = " + (b << 3));
-
+                
             int c = 4, d=5;
             Console.WriteLine("\nLogical Operators:\nc : " + c + " d : " + d + "\n");
             Console.WriteLine("c==4 && d==4 : " + (c==4 && d==4));

@@ -14,6 +14,7 @@ namespace CSharp_Basics
             arr[0] = 0;
             arr[1] = 1;
 
+            // Other ways to create arrays
 
             // Create an array of four elements, and add values later
             //string[] cars = new string[4];
@@ -108,7 +109,7 @@ namespace CSharp_Basics
 
 
 
-            /// Checks if any element exists with given condition
+            // Checks if any element exists with given condition
             //bool flg = Array.Exists(numbers, e => e > 222);
             //Console.WriteLine(flg);
 

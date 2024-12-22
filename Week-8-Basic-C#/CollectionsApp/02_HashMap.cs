@@ -39,11 +39,11 @@ namespace CollectionsApp
 
             //htable.Remove("name");
 
-            var any = htable.Values;
-            foreach (var item in any)
-            {
-                Console.WriteLine(item);
-            }
+            //var any = htable.Values;
+            //foreach (var item in any)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
 }

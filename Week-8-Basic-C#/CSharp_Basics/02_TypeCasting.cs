@@ -9,6 +9,7 @@ namespace CSharp_Basic
 
 			// explicit type casting
 			double var = 65.4F;
+			long longVar = Convert.ToInt64(var);
 			int intVar = Convert.ToInt32(var);
 			char charVar = Convert.ToChar(intVar);
 

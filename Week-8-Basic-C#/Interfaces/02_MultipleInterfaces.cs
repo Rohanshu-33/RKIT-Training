@@ -51,7 +51,7 @@ namespace Interfaces
         public void ShowValues()
         {
             // casting done for var1 bcoz both interface had same member-name
-            Console.WriteLine($"II1.var1: {((II1)this).var1}, II2.var1: {((II2)this).var1}, var2: {var2}");
+            Console.WriteLine($"II1.var1: {((II1)this).var1}, II2.var1: {((II2)this).var1}, var2: {this.var2}");
         }
     }
 }

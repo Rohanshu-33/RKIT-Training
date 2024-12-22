@@ -60,13 +60,13 @@ namespace CollectionsApp
 
             // Iterate only keys or values
             Console.WriteLine("\nKeys:");
-            foreach (var key in dictionary.Keys)
+            foreach (int key in dictionary.Keys)
             {
                 Console.WriteLine(key);
             }
 
             Console.WriteLine("\nValues:");
-            foreach (var val in dictionary.Values)
+            foreach (string val in dictionary.Values)
             {
                 Console.WriteLine(val);
             }

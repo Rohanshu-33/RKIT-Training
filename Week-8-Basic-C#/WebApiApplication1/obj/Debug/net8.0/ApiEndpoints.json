@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "WebApiApplication1.Controllers.TodoController",
+    "Method": "Add",
+    "RelativePath": "addtodo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itm",
+        "Type": "WebApiApplication1.Models.TodoItem",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiApplication1.Controllers.TodoController",
+    "Method": "Delete",
+    "RelativePath": "deletetodo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiApplication1.Controllers.TodoController",
+    "Method": "Get",
+    "RelativePath": "todos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
