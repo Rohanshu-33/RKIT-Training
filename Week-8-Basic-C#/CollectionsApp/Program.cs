@@ -6,7 +6,7 @@ public class Program
     static void Main()
     {
         Console.WriteLine("Main Program\n");
-        //ListsDemo.ListsMethods();
+        ListsDemo.ListsMethods();
         //HashTableDemo.HTableMethods();
         //StackDemo.StackMethods();
         //QueueDemo.QueueMethods();

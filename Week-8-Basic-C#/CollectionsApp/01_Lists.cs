@@ -15,6 +15,9 @@ namespace CollectionsApp
             numbers.Add(3);
             numbers.Add(4);
 
+            //int ele = numbers.FirstOrDefault(e => e==20, 100);
+            //Console.WriteLine(ele);
+
             //numbers.Remove(3); // returns T/F and removes the element
             //Console.WriteLine(string.Join(", ", numbers));
 
@@ -22,17 +25,21 @@ namespace CollectionsApp
 
             //numbers.Capacity = 10;  // set max size before resizing
             //int x = numbers.Capacity;  // get max size
+            //Console.WriteLine(x);
 
             //numbers.AddRange(numbers); // add at last
             //Console.WriteLine(string.Join(", ", numbers));
 
             // checks condition on every element
             //bool ans = numbers.All(x => x > 0);
+            // time complexity for the above (compare with foreach)
 
-            //double avg = numbers.Average();
+            //List<string> tmp = new List<string>();
+            //tmp.Add("a");
+            //double avg = tmp.Average();
             //Console.WriteLine("Average : " + avg);
 
-            //numbers.Contains(2);   // bool return T/F
+            numbers.Contains(2);   // bool return T/F
 
             //int count = numbers.Count();
             //Console.WriteLine("Count : " + count);
@@ -60,6 +67,8 @@ namespace CollectionsApp
             //numbers.Sort();
 
             //int[] arrList = numbers.ToArray();
+            // by ref and value, deep copy
+            // mindmap
 
         }
     }
