@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApplication1_NetFramework.Models;
 
 namespace WebApplication1_NetFramework.Controllers
 {
@@ -62,7 +63,24 @@ namespace WebApplication1_NetFramework.Controllers
             return Ok($"Name : {name}");
         }
 
-        
+        [HttpPost]
+        [Route("userdata")]
+        public IHttpActionResult PostData([FromBody] ModelClass obj)
+        {
+            if (obj == null)
+            {
+                return BadRequest("Invalid object data.");
+            }
+
+            var responseObj = new
+            {
+                Message = "Data received successfully.",
+                Id = obj.Id, 
+                Name = obj.Name
+            };
+
+            return Ok(responseObj);
+        }
 
     }
 }

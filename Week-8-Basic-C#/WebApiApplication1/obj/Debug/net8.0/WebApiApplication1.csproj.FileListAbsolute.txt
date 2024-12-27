@@ -31,3 +31,7 @@ D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\WebApiApplication1.pdb
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\WebApiApplication1.genruntimeconfig.cache
 D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\ref\WebApiApplication1.dll
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\bin\Debug\net8.0\WebApiApplication1.staticwebassets.endpoints.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\staticwebassets\msbuild.WebApiApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\RKIT - Training\RKIT - Training\Week-8-Basic-C#\WebApiApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

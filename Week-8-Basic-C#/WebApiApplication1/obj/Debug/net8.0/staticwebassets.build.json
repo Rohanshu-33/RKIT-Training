@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "faMs/dcyF8k+u+bKUlPW7LEdfexn68oUFG+uCrUbj+g=",
+  "Hash": "I56Bejo3fq1i50d40D29WUgxtkqYJjSPpyD06MRSv84=",
   "Source": "WebApiApplication1",
   "BasePath": "_content/WebApiApplication1",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
