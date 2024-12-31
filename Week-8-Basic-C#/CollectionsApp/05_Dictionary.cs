@@ -74,6 +74,7 @@ namespace CollectionsApp
             // Clear the dictionary
             dictionary.Clear();
             Console.WriteLine("\nDictionary cleared. Count: " + dictionary.Count);
+            
         }
     }
 }

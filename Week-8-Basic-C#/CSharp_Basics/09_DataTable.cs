@@ -66,6 +66,7 @@ namespace CSharp_Basics
                 Console.WriteLine("Row States: " + row.RowState + " " + row["id"] + " " + row["name"] + " " + row["salary"]);
             }
 
+            
 
             // Memory cleaning
             //table.Clear();  // Empty the table
@@ -80,10 +81,12 @@ namespace CSharp_Basics
             {
                 Console.WriteLine($"Found: {foundRow["name"]} {foundRow["salary"]}");
             }
-
+            
             //table.Rows.Add(1, "abc", 55.55F); // ConstraintException Raised
 
             //DataTable tble2 = table.Clone(); // only structure, no data.
+
+            // DataSet, TableName
         }
     }
 }
