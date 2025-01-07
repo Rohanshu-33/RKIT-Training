@@ -49,7 +49,7 @@ namespace ConsoleApp1_AdvanceC_
                 Console.WriteLine($"Iteration number: {i}");
             }
 
-            // 5) Data - sstart debug, go to watch window and inspect variables.
+            // 5) Data - start debug, go to watch window and inspect variables.
 
         }
 

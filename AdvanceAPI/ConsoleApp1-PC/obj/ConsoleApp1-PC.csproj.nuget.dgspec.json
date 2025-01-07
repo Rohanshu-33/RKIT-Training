@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Rohanshu\\DemoBackend-1\\Advance_API\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj": {}
+    "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\AdvanceAPI\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj": {}
   },
   "projects": {
-    "F:\\Rohanshu\\DemoBackend-1\\Advance_API\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj": {
+    "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\AdvanceAPI\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Rohanshu\\DemoBackend-1\\Advance_API\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj",
+        "projectUniqueName": "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\AdvanceAPI\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj",
         "projectName": "ConsoleApp1-PC",
-        "projectPath": "F:\\Rohanshu\\DemoBackend-1\\Advance_API\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj",
+        "projectPath": "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\AdvanceAPI\\ConsoleApp1-PC\\ConsoleApp1-PC.csproj",
         "packagesPath": "C:\\Users\\rohanshu.b\\.nuget\\packages\\",
-        "outputPath": "F:\\Rohanshu\\DemoBackend-1\\Advance_API\\ConsoleApp1-PC\\obj\\",
+        "outputPath": "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\AdvanceAPI\\ConsoleApp1-PC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rohanshu.b\\AppData\\Roaming\\NuGet\\NuGet.Config",
