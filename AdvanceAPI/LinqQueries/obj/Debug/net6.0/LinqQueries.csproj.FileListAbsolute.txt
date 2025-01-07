@@ -1,0 +1,15 @@
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\bin\Debug\net6.0\LinqQueries.exe
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\bin\Debug\net6.0\LinqQueries.deps.json
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\bin\Debug\net6.0\LinqQueries.runtimeconfig.json
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\bin\Debug\net6.0\LinqQueries.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\bin\Debug\net6.0\LinqQueries.pdb
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.csproj.AssemblyReference.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.GeneratedMSBuildEditorConfig.editorconfig
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.AssemblyInfoInputs.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.AssemblyInfo.cs
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.csproj.CoreCompileInputs.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\refint\LinqQueries.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.pdb
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\LinqQueries.genruntimeconfig.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\LinqQueries\obj\Debug\net6.0\ref\LinqQueries.dll
