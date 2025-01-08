@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -224,21 +225,21 @@ namespace LinqQueries
             //}
 
             // all
-            bool hasDeptId1 = empList.All(e => e.DepartmentId == 1);
-            if (hasDeptId1)
-            {
-                Console.WriteLine("All employees have dept id as 1.");
-            }
-            else Console.WriteLine("Not all employees are of dept id 1.");
+            //bool hasDeptId1 = empList.All(e => e.DepartmentId == 1);
+            //if (hasDeptId1)
+            //{
+            //    Console.WriteLine("All employees have dept id as 1.");
+            //}
+            //else Console.WriteLine("Not all employees are of dept id 1.");
 
 
             // any
-            hasDeptId1 = empList.Any(e => e.DepartmentId == 1);
-            if (hasDeptId1)
-            {
-                Console.WriteLine("Atleast 1 employee has dept id as 1.");
-            }
-            else Console.WriteLine("None employees are of dept id 1.");
+            //hasDeptId1 = empList.Any(e => e.DepartmentId == 1);
+            //if (hasDeptId1)
+            //{
+            //    Console.WriteLine("Atleast 1 employee has dept id as 1.");
+            //}
+            //else Console.WriteLine("None employees are of dept id 1.");
 
 
             // contains
@@ -252,10 +253,61 @@ namespace LinqQueries
                 DepartmentId = 2
             };
             bool isEmployee = empList.Contains(tmp, new EmployeeComparator());
-            Console.WriteLine("Employee exists : " + isEmployee);
+            //Console.WriteLine("Employee exists : " + isEmployee);
 
 
             // ElementAt, ElementAtOrDefault, First, FirstOrDefault, Last, LastOrDefault, Single, SingleOrDefault
+
+
+            // SequenceEqual
+            List<Employee> empList2 = DataEntry.GetEmployees();
+            List<Employee> empList3 = DataEntry.GetEmployees();
+            bool areEqualSequences = empList3.SequenceEqual(empList2, new EmployeeComparator());
+            //Console.WriteLine("Answer: "+areEqualSequences);
+
+
+            // Concat
+            List<Employee> empList4 = new List<Employee>{ new Employee {
+                Id = 4,
+                FirstName = "Rohan",
+                LastName = "Patel",
+                Salary = 55000,
+                IsManager = true,
+                DepartmentId = 2} };
+
+            IEnumerable<Employee> concatedEmployees = empList2.Concat(empList4);
+            //foreach (Employee emp in concatedEmployees)
+            //{
+            //    Console.WriteLine($"{emp.Id}, {emp.FirstName}");
+            //}
+
+
+            // Aggregate, Average, Sum, Max, Min -> demo covered in basic c# collections.
+
+            // DefaultIfEmpty
+            List<int> l = new List<int> { 1,2,3,4,5};
+            var ans = l.DefaultIfEmpty(9999);
+
+
+            // Empty  -> to create an empty data structure
+            IEnumerable<int> li = Enumerable.Empty<int>();
+
+            // Range
+            var intNumbers = Enumerable.Range(10, 5); // starting from 10, 5 numbers.
+            //foreach (var num in intNumbers)
+            //{
+            //    Console.Write(num+", ");
+            //}
+            
+            // Repeat
+            var repeatedString = Enumerable.Repeat<string>("String", 3);
+            foreach (string s in repeatedString)
+            {
+                Console.Write(s+"-");
+            }
+
+
+
 
         }
     }
