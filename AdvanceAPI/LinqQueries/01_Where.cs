@@ -301,15 +301,66 @@ namespace LinqQueries
             
             // Repeat
             var repeatedString = Enumerable.Repeat<string>("String", 3);
-            foreach (string s in repeatedString)
+            //foreach (string s in repeatedString)
+            //{
+            //    Console.Write(s+"-");
+            //}
+            
+
+            // distinct, except, intersect, union
+            List<int> list = new List<int> { 1, 1, 2, 3, 3, 4, 5, 5, 5 };
+            List<int> list2 = new List<int> { 4, 4, 5, 5 };
+
+            // distinct
+            List<int> distinctElements = list.Distinct().ToList();
+
+            // except
+            List<int> exceptList = list.Except(list2).ToList();
+
+            // intersect
+            List<int> intersectList = list.Intersect(list2).ToList();
+
+            // for any overloaded version -> second parameter is IEqualityComparator.
+
+            //foreach (int e in intersectList)
+            //{
+            //    Console.Write(e+",");
+            //}
+
+
+            // skip, skipwhile, take, takewhile
+
+            // (while -> skips until the condition specified remains true.
+            // if false, from that point, all other are returned in case of skipwhile
+            // and all other are skipped in case of takewhile.)
+
+
+            // let
+            res = from emp in empList
+                  let Initials = emp.FirstName.Substring(0, 1).ToUpper() + emp.LastName.Substring(0, 1).ToUpper()
+                  select new
+                  {
+                      Initials = Initials,
+                      FullName = emp.FirstName + " " + emp.LastName
+                  };
+            //foreach (var e in res)
+            //{
+            //    Console.WriteLine($"{e.Initials} {e.FullName}");
+            //}
+
+            // into
+            res = from emp in empList
+                  where emp.Salary > 50000
+                  select emp
+                  into HighEarners
+                  where HighEarners.IsManager == true
+                  select HighEarners;
+            
+            foreach (var e in res)
             {
-                Console.Write(s+"-");
+                Console.WriteLine($"{e.FirstName} {e.Salary}");
             }
-
-
-
-
-        }
+        } 
     }
 
     public class EmployeeComparator : IEqualityComparer<Employee>
