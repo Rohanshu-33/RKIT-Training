@@ -26,7 +26,7 @@ ALTER TABLE instructors MODIFY salary FLOAT;
 ALTER TABLE students CHANGE DateOfBirth DOB DATE;
 
 # 4.4 - drop a column
-ALTER TABLE instructors DROP COLUMN salary;
+#ALTER TABLE instructors DROP COLUMN salary;
 
 # 4.5 - add primary key
 ALTER TABLE tbl_name ADD PRIMARY KEY (col_name);

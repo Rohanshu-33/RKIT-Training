@@ -54,3 +54,12 @@ VALUES
 (5, 5, 'B', '2023-05-15'),
 (1, 2, 'B', '2023-05-15'),
 (3, 2, 'A', '2023-05-15');
+
+-- other ways to insert in table
+INSERT INTO students (id, first_name, last_name)
+VALUES (1, 'John', 'Doe')
+ON DUPLICATE KEY UPDATE first_name = 'John', last_name = 'Doe';
+
+# if exists with id=1, then replaced with new values, else new row is inserted.
+REPLACE INTO students (id, first_name, last_name)
+VALUES (1, 'John', 'Doe');

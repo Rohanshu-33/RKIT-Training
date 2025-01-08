@@ -214,17 +214,63 @@ namespace LinqQueries
             // to lookup  --> immediate execution (same funcionality as groupby)
             res = empList.ToLookup(e => e.DepartmentId);
             
-            foreach (var empGroup in res)
+            //foreach (var empGroup in res)
+            //{
+            //    Console.WriteLine($"DepartmentId: {empGroup.Key}");
+            //    foreach (Employee e in empGroup)
+            //    {
+            //        Console.WriteLine($"\tId: {e.Id} Name: {e.FirstName}");
+            //    }
+            //}
+
+            // all
+            bool hasDeptId1 = empList.All(e => e.DepartmentId == 1);
+            if (hasDeptId1)
             {
-                Console.WriteLine($"DepartmentId: {empGroup.Key}");
-                foreach (Employee e in empGroup)
-                {
-                    Console.WriteLine($"\tId: {e.Id} Name: {e.FirstName}");
-                }
+                Console.WriteLine("All employees have dept id as 1.");
             }
+            else Console.WriteLine("Not all employees are of dept id 1.");
 
 
+            // any
+            hasDeptId1 = empList.Any(e => e.DepartmentId == 1);
+            if (hasDeptId1)
+            {
+                Console.WriteLine("Atleast 1 employee has dept id as 1.");
+            }
+            else Console.WriteLine("None employees are of dept id 1.");
 
+
+            // contains
+            Employee tmp = new Employee
+            {
+                Id = 2,
+                FirstName = "Meet",
+                LastName = "Joshi",
+                Salary = 55000,
+                IsManager = true,
+                DepartmentId = 2
+            };
+            bool isEmployee = empList.Contains(tmp, new EmployeeComparator());
+            Console.WriteLine("Employee exists : " + isEmployee);
+
+
+            // ElementAt, ElementAtOrDefault, First, FirstOrDefault, Last, LastOrDefault, Single, SingleOrDefault
+
+        }
+    }
+
+    public class EmployeeComparator : IEqualityComparer<Employee>
+    {
+        bool IEqualityComparer<Employee>.Equals(Employee? x, Employee? y)
+        {
+            if (x.Id == y.Id && x.FirstName == y.FirstName && x.LastName == y.LastName && x.DepartmentId == y.DepartmentId && x.Salary == y.Salary) return true;
+            return false;
+        }
+
+        int IEqualityComparer<Employee>.GetHashCode(Employee obj)
+        {
+            return obj.Id.GetHashCode();
         }
     }
 }

@@ -1,7 +1,6 @@
 # Data Manipulation Language Queries
 
 # 1) UPDATE
-
 # affects to all the rows
 # below don't work in safe mode because there is no WHERE statement with key as parameter.
 # in safe mode, you cannot update a table without specifying primary key in WHERE statement
@@ -29,7 +28,7 @@ UPDATE instructors
 SET salary = CASE
     WHEN TIMESTAMPDIFF(YEAR, HireDate, CURDATE()) >= 7 THEN salary * 1.4
     WHEN TIMESTAMPDIFF(YEAR, HireDate, CURDATE()) BETWEEN 4 AND 6 THEN salary * 1.2
-    ELSE salary
+    ELSE salary # required or else salary will become null
 END;
 
 # ------------------------------------------

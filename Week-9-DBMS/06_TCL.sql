@@ -1,9 +1,10 @@
 # Transaction Control Language
-select * from instructors;
 
 # to make the transaction not to modify anything
 SET TRANSACTION READ ONLY;
+SET TRANSACTION READ WRITE;
 
+-- SET autocommit = 0;
 START TRANSACTION;
 
 UPDATE instructors

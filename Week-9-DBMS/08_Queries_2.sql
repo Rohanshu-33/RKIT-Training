@@ -27,7 +27,11 @@ WHERE
                         )
 			)
 		);
-    
+
+# alternate to above
+SELECT DISTINCT s.StudentId FROM studentcourses as s INNER JOIN courses as c ON
+s.CourseId = c.Id WHERE c.Credits = (SELECT MAX(Credits) From courses);
+
 # give details of departments that have no instructors yet.
 SELECT
 	*
