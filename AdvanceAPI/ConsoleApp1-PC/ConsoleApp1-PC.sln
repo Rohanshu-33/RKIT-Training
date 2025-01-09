@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqQueries", "..\LinqQueri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security&Cryptography", "..\Security&Cryptography\Security&Cryptography.csproj", "{6446FD55-9D3C-407E-987C-9313F92F5D2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_CRUD", "..\DB_CRUD\DB_CRUD.csproj", "{23E4D0E1-08D0-4A11-B72E-091B62FADB13}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23E4D0E1-08D0-4A11-B72E-091B62FADB13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23E4D0E1-08D0-4A11-B72E-091B62FADB13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23E4D0E1-08D0-4A11-B72E-091B62FADB13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23E4D0E1-08D0-4A11-B72E-091B62FADB13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
