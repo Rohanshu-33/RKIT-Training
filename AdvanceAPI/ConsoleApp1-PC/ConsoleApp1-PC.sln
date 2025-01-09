@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1-PC", "ConsoleApp1-PC.csproj", "{DA5ED74F-D06C-4AAA-B3D5-EB7D5B43AECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqQueries", "..\LinqQueries\LinqQueries.csproj", "{1E9A48D5-0A84-4A0B-B0DC-68AAAB85D891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqQueries", "..\LinqQueries\LinqQueries.csproj", "{1E9A48D5-0A84-4A0B-B0DC-68AAAB85D891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security&Cryptography", "..\Security&Cryptography\Security&Cryptography.csproj", "{6446FD55-9D3C-407E-987C-9313F92F5D2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1E9A48D5-0A84-4A0B-B0DC-68AAAB85D891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E9A48D5-0A84-4A0B-B0DC-68AAAB85D891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E9A48D5-0A84-4A0B-B0DC-68AAAB85D891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6446FD55-9D3C-407E-987C-9313F92F5D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
