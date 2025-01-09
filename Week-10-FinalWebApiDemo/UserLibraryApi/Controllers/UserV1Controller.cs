@@ -10,13 +10,14 @@ using UserLibraryApi.Models;
 
 namespace UserLibraryApi.Controllers
 {
+    [RoutePrefix("user/v1")]
     public class UserV1Controller : ApiController
     {
         internal static List<User> Users = new List<User>();
 
         // user signup
         [HttpPost]
-        [Route("user/v1/signup")]
+        [Route("signup")]
         public IHttpActionResult Signup([FromBody] User usr)
         {
             try
@@ -35,7 +36,7 @@ namespace UserLibraryApi.Controllers
 
         // user login
         [HttpPost]
-        [RouteAttribute("user/v1/login")]
+        [RouteAttribute("login")]
         public IHttpActionResult Login([FromBody] User usr)
         {
             try

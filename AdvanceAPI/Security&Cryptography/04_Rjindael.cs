@@ -19,11 +19,11 @@ namespace Security_Cryptography
 
             ICryptoTransform encryptor = _rijndael.CreateEncryptor(_rijndael.Key, _rijndael.IV);
             byte[] encBytes;
-            using (MemoryStream ms = new MemoryStream())
+            using (MemoryStream ms = new MemoryStream())   // stores encrypted or decrypted data in memory
             {
-                using (CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))
+                using (CryptoStream cs = new CryptoStream(ms, encryptor, CryptoStreamMode.Write))   // links memory stream with encryptor
                 {
-                    using (StreamWriter sw = new StreamWriter(cs))
+                    using (StreamWriter sw = new StreamWriter(cs))  // writes text data to cryptostream
                     {
                         sw.Write(data);
                     }
@@ -46,11 +46,11 @@ namespace Security_Cryptography
             byte[] encBytes = Convert.FromBase64String(ciphertext);
             string decText;
 
-            using (MemoryStream ms = new MemoryStream(encBytes))
+            using (MemoryStream ms = new MemoryStream(encBytes))   // stores encrypted or decrypted data in memory
             {
-                using (CryptoStream cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))
+                using (CryptoStream cs = new CryptoStream(ms, decryptor, CryptoStreamMode.Read))   // links memory stream with decryptor
                 {
-                    using (StreamReader sr = new StreamReader(cs))
+                    using (StreamReader sr = new StreamReader(cs))   // reads text data from cryptostream
                     {
                         decText = sr.ReadToEnd();
                     }

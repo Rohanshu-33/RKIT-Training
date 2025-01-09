@@ -86,7 +86,7 @@ namespace UserLibraryApi.Controllers
                 }
 
                 string usrname = JWTHelper.ExtractUsernameFromToken(token);
-                User usr = UserController.Users.FirstOrDefault(e => e.Username == usrname);
+                User usr = UserV1Controller.Users.FirstOrDefault(e => e.Username == usrname);
                 if (usr != null)
                 {
                     return Ok(new {Message= $"Found for {usr.Username}", Books = usr.purchasedBooks});
@@ -118,7 +118,7 @@ namespace UserLibraryApi.Controllers
                     }
 
                     string usrname = JWTHelper.ExtractUsernameFromToken(token);
-                    User usr = UserController.Users.FirstOrDefault(e => e.Username == usrname);
+                    User usr = UserV1Controller.Users.FirstOrDefault(e => e.Username == usrname);
                     if(usr != null)
                     {
                         usr.purchasedBooks.Add(book);
