@@ -1,0 +1,38 @@
+Claims: These are key value pairs of information about a user or a system. it represents specific
+	attributes of the user.
+Eg:
+"name": "RohanshuBanodha"
+"role": "Admin"
+"email": "example@example.com"
+
+in jwt, claims are encoded within the payload and can be accessed by decoding the token.
+
+
+Claim: Claim is a specific key-value pair. it is a subset of claims.
+
+
+ClaimsIdentity: represents a collection of claims for an entity(user or a system). Each identity can
+		have multiple claims. ClaimsIdentity is used to define the subject of the JWT.
+Eg:  ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, username) })
+
+
+ClaimsPrincipal: represents a user or identity in more general sense and consists of one or
+		more ClaimsIdentity objects.
+		While a ClaimsIdentity represents the individual claims about a single entity
+		(e.g., a single user), a ClaimsPrincipal is a higher-level representation that
+		can hold multiple identities (for example, if a user is part of multiple roles
+		or has different identities in different contexts).
+
+You can have one ClaimsIdentity for a user's base identity and another ClaimsIdentity for their role or permissions.
+In your code, the ClaimsPrincipal is what represents the "user" that is validated after decoding a JWT token.
+
+var principal = ValidateToken(token, key);
+
+Here, the principal is a ClaimsPrincipal object, which contains all the claims and identities associated with the JWT.
+
+The principal variable refers to an instance of ClaimsPrincipal that is returned when a JWT is validated.
+This object represents the authenticated user and contains all the claims in the token.
+
+ClaimTypes: The purpose of ClaimTypes is to standardize and simplify the use of claim types.
+When you're creating or working with claims in your application, instead of using raw strings to represent things like the username or email,
+you can use the predefined constants from ClaimTypes.

@@ -29,8 +29,17 @@ WHERE
 		);
 
 # alternate to above
-SELECT DISTINCT s.StudentId FROM studentcourses as s INNER JOIN courses as c ON
-s.CourseId = c.Id WHERE c.Credits = (SELECT MAX(Credits) From courses);
+SELECT DISTINCT
+    s.StudentId
+FROM
+    studentcourses AS s
+        INNER JOIN
+    courses AS c ON s.CourseId = c.Id
+WHERE
+    c.Credits = (SELECT 
+            MAX(Credits)
+        FROM
+            courses);
 
 # give details of departments that have no instructors yet.
 SELECT
@@ -68,4 +77,4 @@ DROP VIEW InstructorCourseDetails;
 SHOW INDEX FROM students;
 CREATE INDEX LastNameIndex ON students(LastName);
 CREATE UNIQUE INDEX FirstNameIndex ON students(FirstName);
-DROP INDEX LastNameIndex ON students;
+DROP INDEX FirstNameIndex ON students;

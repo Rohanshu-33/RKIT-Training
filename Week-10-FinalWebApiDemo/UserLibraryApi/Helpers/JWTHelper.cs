@@ -18,13 +18,13 @@ namespace UserLibraryApi.Helpers
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, username) }),
+                Subject = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Name, username) }),  // claims indicate the data that will be included in the jwt
                 Expires = DateTime.UtcNow.AddHours(1),  // Token expires in 1 hour
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);  // Return the token as a string
+            return tokenHandler.WriteToken(token);  // serializes the token as a string to return to client
         }
 
         // Method to extract username from the JWT token

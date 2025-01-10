@@ -15,7 +15,7 @@ WHERE
 	FirstName LIKE 'J%';   # multiple occurence match
 
 
-# Aggregate queries - COUNT, SUM AVG, MAX, MIN
+# Aggregate queries - COUNT, SUM, AVG, MAX, MIN
 
 # count number of instructors in each department
 SELECT

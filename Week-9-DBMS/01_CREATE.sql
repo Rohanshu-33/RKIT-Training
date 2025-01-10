@@ -12,6 +12,10 @@ CREATE TABLE Students(
     Address VARCHAR(60) NOT NULL
 );
 
+-- ALTER TABLE Students ADD UNIQUE (LastName);
+# 2 column uniqueness using distinct, pagination, index, view, cursor, stored procedure, partition
+
+SELECT * FROM Students ORDER BY FirstName DESC, LastName DESC limit 2 offset 1;
 
 CREATE TABLE Departments (
     Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -39,6 +43,8 @@ CREATE TABLE Instructors (
     FOREIGN KEY (DepartmentId) REFERENCES Departments(Id) ON DELETE SET NULL
 );
 
+SELECT CONCAT(DAY(HireDate),"-",MONTH(HireDate), "-", YEAR(HireDate)) AS DATEs FROM Instructors;
+
 
 CREATE TABLE InstructorCourses (
 	Id INT AUTO_INCREMENT PRIMARY KEY, # composite primary key can't be made bcoz of referential constraint added
@@ -59,7 +65,9 @@ CREATE TABLE StudentCourses(
     FOREIGN KEY (CourseId) REFERENCES Courses(Id) ON DELETE CASCADE
 );
 
-CREATE TABLE User(
+
+# The below is for DBMS CRUD in C# Advance API
+CREATE TABLE IF NOT EXISTS Users(
 	Id INT PRIMARY KEY AUTO_INCREMENT,
     Username VARCHAR(20) NOT NULL,
     Email VARCHAR(30) NOT NULL UNIQUE,
