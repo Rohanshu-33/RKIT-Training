@@ -19,6 +19,8 @@ namespace ConsoleApp1_PC
 
             // dynamic - type of variable is decided at runtime. initialization is not compulsory.
             // can be used to create properties, as a parameter or in return types.
+            dynamic d1 = 4;
+            d1 = "hi";
         }
     }
 }

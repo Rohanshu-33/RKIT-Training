@@ -6,7 +6,8 @@ class Program
     {
         Console.WriteLine("Start of Main Program");
 
-        WhereDemo.WhereDemoMethod();
+        //WhereDemo.WhereDemoMethod();
+        LinqQuery.LinqQueriesDemo();
 
         Console.WriteLine("End of Main Program");
     }
