@@ -8,6 +8,7 @@ using UserLibraryApi.Models;
 using UserLibraryApi.Helpers;
 using System.Diagnostics;
 using System.Web.Http.Cors;
+using System.Web;
 
 namespace UserLibraryApi.Controllers
 {
@@ -73,7 +74,7 @@ namespace UserLibraryApi.Controllers
         // GET: Get books for a user by their JWT token.
         [HttpGet]
         [Route("user/getuserbooks")]
-        public IHttpActionResult GetBooksByUser()
+        public HttpResponseMessage GetBooksByUser()
         {
             try
             {
@@ -82,22 +83,50 @@ namespace UserLibraryApi.Controllers
 
                 if (token == null)
                 {
-                    return Unauthorized();
+                    //return Unauthorized();
+                    return Request.CreateResponse(HttpStatusCode.Unauthorized);
                 }
 
                 string usrname = JWTHelper.ExtractUsernameFromToken(token);
                 User usr = UserV1Controller.Users.FirstOrDefault(e => e.Username == usrname);
                 if (usr != null)
                 {
-                    return Ok(new {Message= $"Found for {usr.Username}", Books = usr.purchasedBooks});
+                    string eTag = "hello";
+
+                    //return Ok(new {Message= $"Found for {usr.Username}", Books = usr.purchasedBooks});
+                    Debug.WriteLine(Request.Headers);
+                    if (Request.Headers.Contains("If-None-Match") && Request.Headers.GetValues("If-None-Match").FirstOrDefault() == eTag)
+                    {
+                        Debug.WriteLine("\n\nuser exists" + usr.purchasedBooks);
+                        // Return 304 Not Modified if the ETag matches
+                        return Request.CreateResponse(HttpStatusCode.NotModified);
+                    }
+
+                    var response = Request.CreateResponse(HttpStatusCode.OK, new
+                    {
+                        Message = $"Found books for {usr.Username}",
+                        Books = usr.purchasedBooks
+                    });
+
+                    response.Headers.CacheControl = new System.Net.Http.Headers.CacheControlHeaderValue
+                    {
+                        Public = true,
+                        MaxAge = TimeSpan.FromSeconds(25),
+                        MustRevalidate = true
+                    };
+
+                    return response;
                 }
+                Debug.WriteLine("out");
 
                 // If the user is not authorized, return an empty response or error.
-                return NotFound();
+                return Request.CreateResponse(HttpStatusCode.Unauthorized);
+                //return Unauthorized();
             }
             catch (Exception ex)
             {
-                return InternalServerError(ex);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError);
+                //return InternalServerError();
             }
         }
 
@@ -111,7 +140,6 @@ namespace UserLibraryApi.Controllers
                 {
                     // Retrieve the JWT token from the headers (for example, "Bearer <JWT_TOKEN>")
                     var token = Request.Headers.Authorization?.Parameter;
-
                     if (token == null)
                     {
                         return Unauthorized();
@@ -135,6 +163,14 @@ namespace UserLibraryApi.Controllers
             {
                 return InternalServerError(ex);
             }
+        }
+
+        private string GenerateETag(List<Book> purchasedBooks)
+        {
+            // Generate a hash of the purchased books list. You can use a different method for generating ETags.
+            var booksString = string.Join(",", purchasedBooks.Select(b => b.BookId + b.Title));  // Simplified; customize as needed
+            var hash = System.Security.Cryptography.SHA256.Create().ComputeHash(System.Text.Encoding.UTF8.GetBytes(booksString));
+            return Convert.ToBase64String(hash);  // Use the hash as the ETag
         }
 
     }
