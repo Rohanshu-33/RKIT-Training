@@ -34,6 +34,8 @@ namespace UserLibraryApi
                         //
                         c.SingleApiVersion("v1", "UserLibraryApi");
 
+                        c.BasicAuth("basic")
+                            .Description("Basic HTTP Authentication");
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
                         //c.PrettyPrint();

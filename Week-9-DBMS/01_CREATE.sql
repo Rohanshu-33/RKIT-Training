@@ -13,9 +13,15 @@ CREATE TABLE Students(
 );
 
 -- ALTER TABLE Students ADD UNIQUE (LastName);
-# 2 column uniqueness using distinct, pagination, index, view, cursor, stored procedure, partition
+# 2 column uniqueness using distinct, pagination, index, view, cursor, stored procedure, partition, isolated table
 
 SELECT * FROM Students ORDER BY FirstName DESC, LastName DESC limit 2 offset 1;
+
+-- pagination: 
+-- FIRST 10 ROWS
+SELECT * FROM Students LIMIT 0, 10;
+-- NEXT 10 ROWS
+SELECT * FROM Students LIMIT 10, 10;
 
 CREATE TABLE Departments (
     Id INT AUTO_INCREMENT PRIMARY KEY,

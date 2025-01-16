@@ -72,9 +72,13 @@ ON courses.Id = teaches.CourseId;
 SELECT * FROM InstructorCourseDetails;
 DROP VIEW InstructorCourseDetails;
 
+
+
 # index
 
 SHOW INDEX FROM students;
 CREATE INDEX LastNameIndex ON students(LastName);
 CREATE UNIQUE INDEX FirstNameIndex ON students(FirstName);
 DROP INDEX FirstNameIndex ON students;
+
+-- types of indexing: primary (primary key), unique, composite, spatial, regular, fulltext
