@@ -14,43 +14,43 @@ namespace FullDemo.Models.POCO
         /// </summary>
         [PrimaryKey]
         [AutoIncrement]
-        [Alias("M01F01")]
-        public int M01F01 { get; set; }
+        [Alias("T02F01")]
+        public int T02F01 { get; set; }
 
         /// <summary>
         /// Get or Set restaurant id (IT IS FOREIGN KEY FROM RST01)
         /// </summary>
         [ForeignKey(typeof(RST01), OnDelete = "CASCADE")]
         [Required]
-        [Alias("M01F02")]
-        public int M01F02 { get; }
+        [Alias("T02F02")]
+        public int T02F02 { get; }
 
         /// <summary>
         /// Get or Set menu name
         /// </summary>
         [Required]
-        [Alias("M01F03")]
-        public string M01F03 { get; set; }
+        [Alias("T02F03")]
+        public string T02F03 { get; set; }
 
         /// <summary>
         /// Get or Set menu price
         /// </summary>
         [Required]
-        [Alias("M01F04")]
-        public float M01F04 { get; set; }
+        [Alias("T02F04")]
+        public float T02F04 { get; set; }
 
         /// <summary>
         /// Get or Set menu cost price
         /// </summary>
         [Required]
-        [Alias("M01F05")]
-        public float M01F05 { get; set; }
+        [Alias("T02F05")]
+        public float T02F05 { get; set; }
 
         /// <summary>
         /// Get or Set menu creation date
         /// </summary>
         [Required]
-        [Alias("M01F06")]
-        public DateTime M01F05 { get; set; }
+        [Alias("T02F06")]
+        public DateTime T02F06 { get; set; }
     }
 }

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FullDemo.Extensions
+namespace FullDemo.Repositories
 {
-    public class DTOtoPOCO
+    internal class RestaurantController
     {
-         
     }
 }

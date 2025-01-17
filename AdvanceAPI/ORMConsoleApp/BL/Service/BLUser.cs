@@ -135,7 +135,7 @@ namespace ORMConsoleApp.BL.Service
             using (var db = _dbFactory.OpenDbConnection())
             {
                 // Querying all users using OrmLite
-                return db.Select<USR01>();  // will return POCO Object
+                return db.Select<USR01>();  // will return list of POCO Objects
             }
         }
 

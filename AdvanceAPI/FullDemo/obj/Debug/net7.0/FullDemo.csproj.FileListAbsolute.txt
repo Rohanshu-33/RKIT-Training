@@ -1,0 +1,5 @@
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\FullDemo\obj\Debug\net7.0\FullDemo.csproj.AssemblyReference.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\FullDemo\obj\Debug\net7.0\FullDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\FullDemo\obj\Debug\net7.0\FullDemo.AssemblyInfoInputs.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\FullDemo\obj\Debug\net7.0\FullDemo.AssemblyInfo.cs
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\FullDemo\obj\Debug\net7.0\FullDemo.csproj.CoreCompileInputs.cache

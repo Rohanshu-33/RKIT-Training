@@ -5,46 +5,54 @@ using Newtonsoft.Json;
 namespace FullDemo.Models.DTO
 {
     /// <summary>
-    /// Data Transfer Object for Menu
+    /// Data Transfer Object for Add Menu, Update Menu and View Menu from Restaurant perspective
     /// </summary>
     public class DTORST02
     {
         /// <summary>
         /// Get or Set menu id
         /// </summary>
-        [JsonProperty("M01101")]
+        [JsonProperty("T02201")]
         [Range(1, int.MaxValue, ErrorMessage = "Menu ID must be a positive value.")]
-        public int M01F01 { get; set; }
+        public int T02F01 { get; set; }
 
         /// <summary>
         /// Get or Set restaurant id
         /// </summary>
-        [JsonProperty("M01102")]
+        [JsonProperty("T02202")]
         [Range(1, int.MaxValue, ErrorMessage = "Restaurant ID must be a positive value.")]
         [Required(ErrorMessage = "Restaurant ID is required.")]
-        public int M01F02 { get; }
+        public int T02F02 { get; }
 
         /// <summary>
         /// Get or Set menu name
         /// </summary>
-        [JsonProperty("M01103")]
+        [JsonProperty("T02203")]
         [Required(ErrorMessage = "Menu name is required.")]
         [StringLength(30, ErrorMessage = "Menu name cannot exceed 30 characters.")]
-        public string M01F03 { get; set; }
+        public string T02F03 { get; set; }
 
         /// <summary>
         /// Get or Set menu price
         /// </summary>
-        [JsonProperty("M01104")]
+        [JsonProperty("T02204")]
         [Required(ErrorMessage = "Menu price is required.")]
         [Range(0.01, double.MaxValue, ErrorMessage = "Price must be a positive value.")]
-        public float M01F04 { get; set; }
+        public float T02F04 { get; set; }
+
+        /// <summary>
+        /// Get or Set menu price
+        /// </summary>
+        [JsonProperty("T02205")]
+        [Required(ErrorMessage = "Menu cost price is required.")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "Cost price must be a positive value.")]
+        public float T02F05 { get; set; }
 
         /// <summary>
         /// Get or Set menu start date
         /// </summary>
-        [JsonProperty("M01106")]
+        [JsonProperty("T02206")]
         [Required(ErrorMessage = "Start date is required.")]
-        public DateTime M01F06 { get; set; }
+        public DateTime T02F06 { get; set; }
     }
 }

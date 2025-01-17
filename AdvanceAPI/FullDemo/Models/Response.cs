@@ -13,7 +13,7 @@ namespace FullDemo.Models
         /// <summary>
         /// Gets or sets the data returned as part of the response, if applicable.
         /// </summary>
-        public DataTable Data { get; set; }
+        public dynamic Data { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether an error occurred.
