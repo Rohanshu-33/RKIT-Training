@@ -1,9 +1,7 @@
 ﻿using System;
-using ORMConsoleApp.BL.Interface;
 using ORMConsoleApp.BL.Service;
 using ORMConsoleApp.Models.DTO;
 using ORMConsoleApp.Models.ENUM;
-using ORMConsoleApp.Models.POCO;
 
 namespace ORMConsoleApp.Controllers
 {
