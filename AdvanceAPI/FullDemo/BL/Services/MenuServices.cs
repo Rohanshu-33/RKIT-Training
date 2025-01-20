@@ -70,16 +70,7 @@ namespace FullDemo.BL.Services
                 if (!isRST02)
                 {
                     _objResponse.IsError = true;
-                    _objResponse.Message = "Restaurant Not Found";
-                }
-            }
-            else if (Type == EnumType.A)
-            {
-                bool isRST02 = IsRST02Exists(_id);
-                if (isRST02)
-                {
-                    _objResponse.IsError = true;
-                    _objResponse.Message = "Restaurant already exists.";
+                    _objResponse.Message = "Menu Not Found";
                 }
             }
             return _objResponse;
@@ -99,12 +90,16 @@ namespace FullDemo.BL.Services
                     if (Type == EnumType.A)
                     {
                         db.Insert(_objRST02);
-                        _objResponse.Message = "Restaurant added successfully.";
+                        _objResponse.Message = "Menu added successfully.";
                     }
                     if (Type == EnumType.E)
                     {
                         db.Update(_objRST02);
-                        _objResponse.Message = "Restaurant data updated successfully.";
+                        db.UpdateOnlyFields(
+                            _objRST02,
+                            onlyFields: p => new { p.T02F03, p.T02F04, p.T02F05 },
+                            where: p => p.T02F01 == _objRST02.T02F01);
+                        _objResponse.Message = "Menu data updated successfully.";
                     }
                 }
             }
@@ -136,7 +131,7 @@ namespace FullDemo.BL.Services
             if (objRST02 == null)
             {
                 _objResponse.IsError = true;
-                _objResponse.Message = "Employee Not Found";
+                _objResponse.Message = "Menu Not Found";
             }
             return _objResponse;
         }
@@ -159,7 +154,7 @@ namespace FullDemo.BL.Services
                     using (var db = _dbFactory.OpenDbConnection())
                     {
                         db.DeleteById<RST02>(id);
-                        _objResponse.Message = "Restaurant deleted successfully.";
+                        _objResponse.Message = "Menu deleted successfully.";
                     }
                 }
                 return _objResponse;
@@ -194,6 +189,18 @@ namespace FullDemo.BL.Services
             using (var db = _dbFactory.OpenDbConnection())
             {
                 return db.Select<RST02>();  // will return List of POCO Objects
+            }
+        }
+
+        /// <summary>
+        /// Retrieves all menu items from the MySQL database.
+        /// </summary>
+        /// <returns>List of menu items</returns>
+        public void GetMEnuGroupByRestaurant()
+        {
+            using (var db = _dbFactory.OpenDbConnection())
+            {
+                
             }
         }
     }

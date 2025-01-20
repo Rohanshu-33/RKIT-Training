@@ -5,6 +5,7 @@ using FullDemo.Models;
 using FullDemo.Models.DTO;
 using FullDemo.Models.ENUM;
 using FullDemo.Models.POCO;
+using Google.Protobuf.Compiler;
 using Google.Protobuf.WellKnownTypes;
 using ServiceStack.Data;
 using ServiceStack.OrmLite;
@@ -73,15 +74,6 @@ namespace FullDemo.BL.Services
                     _objResponse.Message = "Restaurant Not Found";
                 }
             }
-            else if (Type == EnumType.A)
-            {
-                bool isRST01 = IsRST01Exists(_id);
-                if (isRST01)
-                {
-                    _objResponse.IsError = true;
-                    _objResponse.Message = "Restaurant already exists.";
-                }
-            }
             return _objResponse;
         }
 
@@ -103,7 +95,11 @@ namespace FullDemo.BL.Services
                     }
                     if (Type == EnumType.E)
                     {
-                        db.Update(_objRST01);
+                        db.UpdateOnlyFields(
+                            _objRST01,
+                            onlyFields: p => new { p.T01F02, p.T01F03, p.T01F05 },
+                            where: p => p.T01F01 == _objRST01.T01F01);
+
                         _objResponse.Message = "Restaurant data updated successfully.";
                     }
                 }
@@ -136,7 +132,7 @@ namespace FullDemo.BL.Services
             if (objRST01 == null)
             {
                 _objResponse.IsError = true;
-                _objResponse.Message = "Employee Not Found";
+                _objResponse.Message = "Restaurant Not Found";
             }
             return _objResponse;
         }

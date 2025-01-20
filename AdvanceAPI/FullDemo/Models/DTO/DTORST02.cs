@@ -13,8 +13,7 @@ namespace FullDemo.Models.DTO
         /// Get or Set menu id
         /// </summary>
         [JsonProperty("T02201")]
-        [Range(1, int.MaxValue, ErrorMessage = "Menu ID must be a positive value.")]
-        public int T02F01 { get; set; }
+        public int? T02F01 { get; set; }
 
         /// <summary>
         /// Get or Set restaurant id
@@ -22,7 +21,7 @@ namespace FullDemo.Models.DTO
         [JsonProperty("T02202")]
         [Range(1, int.MaxValue, ErrorMessage = "Restaurant ID must be a positive value.")]
         [Required(ErrorMessage = "Restaurant ID is required.")]
-        public int T02F02 { get; }
+        public int T02F02 { get; set; }
 
         /// <summary>
         /// Get or Set menu name
