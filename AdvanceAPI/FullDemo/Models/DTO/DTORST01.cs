@@ -13,7 +13,7 @@ namespace FullDemo.Models.DTO
         /// Get or Set restaurant id
         /// </summary>
         [JsonProperty("T01101")]
-        public int? T01F01 { get; set; }
+        public int T01F01 { get; set; }
 
         /// <summary>
         /// Get or Set restaurant name
@@ -36,7 +36,7 @@ namespace FullDemo.Models.DTO
         /// </summary>
         [JsonProperty("T01104")]
         [Required(ErrorMessage = "Restaurant password is required.")]
-        [StringLength(16, MinimumLength = 8, ErrorMessage = "Password must be between 8 and 16 characters.")]
+        [StringLength(int.MaxValue, MinimumLength = 8, ErrorMessage = "Password must be atleast 8 characters.")]
         public string T01F04 { get; set; }
 
 

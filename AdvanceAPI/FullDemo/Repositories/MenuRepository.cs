@@ -4,7 +4,8 @@ using FullDemo.Models.DTO;
 using FullDemo.Models.POCO;
 using FullDemo.Models.ENUM;
 using FullDemo.Models;
-using Newtonsoft.Json.Serialization;
+using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 namespace FullDemo.Repositories
 {
@@ -17,9 +18,9 @@ namespace FullDemo.Repositories
         internal static void AddMenu()
         {
             int restId = GetIntInput("Enter restaruant id: ");
-            string nme = GetStringInput("Enter restaurant name: ");
-            float sellPrice = GetFloatInput("Enter menu price: ");
-            float costPrice = GetFloatInput("Enter menu cost price: ");
+            string nme = GetStringInput("Enter food item name: ");
+            float sellPrice = GetFloatInput("Enter item price: ");
+            float costPrice = GetFloatInput("Enter item cost price: ");
 
             DTORST02 menu = new DTORST02
             {
@@ -69,13 +70,13 @@ namespace FullDemo.Repositories
                 var updatedMenu = new DTORST02
                 {
                     T02F01 = id,
+                    T02F02 = menu.T02F02,
                     T02F03 = GetStringInput("Enter new name of menu: ", menu.T02F03),
                     T02F04 = GetFloatInput("Enter menu new sell price: ", menu.T02F04),
                     T02F05 = GetFloatInput("Enter menu new cost price: ", menu.T02F05)
                 };
 
                 _objMenuServices.PreSave(updatedMenu);
-
                 _objMenuServices.Type = EnumType.E;
 
                 Response response = _objMenuServices.Validation();
@@ -84,6 +85,7 @@ namespace FullDemo.Repositories
                     Console.WriteLine(response.Message);
                     return;
                 }
+
                 response = _objMenuServices.Save();
                 Console.WriteLine($"Success: {!response.IsError}\nMessage: {response.Message}");
             }
@@ -118,7 +120,41 @@ namespace FullDemo.Repositories
         // store all menu grouped by their restaurant name and city in a file
         internal static void StoreMenuByRestaurantInJSONFile()
         {
-           
+            List<RST01> rstList = _objRestaurantServices.GetAll();
+            List<RST02> menuList = _objMenuServices.GetAll();
+
+            var result = (from rst in rstList
+                         join menu in menuList
+                         on rst.T01F01 equals menu.T02F02
+                         into menuGroup
+                         select new DTORST03
+                         {
+                             T03F01 = rst.T01F02,
+                             T03F02 = menuGroup.Select(menu => new DTORST04
+                             {
+                                 T04F01 = menu.T02F03,
+                                 T04F02 = menu.T02F04,
+                                 T04F03 = menu.T02F05
+                             }).ToList()
+                         }).ToList();
+
+            // Convert the result to JSON using Newtonsoft.Json
+            string json = JsonConvert.SerializeObject(result, Formatting.Indented);
+
+            // Save the JSON to a file
+            string filePath = "restaurants_menus.json";
+            File.WriteAllText(filePath, json);
+
+            Console.WriteLine($"File saved to {filePath}");
+
+            //foreach (var entry in result)
+            //{
+            //    Console.WriteLine($"Restaurant: {entry.Restaurant}");
+            //    foreach (var menu in entry.Menu)
+            //    {
+            //        Console.WriteLine($"  {menu.T02F03}: {menu.T02F04}");
+            //    }
+            //}
         }
 
         // delete a menu

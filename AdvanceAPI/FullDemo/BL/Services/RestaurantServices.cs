@@ -43,6 +43,7 @@ namespace FullDemo.BL.Services
         /// <returns>True if the restaurant exists, otherwise false</returns>
         private bool IsRST01Exists(int id)
         {
+            //Console.WriteLine("id is : " + id);
             using (var db = _dbFactory.OpenDbConnection())
             {
                 return db.Exists<RST01>(r => r.T01F01 == id);
@@ -56,6 +57,7 @@ namespace FullDemo.BL.Services
         public void PreSave(DTORST01 rst)
         {
             _objRST01 = rst.Convert<RST01>();
+            Console.WriteLine($"{_objRST01.T01F01} {_objRST01.T01F02}");
         }
 
         /// <summary>
@@ -65,6 +67,7 @@ namespace FullDemo.BL.Services
         public Response Validation()
         {
             _id = _objRST01.T01F01;
+            Console.WriteLine(_id);
             if (Type == EnumType.E)
             {
                 bool isRST01 = IsRST01Exists(_id);

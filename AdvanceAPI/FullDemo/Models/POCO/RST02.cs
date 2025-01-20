@@ -23,7 +23,7 @@ namespace FullDemo.Models.POCO
         [ForeignKey(typeof(RST01), OnDelete = "CASCADE")]
         [Required]
         [Alias("T02F02")]
-        public int T02F02 { get; }
+        public int T02F02 { get; set; }
 
         /// <summary>
         /// Get or Set menu name

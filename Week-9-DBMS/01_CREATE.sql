@@ -90,3 +90,6 @@ CREATE TABLE IF NOT EXISTS USR01(
     P01F05 DATE NOT NULL
 );
 select * from USR01;
+
+show tables;
+describe rst02;

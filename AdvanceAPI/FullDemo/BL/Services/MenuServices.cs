@@ -72,7 +72,12 @@ namespace FullDemo.BL.Services
                     _objResponse.IsError = true;
                     _objResponse.Message = "Menu Not Found";
                 }
+                else
+                {
+                    Console.WriteLine("Menu is present in db.");
+                }
             }
+
             return _objResponse;
         }
 
@@ -196,12 +201,33 @@ namespace FullDemo.BL.Services
         /// Retrieves all menu items from the MySQL database.
         /// </summary>
         /// <returns>List of menu items</returns>
-        public void GetMEnuGroupByRestaurant()
+        public void GetMenuGroupByRestaurant()
         {
-            using (var db = _dbFactory.OpenDbConnection())
-            {
-                
-            }
+            //using (var db = _dbFactory.OpenDbConnection())
+            //{
+            //    var query = db.From<RST01>()
+            //      .Join<RST02>((rest, menu) => rest.T01F01 == menu.T02F02)
+            //      .Select<RST01, RST02>((rest, menu) => new
+            //      {
+            //          T01F02 = rest.T01F02,
+            //          T02F03 = menu.T02F03,
+            //          T02F04 = menu.T02F04
+            //      })
+            //      .OrderBy(rest => rest.T01F02);
+
+            //    var result = db.Select(query);
+
+            //    var ans = result.GroupBy(r => r.T01F02).ToList();
+
+            //    foreach (var empGroup in ans)
+            //    {
+            //        Console.WriteLine($"Restaurant Name: {empGroup.Key}");
+            //        foreach (var e in empGroup)
+            //        {
+            //            Console.WriteLine($"{e.T02F03}, {e.T02F04}");  // Print Menu details
+            //        }
+            //    }
+            //}
         }
     }
 }
