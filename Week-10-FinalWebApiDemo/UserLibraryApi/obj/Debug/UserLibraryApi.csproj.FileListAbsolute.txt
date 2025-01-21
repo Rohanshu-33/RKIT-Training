@@ -215,3 +215,5 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\r
 F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\System.IO.Pipelines.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\System.IO.Pipelines.xml
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\System.Configuration.ConfigurationManager.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-10-FinalWebApiDemo\UserLibraryApi\bin\System.Configuration.ConfigurationManager.xml

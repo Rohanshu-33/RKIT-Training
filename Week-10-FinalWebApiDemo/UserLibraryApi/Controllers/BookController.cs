@@ -9,6 +9,7 @@ using UserLibraryApi.Helpers;
 using System.Diagnostics;
 using System.Web.Http.Cors;
 using System.Web;
+using System.Runtime.Caching;
 
 namespace UserLibraryApi.Controllers
 {
@@ -78,55 +79,50 @@ namespace UserLibraryApi.Controllers
         {
             try
             {
-                // Retrieve the JWT token from the headers (for example, "Bearer <JWT_TOKEN>")
+                // Retrieve the JWT token from the headers
                 var token = Request.Headers.Authorization?.Parameter;
 
                 if (token == null)
                 {
-                    //return Unauthorized();
                     return Request.CreateResponse(HttpStatusCode.Unauthorized);
                 }
 
                 string usrname = JWTHelper.ExtractUsernameFromToken(token);
+
+                // Define a cache key based on the username
+                string cacheKey = $"Books_{usrname}";
+
+                // Attempt to retrieve cached data
+                var cache = MemoryCache.Default;
+                if (cache.Contains(cacheKey))
+                {
+                    // Return cached data if available
+                    var cachedData = cache.Get(cacheKey);
+                    return Request.CreateResponse(HttpStatusCode.OK, cachedData);
+                }
+
+                // Fetch data from the database or logic
                 User usr = UserV1Controller.Users.FirstOrDefault(e => e.Username == usrname);
                 if (usr != null)
                 {
-                    string eTag = "hello";
-
-                    //return Ok(new {Message= $"Found for {usr.Username}", Books = usr.purchasedBooks});
-                    Debug.WriteLine(Request.Headers);
-                    if (Request.Headers.Contains("If-None-Match") && Request.Headers.GetValues("If-None-Match").FirstOrDefault() == eTag)
-                    {
-                        Debug.WriteLine("\n\nuser exists" + usr.purchasedBooks);
-                        // Return 304 Not Modified if the ETag matches
-                        return Request.CreateResponse(HttpStatusCode.NotModified);
-                    }
-
-                    var response = Request.CreateResponse(HttpStatusCode.OK, new
+                    var dataToCache = new
                     {
                         Message = $"Found books for {usr.Username}",
                         Books = usr.purchasedBooks
-                    });
-
-                    response.Headers.CacheControl = new System.Net.Http.Headers.CacheControlHeaderValue
-                    {
-                        Public = true,
-                        MaxAge = TimeSpan.FromSeconds(25),
-                        MustRevalidate = true
                     };
 
-                    return response;
-                }
-                Debug.WriteLine("out");
+                    // Cache the data for a specific duration (e.g., 30 seconds)
+                    cache.Add(cacheKey, dataToCache, DateTimeOffset.Now.AddSeconds(150));
 
-                // If the user is not authorized, return an empty response or error.
-                return Request.CreateResponse(HttpStatusCode.Unauthorized);
-                //return Unauthorized();
+                    return Request.CreateResponse(HttpStatusCode.OK, dataToCache);
+                }
+
+                // If the user is not found
+                return Request.CreateResponse(HttpStatusCode.NotFound);
             }
             catch (Exception ex)
             {
                 return Request.CreateResponse(HttpStatusCode.InternalServerError);
-                //return InternalServerError();
             }
         }
 
