@@ -116,6 +116,7 @@ namespace UserLibraryApi.Controllers
 
                     return Request.CreateResponse(HttpStatusCode.OK, dataToCache);
                 }
+                // data, output, fragment caching / (distributed caching) // redis-caching
 
                 // If the user is not found
                 return Request.CreateResponse(HttpStatusCode.NotFound);

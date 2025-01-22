@@ -11,7 +11,8 @@ class Program
 
         //ConditionalCompilation.ConditionalCompilationDemo();
 
-        //Dummy1.Display();  // static class demo
+        Dummy1.Display();  // static class demo
+        Dummy1.Display2();
 
         //Dummy2 tmp = new Dummy2();  // abstract class demo
         //tmp.GreetUser();
@@ -38,7 +39,7 @@ class Program
 
         //ExtensionMethods.ExtensionMethodsDemo();
 
-        BaseClassLibraries.BaseClassLibrariesDemo();
+        //BaseClassLibraries.BaseClassLibrariesDemo();
 
         Console.WriteLine("\nEnd of Main Program.");
     }

@@ -37,8 +37,16 @@ namespace ConsoleApp1_AdvanceC_
     {
         public static void Display()
         {
-            //StaticClass.user = "Rohanshu Banodha";
-            //StaticClass.GreetUser();
+            StaticClass.user = "Rohanshu Banodha";
+            StaticClass.GreetUser();
+            StaticClass.user = "abc";
+        }
+
+        public static void Display2()
+        {
+            StaticClass.user = "Rohanshu Banodha";
+            StaticClass.GreetUser();
+            StaticClass.user = "abc";
         }
     }
 
