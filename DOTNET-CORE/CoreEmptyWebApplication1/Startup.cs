@@ -1,4 +1,7 @@
 ﻿using CoreEmptyWebApplication1.Controllers;
+using CoreEmptyWebApplication1.Interfaces;
+using CoreEmptyWebApplication1.Extensions;
+using CoreEmptyWebApplication1.Repositories;
 
 namespace CoreEmptyWebApplication1
 {
@@ -8,6 +11,18 @@ namespace CoreEmptyWebApplication1
         {
             services.AddControllers();
             services.AddTransient<CustomMiddleware>();
+
+            // there will be only one instance of singleton service throughout the application
+            //services.AddSingleton<IProductInterface, ProductRepository>();
+
+            // there will be only one instance of scoped service for a single http request. if requested again, then new instance is created.
+            services.AddScoped<IProductInterface, ProductRepository>();
+
+            // there will be different instances for every time the interface is being accessed or is used from different instances.
+            services.AddTransient<IProductInterface, ProductRepository>();
+
+            // service extension AddServices method to insert dependency injection.
+            services.AddServices();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
