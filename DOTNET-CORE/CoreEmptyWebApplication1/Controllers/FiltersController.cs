@@ -15,6 +15,7 @@ namespace CoreEmptyWebApplication1.Controllers
         [MyActionfilter]
         [MyResultFilter]
         [MyExceptionFilter]
+        [HttpGet]
         public string GetAllData()
         {
             Debug.WriteLine("Start of action method.");

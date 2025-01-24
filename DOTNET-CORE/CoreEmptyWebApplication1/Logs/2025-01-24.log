@@ -1,0 +1,56 @@
+2025-01-24 14:55:43.8742 | DEBUG | Connection id "0HN9SB2HGP16Q" accepted. 
+2025-01-24 14:55:43.8742 | DEBUG | Connection id "0HN9SB2HGP16Q" started. 
+2025-01-24 14:55:43.8742 | INFO | Request starting HTTP/1.1 POST http://localhost:5298/api/Product/add application/json 22 
+2025-01-24 14:55:43.8742 | TRACE | All hosts are allowed. 
+2025-01-24 14:55:43.8845 | DEBUG | POST requests are not supported 
+2025-01-24 14:55:43.8845 | DEBUG | 1 candidate(s) found for the request path '/api/Product/add' 
+2025-01-24 14:55:43.8845 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1)' with route pattern 'api/Product/add' is valid for the request path '/api/Product/add' 
+2025-01-24 14:55:43.8845 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1)' 
+2025-01-24 14:55:43.8845 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1)' 
+2025-01-24 14:55:43.8845 | INFO | Route matched with {action = "AddProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddProduct(CoreEmptyWebApplication1.Models.ProductModel) on controller CoreEmptyWebApplication1.Controllers.ProductController (CoreEmptyWebApplication1). 
+2025-01-24 14:55:43.8845 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-24 14:55:43.8845 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-24 14:55:43.8845 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-24 14:55:43.9008 | DEBUG | Execution plan of exception filters (in the following order): None 
+2025-01-24 14:55:43.9008 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-24 14:55:43.9008 | DEBUG | Executing controller factory for controller CoreEmptyWebApplication1.Controllers.ProductController (CoreEmptyWebApplication1) 
+2025-01-24 14:55:43.9008 | DEBUG | Executed controller factory for controller CoreEmptyWebApplication1.Controllers.ProductController (CoreEmptyWebApplication1) 
+2025-01-24 14:55:43.9008 | DEBUG | Attempting to bind parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel' ... 
+2025-01-24 14:55:43.9008 | DEBUG | Attempting to bind parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel' using the name '' in request data ... 
+2025-01-24 14:55:43.9008 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-24 14:55:43.9008 | DEBUG | Connection id "0HN9SB2HGP16Q", Request id "0HN9SB2HGP16Q:00000001": started reading request body. 
+2025-01-24 14:55:43.9008 | DEBUG | Connection id "0HN9SB2HGP16Q", Request id "0HN9SB2HGP16Q:00000001": done reading request body. 
+2025-01-24 14:55:43.9186 | DEBUG | JSON input formatter succeeded, deserializing to type 'CoreEmptyWebApplication1.Models.ProductModel' 
+2025-01-24 14:55:43.9186 | DEBUG | Done attempting to bind parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel'. 
+2025-01-24 14:55:43.9186 | DEBUG | Done attempting to bind parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel'. 
+2025-01-24 14:55:43.9186 | DEBUG | Attempting to validate the bound parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel' ... 
+2025-01-24 14:55:43.9186 | DEBUG | Done attempting to validate the bound parameter 'product' of type 'CoreEmptyWebApplication1.Models.ProductModel'. 
+2025-01-24 14:55:43.9186 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-24 14:55:43.9186 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-24 14:55:43.9186 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-01-24 14:55:43.9332 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-01-24 14:55:43.9332 | INFO | Executing action method CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1) - Validation state: Valid 
+2025-01-24 14:55:43.9332 | TRACE | Executing action method CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1) with arguments (CoreEmptyWebApplication1.Models.ProductModel) 
+2025-01-24 14:55:44.0056 | ERROR | System.Exception: Error occured
+   at CoreEmptyWebApplication1.Controllers.ProductController.AddProduct(ProductModel product) in F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\Controllers\ProductController.cs:line 42 
+2025-01-24 14:55:44.0097 | INFO | Executed action method CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1), returned result Microsoft.AspNetCore.Mvc.BadRequestResult in 66.0076ms. 
+2025-01-24 14:55:44.0097 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-01-24 14:55:44.0097 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-01-24 14:55:44.0097 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-24 14:55:44.0097 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-24 14:55:44.0097 | TRACE | Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-01-24 14:55:44.0097 | TRACE | Replacing Microsoft.AspNetCore.Mvc.BadRequestResult with status code 400 with Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-01-24 14:55:44.0259 | TRACE | Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-01-24 14:55:44.0259 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-01-24 14:55:44.0259 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-01-24 14:55:44.0259 | DEBUG | No information found on request to perform content negotiation. 
+2025-01-24 14:55:44.0259 | DEBUG | Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2025-01-24 14:55:44.0259 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2025-01-24 14:55:44.0259 | INFO | Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'. 
+2025-01-24 14:55:44.0452 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-01-24 14:55:44.0452 | TRACE | Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-01-24 14:55:44.0452 | TRACE | Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-01-24 14:55:44.0452 | INFO | Executed action CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1) in 143.1299ms 
+2025-01-24 14:55:44.0452 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.ProductController.AddProduct (CoreEmptyWebApplication1)' 
+2025-01-24 14:55:44.0574 | DEBUG | Connection id "0HN9SB2HGP16Q" completed keep alive response. 
+2025-01-24 14:55:44.0574 | INFO | Request finished HTTP/1.1 POST http://localhost:5298/api/Product/add application/json 22 - 400 - application/problem+json;+charset=utf-8 175.9954ms 

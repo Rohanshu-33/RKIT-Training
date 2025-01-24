@@ -25,3 +25,13 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Deb
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Debug\net7.0\CoreEmptyWebApplication1.pdb
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Debug\net7.0\CoreEmptyWebApplication1.genruntimeconfig.cache
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Debug\net7.0\ref\CoreEmptyWebApplication1.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\Microsoft.OpenApi.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Debug\net7.0\CoreEmptyWebApplication1.MvcApplicationPartsAssemblyInfo.cs
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Debug\net7.0\CoreEmptyWebApplication1.csproj.CopyComplete
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\nlog.config
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.Extensions.Logging.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.Web.AspNetCore.dll

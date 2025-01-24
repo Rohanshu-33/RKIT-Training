@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "ilihsWIvQVN44kLq3AaMZbOIjZnwBebimKwu1uhfWqo=",
+  "Source": "CoreEmptyWebApplication1",
+  "BasePath": "_content/CoreEmptyWebApplication1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "CoreEmptyWebApplication1\\wwwroot",
+      "Source": "CoreEmptyWebApplication1",
+      "ContentRoot": "F:\\Rohanshu\\RKIT-Main\\RKIT-Training\\DOTNET-CORE\\CoreEmptyWebApplication1\\wwwroot\\",
+      "BasePath": "_content/CoreEmptyWebApplication1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

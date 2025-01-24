@@ -7,6 +7,7 @@ namespace CoreEmptyWebApplication1.Controllers
     [Route("[controller]/[action]")]
     public class HomeController : ControllerBase
     {
+        [HttpGet]
         [Route("~/hello")]  // the base route setup of controller/action will not work now on this method.
         public string Get()
         {
@@ -15,6 +16,7 @@ namespace CoreEmptyWebApplication1.Controllers
 
         // Variables in routing
         [Route("{id}")]
+        [HttpGet]
         public string Other(int id)
         {
             return "other "+id;
@@ -22,6 +24,7 @@ namespace CoreEmptyWebApplication1.Controllers
 
         // Query string in routing
         //[Route("getall")]
+        [HttpGet]
         public string GetAll(int id, string name, int aid, string aname)
         {
             return $"Id: {id} Name: {name} Aid: {aid} Aname: {aname}";

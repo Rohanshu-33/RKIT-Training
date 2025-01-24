@@ -2,21 +2,56 @@
 using CoreEmptyWebApplication1.Interfaces;
 using CoreEmptyWebApplication1.Extensions;
 using CoreEmptyWebApplication1.Repositories;
+using Microsoft.AspNetCore.Diagnostics;
+using System.Net;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.Configuration;
+using NLog;
 
 namespace CoreEmptyWebApplication1
 {
     public class Startup
     {
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddTransient<CustomMiddleware>();
+            //services.AddTransient<CustomMiddleware>();
+
+            services.AddSwaggerGen(c =>
+            {
+                // Add API key definition to Swagger
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Name = "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Description = "Provide the API key in the header"
+                });
+
+                // Add security requirement to require the API key
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                 {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new string[] {}
+                    }
+                 });
+            });
+            services.AddEndpointsApiExplorer();
 
             // there will be only one instance of singleton service throughout the application
             //services.AddSingleton<IProductInterface, ProductRepository>();
 
             // there will be only one instance of scoped service for a single http request. if requested again, then new instance is created.
-            services.AddScoped<IProductInterface, ProductRepository>();
+            //services.AddScoped<IProductInterface, ProductRepository>();
 
             // there will be different instances for every time the interface is being accessed or is used from different instances.
             services.AddTransient<IProductInterface, ProductRepository>();
@@ -27,7 +62,7 @@ namespace CoreEmptyWebApplication1
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            // context is similar to nodejs (req, res). it has details of both req and response upto the current pipeline execution
             //app.Use(async (context, next) =>
             //{
             //    await context.Response.WriteAsync("Use 1 - 1\n");
@@ -38,11 +73,42 @@ namespace CoreEmptyWebApplication1
             //app.UseMiddleware<CustomMiddleware>();
 
 
-
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
+                });
+                app.UseDeveloperExceptionPage(
+                    new DeveloperExceptionPageOptions
+                    {
+                        SourceCodeLineCount = 10
+                    });
             }
+            else
+            {
+                app.UseExceptionHandler(
+                    options =>
+                    {
+                        options.Run(
+                            async context =>
+                            {
+                                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                                var ex = context.Features.Get<IExceptionHandlerFeature>();
+                                if (ex != null)
+                                {
+                                    await context.Response.WriteAsync(ex.Error.Message);
+                                }
+                            }
+                     );
+                    });
+            }
+
+            //app.Run(context =>
+            //{
+            //    throw new Exception("My exception.");
+            //});
 
             app.UseRouting();
             app.UseEndpoints(endpoints =>
