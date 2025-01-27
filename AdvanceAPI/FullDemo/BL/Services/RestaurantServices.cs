@@ -93,7 +93,7 @@ namespace FullDemo.BL.Services
                 {
                     if (Type == EnumType.A)
                     {
-                        db.Insert(_objRST01);
+                        db.Insert(_objRST01, true);
                         _objResponse.Message = "Restaurant added successfully.";
                     }
                     if (Type == EnumType.E)

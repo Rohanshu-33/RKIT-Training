@@ -21,7 +21,7 @@ namespace FullDemo.Models.POCO
         /// Get or Set restaurant name
         /// </summary>
         [Required] // Ensures the value is not null
-        [StringLength(30)] // Limits the length to 100 characters
+        [StringLength(30)] // Limits the length to 30 characters
         [Alias("T01F02")] // Maps this property to the column "R01F02"
         public string T01F02 { get; set; }
 

@@ -16,7 +16,7 @@ namespace ORMConsoleApp.BL.Interface
         /// Validates the data before saving.
         /// </summary>
         /// <returns>A response indicating whether the validation was successful.</returns>
-        Response Validation(DTOUSR01 usr);
+        Response Validation(T usr);
 
         /// <summary>
         /// Saves the data.

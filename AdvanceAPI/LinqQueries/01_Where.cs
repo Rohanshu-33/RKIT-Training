@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LinqQueries.Data;
+﻿using LinqQueries.Data;
 
 namespace LinqQueries
 {
@@ -114,12 +108,12 @@ namespace LinqQueries
             // so that it will force the query to get executed in order to execute ToList().
             // Thus in this way we can make queries execute immediately and not lazily.
             //res = (from e in empList
-            //      where e.IsManager == false
-            //      select new
-            //      {
-            //          FullName = e.FirstName + "--" + e.LastName,
-            //          AnnualSalary = e.Salary * 12
-            //      }).ToList();
+            //       where e.IsManager == false
+            //       select new
+            //       {
+            //           FullName = e.FirstName + "--" + e.LastName,
+            //           AnnualSalary = e.Salary * 12
+            //       }).ToList();
 
             //foreach (var e in res)
             //{
@@ -152,6 +146,7 @@ namespace LinqQueries
                     DepartmentName = dept.Name
                 });
 
+            // Query Syntax form
             res = from dept in deptList
                   join emp in empList
                   on dept.Id equals emp.DepartmentId
@@ -202,7 +197,7 @@ namespace LinqQueries
             //}
 
 
-            // group by  --> it is deferred execution -> returns igrouping generic interface (tolookup also)
+            // group by  --> it is deferred execution -> returns igrouping generic interface
 
             // query syntax
             res = from emp in empList
@@ -356,10 +351,10 @@ namespace LinqQueries
                   where HighEarners.IsManager == true
                   select HighEarners;
             
-            foreach (var e in res)
-            {
-                Console.WriteLine($"{e.FirstName} {e.Salary}");
-            }
+            //foreach (var e in res)
+            //{
+            //    Console.WriteLine($"{e.FirstName} {e.Salary}");
+            //}
         } 
     }
 

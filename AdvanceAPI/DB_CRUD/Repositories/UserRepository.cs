@@ -46,6 +46,7 @@ namespace DB_CRUD.Repositories
                         Username = reader["Username"].ToString(),
                         Email = reader["Email"].ToString()
                     };
+                    // it should be in POCO.
                     users.Add(user);
                 }
             }
