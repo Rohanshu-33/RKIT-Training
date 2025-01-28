@@ -5,6 +5,7 @@ namespace FullDemo.Models.POCO
     /// <summary>
     /// ITH04 -> Item Calendar Table
     /// </summary>
+    [Alias("ITH04")]
     public class ITH04
     {
         #region Item Calendar
