@@ -8,16 +8,16 @@
         /// <summary>
         /// Indicates that the item is pending action.
         /// </summary>
-        Pending,
+        P,
 
         /// <summary>
         /// Indicates that the item has been collected.
         /// </summary>
-        Collected,
+        C,
 
         /// <summary>
         /// Indicates that the item has been returned.
         /// </summary>
-        Returned
+        R
     }
 }

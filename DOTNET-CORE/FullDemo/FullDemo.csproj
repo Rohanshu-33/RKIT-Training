@@ -7,22 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.15" />
     <PackageReference Include="ServiceStack.OrmLite.MySql" Version="8.5.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="BL\Repositories\" />
     <Folder Include="Controllers\" />
-    <Folder Include="BL\" />
-    <Folder Include="Extensions\" />
     <Folder Include="Filters\" />
     <Folder Include="Helpers\Logging\" />
     <Folder Include="Helpers\JWT\" />
-    <Folder Include="Helpers\Security\" />
   </ItemGroup>
 
 </Project>

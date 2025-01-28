@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using Microsoft.OpenApi.Models;
-using Microsoft.Extensions.Configuration;
-using NLog;
+using FullDemo.BL.Interfaces;
+using FullDemo.BL.Services;
+using FullDemo.Models.POCO;
+using FullDemo.Models.DTO;
 
 namespace FullDemo
 {
@@ -14,6 +16,8 @@ namespace FullDemo
         {
             services.AddControllers();
             //services.AddTransient<CustomMiddleware>();
+
+            services.AddScoped<IUserServices<DTOITH01>, UserServices>();
 
             services.AddSwaggerGen(c =>
             {
