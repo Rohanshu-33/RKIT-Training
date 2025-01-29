@@ -5,7 +5,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
+        var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Helpers", "Logging");
         NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
         CreateHostBuilder(args).Build().Run();
     }

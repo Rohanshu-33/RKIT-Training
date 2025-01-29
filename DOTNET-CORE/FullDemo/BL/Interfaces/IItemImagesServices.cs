@@ -2,5 +2,6 @@
 {
     public class IItemImagesServices
     {
+        // pending: jwt, exception filter, logging
     }
 }
