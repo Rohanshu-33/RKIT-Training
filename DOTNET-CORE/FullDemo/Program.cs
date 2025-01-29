@@ -11,13 +11,16 @@ internal class Program
     }
     public static IHostBuilder CreateHostBuilder(string[] args)
     {
-        return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webHosts =>
-        {
-            webHosts.UseStartup<Startup>();
-        }).ConfigureLogging(options =>
-        {
-            options.ClearProviders();
-            options.SetMinimumLevel(LogLevel.Trace);
-        }).UseNLog();
+        return Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webHost =>
+            {
+                webHost.UseStartup<Startup>();
+                webHost.UseNLog();
+            })
+            .ConfigureLogging(logging =>
+            {
+                logging.ClearProviders();
+                logging.SetMinimumLevel(LogLevel.Trace);
+            });
     }
 }
