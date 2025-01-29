@@ -4,6 +4,9 @@ using Newtonsoft.Json;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Adding Item.
+    /// </summary>
     public class DTOITH03
     {
         #region Add New Item
@@ -48,11 +51,19 @@ namespace FullDemo.Models.DTO
         public float H03F05 { get; set; }
 
         /// <summary>
+        /// Gets or Sets the Item Category.
+        /// </summary>
+        [JsonProperty("itemDescription")]
+        [Required(ErrorMessage = "Item Category is required.")]
+        [StringLength(50, ErrorMessage = "Item Category cannot exceed 50 characters.")]
+        public string H03F06 { get; set; }
+
+        /// <summary>
         /// Gets or Sets the Item Addition Date.
         /// </summary>
         [JsonProperty("itemAdditionDate")]
         [Required(ErrorMessage = "Item Addition Date is required.")]
-        public DateTime H03F06 { get; set; }
+        public DateTime H03F07 { get; set; }
 
         #endregion
     }

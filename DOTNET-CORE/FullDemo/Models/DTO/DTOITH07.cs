@@ -5,6 +5,9 @@ using Newtonsoft.Json;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Bookings.
+    /// </summary>
     public class DTOITH07
     {
         #region Bookings DTO

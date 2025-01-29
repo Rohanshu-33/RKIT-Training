@@ -18,6 +18,7 @@ namespace FullDemo
             //services.AddTransient<CustomMiddleware>();
 
             services.AddScoped<IUserServices<DTOITH01>, UserServices>();
+            services.AddScoped<IItemServices<DTOITH03>, ItemServices>();
 
             services.AddSwaggerGen(c =>
             {

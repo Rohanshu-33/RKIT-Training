@@ -36,10 +36,6 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Google
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\K4os.Compression.LZ4.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\K4os.Compression.LZ4.Streams.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\K4os.Hash.xxHash.dll
-F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
-F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.Bcl.Memory.dll
-F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.Bcl.TimeProvider.dll
-F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
@@ -74,3 +70,6 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\runtim
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Text.Encoding.CodePages.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

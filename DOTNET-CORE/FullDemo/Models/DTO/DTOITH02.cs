@@ -3,6 +3,9 @@ using Newtonsoft.Json;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for User Login.
+    /// </summary>
     public class DTOITH02
     {
         #region User Login

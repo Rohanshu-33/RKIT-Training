@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Item Calendar.
+    /// </summary>
     public class DTOITH06
     {
         #region Item Calendar DTO

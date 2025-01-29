@@ -6,7 +6,7 @@ using FullDemo.Models.DTO;
 
 namespace FullDemo.BL.Interfaces
 {
-    public interface IUserServices<TDTO> where TDTO : class
+    public interface IItemServices<TDTO> where TDTO : class
     {
         /// <summary>
         /// Gets or sets the type of operation (e.g., Add, Edit, Delete) to be performed.
@@ -14,18 +14,16 @@ namespace FullDemo.BL.Interfaces
         public EnmType Type { get; set; }
 
         /// <summary>
-        /// Checks whether user exists or not with given email.
+        /// Prepares the data before saving it.
         /// </summary>
-        /// <param name="email">The email to be processed.</param>
-        /// <param name="password">The password to be processed.</param>
-        public bool CheckUserCredentials(DTOITH02 usr);
+        /// <param name="objDTO">The data transfer object to be processed.</param>
+        void PreSave(TDTO objDTO);
 
         /// <summary>
-        /// Prepares the data before saving it.
-        /// This method is invoked to handle any necessary preparation steps (e.g., mapping or transformation) before saving.
+        /// Prepares the updation data before saving it.
         /// </summary>
-        /// <param name="objDTO">The data object (DTO or POCO) to be processed.</param>
-        void PreSave(TDTO objDTO);
+        /// <param name="ITH">The data transfer object to be processed.</param>
+        public void PreSaveForUpdate(DTOITH04 ITH);
 
         /// <summary>
         /// Validates the data before performing the save operation.
@@ -46,14 +44,14 @@ namespace FullDemo.BL.Interfaces
         /// </summary>
         /// <param name="id">The identifier of the object to delete.</param>
         /// <returns>The prepared object.</returns>
-        ITH01 PreDelete(int id);
+        ITH02 PreDelete(int id);
 
         /// <summary>
         /// Validates an object before deletion.
         /// </summary>
         /// <param name="objPOCO">The object to validate.</param>
         /// <returns>A <see cref="Response"/> indicating the validation result.</returns>
-        Response ValidationOnDelete(ITH01 objPOCO);
+        Response ValidationOnDelete(ITH02 objPOCO);
 
         /// <summary>
         /// Deletes an object from the database based on its identifier.
@@ -62,9 +60,23 @@ namespace FullDemo.BL.Interfaces
         /// <returns>The number of rows affected by the deletion.</returns> 
         Response Delete(int id);
 
+        /// <summary>
+        /// Gets an object from the database based on item id.
+        /// </summary>
+        /// <param name="id">The identifier of the object to retrieve.</param>
+        /// <returns>The corresponding item object.</returns> 
+        public ITH02 Get(int id);
 
-        public ITH01 Get(int id);
+        /// <summary>
+        /// Gets all item objects from the database.
+        /// </summary>
+        /// <returns>List of item objects.</returns> 
+        public List<ITH02> GetAllItems();
 
-        public List<ITH01> GetAll();
+        /// <summary>
+        /// Gets all item objects from the database based on their category.
+        /// </summary>
+        /// <returns>List of item objects.</returns> 
+        public List<ITH02> GetAllItemsByCategory(string category);
     }
 }

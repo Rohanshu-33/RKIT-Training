@@ -4,6 +4,9 @@ using FullDemo.Models.ENUM;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Booking Status.
+    /// </summary>
     public class DTOITH08
     {
         #region Booking Status DTO

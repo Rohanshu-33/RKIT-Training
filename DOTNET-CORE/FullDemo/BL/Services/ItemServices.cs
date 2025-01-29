@@ -1,5 +1,4 @@
-﻿using System;
-using FullDemo.BL.Interfaces;
+﻿using FullDemo.BL.Interfaces;
 using FullDemo.Extensions;
 using FullDemo.Models;
 using FullDemo.Models.DTO;
@@ -10,64 +9,70 @@ using ServiceStack.OrmLite;
 
 namespace FullDemo.BL.Services
 {
-    public class UserServices : IUserServices<DTOITH01>
+    public class ItemServices : IItemServices<DTOITH03>
     {
         private int _id;
         public EnmType Type { get; set; }
         private Response _objResponse; // Response
-        private ITH01 _objITH01; // POCO
+        private ITH02 _objITH02; // POCO
         private string _connectionString;
         private IDbConnectionFactory _dbFactory;
 
         /// <summary>
-        /// UserServices Constructor
+        /// Item Services Constructor
         /// </summary
-        public UserServices()
+        public ItemServices()
         {
             _objResponse = new Response();
-            _connectionString = "Server=localhost;Database=rbcollege;User=Admin;Password=gs@123;";
+            _connectionString = "Server=localhost;Database=rbcollege;Item=Admin;Password=gs@123;";
             _dbFactory = new OrmLiteConnectionFactory(_connectionString, MySqlDialect.Provider);
         }
 
         /// <summary>
-        /// Checks whether a user with the specified ID exists in the database.
+        /// Checks whether an item with the specified ID exists in the database.
         /// </summary>
-        /// <param name="id">User ID</param>
-        /// <returns>True if the user exists, otherwise false</returns>
-        private bool IsITH01Exists(int id)
+        /// <param name="id">Item ID</param>
+        /// <returns>True if the item exists, otherwise false</returns>
+        private bool IsITH02Exists(int id)
         {
             //Console.WriteLine("id is : " + id);
             using (var db = _dbFactory.OpenDbConnection())
             {
-                return db.Exists<ITH01>(r => r.H01F01 == id);
+                return db.Exists<ITH02>(r => r.H02F01 == id);
             }
         }
 
         /// <summary>
-        /// performs validation whether user exists or not before updating the data.
+        /// convert to poco for corresponding DTO.
         /// </summary>
-        /// <returns>Response object indicating success or failure of validation.</returns>
-        public void PreSave(DTOITH01 ITH)
+        public void PreSave(DTOITH03 ITH)
         {
-            _objITH01 = ITH.Convert<ITH01>();
-            Console.WriteLine($"{_objITH01.H01F01} {_objITH01.H01F02}");
+            _objITH02 = ITH.Convert<ITH02>();
         }
 
         /// <summary>
-        /// performs validation whether user exists or not before updating the data.
+        /// convert to poco for corresponding DTO.
+        /// </summary>
+        public void PreSaveForUpdate(DTOITH04 ITH)
+        {
+            _objITH02 = ITH.Convert<ITH02>();
+        }
+
+        /// <summary>
+        /// performs validation whether item exists or not before updating the data.
         /// </summary>
         /// <returns>Response object indicating success or failure of validation.</returns>
         public Response Validation()
         {
-            _id = _objITH01.H01F01;
+            _id = _objITH02.H02F01;
             Console.WriteLine(_id);
             if (Type == EnmType.E)
             {
-                bool isITH01 = IsITH01Exists(_id);
-                if (!isITH01)
+                bool isITH02 = IsITH02Exists(_id);
+                if (!isITH02)
                 {
-                    _objResponse.Success = true;
-                    _objResponse.Message = "User Not Found";
+                    _objResponse.Success = false;
+                    _objResponse.Message = "Item Not Found";
                 }
             }
             return _objResponse;
@@ -75,7 +80,7 @@ namespace FullDemo.BL.Services
 
 
         /// <summary>
-        /// Saves the user data (adding or updating a user) to the MySQL database.
+        /// Saves the item data (adding or updating a item) to the MySQL database.
         /// </summary>
         /// <returns>Response object indicating success or failure of saving operation</returns>
         public Response Save()
@@ -86,17 +91,17 @@ namespace FullDemo.BL.Services
                 {
                     if (Type == EnmType.A)
                     {
-                        db.Insert(_objITH01, true);
-                        _objResponse.Message = "User added successfully.";
+                        db.Insert(_objITH02, true);
+                        _objResponse.Message = "Item added successfully.";
                     }
                     if (Type == EnmType.E)
                     {
                         //db.UpdateOnlyFields(
-                        //    _objITH01,
+                        //    _objITH02,
                         //    onlyFields: p => new { p.T01F02, p.T01F03, p.T01F05 },
-                        //    where: p => p.T01F01 == _objITH01.T01F01);
+                        //    where: p => p.T01F01 == _objITH02.T01F01);
 
-                        _objResponse.Message = "User data updated successfully.";
+                        _objResponse.Message = "Item data updated successfully.";
                     }
                 }
             }
@@ -109,49 +114,49 @@ namespace FullDemo.BL.Services
         }
 
         /// <summary>
-        /// Retrieves a user before deletion to validate its existence.
+        /// Retrieves an item before deletion to validate its existence.
         /// </summary>
-        /// <param name="id">The ID of the user to delete.</param>
-        /// <returns>The User object if found.</returns>
-        public ITH01 PreDelete(int id)
+        /// <param name="id">The ID of the item to delete.</param>
+        /// <returns>The item object if found.</returns>
+        public ITH02 PreDelete(int id)
         {
             return Get(id);
         }
 
         /// <summary>
-        /// Validates the user object before deletion.
+        /// Validates the item object before deletion.
         /// </summary>
-        /// <param name="objITH01">The user object to validate.</param>
+        /// <param name="objITH02">The item object to validate.</param>
         /// <returns>A Response object indicating success or errors.</returns>
-        public Response ValidationOnDelete(ITH01 objITH01)
+        public Response ValidationOnDelete(ITH02 objITH02)
         {
-            if (objITH01 == null)
+            if (objITH02 == null)
             {
                 _objResponse.Success = false;
-                _objResponse.Message = "User Not Found";
+                _objResponse.Message = "Item Not Found";
             }
             return _objResponse;
         }
 
 
         /// <summary>
-        /// Deletes a user by ID from the MySQL database.
+        /// Deletes an item by ID from the MySQL database.
         /// </summary>
-        /// <param name="id">User ID</param>
+        /// <param name="id">Item ID</param>
         /// <returns>Response indicating the success or failure of the operation</returns>
         public Response Delete(int id)
         {
             try
             {
-                ITH01 objITH01 = PreDelete(id);
-                Response objResponse = ValidationOnDelete(objITH01);
+                ITH02 objITH02 = PreDelete(id);
+                Response objResponse = ValidationOnDelete(objITH02);
 
                 if (objResponse.Success == true)
                 {
                     using (var db = _dbFactory.OpenDbConnection())
                     {
-                        db.DeleteById<ITH01>(id);
-                        _objResponse.Message = "User deleted successfully.";
+                        db.DeleteById<ITH02>(id);
+                        _objResponse.Message = "Item deleted successfully.";
                     }
                 }
                 return _objResponse;
@@ -165,39 +170,36 @@ namespace FullDemo.BL.Services
         }
 
         /// <summary>
-        /// Retrieves a user by ID from the database.
+        /// Retrieves a item by ID from the database.
         /// </summary>
-        /// <param name="id">User ID</param>
-        /// <returns>User with the specified ID</returns>
-        public ITH01 Get(int id)
+        /// <param name="id">Item ID</param>
+        /// <returns>item with the specified ID</returns>
+        public ITH02 Get(int id)
         {
             using (var db = _dbFactory.OpenDbConnection())
             {
-                return db.SingleById<ITH01>(id);
+                return db.SingleById<ITH02>(id);
             }
         }
 
         /// <summary>
-        /// Retrieves all users from the MySQL database.
+        /// Retrieves all items from the MySQL database.
         /// </summary>
-        /// <returns>List of users</returns>
-        public List<ITH01> GetAll()
+        /// <returns>List of items</returns>
+        public List<ITH02> GetAllItems()
         {
             using (var db = _dbFactory.OpenDbConnection())
             {
-                return db.Select<ITH01>();  // will return List of POCO Objects
+                return db.Select<ITH02>();  // will return List of POCO Objects
             }
         }
 
-        /// <summary>
-        /// Chcks for user match in the MySQL database.
-        /// </summary>
-        /// <returns>Boolean value</returns>
-        public bool CheckUserCredentials(DTOITH02 usr)
+
+        public List<ITH02> GetAllItemsByCategory(string category)
         {
             using (var db = _dbFactory.OpenDbConnection())
             {
-                return db.Exists<ITH01>(u => u.H01F03==usr.H02F01 && u.H01F04==usr.H02F02);
+                return db.Select<ITH02>(i => i.H02F07 ==  category);  // will return List of POCO Objects
             }
         }
     }

@@ -4,6 +4,9 @@ using Newtonsoft.Json;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Updating Item.
+    /// </summary>
     public class DTOITH04
     {
         #region Update Item

@@ -54,11 +54,18 @@ namespace FullDemo.Models.POCO
         public float H02F06 { get; set; }
 
         /// <summary>
+        /// Gets or Sets Item Category.
+        /// </summary>
+        [Required, StringLength(50)]
+        [Alias("H02F07")]
+        public string H02F07 { get; set; }
+
+        /// <summary>
         /// Gets or Sets Item Addition/ Modification Date.
         /// </summary>
         [Required]
-        [Alias("H02F07")]
-        public DateTime H02F07 { get; set; }
+        [Alias("H02F08")]
+        public DateTime H02F08 { get; set; }
 
         #endregion
     }

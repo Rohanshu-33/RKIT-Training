@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FullDemo.Models.DTO
 {
+    /// <summary>
+    /// Data Transfer Object for Item Image addition.
+    /// </summary>
     public class DTOITH05
     {
         #region Item Image DTO
@@ -18,7 +21,7 @@ namespace FullDemo.Models.DTO
         /// Gets or Sets the Image File Path.
         /// </summary>
         [Required]
-        [StringLength(500, ErrorMessage = "Image file path cannot exceed 255 characters.")]
+        [StringLength(500, ErrorMessage = "Image file path cannot exceed 500 characters.")]
         [JsonProperty("imageFilePath")]
         public string H05F02 { get; set; }
 
