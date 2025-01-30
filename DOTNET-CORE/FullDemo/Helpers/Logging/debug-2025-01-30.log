@@ -451,3 +451,38 @@
 2025-01-30 18:06:11.7502 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
 2025-01-30 18:06:11.7502 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
 2025-01-30 18:06:11.7789 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:12:52.9129 | DEBUG | Hosting starting 
+2025-01-30 18:12:53.2728 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 18:12:53.5969 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 18:12:53.5969 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 18:12:53.5969 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 18:12:53.5969 | DEBUG | Hosting started 
+2025-01-30 18:12:53.6326 | DEBUG | Connection id "0HNA15EEM3QVP" accepted. 
+2025-01-30 18:12:53.6326 | DEBUG | Connection id "0HNA15EEM3QVP" started. 
+2025-01-30 18:12:53.6326 | DEBUG | Connection id "0HNA15EEM3QVP" received FIN. 
+2025-01-30 18:12:53.6604 | DEBUG | Connection id "0HNA15EEM3QVP" sending FIN because: "The client closed the connection." 
+2025-01-30 18:12:53.6604 | DEBUG | Connection id "0HNA15EEM3QVP" disconnecting. 
+2025-01-30 18:12:53.6604 | DEBUG | Connection id "0HNA15EEM3QVP" stopped. 
+2025-01-30 18:12:53.9029 | DEBUG | Connection id "0HNA15EEM3QVQ" accepted. 
+2025-01-30 18:12:53.9029 | DEBUG | Connection id "0HNA15EEM3QVQ" started. 
+2025-01-30 18:12:53.9029 | DEBUG | Connection id "0HNA15EEM3QVR" accepted. 
+2025-01-30 18:12:53.9091 | DEBUG | Connection id "0HNA15EEM3QVR" started. 
+2025-01-30 18:12:54.0285 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 18:12:54.3952 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:12:54.5794 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:12:54.5850 | DEBUG | Connection id "0HNA15EEM3QVS" accepted. 
+2025-01-30 18:12:54.5850 | DEBUG | Connection id "0HNA15EEM3QVQ" completed keep alive response. 
+2025-01-30 18:12:54.5850 | DEBUG | Connection id "0HNA15EEM3QVS" started. 
+2025-01-30 18:12:54.5850 | DEBUG | Connection id "0HNA15EEM3QVS" completed keep alive response. 
+2025-01-30 18:12:54.6556 | DEBUG | Connection id "0HNA15EEM3QVR" completed keep alive response. 
+2025-01-30 18:12:54.9699 | DEBUG | Connection id "0HNA15EEM3QVR" completed keep alive response. 
+2025-01-30 18:13:14.8229 | DEBUG | POST requests are not supported 
+2025-01-30 18:13:15.0218 | DEBUG | Connection id "0HNA15EEM3QVR" completed keep alive response. 
+2025-01-30 18:13:15.0218 | DEBUG | Connection id "0HNA15EEM3QVR", Request id "0HNA15EEM3QVR:00000003": started reading request body. 
+2025-01-30 18:13:15.0218 | DEBUG | Connection id "0HNA15EEM3QVR", Request id "0HNA15EEM3QVR:00000003": done reading request body. 
+2025-01-30 18:14:52.0587 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:14:52.0734 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:14:52.0734 | DEBUG | Connection id "0HNA15EEM3QVR" completed keep alive response. 
+2025-01-30 18:14:52.0734 | DEBUG | Connection id "0HNA15EEM3QVR" completed keep alive response. 
+2025-01-30 18:14:52.1142 | DEBUG | Connection id "0HNA15EEM3QVS" completed keep alive response. 
+2025-01-30 18:14:52.2306 | DEBUG | Connection id "0HNA15EEM3QVS" completed keep alive response. 

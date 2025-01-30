@@ -1,29 +1,17 @@
 using FullDemo;
 using NLog.Web;
 
-internal class Program
+namespace FullDemo
 {
-    static void Main(string[] args)
+    public class Program
     {
-        var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Helpers", "Logging");
-        if (!Directory.Exists(logPath))
+        public static void Main(string[] args)
         {
-            Directory.CreateDirectory(logPath);
+            WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+            Startup startup = new Startup(builder.Configuration);
+            startup.ConfigureServices(builder.Services);
+            WebApplication app = builder.Build();
+            startup.Configure(app, builder.Environment);
         }
-        NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
-        CreateHostBuilder(args).Build().Run();
-    }
-    public static IHostBuilder CreateHostBuilder(string[] args)
-    {
-        return Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webHost =>
-            {
-                webHost.UseStartup<Startup>();
-            })
-            .ConfigureLogging(logging =>
-            {
-                logging.ClearProviders();
-                logging.SetMinimumLevel(LogLevel.Trace);
-            }).UseNLog();
     }
 }

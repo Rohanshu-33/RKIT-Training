@@ -2,6 +2,7 @@
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
+using Microsoft.AspNetCore.Http;
 
 namespace FullDemo.Middlewares
 {
@@ -27,7 +28,7 @@ namespace FullDemo.Middlewares
         /// </summary>
         /// <param name="context">The HTTP context for the current request.</param>
         /// <param name="next">The next middleware in the pipeline.</param>
-        public async Task InvokeAsync(HttpContext context, RequestDelegate next)
+        public async Task InvokeAsync(HttpContext context)
         {
             // Check if the endpoint allows anonymous access
             if (context.GetEndpoint()?.Metadata?.GetMetadata<AllowAnonymousAttribute>() != null)

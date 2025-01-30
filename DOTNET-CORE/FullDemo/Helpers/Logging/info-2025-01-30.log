@@ -120,3 +120,25 @@
 2025-01-30 18:06:11.6528 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
 2025-01-30 18:06:11.6765 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
 2025-01-30 18:06:11.7789 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-01-30 18:12:53.5969 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 18:12:53.5969 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 18:12:53.5969 | INFO | Hosting environment: Development 
+2025-01-30 18:12:53.5969 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 18:12:53.9875 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:12:54.5850 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:12:54.5850 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 603.9414ms 
+2025-01-30 18:12:54.5850 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:12:54.5850 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 3.8349ms 
+2025-01-30 18:12:54.6556 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.6077ms 
+2025-01-30 18:12:54.7325 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:12:54.9702 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 237.6664ms 
+2025-01-30 18:13:14.8229 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-01-30 18:13:15.0218 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 - 500 - text/plain;+charset=utf-8 199.2084ms 
+2025-01-30 18:14:52.0394 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:14:52.0734 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 34.2815ms 
+2025-01-30 18:14:52.0734 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:14:52.0734 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:14:52.0734 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.5663ms 
+2025-01-30 18:14:52.1142 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.3451ms 
+2025-01-30 18:14:52.2151 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:14:52.2306 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.6680ms 

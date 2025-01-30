@@ -1,7 +1,4 @@
-﻿using FullDemo;
-using Microsoft.AspNetCore.Diagnostics;
-using System.Net;
-using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi.Models;
 using FullDemo.Filters;
 using FullDemo.Extensions;
 using FullDemo.Middlewares;
@@ -11,13 +8,16 @@ namespace FullDemo
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddServices();
-
             services.AddSwaggerGen(c =>
             {
                 // Add API key definition to Swagger
@@ -46,41 +46,32 @@ namespace FullDemo
                  });
             });
             services.AddEndpointsApiExplorer();
-
-            // Registering filter globally
+            services.AddServices();
             services.AddControllers(options =>
             {
                 options.Filters.Add<CustomExceptionFilter>();
             });
-  
-
-
+            services.AddLogging(logging =>
+            {
+                logging.ClearProviders();
+                logging.SetMinimumLevel(LogLevel.Trace);
+            });
+            services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(WebApplication app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseSwagger();
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
-                });
-
-                app.UseDeveloperExceptionPage(
-                    new DeveloperExceptionPageOptions
-                    {
-                        SourceCodeLineCount = 10
-                    });
+                app.UseSwaggerUI();
+                app.UseDeveloperExceptionPage();
             }
 
-            //app.UseMiddleware<JWTAuthenticationMiddleware>();
-            app.UseRouting();
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-
+            app.UseMiddleware<JWTAuthenticationMiddleware>();
+            app.MapControllers();
+            app.Run();
         }
+
     }
 }
