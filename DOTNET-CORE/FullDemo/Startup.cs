@@ -52,8 +52,7 @@ namespace FullDemo
             {
                 options.Filters.Add<CustomExceptionFilter>();
             });
-
-            services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
+  
 
 
         }
@@ -68,11 +67,11 @@ namespace FullDemo
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
                 });
 
-                //app.UseDeveloperExceptionPage(
-                //    new DeveloperExceptionPageOptions
-                //    {
-                //        SourceCodeLineCount = 10
-                //    });
+                app.UseDeveloperExceptionPage(
+                    new DeveloperExceptionPageOptions
+                    {
+                        SourceCodeLineCount = 10
+                    });
             }
 
             //app.UseMiddleware<JWTAuthenticationMiddleware>();
