@@ -1,0 +1,16 @@
+2025-01-30 17:31:20.9782 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 17:31:20.9998 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 17:31:20.9998 | INFO | Hosting environment: Development 
+2025-01-30 17:31:20.9998 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 17:31:24.5055 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 17:31:25.5358 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 1041.0007ms 
+2025-01-30 17:31:25.5699 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 17:31:25.5797 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 8.2649ms 
+2025-01-30 17:31:25.6261 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 17:31:25.8470 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 215.4652ms 
+2025-01-30 17:31:25.9617 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 17:31:26.5049 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 543.5710ms 
+2025-01-30 17:31:30.1021 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-01-30 17:31:30.1427 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-01-30 17:31:30.1663 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 17:31:30.1663 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 

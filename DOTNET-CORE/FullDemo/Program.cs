@@ -6,6 +6,10 @@ internal class Program
     static void Main(string[] args)
     {
         var logPath = Path.Combine(Directory.GetCurrentDirectory(), "Helpers", "Logging");
+        if (!Directory.Exists(logPath))
+        {
+            Directory.CreateDirectory(logPath);
+        }
         NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
         CreateHostBuilder(args).Build().Run();
     }
@@ -15,12 +19,11 @@ internal class Program
             .ConfigureWebHostDefaults(webHost =>
             {
                 webHost.UseStartup<Startup>();
-                webHost.UseNLog();
             })
             .ConfigureLogging(logging =>
             {
                 logging.ClearProviders();
                 logging.SetMinimumLevel(LogLevel.Trace);
-            });
+            }).UseNLog();
     }
 }

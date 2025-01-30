@@ -73,3 +73,4 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\runtim
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo\bin\Debug\net7.0\nlog.config

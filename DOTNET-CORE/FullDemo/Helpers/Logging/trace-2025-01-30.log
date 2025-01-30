@@ -1,0 +1,7 @@
+2025-01-30 17:31:24.7432 | TRACE | All hosts are allowed. 
+2025-01-30 17:31:25.9617 | TRACE | All hosts are allowed. 
+2025-01-30 17:31:30.1021 | TRACE | All hosts are allowed. 
+2025-01-30 17:31:30.1663 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-30 17:31:30.1663 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-01-30 17:31:30.1663 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-01-30 17:31:30.1663 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 

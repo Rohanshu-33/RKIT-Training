@@ -15,7 +15,7 @@ namespace FullDemo.Models.POCO
         [Required]
         [Alias("H04F01")]
         [ForeignKey(typeof(ITH02))]
-        public string H04F01 { get; set; }
+        public int H04F01 { get; set; }
 
         /// <summary>
         /// Gets or Sets Booking Start Date.

@@ -20,6 +20,6 @@
         /// Gets or Sets the data associated with the response.
         /// Can hold any type of data related to the operation's result.
         /// </summary>
-        public dynamic Data { get; set; }
+        public dynamic? Data { get; set; }
     }
 }

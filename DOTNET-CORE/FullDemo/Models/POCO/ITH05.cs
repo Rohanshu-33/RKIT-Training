@@ -16,7 +16,7 @@ namespace FullDemo.Models.POCO
         [Required]
         [Alias("H05F01")]
         [ForeignKey(typeof(ITH01))]
-        public string H05F01 { get; set; }
+        public int H05F01 { get; set; }
 
         /// <summary>
         /// Gets or Sets Seeker ID (Foreign Key to User Table).
@@ -24,7 +24,7 @@ namespace FullDemo.Models.POCO
         [Required]
         [Alias("H05F02")]
         [ForeignKey(typeof(ITH01))]
-        public string H05F02 { get; set; }
+        public int H05F02 { get; set; }
 
         /// <summary>
         /// Gets or Sets Item ID (Foreign Key to Item Table).
@@ -32,7 +32,7 @@ namespace FullDemo.Models.POCO
         [Required]
         [Alias("H05F03")]
         [References(typeof(ITH02))]
-        public string H05F03 { get; set; }
+        public int H05F03 { get; set; }
 
         /// <summary>
         /// Gets or Sets Total Price of the Booking.

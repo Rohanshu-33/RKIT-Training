@@ -6,6 +6,7 @@ using FullDemo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using FullDemo.BL.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FullDemo.Controllers
 {
@@ -19,6 +20,7 @@ namespace FullDemo.Controllers
 
         public ItemsController(IItemServices<DTOITH03> itmServices, ILogger<ItemsController> logger)
         {
+            _objResponse = new Response();
             _itmServices = itmServices;
             _logger = logger;
         }
@@ -36,27 +38,30 @@ namespace FullDemo.Controllers
         }
 
         // get items
+        [AllowAnonymous]
         [HttpGet]
-        [Route("items")]
+        [Route("")]
         public ActionResult<Response> GetItems()
         {
-            _objResponse.Data = _itmServices.GetAllItems();
-            if (_objResponse.Data == null)
+            List<ITH02> items = _itmServices.GetAllItems();
+            if (items.Count == 0)
             {
                 _objResponse.Success = false;
                 _objResponse.Message = "Not Found";
                 return NotFound(_objResponse);
             }
+            _objResponse.Data = items;
             _objResponse.Success = true;
             _objResponse.Message = "Items";
              
             return Ok(_objResponse);
         }
-        
+
 
         // get items by category
+        [AllowAnonymous]
         [HttpGet]
-        [Route("items/{category}")]
+        [Route("{category}")]
         public ActionResult<Response> GetItems(string category)
         {
             _objResponse.Data = _itmServices.GetAllItemsByCategory(category);

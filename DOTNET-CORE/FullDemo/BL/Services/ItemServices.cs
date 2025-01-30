@@ -186,6 +186,7 @@ namespace FullDemo.BL.Services
         /// <returns>List of items</returns>
         public List<ITH02> GetAllItems()
         {
+            throw new Exception("My exception.");
             using (var db = _dbConnection.GetDbConnection())
             {
                 return db.Select<ITH02>();  // will return List of POCO Objects

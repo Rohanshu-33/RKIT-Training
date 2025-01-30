@@ -80,7 +80,8 @@ CREATE TABLE IF NOT EXISTS Users(
     Password VARCHAR(12) NOT NULL
 );
 
-USE rbcollege;
+USE rbcorefulldemo;
+create database if not exists rbcorefulldemo;
 
 CREATE TABLE IF NOT EXISTS USR01(
 	P01F01 INT PRIMARY KEY,
@@ -89,7 +90,9 @@ CREATE TABLE IF NOT EXISTS USR01(
     P01F04 INT NOT NULL,
     P01F05 DATE NOT NULL
 );
-select * from USR01;
+select * from RST02;
+select * from RST01;
+
 
 show tables;
 describe rst02;

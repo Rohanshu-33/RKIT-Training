@@ -3,6 +3,7 @@ using FullDemo.Models;
 using FullDemo.Models.DTO;
 using FullDemo.Models.ENUM;
 using FullDemo.Models.POCO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,6 +28,7 @@ namespace FullDemo.Controllers
         /// <summary>
         /// User signup
         /// </summary>
+        [AllowAnonymous]
         [HttpPost]
         [Route("signup")]
         public ActionResult<Response> Signup([FromBody] DTOITH01 usr)
@@ -41,6 +43,7 @@ namespace FullDemo.Controllers
         /// <summary>
         /// User login
         /// </summary>
+        [AllowAnonymous]
         [HttpPost]
         [Route("login")]
         //[JWTGeneration]

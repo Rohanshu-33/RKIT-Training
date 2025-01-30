@@ -2,12 +2,10 @@
 using Microsoft.AspNetCore.Diagnostics;
 using System.Net;
 using Microsoft.OpenApi.Models;
-using FullDemo.BL.Interfaces;
-using FullDemo.BL.Services;
-using FullDemo.Models.POCO;
-using FullDemo.Models.DTO;
 using FullDemo.Filters;
 using FullDemo.Extensions;
+using FullDemo.Middlewares;
+using NLog.Extensions.Logging;
 
 namespace FullDemo
 {
@@ -55,22 +53,13 @@ namespace FullDemo
                 options.Filters.Add<CustomExceptionFilter>();
             });
 
+            services.AddSingleton<ILoggerProvider, NLogLoggerProvider>();
+
 
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            // context is similar to nodejs (req, res). it has details of both req and response upto the current pipeline execution
-            //app.Use(async (context, next) =>
-            //{
-            //    await context.Response.WriteAsync("Use 1 - 1\n");
-            //    await next();
-            //    await context.Response.WriteAsync("Use 1 - 2\n");
-            //});
-
-            //app.UseMiddleware<CustomMiddleware>();
-
-
             if (env.IsDevelopment())
             {
                 app.UseSwagger();
@@ -78,31 +67,15 @@ namespace FullDemo
                 {
                     c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1");
                 });
-                app.UseDeveloperExceptionPage(
-                    new DeveloperExceptionPageOptions
-                    {
-                        SourceCodeLineCount = 10
-                    });
-            }
-            else
-            {
-                app.UseExceptionHandler(
-                    options =>
-                    {
-                        options.Run(
-                            async context =>
-                            {
-                                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                                var ex = context.Features.Get<IExceptionHandlerFeature>();
-                                if (ex != null)
-                                {
-                                    await context.Response.WriteAsync(ex.Error.Message);
-                                }
-                            }
-                     );
-                    });
+
+                //app.UseDeveloperExceptionPage(
+                //    new DeveloperExceptionPageOptions
+                //    {
+                //        SourceCodeLineCount = 10
+                //    });
             }
 
+            //app.UseMiddleware<JWTAuthenticationMiddleware>();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
