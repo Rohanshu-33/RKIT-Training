@@ -15,7 +15,7 @@ namespace FullDemo.Models.DTO
         /// Gets or Sets the User ID associated with the item.
         /// </summary>
         [JsonProperty("userId")]
-        [Required(ErrorMessage = "User ID is required.")]
+        //[Required(ErrorMessage = "User ID is required.")]
         public int H03F01 { get; set; }
 
         /// <summary>

@@ -54,3 +54,400 @@
 2025-01-30 17:31:30.1663 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
 2025-01-30 17:31:30.1663 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
 2025-01-30 17:31:30.1663 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:58:28.5682 | DEBUG | Hosting starting 
+2025-01-30 17:58:28.8536 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 17:58:29.0773 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 17:58:29.0773 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 17:58:29.0773 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 17:58:29.0773 | DEBUG | Hosting started 
+2025-01-30 17:58:29.3141 | DEBUG | Connection id "0HNA156D3AQU8" received FIN. 
+2025-01-30 17:58:29.3224 | DEBUG | Connection id "0HNA156D3AQU8" accepted. 
+2025-01-30 17:58:29.3224 | DEBUG | Connection id "0HNA156D3AQU8" started. 
+2025-01-30 17:58:29.3459 | DEBUG | Connection id "0HNA156D3AQU8" sending FIN because: "The client closed the connection." 
+2025-01-30 17:58:29.3508 | DEBUG | Connection id "0HNA156D3AQU8" disconnecting. 
+2025-01-30 17:58:29.3508 | DEBUG | Connection id "0HNA156D3AQU8" stopped. 
+2025-01-30 17:58:30.1004 | DEBUG | Connection id "0HNA156D3AQU9" accepted. 
+2025-01-30 17:58:30.1004 | DEBUG | Connection id "0HNA156D3AQU9" started. 
+2025-01-30 17:58:30.1004 | DEBUG | Connection id "0HNA156D3AQUA" accepted. 
+2025-01-30 17:58:30.1004 | DEBUG | Connection id "0HNA156D3AQUA" started. 
+2025-01-30 17:58:30.2525 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 17:58:30.5362 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 17:58:30.6894 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 17:58:30.6894 | DEBUG | Connection id "0HNA156D3AQUA" completed keep alive response. 
+2025-01-30 17:58:30.6894 | DEBUG | Connection id "0HNA156D3AQUB" accepted. 
+2025-01-30 17:58:30.6920 | DEBUG | Connection id "0HNA156D3AQUB" started. 
+2025-01-30 17:58:30.7123 | DEBUG | Connection id "0HNA156D3AQU9" completed keep alive response. 
+2025-01-30 17:58:30.7700 | DEBUG | Connection id "0HNA156D3AQUB" completed keep alive response. 
+2025-01-30 17:58:31.1502 | DEBUG | Connection id "0HNA156D3AQUB" completed keep alive response. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQU9" received FIN. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUA" received FIN. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQU9" sending FIN because: "The client closed the connection." 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQU9" disconnecting. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUB" received FIN. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUA" sending FIN because: "The client closed the connection." 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUA" disconnecting. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUB" sending FIN because: "The client closed the connection." 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUB" disconnecting. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUA" stopped. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQU9" stopped. 
+2025-01-30 17:58:31.6166 | DEBUG | Connection id "0HNA156D3AQUB" stopped. 
+2025-01-30 17:58:46.1479 | DEBUG | Connection id "0HNA156D3AQUC" accepted. 
+2025-01-30 17:58:46.1479 | DEBUG | Connection id "0HNA156D3AQUC" started. 
+2025-01-30 17:58:46.1479 | DEBUG | POST requests are not supported 
+2025-01-30 17:58:46.1911 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 17:58:46.1957 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 17:58:46.1957 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:58:46.2210 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 17:58:46.2210 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 17:58:46.2231 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 17:58:46.2231 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 17:58:46.2231 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 17:58:46.2231 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:58:46.2231 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:58:46.2231 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:58:46.2231 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 17:58:46.2231 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 17:58:46.2639 | DEBUG | Connection id "0HNA156D3AQUC", Request id "0HNA156D3AQUC:00000001": started reading request body. 
+2025-01-30 17:58:46.2639 | DEBUG | Connection id "0HNA156D3AQUC", Request id "0HNA156D3AQUC:00000001": done reading request body. 
+2025-01-30 17:58:46.3220 | DEBUG | JSON input formatter threw an exception: The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 6 | BytePositionInLine: 0. 
+2025-01-30 17:58:46.3220 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:58:46.3220 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:58:46.3220 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:58:46.3220 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:58:46.3343 | DEBUG | The request has model state errors, returning an error response. 
+2025-01-30 17:58:46.3343 | DEBUG | Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2025-01-30 17:58:46.3343 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-01-30 17:58:46.3343 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types. 
+2025-01-30 17:58:46.3343 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-01-30 17:58:46.3343 | DEBUG | Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2025-01-30 17:58:46.3495 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2025-01-30 17:58:46.3684 | DEBUG | Connection id "0HNA156D3AQUC" completed keep alive response. 
+2025-01-30 17:58:56.2307 | DEBUG | POST requests are not supported 
+2025-01-30 17:58:56.2307 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 17:58:56.2307 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 17:58:56.2307 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:58:56.2307 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 17:58:56.2307 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 17:58:56.2307 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 17:58:56.2307 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 17:58:56.2307 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 17:58:56.2307 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:58:56.2307 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:58:56.2307 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:58:56.2307 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 17:58:56.2307 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 17:58:56.2307 | DEBUG | Connection id "0HNA156D3AQUC", Request id "0HNA156D3AQUC:00000002": started reading request body. 
+2025-01-30 17:58:56.2307 | DEBUG | Connection id "0HNA156D3AQUC", Request id "0HNA156D3AQUC:00000002": done reading request body. 
+2025-01-30 17:58:56.2391 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 17:58:56.2391 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:58:56.2391 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:58:56.2391 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:58:56.2711 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:59:24.7326 | DEBUG | Hosting starting 
+2025-01-30 17:59:25.1551 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 17:59:25.4592 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 17:59:25.4592 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 17:59:25.4592 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 17:59:25.4592 | DEBUG | Hosting started 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9T" received FIN. 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9S" received FIN. 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9S" accepted. 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9T" accepted. 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9S" started. 
+2025-01-30 17:59:25.9424 | DEBUG | Connection id "0HNA156TVBB9T" started. 
+2025-01-30 17:59:25.9719 | DEBUG | Connection id "0HNA156TVBB9T" sending FIN because: "The client closed the connection." 
+2025-01-30 17:59:25.9719 | DEBUG | Connection id "0HNA156TVBB9S" sending FIN because: "The client closed the connection." 
+2025-01-30 17:59:25.9743 | DEBUG | Connection id "0HNA156TVBB9T" disconnecting. 
+2025-01-30 17:59:25.9743 | DEBUG | Connection id "0HNA156TVBB9S" disconnecting. 
+2025-01-30 17:59:25.9743 | DEBUG | Connection id "0HNA156TVBB9T" stopped. 
+2025-01-30 17:59:25.9743 | DEBUG | Connection id "0HNA156TVBB9S" stopped. 
+2025-01-30 17:59:26.7439 | DEBUG | Connection id "0HNA156TVBB9U" accepted. 
+2025-01-30 17:59:26.7439 | DEBUG | Connection id "0HNA156TVBB9V" accepted. 
+2025-01-30 17:59:26.7439 | DEBUG | Connection id "0HNA156TVBB9V" started. 
+2025-01-30 17:59:26.7546 | DEBUG | Connection id "0HNA156TVBB9U" started. 
+2025-01-30 17:59:26.8689 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 17:59:27.1045 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 17:59:27.2705 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 17:59:27.2705 | DEBUG | Connection id "0HNA156TVBB9V" completed keep alive response. 
+2025-01-30 17:59:27.2705 | DEBUG | Connection id "0HNA156TVBBA0" accepted. 
+2025-01-30 17:59:27.2705 | DEBUG | Connection id "0HNA156TVBBA0" started. 
+2025-01-30 17:59:27.2901 | DEBUG | Connection id "0HNA156TVBB9U" completed keep alive response. 
+2025-01-30 17:59:27.3658 | DEBUG | Connection id "0HNA156TVBBA0" completed keep alive response. 
+2025-01-30 17:59:27.6800 | DEBUG | Connection id "0HNA156TVBBA0" completed keep alive response. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9V" received FIN. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9U" received FIN. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBBA0" received FIN. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9V" sending FIN because: "The client closed the connection." 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9U" sending FIN because: "The client closed the connection." 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9V" disconnecting. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9U" disconnecting. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBBA0" sending FIN because: "The client closed the connection." 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBBA0" disconnecting. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBBA0" stopped. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9V" stopped. 
+2025-01-30 17:59:28.2118 | DEBUG | Connection id "0HNA156TVBB9U" stopped. 
+2025-01-30 17:59:42.0777 | DEBUG | Connection id "0HNA156TVBBA1" accepted. 
+2025-01-30 17:59:42.0777 | DEBUG | Connection id "0HNA156TVBBA1" started. 
+2025-01-30 17:59:42.0777 | DEBUG | POST requests are not supported 
+2025-01-30 17:59:42.1160 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 17:59:42.1160 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 17:59:42.1160 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:59:42.1470 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 17:59:42.1470 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 17:59:42.1470 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 17:59:42.1470 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 17:59:42.1470 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 17:59:42.1470 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:59:42.1470 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 17:59:42.1470 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:59:42.1470 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 17:59:42.1470 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 17:59:42.1791 | DEBUG | Connection id "0HNA156TVBBA1", Request id "0HNA156TVBBA1:00000001": started reading request body. 
+2025-01-30 17:59:42.1791 | DEBUG | Connection id "0HNA156TVBBA1", Request id "0HNA156TVBBA1:00000001": done reading request body. 
+2025-01-30 17:59:42.2029 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 17:59:42.2029 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:59:42.2029 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 17:59:42.2029 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 17:59:42.2202 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:00:53.4033 | DEBUG | Hosting starting 
+2025-01-30 18:00:53.7870 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 18:00:54.0533 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 18:00:54.0533 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 18:00:54.0533 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 18:00:54.0533 | DEBUG | Hosting started 
+2025-01-30 18:00:54.1701 | DEBUG | Connection id "0HNA157O8PAI6" accepted. 
+2025-01-30 18:00:54.1701 | DEBUG | Connection id "0HNA157O8PAI5" accepted. 
+2025-01-30 18:00:54.1701 | DEBUG | Connection id "0HNA157O8PAI6" started. 
+2025-01-30 18:00:54.1701 | DEBUG | Connection id "0HNA157O8PAI5" started. 
+2025-01-30 18:00:54.1901 | DEBUG | Connection id "0HNA157O8PAI6" received FIN. 
+2025-01-30 18:00:54.1901 | DEBUG | Connection id "0HNA157O8PAI5" received FIN. 
+2025-01-30 18:00:54.2201 | DEBUG | Connection id "0HNA157O8PAI6" sending FIN because: "The client closed the connection." 
+2025-01-30 18:00:54.2201 | DEBUG | Connection id "0HNA157O8PAI5" sending FIN because: "The client closed the connection." 
+2025-01-30 18:00:54.2201 | DEBUG | Connection id "0HNA157O8PAI5" disconnecting. 
+2025-01-30 18:00:54.2201 | DEBUG | Connection id "0HNA157O8PAI6" disconnecting. 
+2025-01-30 18:00:54.2327 | DEBUG | Connection id "0HNA157O8PAI6" stopped. 
+2025-01-30 18:00:54.2327 | DEBUG | Connection id "0HNA157O8PAI5" stopped. 
+2025-01-30 18:00:55.2331 | DEBUG | Connection id "0HNA157O8PAI7" accepted. 
+2025-01-30 18:00:55.2331 | DEBUG | Connection id "0HNA157O8PAI8" accepted. 
+2025-01-30 18:00:55.2331 | DEBUG | Connection id "0HNA157O8PAI7" started. 
+2025-01-30 18:00:55.2331 | DEBUG | Connection id "0HNA157O8PAI8" started. 
+2025-01-30 18:00:55.4502 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 18:00:55.9195 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:00:56.2014 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:00:56.2014 | DEBUG | Connection id "0HNA157O8PAI7" completed keep alive response. 
+2025-01-30 18:00:56.3893 | DEBUG | Connection id "0HNA157O8PAI7" completed keep alive response. 
+2025-01-30 18:00:56.4788 | DEBUG | Connection id "0HNA157O8PAI8" completed keep alive response. 
+2025-01-30 18:00:56.7105 | DEBUG | Connection id "0HNA157O8PAI7" received FIN. 
+2025-01-30 18:00:56.7105 | DEBUG | Connection id "0HNA157O8PAI7" sending FIN because: "The client closed the connection." 
+2025-01-30 18:00:56.7105 | DEBUG | Connection id "0HNA157O8PAI7" disconnecting. 
+2025-01-30 18:00:56.7105 | DEBUG | Connection id "0HNA157O8PAI7" stopped. 
+2025-01-30 18:00:56.8875 | DEBUG | Connection id "0HNA157O8PAI8" completed keep alive response. 
+2025-01-30 18:00:56.8875 | DEBUG | Connection id "0HNA157O8PAI8" received FIN. 
+2025-01-30 18:00:56.8875 | DEBUG | Connection id "0HNA157O8PAI8" sending FIN because: "The client closed the connection." 
+2025-01-30 18:00:56.8875 | DEBUG | Connection id "0HNA157O8PAI8" disconnecting. 
+2025-01-30 18:00:56.8875 | DEBUG | Connection id "0HNA157O8PAI8" stopped. 
+2025-01-30 18:01:07.3324 | DEBUG | Connection id "0HNA157O8PAI9" accepted. 
+2025-01-30 18:01:07.3324 | DEBUG | Connection id "0HNA157O8PAI9" started. 
+2025-01-30 18:01:07.3363 | DEBUG | POST requests are not supported 
+2025-01-30 18:01:07.3837 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 18:01:07.3837 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 18:01:07.3837 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:01:07.4194 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 18:01:07.4194 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 18:01:07.4194 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 18:01:07.4194 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 18:01:07.4194 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 18:01:07.4194 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:01:07.4194 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:01:07.4310 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:01:07.4310 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 18:01:07.4310 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 18:01:07.4635 | DEBUG | Connection id "0HNA157O8PAI9", Request id "0HNA157O8PAI9:00000001": started reading request body. 
+2025-01-30 18:01:07.4635 | DEBUG | Connection id "0HNA157O8PAI9", Request id "0HNA157O8PAI9:00000001": done reading request body. 
+2025-01-30 18:01:07.4934 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 18:01:07.4934 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:01:07.4934 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:01:07.4934 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:01:07.5155 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:01:07.5155 | DEBUG | The request has model state errors, returning an error response. 
+2025-01-30 18:01:07.5229 | DEBUG | Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2025-01-30 18:01:07.5229 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-01-30 18:01:07.5229 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types. 
+2025-01-30 18:01:07.5229 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-01-30 18:01:07.5229 | DEBUG | Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2025-01-30 18:01:07.5396 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2025-01-30 18:01:07.5605 | DEBUG | Connection id "0HNA157O8PAI9" completed keep alive response. 
+2025-01-30 18:02:44.0832 | DEBUG | Hosting starting 
+2025-01-30 18:02:44.6848 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 18:02:45.2339 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 18:02:45.2339 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 18:02:45.2339 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 18:02:45.2339 | DEBUG | Hosting started 
+2025-01-30 18:02:45.5113 | DEBUG | Connection id "0HNA158PEJVBI" accepted. 
+2025-01-30 18:02:45.5113 | DEBUG | Connection id "0HNA158PEJVBI" started. 
+2025-01-30 18:02:45.5244 | DEBUG | Connection id "0HNA158PEJVBJ" accepted. 
+2025-01-30 18:02:45.5244 | DEBUG | Connection id "0HNA158PEJVBJ" started. 
+2025-01-30 18:02:45.5244 | DEBUG | Connection id "0HNA158PEJVBI" received FIN. 
+2025-01-30 18:02:45.5244 | DEBUG | Connection id "0HNA158PEJVBJ" received FIN. 
+2025-01-30 18:02:45.5473 | DEBUG | Connection id "0HNA158PEJVBI" sending FIN because: "The client closed the connection." 
+2025-01-30 18:02:45.5473 | DEBUG | Connection id "0HNA158PEJVBJ" sending FIN because: "The client closed the connection." 
+2025-01-30 18:02:45.5473 | DEBUG | Connection id "0HNA158PEJVBJ" disconnecting. 
+2025-01-30 18:02:45.5473 | DEBUG | Connection id "0HNA158PEJVBI" disconnecting. 
+2025-01-30 18:02:45.5560 | DEBUG | Connection id "0HNA158PEJVBJ" stopped. 
+2025-01-30 18:02:45.5560 | DEBUG | Connection id "0HNA158PEJVBI" stopped. 
+2025-01-30 18:02:46.3866 | DEBUG | Connection id "0HNA158PEJVBK" accepted. 
+2025-01-30 18:02:46.3866 | DEBUG | Connection id "0HNA158PEJVBL" accepted. 
+2025-01-30 18:02:46.3866 | DEBUG | Connection id "0HNA158PEJVBK" started. 
+2025-01-30 18:02:46.3866 | DEBUG | Connection id "0HNA158PEJVBL" started. 
+2025-01-30 18:02:46.5274 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 18:02:46.8583 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:02:47.0128 | DEBUG | Connection id "0HNA158PEJVBM" accepted. 
+2025-01-30 18:02:47.0128 | DEBUG | Connection id "0HNA158PEJVBM" started. 
+2025-01-30 18:02:47.0128 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:02:47.0128 | DEBUG | Connection id "0HNA158PEJVBL" completed keep alive response. 
+2025-01-30 18:02:47.0128 | DEBUG | Connection id "0HNA158PEJVBK" completed keep alive response. 
+2025-01-30 18:02:47.0951 | DEBUG | Connection id "0HNA158PEJVBM" completed keep alive response. 
+2025-01-30 18:02:47.4898 | DEBUG | Connection id "0HNA158PEJVBM" completed keep alive response. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBL" received FIN. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBK" received FIN. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBM" received FIN. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBL" sending FIN because: "The client closed the connection." 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBL" disconnecting. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBK" disconnecting. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBK" sending FIN because: "The client closed the connection." 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBM" disconnecting. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBL" stopped. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBM" stopped. 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-01-30 18:02:47.8397 | DEBUG | Connection id "0HNA158PEJVBK" stopped. 
+2025-01-30 18:02:59.4420 | DEBUG | Connection id "0HNA158PEJVBN" accepted. 
+2025-01-30 18:02:59.4420 | DEBUG | Connection id "0HNA158PEJVBN" started. 
+2025-01-30 18:02:59.4477 | DEBUG | POST requests are not supported 
+2025-01-30 18:02:59.4985 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 18:02:59.4985 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 18:02:59.4985 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:02:59.5286 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 18:02:59.5286 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 18:02:59.5286 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 18:02:59.5286 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 18:02:59.5286 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 18:02:59.5286 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:02:59.5286 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:02:59.5412 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:02:59.5412 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 18:02:59.5412 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 18:02:59.5716 | DEBUG | Connection id "0HNA158PEJVBN", Request id "0HNA158PEJVBN:00000001": started reading request body. 
+2025-01-30 18:02:59.5716 | DEBUG | Connection id "0HNA158PEJVBN", Request id "0HNA158PEJVBN:00000001": done reading request body. 
+2025-01-30 18:02:59.5997 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 18:02:59.5997 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:02:59.5997 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:02:59.5997 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:02:59.6258 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:04:29.2580 | DEBUG | Hosting starting 
+2025-01-30 18:04:29.8321 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 18:04:30.1021 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 18:04:30.1021 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 18:04:30.1021 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 18:04:30.1037 | DEBUG | Hosting started 
+2025-01-30 18:04:30.4529 | DEBUG | Connection id "0HNA159ONDI17" accepted. 
+2025-01-30 18:04:30.4529 | DEBUG | Connection id "0HNA159ONDI17" started. 
+2025-01-30 18:04:30.4529 | DEBUG | Connection id "0HNA159ONDI17" received FIN. 
+2025-01-30 18:04:30.4857 | DEBUG | Connection id "0HNA159ONDI17" sending FIN because: "The client closed the connection." 
+2025-01-30 18:04:30.4857 | DEBUG | Connection id "0HNA159ONDI17" disconnecting. 
+2025-01-30 18:04:30.4857 | DEBUG | Connection id "0HNA159ONDI17" stopped. 
+2025-01-30 18:04:31.4067 | DEBUG | Connection id "0HNA159ONDI18" accepted. 
+2025-01-30 18:04:31.4067 | DEBUG | Connection id "0HNA159ONDI18" started. 
+2025-01-30 18:04:31.4067 | DEBUG | Connection id "0HNA159ONDI19" accepted. 
+2025-01-30 18:04:31.4067 | DEBUG | Connection id "0HNA159ONDI19" started. 
+2025-01-30 18:04:31.6008 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 18:04:31.9302 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:04:32.1998 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:04:32.1998 | DEBUG | Connection id "0HNA159ONDI19" completed keep alive response. 
+2025-01-30 18:04:32.2348 | DEBUG | Connection id "0HNA159ONDI19" completed keep alive response. 
+2025-01-30 18:04:32.3690 | DEBUG | Connection id "0HNA159ONDI18" completed keep alive response. 
+2025-01-30 18:04:32.7226 | DEBUG | Connection id "0HNA159ONDI18" completed keep alive response. 
+2025-01-30 18:04:32.9056 | DEBUG | Connection id "0HNA159ONDI19" received FIN. 
+2025-01-30 18:04:32.9056 | DEBUG | Connection id "0HNA159ONDI18" received FIN. 
+2025-01-30 18:04:32.9056 | DEBUG | Connection id "0HNA159ONDI19" disconnecting. 
+2025-01-30 18:04:32.9056 | DEBUG | Connection id "0HNA159ONDI19" stopped. 
+2025-01-30 18:04:32.9430 | DEBUG | Connection id "0HNA159ONDI18" disconnecting. 
+2025-01-30 18:04:32.9430 | DEBUG | Connection id "0HNA159ONDI19" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-01-30 18:04:32.9430 | DEBUG | Connection id "0HNA159ONDI18" sending FIN because: "The client closed the connection." 
+2025-01-30 18:04:32.9430 | DEBUG | Connection id "0HNA159ONDI18" stopped. 
+2025-01-30 18:04:39.2520 | DEBUG | Connection id "0HNA159ONDI1A" accepted. 
+2025-01-30 18:04:39.2520 | DEBUG | Connection id "0HNA159ONDI1A" started. 
+2025-01-30 18:04:39.2520 | DEBUG | POST requests are not supported 
+2025-01-30 18:04:39.2970 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 18:04:39.2970 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 18:04:39.2970 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:04:39.3376 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 18:04:39.3376 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 18:04:39.3376 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 18:04:39.3376 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 18:04:39.3376 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 18:04:39.3376 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:04:39.3376 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:04:39.3376 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:04:39.3553 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 18:04:39.3553 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 18:04:39.3817 | DEBUG | Connection id "0HNA159ONDI1A", Request id "0HNA159ONDI1A:00000001": started reading request body. 
+2025-01-30 18:04:39.3817 | DEBUG | Connection id "0HNA159ONDI1A", Request id "0HNA159ONDI1A:00000001": done reading request body. 
+2025-01-30 18:04:39.4080 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 18:04:39.4080 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:04:39.4080 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:04:39.4080 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:04:39.4280 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:06:03.3603 | DEBUG | Hosting starting 
+2025-01-30 18:06:03.7247 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-01-30 18:06:04.0780 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-01-30 18:06:04.0780 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-01-30 18:06:04.0780 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-01-30 18:06:04.0780 | DEBUG | Hosting started 
+2025-01-30 18:06:04.3993 | DEBUG | Connection id "0HNA15AKNBQ11" accepted. 
+2025-01-30 18:06:04.3993 | DEBUG | Connection id "0HNA15AKNBQ11" received FIN. 
+2025-01-30 18:06:04.3993 | DEBUG | Connection id "0HNA15AKNBQ11" started. 
+2025-01-30 18:06:04.4769 | DEBUG | Connection id "0HNA15AKNBQ11" sending FIN because: "The client closed the connection." 
+2025-01-30 18:06:04.4830 | DEBUG | Connection id "0HNA15AKNBQ11" disconnecting. 
+2025-01-30 18:06:04.5013 | DEBUG | Connection id "0HNA15AKNBQ11" stopped. 
+2025-01-30 18:06:05.4670 | DEBUG | Connection id "0HNA15AKNBQ12" accepted. 
+2025-01-30 18:06:05.4670 | DEBUG | Connection id "0HNA15AKNBQ13" accepted. 
+2025-01-30 18:06:05.4670 | DEBUG | Connection id "0HNA15AKNBQ13" started. 
+2025-01-30 18:06:05.4670 | DEBUG | Connection id "0HNA15AKNBQ12" started. 
+2025-01-30 18:06:05.7724 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-01-30 18:06:06.0996 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-01-30 18:06:06.4290 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-01-30 18:06:06.4290 | DEBUG | Connection id "0HNA15AKNBQ13" completed keep alive response. 
+2025-01-30 18:06:06.4341 | DEBUG | Connection id "0HNA15AKNBQ13" completed keep alive response. 
+2025-01-30 18:06:06.5712 | DEBUG | Connection id "0HNA15AKNBQ12" completed keep alive response. 
+2025-01-30 18:06:07.0436 | DEBUG | Connection id "0HNA15AKNBQ13" received FIN. 
+2025-01-30 18:06:07.0436 | DEBUG | Connection id "0HNA15AKNBQ13" disconnecting. 
+2025-01-30 18:06:07.0436 | DEBUG | Connection id "0HNA15AKNBQ13" stopped. 
+2025-01-30 18:06:07.0436 | DEBUG | Connection id "0HNA15AKNBQ13" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-01-30 18:06:07.1563 | DEBUG | Connection id "0HNA15AKNBQ12" completed keep alive response. 
+2025-01-30 18:06:07.1563 | DEBUG | Connection id "0HNA15AKNBQ12" received FIN. 
+2025-01-30 18:06:07.1563 | DEBUG | Connection id "0HNA15AKNBQ12" disconnecting. 
+2025-01-30 18:06:07.1563 | DEBUG | Connection id "0HNA15AKNBQ12" sending FIN because: "The client closed the connection." 
+2025-01-30 18:06:07.1563 | DEBUG | Connection id "0HNA15AKNBQ12" stopped. 
+2025-01-30 18:06:11.6066 | DEBUG | Connection id "0HNA15AKNBQ14" accepted. 
+2025-01-30 18:06:11.6066 | DEBUG | Connection id "0HNA15AKNBQ14" started. 
+2025-01-30 18:06:11.6066 | DEBUG | POST requests are not supported 
+2025-01-30 18:06:11.6483 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-01-30 18:06:11.6483 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-01-30 18:06:11.6483 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:06:11.6765 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-01-30 18:06:11.6765 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-01-30 18:06:11.6765 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-01-30 18:06:11.6765 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-01-30 18:06:11.6765 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-01-30 18:06:11.6765 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:06:11.6765 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-01-30 18:06:11.6909 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:06:11.6909 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-01-30 18:06:11.6909 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-01-30 18:06:11.7169 | DEBUG | Connection id "0HNA15AKNBQ14", Request id "0HNA15AKNBQ14:00000001": started reading request body. 
+2025-01-30 18:06:11.7169 | DEBUG | Connection id "0HNA15AKNBQ14", Request id "0HNA15AKNBQ14:00000001": done reading request body. 
+2025-01-30 18:06:11.7502 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-01-30 18:06:11.7502 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:06:11.7502 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-01-30 18:06:11.7502 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-01-30 18:06:11.7789 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 

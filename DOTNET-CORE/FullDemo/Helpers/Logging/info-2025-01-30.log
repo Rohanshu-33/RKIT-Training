@@ -14,3 +14,109 @@
 2025-01-30 17:31:30.1427 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
 2025-01-30 17:31:30.1663 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
 2025-01-30 17:31:30.1663 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-01-30 17:58:29.0773 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 17:58:29.0773 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 17:58:29.0773 | INFO | Hosting environment: Development 
+2025-01-30 17:58:29.0773 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 17:58:30.2090 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 17:58:30.6920 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 17:58:30.6920 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 17:58:30.7123 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 494.9522ms 
+2025-01-30 17:58:30.7123 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 22.1041ms 
+2025-01-30 17:58:30.7700 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 71.2550ms 
+2025-01-30 17:58:30.8790 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 17:58:31.1502 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 271.8916ms 
+2025-01-30 17:58:46.1479 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 99 
+2025-01-30 17:58:46.1957 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:58:46.2210 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 17:58:46.3495 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-01-30 17:58:46.3684 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 145.625ms 
+2025-01-30 17:58:46.3684 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:58:46.3684 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 99 - 400 - application/problem+json;+charset=utf-8 222.7650ms 
+2025-01-30 17:58:56.2307 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 98 
+2025-01-30 17:58:56.2307 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:58:56.2307 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 17:58:56.2711 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-01-30 17:59:25.4592 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 17:59:25.4592 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 17:59:25.4592 | INFO | Hosting environment: Development 
+2025-01-30 17:59:25.4592 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 17:59:26.8308 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 17:59:27.2705 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 17:59:27.2705 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 17:59:27.2901 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 19.8494ms 
+2025-01-30 17:59:27.3029 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 474.8027ms 
+2025-01-30 17:59:27.3658 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.0266ms 
+2025-01-30 17:59:27.4586 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 17:59:27.6800 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 221.6615ms 
+2025-01-30 17:59:42.0777 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 138 
+2025-01-30 17:59:42.1160 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 17:59:42.1449 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 17:59:42.2280 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-01-30 18:00:54.0520 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 18:00:54.0533 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 18:00:54.0533 | INFO | Hosting environment: Development 
+2025-01-30 18:00:54.0533 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 18:00:55.3584 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:00:56.2014 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 857.1625ms 
+2025-01-30 18:00:56.2118 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:00:56.2679 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:00:56.3893 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 121.7333ms 
+2025-01-30 18:00:56.4788 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 267.2737ms 
+2025-01-30 18:00:56.5784 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:00:56.8875 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 309.5309ms 
+2025-01-30 18:01:07.3363 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 156 
+2025-01-30 18:01:07.3837 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:01:07.4194 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 18:01:07.5396 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-01-30 18:01:07.5605 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 138.7374ms 
+2025-01-30 18:01:07.5605 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:01:07.5605 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 156 - 400 - application/problem+json;+charset=utf-8 229.1321ms 
+2025-01-30 18:02:45.2339 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 18:02:45.2339 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 18:02:45.2339 | INFO | Hosting environment: Development 
+2025-01-30 18:02:45.2339 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 18:02:46.4805 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:02:47.0128 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:02:47.0128 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:02:47.0128 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 7.9385ms 
+2025-01-30 18:02:47.0290 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 552.5603ms 
+2025-01-30 18:02:47.0951 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.6306ms 
+2025-01-30 18:02:47.2172 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:02:47.4898 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 272.9627ms 
+2025-01-30 18:02:59.4420 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 156 
+2025-01-30 18:02:59.4985 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:02:59.5286 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 18:02:59.6258 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-01-30 18:04:30.1021 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 18:04:30.1037 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 18:04:30.1037 | INFO | Hosting environment: Development 
+2025-01-30 18:04:30.1037 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 18:04:31.5546 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:04:32.1998 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 653.5076ms 
+2025-01-30 18:04:32.2348 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:04:32.2348 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:04:32.2348 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.2123ms 
+2025-01-30 18:04:32.3690 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 134.2866ms 
+2025-01-30 18:04:32.4555 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:04:32.7226 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 267.4770ms 
+2025-01-30 18:04:39.2520 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-01-30 18:04:39.2970 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:04:39.3356 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 18:04:39.4364 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-01-30 18:06:04.0780 | INFO | Now listening on: http://localhost:5115 
+2025-01-30 18:06:04.0780 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-01-30 18:06:04.0780 | INFO | Hosting environment: Development 
+2025-01-30 18:06:04.0780 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-01-30 18:06:05.6807 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-01-30 18:06:06.4341 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 759.5461ms 
+2025-01-30 18:06:06.4341 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-01-30 18:06:06.4341 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-01-30 18:06:06.4341 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 3.9805ms 
+2025-01-30 18:06:06.5712 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 135.4173ms 
+2025-01-30 18:06:06.6637 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-01-30 18:06:07.1563 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 492.8998ms 
+2025-01-30 18:06:11.6066 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-01-30 18:06:11.6528 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-01-30 18:06:11.6765 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-01-30 18:06:11.7789 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
