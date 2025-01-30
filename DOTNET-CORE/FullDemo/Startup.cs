@@ -6,6 +6,8 @@ using FullDemo.BL.Interfaces;
 using FullDemo.BL.Services;
 using FullDemo.Models.POCO;
 using FullDemo.Models.DTO;
+using FullDemo.Filters;
+using FullDemo.Extensions;
 
 namespace FullDemo
 {
@@ -15,10 +17,8 @@ namespace FullDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddTransient<CustomMiddleware>();
 
-            services.AddScoped<IUserServices<DTOITH01>, UserServices>();
-            services.AddScoped<IItemServices<DTOITH03>, ItemServices>();
+            services.AddServices();
 
             services.AddSwaggerGen(c =>
             {
@@ -49,7 +49,13 @@ namespace FullDemo
             });
             services.AddEndpointsApiExplorer();
 
-            
+            // Registering filter globally
+            services.AddControllers(options =>
+            {
+                options.Filters.Add<CustomExceptionFilter>();
+            });
+
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -102,7 +108,6 @@ namespace FullDemo
             {
                 endpoints.MapControllers();
             });
-
 
         }
     }

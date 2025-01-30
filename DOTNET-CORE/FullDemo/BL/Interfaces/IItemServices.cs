@@ -6,6 +6,9 @@ using FullDemo.Models.DTO;
 
 namespace FullDemo.BL.Interfaces
 {
+    /// <summary>
+    /// Interface for managing Item Services.
+    /// </summary>
     public interface IItemServices<TDTO> where TDTO : class
     {
         /// <summary>

@@ -15,11 +15,13 @@ namespace FullDemo.Controllers
     {
         private readonly IUserServices<DTOITH01> _usrServices;
         private Response _objResponse;
+        private readonly ILogger _logger;
 
-        public UsersController(IUserServices<DTOITH01> usrServices)
+        public UsersController(IUserServices<DTOITH01> usrServices, ILogger<UsersController> logger)
         {
             _objResponse = new Response();
             _usrServices = usrServices;
+            _logger = logger;
         }
 
         /// <summary>

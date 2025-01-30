@@ -15,17 +15,15 @@ namespace FullDemo.BL.Services
         public EnmType Type { get; set; }
         private Response _objResponse; // Response
         private ITH02 _objITH02; // POCO
-        private string _connectionString;
-        private IDbConnectionFactory _dbFactory;
+        private readonly IAppDBConnection _dbConnection;
 
         /// <summary>
         /// Item Services Constructor
         /// </summary
-        public ItemServices()
+        public ItemServices(IAppDBConnection dbConnection)
         {
             _objResponse = new Response();
-            _connectionString = "Server=localhost;Database=rbcollege;Item=Admin;Password=gs@123;";
-            _dbFactory = new OrmLiteConnectionFactory(_connectionString, MySqlDialect.Provider);
+            _dbConnection = dbConnection;
         }
 
         /// <summary>
@@ -36,7 +34,7 @@ namespace FullDemo.BL.Services
         private bool IsITH02Exists(int id)
         {
             //Console.WriteLine("id is : " + id);
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db = _dbConnection.GetDbConnection())
             {
                 return db.Exists<ITH02>(r => r.H02F01 == id);
             }
@@ -87,7 +85,7 @@ namespace FullDemo.BL.Services
         {
             try
             {
-                using (var db = _dbFactory.OpenDbConnection())
+                using (var db = _dbConnection.GetDbConnection())
                 {
                     if (Type == EnmType.A)
                     {
@@ -153,7 +151,7 @@ namespace FullDemo.BL.Services
 
                 if (objResponse.Success == true)
                 {
-                    using (var db = _dbFactory.OpenDbConnection())
+                    using (var db = _dbConnection.GetDbConnection())
                     {
                         db.DeleteById<ITH02>(id);
                         _objResponse.Message = "Item deleted successfully.";
@@ -176,7 +174,7 @@ namespace FullDemo.BL.Services
         /// <returns>item with the specified ID</returns>
         public ITH02 Get(int id)
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db = _dbConnection.GetDbConnection())
             {
                 return db.SingleById<ITH02>(id);
             }
@@ -188,7 +186,7 @@ namespace FullDemo.BL.Services
         /// <returns>List of items</returns>
         public List<ITH02> GetAllItems()
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db = _dbConnection.GetDbConnection())
             {
                 return db.Select<ITH02>();  // will return List of POCO Objects
             }
@@ -197,7 +195,7 @@ namespace FullDemo.BL.Services
 
         public List<ITH02> GetAllItemsByCategory(string category)
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db = _dbConnection.GetDbConnection())
             {
                 return db.Select<ITH02>(i => i.H02F07 ==  category);  // will return List of POCO Objects
             }

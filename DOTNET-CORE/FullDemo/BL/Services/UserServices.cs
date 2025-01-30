@@ -16,17 +16,15 @@ namespace FullDemo.BL.Services
         public EnmType Type { get; set; }
         private Response _objResponse; // Response
         private ITH01 _objITH01; // POCO
-        private string _connectionString;
-        private IDbConnectionFactory _dbFactory;
+        private readonly IAppDBConnection _dbConnection;
 
         /// <summary>
         /// UserServices Constructor
         /// </summary
-        public UserServices()
+        public UserServices(IAppDBConnection dbConnection)
         {
             _objResponse = new Response();
-            _connectionString = "Server=localhost;Database=rbcollege;User=Admin;Password=gs@123;";
-            _dbFactory = new OrmLiteConnectionFactory(_connectionString, MySqlDialect.Provider);
+            _dbConnection = dbConnection;
         }
 
         /// <summary>
@@ -37,7 +35,7 @@ namespace FullDemo.BL.Services
         private bool IsITH01Exists(int id)
         {
             //Console.WriteLine("id is : " + id);
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db = _dbConnection.GetDbConnection())
             {
                 return db.Exists<ITH01>(r => r.H01F01 == id);
             }
@@ -82,7 +80,7 @@ namespace FullDemo.BL.Services
         {
             try
             {
-                using (var db = _dbFactory.OpenDbConnection())
+                using (var db = _dbConnection.GetDbConnection())
                 {
                     if (Type == EnmType.A)
                     {
@@ -148,7 +146,7 @@ namespace FullDemo.BL.Services
 
                 if (objResponse.Success == true)
                 {
-                    using (var db = _dbFactory.OpenDbConnection())
+                    using (var db = _dbConnection.GetDbConnection())
                     {
                         db.DeleteById<ITH01>(id);
                         _objResponse.Message = "User deleted successfully.";
@@ -171,7 +169,7 @@ namespace FullDemo.BL.Services
         /// <returns>User with the specified ID</returns>
         public ITH01 Get(int id)
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db =  _dbConnection.GetDbConnection())
             {
                 return db.SingleById<ITH01>(id);
             }
@@ -183,7 +181,7 @@ namespace FullDemo.BL.Services
         /// <returns>List of users</returns>
         public List<ITH01> GetAll()
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db =  _dbConnection.GetDbConnection())
             {
                 return db.Select<ITH01>();  // will return List of POCO Objects
             }
@@ -195,7 +193,7 @@ namespace FullDemo.BL.Services
         /// <returns>Boolean value</returns>
         public bool CheckUserCredentials(DTOITH02 usr)
         {
-            using (var db = _dbFactory.OpenDbConnection())
+            using (var db =  _dbConnection.GetDbConnection())
             {
                 return db.Exists<ITH01>(u => u.H01F03==usr.H02F01 && u.H01F04==usr.H02F02);
             }

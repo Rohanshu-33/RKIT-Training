@@ -6,6 +6,9 @@ using FullDemo.Models.DTO;
 
 namespace FullDemo.BL.Interfaces
 {
+    /// <summary>
+    /// Interface for managing User Services.
+    /// </summary>
     public interface IUserServices<TDTO> where TDTO : class
     {
         /// <summary>

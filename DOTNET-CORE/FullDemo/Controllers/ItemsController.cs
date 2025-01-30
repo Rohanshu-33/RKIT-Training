@@ -15,10 +15,12 @@ namespace FullDemo.Controllers
     {
         private readonly IItemServices<DTOITH03> _itmServices;
         private Response _objResponse;
+        private readonly ILogger _logger;
 
-        public ItemsController(IItemServices<DTOITH03> itmServices)
+        public ItemsController(IItemServices<DTOITH03> itmServices, ILogger<ItemsController> logger)
         {
             _itmServices = itmServices;
+            _logger = logger;
         }
 
         // add item, jwt required
