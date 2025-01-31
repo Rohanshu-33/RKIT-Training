@@ -6,6 +6,7 @@ using FullDemo.Models.POCO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using FullDemo.Helpers.JWT;
 
 namespace FullDemo.Controllers
 {
@@ -57,6 +58,9 @@ namespace FullDemo.Controllers
                 return BadRequest(_objResponse);
             }
             // response should set JWT Token in cookie
+            _objResponse.Success = true;
+            _objResponse.Message = "Login successful.";
+            _objResponse.Data = JWTHandler.GenerateToken(usr.H02F01);
             return Ok(_objResponse);
         }
 

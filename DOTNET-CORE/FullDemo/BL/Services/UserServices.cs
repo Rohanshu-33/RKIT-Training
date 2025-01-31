@@ -84,7 +84,8 @@ namespace FullDemo.BL.Services
                 {
                     if (Type == EnmType.A)
                     {
-                        db.Insert(_objITH01, true);
+                        _objResponse.Data = "id: " +  db.Insert(_objITH01, true);
+                        _objResponse.Success = true;
                         _objResponse.Message = "User added successfully.";
                     }
                     if (Type == EnmType.E)
@@ -94,6 +95,7 @@ namespace FullDemo.BL.Services
                         //    onlyFields: p => new { p.T01F02, p.T01F03, p.T01F05 },
                         //    where: p => p.T01F01 == _objITH01.T01F01);
 
+                        _objResponse.Success = true;
                         _objResponse.Message = "User data updated successfully.";
                     }
                 }

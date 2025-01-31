@@ -16,7 +16,7 @@ namespace FullDemo.Models.DTO
         [JsonProperty("userName")]
         [Required(ErrorMessage = "User Name is required.")]
         [StringLength(50, MinimumLength = 2, ErrorMessage = "User Name should be between 2 and 50 characters.")]
-        public string H01F01 { get; set; }
+        public string H01F02 { get; set; }
 
         /// <summary>
         /// Gets or Sets the Email Address.
@@ -25,7 +25,7 @@ namespace FullDemo.Models.DTO
         [Required(ErrorMessage = "Email Address is required.")]
         [EmailAddress(ErrorMessage = "Invalid Email Address format.")]
         [StringLength(50, ErrorMessage = "Email Address should not exceed 50 characters.")]
-        public string H01F02 { get; set; }
+        public string H01F03 { get; set; }
 
         /// <summary>
         /// Gets or Sets the Password.
@@ -33,7 +33,7 @@ namespace FullDemo.Models.DTO
         [JsonProperty("password")]
         [Required(ErrorMessage = "Password is required.")]
         [StringLength(100, MinimumLength = 8, ErrorMessage = "Password must be between 8 and 100 characters.")]
-        public string H01F03 { get; set; }
+        public string H01F04 { get; set; }
 
         /// <summary>
         /// Gets or Sets the Contact Number.
@@ -41,7 +41,7 @@ namespace FullDemo.Models.DTO
         [JsonProperty("contactNumber")]
         [Required(ErrorMessage = "Contact Number is required.")]
         [RegularExpression(@"^[6-9]\d{9}$", ErrorMessage = "Invalid Contact Number format.")]
-        public string H01F04 { get; set; }
+        public string H01F05 { get; set; }
 
         /// <summary>
         /// Gets or Sets the User Address.
@@ -49,7 +49,14 @@ namespace FullDemo.Models.DTO
         [JsonProperty("address")]
         [Required(ErrorMessage = "Address is required.")]
         [StringLength(100, MinimumLength = 2, ErrorMessage = "Address must be between 2 and 100 characters.")]
-        public string H01F05 { get; set; }
+        public string H01F06 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets the User Registration Date.
+        /// </summary>
+        [JsonProperty("registeredDate")]
+        [Required(ErrorMessage = "Registration date is required.")]
+        public DateTime H01F07 { get; set; }
         #endregion
     }
 }
