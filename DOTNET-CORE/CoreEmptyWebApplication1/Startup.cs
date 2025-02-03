@@ -7,6 +7,7 @@ using System.Net;
 using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Configuration;
 using NLog;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace CoreEmptyWebApplication1
 {
@@ -51,7 +52,7 @@ namespace CoreEmptyWebApplication1
             //services.AddSingleton<IProductInterface, ProductRepository>();
 
             // there will be only one instance of scoped service for a single http request. if requested again, then new instance is created.
-            //services.AddScoped<IProductInterface, ProductRepository>();
+            services.TryAddScoped<IProductInterface, ProductRepository>();
 
             // there will be different instances for every time the interface is being accessed or is used from different instances.
             services.AddTransient<IProductInterface, ProductRepository>();
