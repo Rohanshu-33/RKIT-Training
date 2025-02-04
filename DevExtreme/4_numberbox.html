@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <title>Number box</title>
+</head>
+<body>
+    <div id="numberBoxContainer"></div>
+</body>
+
+<script>
+    $(document).ready(function(){
+        $("#numberBoxContainer").dxNumberBox({
+
+
+        // options
+        
+        
+        value: 15,
+        min: 5,
+        max: 55,
+        showSpinButtons: true,
+        showClearButton: true,
+        step: 2,
+        width: "15rem",
+        height: "3rem",
+        // format: "   0.0",
+        // mode:
+        rtlEnabled: false,
+        stylingMode: "outlined", // filled, underlined
+        useLargeSpinButtons: true
+
+        // methods and events same as previous widgets
+    });
+});
+</script>
+</html>

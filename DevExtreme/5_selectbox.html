@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <title>Select Box</title>
+
+    <style>
+        .my-div {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="selectBox" class="my-div"></div>
+    <div id="selectBox2" class="my-div"></div>
+    <div id="selectBox3" class="my-div"></div>
+    <div id="selectBox4" class="my-div"></div>
+    <div id="selectBox5" class="my-div"></div>
+    <div id="selectBox6" class="my-div"></div>
+    <div id="selectBox7" class="my-div"></div>
+
+    <div id="selectBoxContainer" class="my-div"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        const data = [{
+            ID: 1,
+            Name: 'Banana',
+            Category: 'Fruits'
+        }, {
+            ID: 2,
+            Name: 'Cucumber',
+            Category: 'Vegetables'
+        }, {
+            ID: 3,
+            Name: 'Apple',
+            Category: 'Fruits'
+        }, {
+            ID: 4,
+            Name: 'Tomato',
+            Category: 'Vegetables'
+        }, {
+            ID: 5,
+            Name: 'Apricot',
+            Category: 'Fruits'
+        },
+        ]
+
+        $("#selectBox").dxSelectBox({
+            dataSource: data,
+            valueExpr: "ID",
+            displayExpr: "Name",
+            width: "20rem",
+            height: "3rem",
+            searchEnabled: true
+        });
+
+        const dataSource = new DevExpress.data.DataSource({
+            store: data,
+            type: "array",
+            key: "ID",
+            group: "Category"
+        });
+
+        $("#selectBox2").dxSelectBox({
+            dataSource: dataSource,
+            grouped: true,
+            width: "20rem",
+            height: "3rem",
+            valueExpr: "ID",
+            displayExpr: "Name",
+            searchEnabled: true,
+            dropDownOptions: {   // scrollable
+                height: 150
+            },
+            valueChangeEvent: 'keyup'
+        });
+
+
+
+        $("#selectBox3").dxSelectBox({
+            valueExpr: 'text',
+            displayExpr: 'text',
+            dataSource: [
+                { text: "HD Video Player" },
+                { text: "SuperHD Video Player", disabled: true },
+                { text: "SuperPlasma 50", visible: true }
+            ],
+            placeholder: "Select a product...",
+            width: "20rem",
+            height: "3rem"
+        });
+
+
+        const pokemons = [
+            {
+                id: 1,
+                name: "Pikachu",
+                imgSrc: "https://th.bing.com/th/id/OIP.T3hkVhl8DyWLZXgNp5vArgHaKC?w=145&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+            },
+            {
+                id: 2,
+                name: "Bulbasaur",
+                imgSrc: "https://th.bing.com/th/id/OIP.T3hkVhl8DyWLZXgNp5vArgHaKC?w=145&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+            },
+            {
+                id: 3,
+                name: "Charmander",
+                imgSrc: "https://th.bing.com/th/id/OIP.T3hkVhl8DyWLZXgNp5vArgHaKC?w=145&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+            },
+            {
+                id: 4,
+                name: "Meowth",
+                imgSrc: "https://th.bing.com/th/id/OIP.T3hkVhl8DyWLZXgNp5vArgHaKC?w=145&h=196&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+            },
+        ];
+
+        $("#selectBox4").dxSelectBox({
+            width: "20rem",
+            height: "3rem",
+            dataSource: pokemons,
+            valueExpr: "id",
+            displayExpr: "name",
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                return $("<div />").append(
+                    $("<img />").attr("src", itemData.imgSrc),
+                    $("<p/ >").text(` -> ${itemData.name}`).css("display", "inline-block")
+                )
+            }
+        });
+
+
+        const fruitsVegetables = [{
+            key: "Fruits",
+            items: [
+                { name: "Apples", count: 10 },
+                { name: "Oranges", count: 12 },
+                { name: "Lemons", count: 15 }
+            ]
+        }, {
+            key: "Vegetables",
+            items: [
+                { name: "Potatoes", count: 5 },
+                { name: "Tomatoes", count: 9 },
+                { name: "Turnips", count: 8 }
+            ]
+        }];
+
+        $("#selectBox5").dxSelectBox({
+            width: "20rem",
+            height: "3rem",
+            dataSource: fruitsVegetables,
+            grouped: true,
+            displayExpr: 'name',
+            valueExpr: 'count',  // useful in backend. this value will be received in backend. if null or not mentioned, stores whole object
+            onValueChanged: function () {
+                const inst = $("#selectBox5").dxSelectBox("instance")
+                console.log(inst.option("value"));
+            }
+        });
+
+        // above requires the objects having key and items. if the data is not in that format, use the below map method.
+
+        const fruitsAndVegetables = [{
+            type: "Fruits",
+            collection: [
+                { name: "Mangoes", count: 10 },
+                { name: "Oranges", count: 12 },
+                { name: "Lemons", count: 15 }
+            ]
+        }, {
+            type: "Vegetables",
+            collection: [
+                { name: "Potatoes", count: 5 },
+                { name: "Tomatoes", count: 9 },
+                { name: "Turnips", count: 8 }
+            ]
+        }];
+
+        $("#selectBox6").dxSelectBox({
+            width: "20rem",
+            height: "3rem",
+            dataSource: new DevExpress.data.DataSource({
+                store: fruitsAndVegetables,
+                map: function (item) {
+                    return {
+                        key: item.type,
+                        items: item.collection
+                    }
+                }
+            }),
+            grouped: true,
+            displayExpr: 'name',
+        })
+
+
+        // if data is not grouped, use group property to group it.
+
+        const fruits_Vegetables = [
+            { type: "Fruits", name: "Guavas", count: 10 },
+            { type: "Fruits", name: "Oranges", count: 12 },
+            { type: "Fruits", name: "Lemons", count: 15 },
+            { type: "Vegetables", name: "Potatoes", count: 5 },
+            { type: "Vegetables", name: "Tomatoes", count: 9 },
+            { type: "Vegetables", name: "Turnips", count: 8 }
+        ];
+
+        $("#selectBox7").dxSelectBox({
+            width: "20rem",
+            height: "3rem",
+            dataSource: new DevExpress.data.DataSource({
+                store: fruits_Vegetables,
+                group: "type",
+                paginate: true,  // If the entire dataset is on the client (stored in a local array or loaded using the CustomStore in raw mode), data items are only rendered page by page.
+                // If the dataset is on the server, and the server supports paging, the data items are also loaded by pages.
+                pageSize: 2
+            }),
+            grouped: true,
+            displayExpr: "name",
+            searchEnabled: true,
+            searchExpr: ["name"],  // specify where to search
+            searchMode: "startswith", // 'contains'
+            searchTimeout: 2000, // waits for 2 seconds after user stops typing
+            minSearchLength: 3,
+            showDataBeforeSearch: false, // requires minSearchLength
+            maxLength: 10  // nothing will be displayed until 3 characters are typed
+        })
+
+
+        // user can add new item in the select box
+
+        const selectBoxData = new DevExpress.data.DataSource({
+            store: [
+                { id: 1, firstName: "Rohanshu" },
+                { id: 2, firstName: "Meet" },
+                { id: 3, firstName: "Navneet" }
+            ]
+        });
+
+        $("#selectBoxContainer").dxSelectBox({
+            width: "20rem",
+            height: "3rem",
+            dataSource: selectBoxData,
+            displayExpr: 'firstName',
+            acceptCustomValue: true,
+            onCustomItemCreating: function(arg){
+                //console.log(arg.text);
+                let nextId;
+                let selectBoxContent = selectBoxData.store().totalCount().done(count => nextId = count + 1);
+                arg.customItem = {id: nextId, firstName: arg.text};                
+                selectBoxData.store().insert(arg.customItem);
+                selectBoxData.reload();
+            },
+            noDataText: "No data to display currently.",
+            onItemClick: function(e){
+                console.log(e);
+            },
+            openOnFieldClick: false,
+            wrapItemText: true
+            
+        });
+
+        // const tmp = [1,2,3,4,5];
+        // $("#selectBoxContainer").dxSelectBox({
+        //     dataSource: tmp,
+        //     displayExpr: this
+        // });
+    });
+</script>
+
+</html>
