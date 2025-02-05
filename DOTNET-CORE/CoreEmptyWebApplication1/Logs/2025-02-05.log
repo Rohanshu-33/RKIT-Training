@@ -1,0 +1,746 @@
+2025-02-05 11:10:26.4585 | DEBUG | Hosting starting 
+2025-02-05 11:10:32.2261 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 11:10:35.6652 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 11:10:35.6745 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 11:10:35.6745 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 11:10:35.6745 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 11:10:35.6745 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 11:10:35.6745 | INFO | Hosting environment: Development 
+2025-02-05 11:10:35.6745 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 11:10:35.6745 | DEBUG | Hosting started 
+2025-02-05 11:10:36.0092 | DEBUG | Connection id "0HNA5KUEMCHF1" accepted. 
+2025-02-05 11:10:36.0361 | DEBUG | Connection id "0HNA5KUEMCHF1" started. 
+2025-02-05 11:10:36.4408 | DEBUG | Connection id "0HNA5KUEMCHF2" accepted. 
+2025-02-05 11:10:36.8574 | DEBUG | Connection id "0HNA5KUEMCHF2" started. 
+2025-02-05 11:10:39.6940 | DEBUG | Connection id "0HNA5KUEMCHF3" accepted. 
+2025-02-05 11:10:39.7706 | DEBUG | Connection id "0HNA5KUEMCHF3" started. 
+2025-02-05 11:10:39.7706 | DEBUG | Connection id "0HNA5KUEMCHF4" accepted. 
+2025-02-05 11:10:40.0228 | DEBUG | Connection id "0HNA5KUEMCHF4" started. 
+2025-02-05 11:10:40.9195 | DEBUG | Connection id "0HNA5KUEMCHF3" received FIN. 
+2025-02-05 11:10:41.1369 | DEBUG | Connection id "0HNA5KUEMCHF3" disconnecting. 
+2025-02-05 11:10:41.0364 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 11:10:41.2452 | DEBUG | Connection id "0HNA5KUEMCHF3" sending FIN because: "The client closed the connection." 
+2025-02-05 11:10:41.3833 | DEBUG | Connection id "0HNA5KUEMCHF3" stopped. 
+2025-02-05 11:10:41.4653 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 11:10:41.4653 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:41.5990 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:10:41.6579 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 11:10:41.7547 | DEBUG | Request did not match any endpoints 
+2025-02-05 11:10:42.0368 | DEBUG | Connection id "0HNA5KUEMCHF4" completed keep alive response. 
+2025-02-05 11:10:42.0368 | DEBUG | Connection id "0HNA5KUEMCHF4" received FIN. 
+2025-02-05 11:10:42.0368 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 404 0 - 1006.0859ms 
+2025-02-05 11:10:42.0368 | DEBUG | Connection id "0HNA5KUEMCHF4" sending FIN because: "The client closed the connection." 
+2025-02-05 11:10:42.1895 | DEBUG | Connection id "0HNA5KUEMCHF4" disconnecting. 
+2025-02-05 11:10:42.1895 | DEBUG | Connection id "0HNA5KUEMCHF4" stopped. 
+2025-02-05 11:10:45.0730 | DEBUG | Connection id "0HNA5KUEMCHF5" accepted. 
+2025-02-05 11:10:45.0730 | DEBUG | Connection id "0HNA5KUEMCHF5" started. 
+2025-02-05 11:10:45.0839 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 11:10:45.1408 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:45.2816 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 11:10:46.2631 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 11:10:46.2631 | DEBUG | Connection id "0HNA5KUEMCHF5" completed keep alive response. 
+2025-02-05 11:10:46.2631 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 1181.6444ms 
+2025-02-05 11:10:46.3255 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui.css - - 
+2025-02-05 11:10:46.3800 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:46.3376 | DEBUG | Connection id "0HNA5KUEMCHF6" accepted. 
+2025-02-05 11:10:46.4440 | DEBUG | Connection id "0HNA5KUEMCHF6" started. 
+2025-02-05 11:10:46.4440 | TRACE | Range header's value is empty. 
+2025-02-05 11:10:46.4973 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.css - - 
+2025-02-05 11:10:46.5029 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:46.5029 | TRACE | Range header's value is empty. 
+2025-02-05 11:10:46.5029 | INFO | The file /index.css was not modified 
+2025-02-05 11:10:46.5357 | DEBUG | Handled. Status code: 304 File: /index.css 
+2025-02-05 11:10:46.5357 | DEBUG | Connection id "0HNA5KUEMCHF6" completed keep alive response. 
+2025-02-05 11:10:46.5357 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.css - - - 304 - text/css 43.9110ms 
+2025-02-05 11:10:46.8640 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - 
+2025-02-05 11:10:46.9516 | INFO | The file /swagger-ui.css was not modified 
+2025-02-05 11:10:46.9824 | DEBUG | Handled. Status code: 304 File: /swagger-ui.css 
+2025-02-05 11:10:46.9824 | DEBUG | Connection id "0HNA5KUEMCHF5" completed keep alive response. 
+2025-02-05 11:10:46.9824 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui.css - - - 304 - text/css 658.1773ms 
+2025-02-05 11:10:46.9964 | DEBUG | Connection id "0HNA5KUEMCHF7" accepted. 
+2025-02-05 11:10:47.2092 | DEBUG | Connection id "0HNA5KUEMCHF7" started. 
+2025-02-05 11:10:47.3823 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHF8" accepted. 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHF8" started. 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHF9" accepted. 
+2025-02-05 11:10:47.3823 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.js - - 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHF9" started. 
+2025-02-05 11:10:47.4207 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui-standalone-preset.js - - 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHF7" completed keep alive response. 
+2025-02-05 11:10:47.3823 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:47.3823 | DEBUG | Connection id "0HNA5KUEMCHFA" accepted. 
+2025-02-05 11:10:48.1312 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 749.2305ms 
+2025-02-05 11:10:48.4804 | DEBUG | Connection id "0HNA5KUEMCHF6" completed keep alive response. 
+2025-02-05 11:10:48.4804 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1617.9883ms 
+2025-02-05 11:10:48.3767 | DEBUG | Connection id "0HNA5KUEMCHF8" completed keep alive response. 
+2025-02-05 11:10:47.7065 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:48.3767 | DEBUG | Connection id "0HNA5KUEMCHFA" started. 
+2025-02-05 11:10:48.5556 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui-bundle.js - - 
+2025-02-05 11:10:48.5556 | TRACE | Range header's value is empty. 
+2025-02-05 11:10:48.5556 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.js - - - 200 - application/javascript;charset=utf-8 1169.2200ms 
+2025-02-05 11:10:48.5556 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:48.5556 | INFO | The file /swagger-ui-standalone-preset.js was not modified 
+2025-02-05 11:10:48.5556 | TRACE | Range header's value is empty. 
+2025-02-05 11:10:48.5556 | DEBUG | Handled. Status code: 304 File: /swagger-ui-standalone-preset.js 
+2025-02-05 11:10:48.5556 | INFO | The file /swagger-ui-bundle.js was not modified 
+2025-02-05 11:10:48.5556 | DEBUG | Connection id "0HNA5KUEMCHF9" completed keep alive response. 
+2025-02-05 11:10:48.5556 | DEBUG | Handled. Status code: 304 File: /swagger-ui-bundle.js 
+2025-02-05 11:10:48.5556 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 1142.4543ms 
+2025-02-05 11:10:48.5556 | DEBUG | Connection id "0HNA5KUEMCHFA" completed keep alive response. 
+2025-02-05 11:10:48.5673 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 10.9762ms 
+2025-02-05 11:10:49.5848 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - 
+2025-02-05 11:10:49.6488 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/favicon-32x32.png - - 
+2025-02-05 11:10:49.6488 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:49.6488 | TRACE | All hosts are allowed. 
+2025-02-05 11:10:49.7695 | TRACE | Range header's value is empty. 
+2025-02-05 11:10:49.7695 | INFO | The file /favicon-32x32.png was not modified 
+2025-02-05 11:10:49.7695 | DEBUG | Handled. Status code: 304 File: /favicon-32x32.png 
+2025-02-05 11:10:49.7695 | DEBUG | Connection id "0HNA5KUEMCHF9" completed keep alive response. 
+2025-02-05 11:10:49.7695 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/favicon-32x32.png - - - 304 - image/png 125.5095ms 
+2025-02-05 11:10:50.2640 | DEBUG | Connection id "0HNA5KUEMCHFA" completed keep alive response. 
+2025-02-05 11:10:50.3751 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 790.2673ms 
+2025-02-05 11:11:05.2448 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - 
+2025-02-05 11:11:05.2448 | TRACE | All hosts are allowed. 
+2025-02-05 11:11:05.2592 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:11:05.2796 | DEBUG | 1 candidate(s) found for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:11:05.3220 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' with route pattern 'api/Filters/GetDataWithApi' is valid for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:11:05.3330 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:11:05.3532 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:11:05.3919 | INFO | Route matched with {action = "GetAllData", controller = "Filters"}. Executing controller action with signature System.String GetAllData() on controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1). 
+2025-02-05 11:11:05.5308 | DEBUG | Execution plan of authorization filters (in the following order): CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter 
+2025-02-05 11:11:05.7969 | DEBUG | Execution plan of resource filters (in the following order): CoreEmptyWebApplication1.Filters.MyResourceFilter 
+2025-02-05 11:11:05.8051 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyActionfilter 
+2025-02-05 11:11:05.8051 | DEBUG | Execution plan of exception filters (in the following order): CoreEmptyWebApplication1.Filters.MyExceptionFilter 
+2025-02-05 11:11:05.8051 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyResultFilter 
+2025-02-05 11:11:05.8170 | TRACE | Authorization Filter: Before executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:11:05.8170 | TRACE | Authorization Filter: After executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:11:05.8320 | INFO | Authorization failed for the request at filter 'CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter'. 
+2025-02-05 11:11:05.8320 | TRACE | Always Run Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:11:05.8482 | TRACE | Always Run Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:11:05.8482 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:11:05.8482 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 11:11:05.8482 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 11:11:05.8631 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-02-05 11:11:05.8631 | INFO | Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-05 11:11:05.8631 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:11:05.8631 | TRACE | Always Run Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:11:05.8631 | TRACE | Always Run Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:11:05.8847 | INFO | Executed action CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) in 66.5921ms 
+2025-02-05 11:11:05.8847 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:11:05.9025 | DEBUG | Connection id "0HNA5KUEMCHFA" completed keep alive response. 
+2025-02-05 11:11:05.9025 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - - 401 - text/plain;+charset=utf-8 663.4267ms 
+2025-02-05 11:12:02.0314 | DEBUG | Connection id "0HNA5KUEMCHF5" received FIN. 
+2025-02-05 11:12:02.0406 | DEBUG | Connection id "0HNA5KUEMCHF7" received FIN. 
+2025-02-05 11:12:02.0406 | DEBUG | Connection id "0HNA5KUEMCHF8" received FIN. 
+2025-02-05 11:12:02.0406 | DEBUG | Connection id "0HNA5KUEMCHF6" received FIN. 
+2025-02-05 11:12:02.0406 | DEBUG | Connection id "0HNA5KUEMCHF9" received FIN. 
+2025-02-05 11:12:02.0510 | DEBUG | Connection id "0HNA5KUEMCHF5" disconnecting. 
+2025-02-05 11:12:02.0510 | DEBUG | Connection id "0HNA5KUEMCHF5" stopped. 
+2025-02-05 11:12:02.0510 | DEBUG | Connection id "0HNA5KUEMCHFA" received FIN. 
+2025-02-05 11:12:02.0510 | DEBUG | Connection id "0HNA5KUEMCHF7" disconnecting. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF7" stopped. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF8" disconnecting. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF8" stopped. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF6" disconnecting. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF9" disconnecting. 
+2025-02-05 11:12:02.0880 | DEBUG | Connection id "0HNA5KUEMCHF9" stopped. 
+2025-02-05 11:12:02.0689 | DEBUG | Connection id "0HNA5KUEMCHF6" sending FIN because: "The client closed the connection." 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHFA" disconnecting. 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHF5" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHF6" stopped. 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHF8" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHFA" stopped. 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHF7" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 11:12:02.0999 | DEBUG | Connection id "0HNA5KUEMCHF9" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 11:12:02.1543 | DEBUG | Connection id "0HNA5KUEMCHFA" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 11:13:29.0808 | DEBUG | Connection id "0HNA5KUEMCHFB" accepted. 
+2025-02-05 11:13:29.3231 | DEBUG | Connection id "0HNA5KUEMCHFB" started. 
+2025-02-05 11:13:29.3231 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - 
+2025-02-05 11:13:29.4694 | TRACE | All hosts are allowed. 
+2025-02-05 11:13:29.4791 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:13:29.4791 | DEBUG | 1 candidate(s) found for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:13:29.4791 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' with route pattern 'api/Filters/GetDataWithApi' is valid for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:13:29.4791 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:29.4791 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:29.4791 | INFO | Route matched with {action = "GetAllData", controller = "Filters"}. Executing controller action with signature System.String GetAllData() on controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1). 
+2025-02-05 11:13:29.4908 | DEBUG | Execution plan of authorization filters (in the following order): CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter 
+2025-02-05 11:13:29.4908 | DEBUG | Execution plan of resource filters (in the following order): CoreEmptyWebApplication1.Filters.MyResourceFilter 
+2025-02-05 11:13:29.4908 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyActionfilter 
+2025-02-05 11:13:29.4908 | DEBUG | Execution plan of exception filters (in the following order): CoreEmptyWebApplication1.Filters.MyExceptionFilter 
+2025-02-05 11:13:29.4908 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyResultFilter 
+2025-02-05 11:13:29.4908 | TRACE | Authorization Filter: Before executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:13:29.5537 | TRACE | Authorization Filter: After executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:13:29.5890 | INFO | Authorization failed for the request at filter 'CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter'. 
+2025-02-05 11:13:29.6044 | TRACE | Always Run Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:29.6044 | TRACE | Always Run Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:29.6044 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:13:29.6468 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 11:13:29.6468 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 11:13:29.6468 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-02-05 11:13:29.6701 | INFO | Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-05 11:13:29.8278 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:13:29.8278 | TRACE | Always Run Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:29.8756 | TRACE | Always Run Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:29.8756 | INFO | Executed action CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) in 379.26ms 
+2025-02-05 11:13:29.8904 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:29.8994 | DEBUG | Connection id "0HNA5KUEMCHFB" completed keep alive response. 
+2025-02-05 11:13:29.8994 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - - 401 - text/plain;+charset=utf-8 573.3963ms 
+2025-02-05 11:13:30.1534 | DEBUG | Connection id "0HNA5KUEMCHFC" accepted. 
+2025-02-05 11:13:30.0550 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 11:13:30.2254 | DEBUG | Connection id "0HNA5KUEMCHFC" started. 
+2025-02-05 11:13:30.4950 | TRACE | All hosts are allowed. 
+2025-02-05 11:13:30.6597 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 11:13:30.6810 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 11:13:30.6810 | DEBUG | Connection id "0HNA5KUEMCHFB" completed keep alive response. 
+2025-02-05 11:13:30.6810 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 629.3848ms 
+2025-02-05 11:13:30.7291 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - 
+2025-02-05 11:13:30.7291 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.js - - 
+2025-02-05 11:13:30.7291 | DEBUG | Connection id "0HNA5KUEMCHFB" completed keep alive response. 
+2025-02-05 11:13:30.7291 | TRACE | All hosts are allowed. 
+2025-02-05 11:13:30.7469 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 17.7539ms 
+2025-02-05 11:13:30.7638 | DEBUG | Connection id "0HNA5KUEMCHFD" accepted. 
+2025-02-05 11:13:30.8083 | DEBUG | Connection id "0HNA5KUEMCHFC" completed keep alive response. 
+2025-02-05 11:13:31.2893 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.js - - - 200 - application/javascript;charset=utf-8 560.1595ms 
+2025-02-05 11:13:31.2779 | DEBUG | Connection id "0HNA5KUEMCHFD" started. 
+2025-02-05 11:13:31.3919 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - 
+2025-02-05 11:13:31.5399 | DEBUG | Connection id "0HNA5KUEMCHFD" completed keep alive response. 
+2025-02-05 11:13:31.5399 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.7498ms 
+2025-02-05 11:13:32.1417 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - 
+2025-02-05 11:13:32.1654 | TRACE | All hosts are allowed. 
+2025-02-05 11:13:32.1654 | DEBUG | Connection id "0HNA5KUEMCHFD" completed keep alive response. 
+2025-02-05 11:13:32.1947 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.9488ms 
+2025-02-05 11:13:52.1093 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - 
+2025-02-05 11:13:52.1147 | TRACE | All hosts are allowed. 
+2025-02-05 11:13:52.1147 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:13:52.1147 | DEBUG | 1 candidate(s) found for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:13:52.1147 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' with route pattern 'api/Filters/GetDataWithApi' is valid for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:13:52.1147 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:52.1147 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:52.1532 | INFO | Route matched with {action = "GetAllData", controller = "Filters"}. Executing controller action with signature System.String GetAllData() on controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1). 
+2025-02-05 11:13:52.1532 | DEBUG | Execution plan of authorization filters (in the following order): CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter 
+2025-02-05 11:13:52.1532 | DEBUG | Execution plan of resource filters (in the following order): CoreEmptyWebApplication1.Filters.MyResourceFilter 
+2025-02-05 11:13:52.1532 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyActionfilter 
+2025-02-05 11:13:52.1626 | DEBUG | Execution plan of exception filters (in the following order): CoreEmptyWebApplication1.Filters.MyExceptionFilter 
+2025-02-05 11:13:52.1626 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyResultFilter 
+2025-02-05 11:13:52.1626 | TRACE | Authorization Filter: Before executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:13:52.1626 | TRACE | Authorization Filter: After executing OnAuthorization on filter CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter. 
+2025-02-05 11:13:52.1808 | INFO | Authorization failed for the request at filter 'CoreEmptyWebApplication1.Filters.ApiAuthorizationFilter'. 
+2025-02-05 11:13:52.1808 | TRACE | Always Run Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:52.1808 | TRACE | Always Run Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:52.1808 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:13:52.1808 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 11:13:52.1808 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 11:13:52.1808 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-02-05 11:13:52.1808 | INFO | Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-05 11:13:52.1931 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:13:52.1931 | TRACE | Always Run Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:52.1931 | TRACE | Always Run Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:13:52.1931 | INFO | Executed action CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) in 32.4792ms 
+2025-02-05 11:13:52.1931 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:13:52.1931 | DEBUG | Connection id "0HNA5KUEMCHFD" completed keep alive response. 
+2025-02-05 11:13:52.1931 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - - 401 - text/plain;+charset=utf-8 91.9916ms 
+2025-02-05 11:14:26.6618 | DEBUG | Hosting starting 
+2025-02-05 11:14:27.2175 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 11:14:28.1200 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 11:14:28.1200 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 11:14:28.1443 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 11:14:28.1475 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 11:14:28.1475 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 11:14:28.1475 | INFO | Hosting environment: Development 
+2025-02-05 11:14:28.1475 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 11:14:28.1624 | DEBUG | Hosting started 
+2025-02-05 11:14:28.3113 | DEBUG | Connection id "0HNA5L0JUOP8J" accepted. 
+2025-02-05 11:14:28.3113 | DEBUG | Connection id "0HNA5L0JUOP8J" received FIN. 
+2025-02-05 11:14:28.3195 | DEBUG | Connection id "0HNA5L0JUOP8J" started. 
+2025-02-05 11:14:28.3546 | DEBUG | Connection id "0HNA5L0JUOP8J" sending FIN because: "The client closed the connection." 
+2025-02-05 11:14:28.3546 | DEBUG | Connection id "0HNA5L0JUOP8J" disconnecting. 
+2025-02-05 11:14:28.3546 | DEBUG | Connection id "0HNA5L0JUOP8J" stopped. 
+2025-02-05 11:14:29.9449 | DEBUG | Connection id "0HNA5L0JUOP8K" accepted. 
+2025-02-05 11:14:30.0657 | DEBUG | Connection id "0HNA5L0JUOP8K" started. 
+2025-02-05 11:14:30.0657 | DEBUG | Connection id "0HNA5L0JUOP8L" accepted. 
+2025-02-05 11:14:30.0804 | DEBUG | Connection id "0HNA5L0JUOP8L" started. 
+2025-02-05 11:14:30.3653 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 11:14:30.6196 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 11:14:30.6196 | TRACE | All hosts are allowed. 
+2025-02-05 11:14:30.6778 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:14:30.7900 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 11:14:30.7900 | DEBUG | Request did not match any endpoints 
+2025-02-05 11:14:30.8668 | DEBUG | Connection id "0HNA5L0JUOP8K" completed keep alive response. 
+2025-02-05 11:14:30.8812 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 404 0 - 520.7540ms 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8L" received FIN. 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8K" received FIN. 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8L" sending FIN because: "The client closed the connection." 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8K" disconnecting. 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8L" disconnecting. 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8K" sending FIN because: "The client closed the connection." 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8L" stopped. 
+2025-02-05 11:14:31.1648 | DEBUG | Connection id "0HNA5L0JUOP8K" stopped. 
+2025-02-05 11:14:45.5926 | DEBUG | Connection id "0HNA5L0JUOP8M" accepted. 
+2025-02-05 11:14:45.6060 | DEBUG | Connection id "0HNA5L0JUOP8M" started. 
+2025-02-05 11:14:45.6060 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 11:14:45.6338 | TRACE | All hosts are allowed. 
+2025-02-05 11:14:45.7541 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 11:14:45.9180 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 11:14:45.9180 | DEBUG | Connection id "0HNA5L0JUOP8M" completed keep alive response. 
+2025-02-05 11:14:45.9180 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 317.8572ms 
+2025-02-05 11:14:45.9827 | DEBUG | Connection id "0HNA5L0JUOP8N" accepted. 
+2025-02-05 11:14:45.9827 | DEBUG | Connection id "0HNA5L0JUOP8N" started. 
+2025-02-05 11:14:46.0116 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.js - - 
+2025-02-05 11:14:46.0777 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - 
+2025-02-05 11:14:46.0777 | TRACE | All hosts are allowed. 
+2025-02-05 11:14:46.0873 | DEBUG | Connection id "0HNA5L0JUOP8N" completed keep alive response. 
+2025-02-05 11:14:46.0873 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 11.3134ms 
+2025-02-05 11:14:46.0873 | DEBUG | Connection id "0HNA5L0JUOP8M" completed keep alive response. 
+2025-02-05 11:14:46.0873 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.js - - - 200 - application/javascript;charset=utf-8 80.6043ms 
+2025-02-05 11:14:46.1038 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - 
+2025-02-05 11:14:46.3378 | DEBUG | Connection id "0HNA5L0JUOP8M" completed keep alive response. 
+2025-02-05 11:14:46.3378 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 240.4417ms 
+2025-02-05 11:14:46.6456 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - 
+2025-02-05 11:14:46.6498 | TRACE | All hosts are allowed. 
+2025-02-05 11:14:46.9035 | DEBUG | Connection id "0HNA5L0JUOP8M" completed keep alive response. 
+2025-02-05 11:14:46.9035 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 264.4837ms 
+2025-02-05 11:14:53.3258 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - 
+2025-02-05 11:14:53.3258 | TRACE | All hosts are allowed. 
+2025-02-05 11:14:53.3258 | DEBUG | The request path  does not match the path filter 
+2025-02-05 11:14:53.3563 | DEBUG | 1 candidate(s) found for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:14:53.3563 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' with route pattern 'api/Filters/GetDataWithApi' is valid for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 11:14:53.3563 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:14:53.3682 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:14:53.3881 | INFO | Route matched with {action = "GetAllData", controller = "Filters"}. Executing controller action with signature System.String GetAllData() on controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1). 
+2025-02-05 11:14:53.3881 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-02-05 11:14:53.3881 | DEBUG | Execution plan of resource filters (in the following order): CoreEmptyWebApplication1.Filters.MyResourceFilter 
+2025-02-05 11:14:53.3971 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyActionfilter 
+2025-02-05 11:14:53.3971 | DEBUG | Execution plan of exception filters (in the following order): CoreEmptyWebApplication1.Filters.MyExceptionFilter 
+2025-02-05 11:14:53.3971 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyResultFilter 
+2025-02-05 11:14:53.3971 | TRACE | Resource Filter: Before executing OnResourceExecuting on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 11:14:53.3971 | TRACE | Resource Filter: After executing OnResourceExecuting on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 11:14:53.4140 | DEBUG | Executing controller factory for controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1) 
+2025-02-05 11:14:53.4140 | DEBUG | Executed controller factory for controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1) 
+2025-02-05 11:14:53.4140 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 11:14:53.4140 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 11:14:53.4140 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 11:14:53.4140 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 11:14:53.4140 | TRACE | Action Filter: Before executing OnActionExecuting on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 11:14:53.4331 | TRACE | Action Filter: After executing OnActionExecuting on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 11:14:53.4331 | INFO | Executing action method CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) - Validation state: Valid 
+2025-02-05 11:14:53.4503 | INFO | Executed action method CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.0344ms. 
+2025-02-05 11:14:53.4679 | TRACE | Action Filter: Before executing OnActionExecuted on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 11:14:53.4679 | TRACE | Action Filter: After executing OnActionExecuted on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 11:14:53.4679 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:14:53.4777 | TRACE | Result Filter: Before executing OnResultExecuting on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 11:14:53.4910 | TRACE | Result Filter: After executing OnResultExecuting on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 11:14:53.4910 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:14:53.4910 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 11:14:53.4910 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 11:14:53.4910 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-02-05 11:14:53.4910 | INFO | Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-05 11:14:53.5123 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 11:14:53.5123 | TRACE | Result Filter: Before executing OnResultExecuted on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 11:14:53.5123 | TRACE | Result Filter: After executing OnResultExecuted on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 11:14:53.5123 | TRACE | Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:14:53.5123 | TRACE | Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 11:14:53.5224 | TRACE | Resource Filter: Before executing OnResourceExecuted on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 11:14:53.5224 | TRACE | Resource Filter: After executing OnResourceExecuted on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 11:14:53.5224 | INFO | Executed action CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) in 125.8973ms 
+2025-02-05 11:14:53.5224 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 11:14:53.5224 | DEBUG | Connection id "0HNA5L0JUOP8M" completed keep alive response. 
+2025-02-05 11:14:53.5377 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - - 200 - text/plain;+charset=utf-8 211.8388ms 
+2025-02-05 16:01:05.5744 | DEBUG | Hosting starting 
+2025-02-05 16:01:06.4612 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 16:01:06.8671 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 16:01:06.8671 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 16:01:06.8755 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 16:01:06.8755 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 16:01:06.8755 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 16:01:06.8755 | INFO | Hosting environment: Development 
+2025-02-05 16:01:06.8755 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 16:01:06.8755 | DEBUG | Hosting started 
+2025-02-05 16:01:07.0875 | DEBUG | Connection id "0HNA5Q0PJ2LTS" accepted. 
+2025-02-05 16:01:07.0967 | DEBUG | Connection id "0HNA5Q0PJ2LTS" started. 
+2025-02-05 16:01:07.1148 | DEBUG | Connection id "0HNA5Q0PJ2LTT" accepted. 
+2025-02-05 16:01:07.1148 | DEBUG | Connection id "0HNA5Q0PJ2LTT" started. 
+2025-02-05 16:01:08.6137 | DEBUG | Connection id "0HNA5Q0PJ2LTU" accepted. 
+2025-02-05 16:01:08.6385 | DEBUG | Connection id "0HNA5Q0PJ2LTV" accepted. 
+2025-02-05 16:01:08.6642 | DEBUG | Connection id "0HNA5Q0PJ2LTV" started. 
+2025-02-05 16:01:08.6460 | DEBUG | Connection id "0HNA5Q0PJ2LTU" started. 
+2025-02-05 16:01:08.9958 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 16:01:09.3609 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 16:01:09.3998 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:09.4827 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:01:09.5605 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 16:01:09.5605 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:01:09.6381 | DEBUG | Connection id "0HNA5Q0PJ2LTV" completed keep alive response. 
+2025-02-05 16:01:09.6533 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 200 - - 683.7682ms 
+2025-02-05 16:01:09.7145 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:01:09.7338 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:09.7451 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:01:09.7451 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:01:09.7564 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:01:09.7564 | DEBUG | Connection id "0HNA5Q0PJ2LTV" completed keep alive response. 
+2025-02-05 16:01:09.7703 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 55.5531ms 
+2025-02-05 16:01:10.1599 | DEBUG | Connection id "0HNA5Q0PJ2LTV" received FIN. 
+2025-02-05 16:01:10.1599 | DEBUG | Connection id "0HNA5Q0PJ2LTU" received FIN. 
+2025-02-05 16:01:10.1599 | DEBUG | Connection id "0HNA5Q0PJ2LTV" sending FIN because: "The client closed the connection." 
+2025-02-05 16:01:10.1599 | DEBUG | Connection id "0HNA5Q0PJ2LTU" disconnecting. 
+2025-02-05 16:01:10.1820 | DEBUG | Connection id "0HNA5Q0PJ2LTV" disconnecting. 
+2025-02-05 16:01:10.1820 | DEBUG | Connection id "0HNA5Q0PJ2LTU" sending FIN because: "The client closed the connection." 
+2025-02-05 16:01:10.1820 | DEBUG | Connection id "0HNA5Q0PJ2LTV" stopped. 
+2025-02-05 16:01:10.1820 | DEBUG | Connection id "0HNA5Q0PJ2LTU" stopped. 
+2025-02-05 16:01:14.2976 | DEBUG | Connection id "0HNA5Q0PJ2LU0" accepted. 
+2025-02-05 16:01:14.2976 | DEBUG | Connection id "0HNA5Q0PJ2LU0" started. 
+2025-02-05 16:01:14.2976 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 16:01:14.2976 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:14.5347 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 16:01:15.0269 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 16:01:15.0344 | DEBUG | Connection id "0HNA5Q0PJ2LU0" completed keep alive response. 
+2025-02-05 16:01:15.0344 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 741.5547ms 
+2025-02-05 16:01:15.0534 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.js - - 
+2025-02-05 16:01:15.0833 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:15.0833 | DEBUG | Connection id "0HNA5Q0PJ2LU1" accepted. 
+2025-02-05 16:01:15.0833 | DEBUG | Connection id "0HNA5Q0PJ2LU1" started. 
+2025-02-05 16:01:15.1085 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - 
+2025-02-05 16:01:15.1201 | DEBUG | Connection id "0HNA5Q0PJ2LU1" completed keep alive response. 
+2025-02-05 16:01:15.0833 | DEBUG | Connection id "0HNA5Q0PJ2LU0" completed keep alive response. 
+2025-02-05 16:01:15.1332 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.js - - - 200 - application/javascript;charset=utf-8 79.8177ms 
+2025-02-05 16:01:15.1332 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 20.6767ms 
+2025-02-05 16:01:15.1418 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - 
+2025-02-05 16:01:15.3219 | DEBUG | Connection id "0HNA5Q0PJ2LU1" completed keep alive response. 
+2025-02-05 16:01:15.3219 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 181.4713ms 
+2025-02-05 16:01:15.4325 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - 
+2025-02-05 16:01:15.4325 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:15.6223 | DEBUG | Connection id "0HNA5Q0PJ2LU1" completed keep alive response. 
+2025-02-05 16:01:15.6223 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 190.3911ms 
+2025-02-05 16:01:16.4664 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - 
+2025-02-05 16:01:16.4752 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:16.4752 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:01:16.4866 | DEBUG | No candidates found for the request path '/djkrr/derljtg' 
+2025-02-05 16:01:16.4866 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:01:16.5267 | DEBUG | Connection id "0HNA5Q0PJ2LU1" completed keep alive response. 
+2025-02-05 16:01:16.5768 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - - 200 - - 110.3166ms 
+2025-02-05 16:01:16.6249 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:01:16.6349 | TRACE | All hosts are allowed. 
+2025-02-05 16:01:16.6349 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:01:16.6349 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:01:16.6349 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:01:16.6349 | DEBUG | Connection id "0HNA5Q0PJ2LU1" completed keep alive response. 
+2025-02-05 16:01:16.6416 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 16.4839ms 
+2025-02-05 16:02:17.1423 | DEBUG | Connection id "0HNA5Q0PJ2LU0" received FIN. 
+2025-02-05 16:02:17.1494 | DEBUG | Connection id "0HNA5Q0PJ2LU1" received FIN. 
+2025-02-05 16:02:17.1494 | DEBUG | Connection id "0HNA5Q0PJ2LU0" disconnecting. 
+2025-02-05 16:02:17.1494 | DEBUG | Connection id "0HNA5Q0PJ2LU0" stopped. 
+2025-02-05 16:02:17.1494 | DEBUG | Connection id "0HNA5Q0PJ2LU1" disconnecting. 
+2025-02-05 16:02:17.1613 | DEBUG | Connection id "0HNA5Q0PJ2LU1" stopped. 
+2025-02-05 16:02:17.1613 | DEBUG | Connection id "0HNA5Q0PJ2LU0" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 16:02:17.1613 | DEBUG | Connection id "0HNA5Q0PJ2LU1" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-02-05 16:21:11.1531 | DEBUG | Connection id "0HNA5Q0PJ2LU2" accepted. 
+2025-02-05 16:21:11.1531 | DEBUG | Connection id "0HNA5Q0PJ2LU2" started. 
+2025-02-05 16:21:11.1531 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - 
+2025-02-05 16:21:11.1531 | DEBUG | Connection id "0HNA5Q0PJ2LU3" accepted. 
+2025-02-05 16:21:11.1531 | DEBUG | Connection id "0HNA5Q0PJ2LU3" started. 
+2025-02-05 16:21:11.1589 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:11.1589 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:11.1589 | DEBUG | No candidates found for the request path '/djkrr/derljtg' 
+2025-02-05 16:21:11.1589 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:11.1589 | DEBUG | Connection id "0HNA5Q0PJ2LU2" completed keep alive response. 
+2025-02-05 16:21:11.1589 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - - 200 - - 9.6650ms 
+2025-02-05 16:21:11.1811 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:21:11.1811 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:11.1811 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:11.1811 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:21:11.1928 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:11.1928 | DEBUG | Connection id "0HNA5Q0PJ2LU2" completed keep alive response. 
+2025-02-05 16:21:11.1928 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 14.0488ms 
+2025-02-05 16:21:11.8090 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - 
+2025-02-05 16:21:11.8202 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:11.8202 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:11.8202 | DEBUG | No candidates found for the request path '/djkrr/derljtg' 
+2025-02-05 16:21:11.8202 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:11.8202 | DEBUG | Connection id "0HNA5Q0PJ2LU2" completed keep alive response. 
+2025-02-05 16:21:11.8202 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - - 200 - - 16.4068ms 
+2025-02-05 16:21:11.8703 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - 
+2025-02-05 16:21:11.8703 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:21:11.8919 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:11.8919 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:11.9314 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:12.0100 | DEBUG | No candidates found for the request path '/djkrr/derljtg' 
+2025-02-05 16:21:11.9193 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:12.0731 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:21:12.0731 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:12.0528 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:12.1080 | DEBUG | Connection id "0HNA5Q0PJ2LU3" completed keep alive response. 
+2025-02-05 16:21:12.1080 | DEBUG | Connection id "0HNA5Q0PJ2LU2" completed keep alive response. 
+2025-02-05 16:21:12.1080 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 238.5609ms 
+2025-02-05 16:21:12.1138 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/djkrr/derljtg - - - 200 - - 243.4484ms 
+2025-02-05 16:21:12.2706 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:21:12.3091 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:12.3236 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:12.3236 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:21:12.3236 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:12.3236 | DEBUG | Connection id "0HNA5Q0PJ2LU2" completed keep alive response. 
+2025-02-05 16:21:12.3325 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 61.8525ms 
+2025-02-05 16:21:43.7715 | DEBUG | Hosting starting 
+2025-02-05 16:21:44.2190 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 16:21:44.6005 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 16:21:44.6005 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 16:21:44.6005 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 16:21:44.6005 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 16:21:44.6005 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 16:21:44.6005 | INFO | Hosting environment: Development 
+2025-02-05 16:21:44.6005 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 16:21:44.6005 | DEBUG | Hosting started 
+2025-02-05 16:21:44.9867 | DEBUG | Connection id "0HNA5QCAGJK0L" accepted. 
+2025-02-05 16:21:44.9867 | DEBUG | Connection id "0HNA5QCAGJK0L" started. 
+2025-02-05 16:21:45.0177 | DEBUG | Connection id "0HNA5QCAGJK0L" received FIN. 
+2025-02-05 16:21:45.0573 | DEBUG | Connection id "0HNA5QCAGJK0L" sending FIN because: "The client closed the connection." 
+2025-02-05 16:21:45.0573 | DEBUG | Connection id "0HNA5QCAGJK0L" disconnecting. 
+2025-02-05 16:21:45.0691 | DEBUG | Connection id "0HNA5QCAGJK0L" stopped. 
+2025-02-05 16:21:46.8388 | DEBUG | Connection id "0HNA5QCAGJK0M" accepted. 
+2025-02-05 16:21:46.8633 | DEBUG | Connection id "0HNA5QCAGJK0M" started. 
+2025-02-05 16:21:46.9144 | DEBUG | Connection id "0HNA5QCAGJK0N" accepted. 
+2025-02-05 16:21:46.9444 | DEBUG | Connection id "0HNA5QCAGJK0N" started. 
+2025-02-05 16:21:47.1050 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 16:21:47.2137 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 16:21:47.2137 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:47.2541 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:47.2991 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 16:21:47.2991 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:47.4211 | DEBUG | Connection id "0HNA5QCAGJK0N" completed keep alive response. 
+2025-02-05 16:21:47.4318 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 404 0 - 333.8812ms 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0N" received FIN. 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0M" received FIN. 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0N" sending FIN because: "The client closed the connection." 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0M" sending FIN because: "The client closed the connection." 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0N" disconnecting. 
+2025-02-05 16:21:48.8471 | DEBUG | Connection id "0HNA5QCAGJK0M" disconnecting. 
+2025-02-05 16:21:48.8630 | DEBUG | Connection id "0HNA5QCAGJK0M" stopped. 
+2025-02-05 16:21:48.8630 | DEBUG | Connection id "0HNA5QCAGJK0N" stopped. 
+2025-02-05 16:21:50.6805 | DEBUG | Connection id "0HNA5QCAGJK0O" accepted. 
+2025-02-05 16:21:50.7811 | DEBUG | Connection id "0HNA5QCAGJK0O" started. 
+2025-02-05 16:21:50.8385 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 16:21:50.8724 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:51.4463 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 16:21:51.9088 | DEBUG | Connection id "0HNA5QCAGJK0P" accepted. 
+2025-02-05 16:21:51.9361 | DEBUG | Connection id "0HNA5QCAGJK0P" started. 
+2025-02-05 16:21:51.9361 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/RTY/DRY - - 
+2025-02-05 16:21:51.9414 | TRACE | All hosts are allowed. 
+2025-02-05 16:21:51.9414 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:21:51.9809 | DEBUG | No candidates found for the request path '/RTY/DRY' 
+2025-02-05 16:21:52.0291 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:21:52.0291 | DEBUG | Connection id "0HNA5QCAGJK0P" completed keep alive response. 
+2025-02-05 16:21:52.0386 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/RTY/DRY - - - 404 0 - 101.3882ms 
+2025-02-05 16:21:52.3171 | DEBUG | Connection id "0HNA5QCAGJK0O" received FIN. 
+2025-02-05 16:21:52.3340 | DEBUG | Connection id "0HNA5QCAGJK0O" sending FIN because: "The client closed the connection." 
+2025-02-05 16:21:52.3798 | DEBUG | Connection id "0HNA5QCAGJK0O" disconnecting. 
+2025-02-05 16:21:52.8188 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 16:21:52.8188 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 1986.6385ms 
+2025-02-05 16:21:52.8188 | DEBUG | Connection id "0HNA5QCAGJK0O" stopped. 
+2025-02-05 16:21:53.9174 | DEBUG | Connection id "0HNA5QCAGJK0P" received FIN. 
+2025-02-05 16:21:53.9358 | DEBUG | Connection id "0HNA5QCAGJK0P" disconnecting. 
+2025-02-05 16:21:53.9358 | DEBUG | Connection id "0HNA5QCAGJK0P" sending FIN because: "The client closed the connection." 
+2025-02-05 16:21:53.9421 | DEBUG | Connection id "0HNA5QCAGJK0P" stopped. 
+2025-02-05 16:32:31.2023 | DEBUG | Hosting starting 
+2025-02-05 16:32:31.8710 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 16:32:32.2784 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 16:32:32.2784 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 16:32:32.2784 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 16:32:32.2784 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 16:32:32.2784 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 16:32:32.2784 | INFO | Hosting environment: Development 
+2025-02-05 16:32:32.2941 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 16:32:32.2941 | DEBUG | Hosting started 
+2025-02-05 16:32:32.5354 | DEBUG | Connection id "0HNA5QIBG1QDH" received FIN. 
+2025-02-05 16:32:32.5354 | DEBUG | Connection id "0HNA5QIBG1QDH" accepted. 
+2025-02-05 16:32:32.5832 | DEBUG | Connection id "0HNA5QIBG1QDH" started. 
+2025-02-05 16:32:32.6384 | DEBUG | Connection id "0HNA5QIBG1QDH" sending FIN because: "The client closed the connection." 
+2025-02-05 16:32:32.6631 | DEBUG | Connection id "0HNA5QIBG1QDH" disconnecting. 
+2025-02-05 16:32:32.6631 | DEBUG | Connection id "0HNA5QIBG1QDH" stopped. 
+2025-02-05 16:32:36.7775 | DEBUG | Connection id "0HNA5QIBG1QDI" accepted. 
+2025-02-05 16:32:36.8169 | DEBUG | Connection id "0HNA5QIBG1QDI" started. 
+2025-02-05 16:32:36.8336 | DEBUG | Connection id "0HNA5QIBG1QDJ" accepted. 
+2025-02-05 16:32:37.1151 | DEBUG | Connection id "0HNA5QIBG1QDJ" started. 
+2025-02-05 16:32:38.1843 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 16:32:38.2465 | DEBUG | Connection id "0HNA5QIBG1QDJ" received FIN. 
+2025-02-05 16:32:38.9485 | DEBUG | Connection id "0HNA5QIBG1QDJ" sending FIN because: "The client closed the connection." 
+2025-02-05 16:32:38.9521 | DEBUG | Connection id "0HNA5QIBG1QDJ" disconnecting. 
+2025-02-05 16:32:38.9521 | DEBUG | Connection id "0HNA5QIBG1QDJ" stopped. 
+2025-02-05 16:32:39.9783 | DEBUG | Connection id "0HNA5QIBG1QDI" received FIN. 
+2025-02-05 16:32:40.0170 | DEBUG | Connection id "0HNA5QIBG1QDI" sending FIN because: "The client closed the connection." 
+2025-02-05 16:32:40.0170 | DEBUG | Connection id "0HNA5QIBG1QDK" accepted. 
+2025-02-05 16:32:40.1459 | DEBUG | Connection id "0HNA5QIBG1QDI" disconnecting. 
+2025-02-05 16:32:40.1542 | DEBUG | Connection id "0HNA5QIBG1QDK" started. 
+2025-02-05 16:32:40.5461 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 16:32:40.5724 | TRACE | All hosts are allowed. 
+2025-02-05 16:32:40.6211 | DEBUG | Connection id "0HNA5QIBG1QDL" accepted. 
+2025-02-05 16:32:40.6813 | DEBUG | Connection id "0HNA5QIBG1QDL" started. 
+2025-02-05 16:32:40.6211 | DEBUG | Connection id "0HNA5QIBG1QDK" received FIN. 
+2025-02-05 16:32:40.7091 | DEBUG | Connection id "0HNA5QIBG1QDK" disconnecting. 
+2025-02-05 16:32:40.7091 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.html - - 
+2025-02-05 16:32:40.7399 | TRACE | All hosts are allowed. 
+2025-02-05 16:32:40.7399 | DEBUG | Connection id "0HNA5QIBG1QDK" sending FIN because: "The client closed the connection." 
+2025-02-05 16:32:40.8493 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:32:41.0384 | DEBUG | Connection id "0HNA5QIBG1QDK" stopped. 
+2025-02-05 16:32:41.2393 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-02-05 16:32:41.9702 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 16:32:42.1447 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:32:42.4220 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 200 - - 4240.6587ms 
+2025-02-05 16:32:42.7350 | DEBUG | Connection id "0HNA5QIBG1QDI" stopped. 
+2025-02-05 16:32:43.3155 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-02-05 16:32:43.3155 | DEBUG | Connection id "0HNA5QIBG1QDL" completed keep alive response. 
+2025-02-05 16:32:43.3155 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.html - - - 200 - text/html;charset=utf-8 2614.3651ms 
+2025-02-05 16:32:43.3155 | DEBUG | Connection id "0HNA5QIBG1QDL" received FIN. 
+2025-02-05 16:32:43.3274 | DEBUG | Connection id "0HNA5QIBG1QDL" disconnecting. 
+2025-02-05 16:32:43.4121 | DEBUG | Connection id "0HNA5QIBG1QDL" sending FIN because: "The client closed the connection." 
+2025-02-05 16:32:43.3674 | DEBUG | Connection id "0HNA5QIBG1QDM" accepted. 
+2025-02-05 16:32:43.5862 | DEBUG | Connection id "0HNA5QIBG1QDN" accepted. 
+2025-02-05 16:32:43.5862 | DEBUG | Connection id "0HNA5QIBG1QDO" accepted. 
+2025-02-05 16:32:43.5862 | DEBUG | Connection id "0HNA5QIBG1QDM" started. 
+2025-02-05 16:32:43.5907 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - 
+2025-02-05 16:32:43.6119 | DEBUG | Connection id "0HNA5QIBG1QDM" completed keep alive response. 
+2025-02-05 16:32:43.6119 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_framework/aspnetcore-browser-refresh.js - - - 200 12018 application/javascript;+charset=utf-8 29.5478ms 
+2025-02-05 16:32:43.6454 | DEBUG | Connection id "0HNA5QIBG1QDN" started. 
+2025-02-05 16:32:43.6454 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/index.js - - 
+2025-02-05 16:32:43.6704 | TRACE | All hosts are allowed. 
+2025-02-05 16:32:43.6574 | DEBUG | Connection id "0HNA5QIBG1QDL" stopped. 
+2025-02-05 16:32:43.6454 | DEBUG | Connection id "0HNA5QIBG1QDO" started. 
+2025-02-05 16:32:43.6997 | DEBUG | Connection id "0HNA5QIBG1QDN" completed keep alive response. 
+2025-02-05 16:32:43.7045 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/index.js - - - 200 - application/javascript;charset=utf-8 58.1602ms 
+2025-02-05 16:32:43.7045 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - 
+2025-02-05 16:32:44.2089 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:32:44.2230 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 518.4561ms 
+2025-02-05 16:32:44.8592 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - 
+2025-02-05 16:32:44.9268 | TRACE | All hosts are allowed. 
+2025-02-05 16:32:45.6167 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:32:45.7033 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 843.9201ms 
+2025-02-05 16:33:03.3776 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - 
+2025-02-05 16:33:03.4015 | TRACE | All hosts are allowed. 
+2025-02-05 16:33:03.4083 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:33:03.4297 | DEBUG | 1 candidate(s) found for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 16:33:03.4297 | DEBUG | Endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' with route pattern 'api/Filters/GetDataWithApi' is valid for the request path '/api/Filters/GetDataWithApi' 
+2025-02-05 16:33:03.4297 | DEBUG | Request matched endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 16:33:03.4381 | INFO | Executing endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 16:33:03.4582 | INFO | Route matched with {action = "GetAllData", controller = "Filters"}. Executing controller action with signature System.String GetAllData() on controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1). 
+2025-02-05 16:33:03.4582 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-02-05 16:33:03.4582 | DEBUG | Execution plan of resource filters (in the following order): CoreEmptyWebApplication1.Filters.MyResourceFilter 
+2025-02-05 16:33:03.4582 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyActionfilter 
+2025-02-05 16:33:03.4701 | DEBUG | Execution plan of exception filters (in the following order): CoreEmptyWebApplication1.Filters.MyExceptionFilter 
+2025-02-05 16:33:03.4701 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000), CoreEmptyWebApplication1.Filters.MyResultFilter 
+2025-02-05 16:33:03.4701 | TRACE | Resource Filter: Before executing OnResourceExecuting on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 16:33:03.4893 | TRACE | Resource Filter: After executing OnResourceExecuting on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 16:33:03.4893 | DEBUG | Executing controller factory for controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1) 
+2025-02-05 16:33:03.4893 | DEBUG | Executed controller factory for controller CoreEmptyWebApplication1.Controllers.FiltersController (CoreEmptyWebApplication1) 
+2025-02-05 16:33:03.4893 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 16:33:03.4893 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 16:33:03.4893 | TRACE | Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 16:33:03.4993 | TRACE | Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 16:33:03.4993 | TRACE | Action Filter: Before executing OnActionExecuting on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 16:33:03.4993 | TRACE | Action Filter: After executing OnActionExecuting on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 16:33:03.4993 | INFO | Executing action method CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) - Validation state: Valid 
+2025-02-05 16:33:03.5227 | INFO | Executed action method CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.2945ms. 
+2025-02-05 16:33:03.5227 | TRACE | Action Filter: Before executing OnActionExecuted on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 16:33:03.5227 | TRACE | Action Filter: After executing OnActionExecuted on filter CoreEmptyWebApplication1.Filters.MyActionfilter. 
+2025-02-05 16:33:03.5324 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 16:33:03.5324 | TRACE | Result Filter: Before executing OnResultExecuting on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 16:33:03.5485 | TRACE | Result Filter: After executing OnResultExecuting on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 16:33:03.5485 | TRACE | Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 16:33:03.5485 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-02-05 16:33:03.5634 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-02-05 16:33:03.5634 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response. 
+2025-02-05 16:33:03.5634 | INFO | Executing ObjectResult, writing value of type 'System.String'. 
+2025-02-05 16:33:03.5634 | TRACE | After executing action result Microsoft.AspNetCore.Mvc.ObjectResult. 
+2025-02-05 16:33:03.5634 | TRACE | Result Filter: Before executing OnResultExecuted on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 16:33:03.5634 | TRACE | Result Filter: After executing OnResultExecuted on filter CoreEmptyWebApplication1.Filters.MyResultFilter. 
+2025-02-05 16:33:03.5634 | TRACE | Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 16:33:03.5768 | TRACE | Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2025-02-05 16:33:03.5768 | TRACE | Resource Filter: Before executing OnResourceExecuted on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 16:33:03.5768 | TRACE | Resource Filter: After executing OnResourceExecuted on filter CoreEmptyWebApplication1.Filters.MyResourceFilter. 
+2025-02-05 16:33:03.5768 | INFO | Executed action CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1) in 113.4746ms 
+2025-02-05 16:33:03.5768 | INFO | Executed endpoint 'CoreEmptyWebApplication1.Controllers.FiltersController.GetAllData (CoreEmptyWebApplication1)' 
+2025-02-05 16:33:03.5935 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:33:03.5935 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/api/Filters/GetDataWithApi - - - 200 - text/plain;+charset=utf-8 218.4449ms 
+2025-02-05 16:33:32.3032 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/DERG - - 
+2025-02-05 16:33:32.3227 | TRACE | All hosts are allowed. 
+2025-02-05 16:33:32.3370 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:33:32.3370 | DEBUG | No candidates found for the request path '/DERG' 
+2025-02-05 16:33:32.3427 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:33:32.3427 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:33:32.3427 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/DERG - - - 200 - - 46.9331ms 
+2025-02-05 16:33:32.4440 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:33:32.4440 | TRACE | All hosts are allowed. 
+2025-02-05 16:33:32.4586 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:33:32.4586 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:33:32.4586 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:33:32.4586 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:33:32.4586 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 20.6012ms 
+2025-02-05 16:33:55.6133 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/DERG/RGT - - 
+2025-02-05 16:33:55.6363 | TRACE | All hosts are allowed. 
+2025-02-05 16:33:55.6363 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:33:55.6495 | DEBUG | No candidates found for the request path '/DERG/RGT' 
+2025-02-05 16:33:55.6832 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:33:55.6956 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:33:55.7627 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/DERG/RGT - - - 200 - - 149.4924ms 
+2025-02-05 16:33:55.8692 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:33:55.8799 | TRACE | All hosts are allowed. 
+2025-02-05 16:33:55.8888 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:33:55.8888 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:33:55.8888 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:33:55.9049 | DEBUG | Connection id "0HNA5QIBG1QDO" completed keep alive response. 
+2025-02-05 16:33:55.9049 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 36.2453ms 
+2025-02-05 16:38:45.8149 | DEBUG | Hosting starting 
+2025-02-05 16:38:47.0895 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-02-05 16:38:48.1010 | INFO | Now listening on: http://localhost:5298 
+2025-02-05 16:38:48.1010 | DEBUG | Loaded hosting startup assembly CoreEmptyWebApplication1 
+2025-02-05 16:38:48.1010 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-02-05 16:38:48.1010 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-02-05 16:38:48.1010 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-02-05 16:38:48.1010 | INFO | Hosting environment: Development 
+2025-02-05 16:38:48.1010 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1 
+2025-02-05 16:38:48.1010 | DEBUG | Hosting started 
+2025-02-05 16:38:48.4945 | DEBUG | Connection id "0HNA5QLRH74PG" accepted. 
+2025-02-05 16:38:48.4945 | DEBUG | Connection id "0HNA5QLRH74PG" received FIN. 
+2025-02-05 16:38:48.5033 | DEBUG | Connection id "0HNA5QLRH74PG" started. 
+2025-02-05 16:38:48.6546 | DEBUG | Connection id "0HNA5QLRH74PG" sending FIN because: "The client closed the connection." 
+2025-02-05 16:38:48.7068 | DEBUG | Connection id "0HNA5QLRH74PG" disconnecting. 
+2025-02-05 16:38:48.7068 | DEBUG | Connection id "0HNA5QLRH74PG" stopped. 
+2025-02-05 16:38:51.7547 | DEBUG | Connection id "0HNA5QLRH74PH" accepted. 
+2025-02-05 16:38:51.8986 | DEBUG | Connection id "0HNA5QLRH74PH" started. 
+2025-02-05 16:38:52.0187 | DEBUG | Connection id "0HNA5QLRH74PI" accepted. 
+2025-02-05 16:38:52.3007 | DEBUG | Connection id "0HNA5QLRH74PI" started. 
+2025-02-05 16:38:52.6561 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/ - - 
+2025-02-05 16:38:53.3219 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-02-05 16:38:53.8880 | DEBUG | Connection id "0HNA5QLRH74PI" received FIN. 
+2025-02-05 16:38:53.8880 | DEBUG | Connection id "0HNA5QLRH74PI" disconnecting. 
+2025-02-05 16:38:53.8980 | DEBUG | Connection id "0HNA5QLRH74PI" sending FIN because: "The client closed the connection." 
+2025-02-05 16:38:53.8980 | DEBUG | Connection id "0HNA5QLRH74PI" stopped. 
+2025-02-05 16:38:53.8880 | TRACE | All hosts are allowed. 
+2025-02-05 16:38:54.3194 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:38:54.3753 | DEBUG | No candidates found for the request path '/' 
+2025-02-05 16:38:54.3806 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:38:54.5107 | DEBUG | Connection id "0HNA5QLRH74PH" completed keep alive response. 
+2025-02-05 16:38:55.0934 | DEBUG | Connection id "0HNA5QLRH74PH" received FIN. 
+2025-02-05 16:38:55.1099 | DEBUG | Connection id "0HNA5QLRH74PJ" accepted. 
+2025-02-05 16:38:55.1099 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/ - - - 200 - - 2442.1460ms 
+2025-02-05 16:38:55.1515 | DEBUG | Connection id "0HNA5QLRH74PH" sending FIN because: "The client closed the connection." 
+2025-02-05 16:38:55.1406 | DEBUG | Connection id "0HNA5QLRH74PJ" started. 
+2025-02-05 16:38:55.2683 | DEBUG | Connection id "0HNA5QLRH74PH" disconnecting. 
+2025-02-05 16:38:55.2719 | DEBUG | Connection id "0HNA5QLRH74PH" stopped. 
+2025-02-05 16:38:55.2719 | INFO | Request starting HTTP/1.1 GET http://localhost:5298/favicon.ico - - 
+2025-02-05 16:38:55.2719 | TRACE | All hosts are allowed. 
+2025-02-05 16:38:55.2719 | DEBUG | The request path  does not match the path filter 
+2025-02-05 16:38:55.2719 | DEBUG | No candidates found for the request path '/favicon.ico' 
+2025-02-05 16:38:55.2719 | DEBUG | Request did not match any endpoints 
+2025-02-05 16:38:55.2719 | DEBUG | Connection id "0HNA5QLRH74PJ" completed keep alive response. 
+2025-02-05 16:38:55.2849 | INFO | Request finished HTTP/1.1 GET http://localhost:5298/favicon.ico - - - 200 - - 12.7955ms 
+2025-02-05 16:38:56.2728 | DEBUG | Connection id "0HNA5QLRH74PJ" received FIN. 
+2025-02-05 16:38:56.2904 | DEBUG | Connection id "0HNA5QLRH74PJ" disconnecting. 
+2025-02-05 16:38:56.3076 | DEBUG | Connection id "0HNA5QLRH74PJ" sending FIN because: "The client closed the connection." 
+2025-02-05 16:38:56.3076 | DEBUG | Connection id "0HNA5QLRH74PJ" stopped. 

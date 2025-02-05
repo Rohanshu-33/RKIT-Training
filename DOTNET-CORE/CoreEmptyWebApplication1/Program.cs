@@ -1,6 +1,7 @@
 using CoreEmptyWebApplication1;
 using Microsoft.Extensions.Hosting;
 using NLog.Web;
+using static System.Net.Mime.MediaTypeNames;
 
 class Program
 {
@@ -10,6 +11,8 @@ class Program
         NLog.GlobalDiagnosticsContext.Set("LogDirectory", logPath);
         CreateHostBuilder(args).Build().Run();
     }
+
+    //responsible for configuring and creating a host.host manages application lifecycle, DI, logging, configuration and hosting of services.
     public static IHostBuilder CreateHostBuilder(string[] args)
     {
         return Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webHosts =>

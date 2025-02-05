@@ -10,7 +10,7 @@ namespace CoreEmptyWebApplication1.Controllers
     public class FiltersController : ControllerBase
     {
         [Route("GetDataWithApi")]
-        [ApiAuthorizationFilter()]
+        //[ApiAuthorizationFilter()]
         [MyResourceFilter]
         [MyActionfilter]
         [MyResultFilter]

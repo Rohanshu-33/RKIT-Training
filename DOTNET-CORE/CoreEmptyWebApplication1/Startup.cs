@@ -8,6 +8,7 @@ using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Configuration;
 using NLog;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.AspNetCore.Builder;
 
 namespace CoreEmptyWebApplication1
 {
@@ -46,6 +47,7 @@ namespace CoreEmptyWebApplication1
                     }
                  });
             });
+            // automatic API documentation generation for minimal APIs. It is required for Swagger/OpenAPI to work properly with minimal APIs
             services.AddEndpointsApiExplorer();
 
             // there will be only one instance of singleton service throughout the application
@@ -111,13 +113,20 @@ namespace CoreEmptyWebApplication1
             //    throw new Exception("My exception.");
             //});
 
+            // It determines which endpoint (controller/action) should handle the request but does not yet execute it.
             app.UseRouting();
+
+            //  executes the matched endpoint after middleware processing.
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers();  // ensures that controller actions are executed.
             });
 
-
+            app.Run(async context =>
+            {
+                Console.WriteLine("Inside app.Run()");
+                await context.Response.WriteAsync("Hello from app.Run()!");
+            });
         }
     }
 }

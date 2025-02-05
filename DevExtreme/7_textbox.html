@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <title>Textbox</title>
+</head>
+
+<body>
+    <div id="textBox"></div>
+    <div id="textBox2"></div>
+    <div id="textBox3"></div>
+    <div id="textBox4"></div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#textBox").dxTextBox({
+            width: "20rem",
+            height: "3rem",
+            value: "The value that should not be edited",
+            readOnly: true
+        })
+
+        $("#textBox2").dxTextBox({
+            width: "20rem",
+            height: "3rem",
+            mode: "password", // search, text | tel, email, url -> changes will be seen on mobile devices
+            // valueChangeEvent: "keyup", // Triggers on every key press -> determines which type of event will trigger onValueChanged event.
+            onValueChanged: function (e) {
+                console.log("New Value:", e.value);
+            },
+            placeholder: "Enter password",
+            maxLength: 10,
+        });
+
+        $("#textBox3").dxTextBox({
+            width: "20rem",
+            height: "3rem",
+            mask: "SFFFFHN",
+            maskRules: {
+                // a single character
+                S: '$',
+
+                // a regular expression
+                H: /[0-9A-F]/,
+
+                // an array of characters
+                N: ['$', '%', '&', '@'],
+
+                // a function
+                F: function (char) {
+                    return char == char.toUpperCase();
+                }
+            },
+            useMaskedValue: true,
+            showMaskMode: "onFocus", // always
+            onValueChanged: function (e) {
+                const maskedValue = $("#textBox3").dxTextBox("option", "text");
+                const unmaskedValue = $("#textBox3").dxTextBox("option", "value");
+                console.log(maskedValue, ' ', unmaskedValue);
+            },
+        });
+
+        $("#textBox4").dxTextBox({
+            width: "20rem",
+            height: "3rem",
+
+        })
+    });
+</script>
+
+</html>

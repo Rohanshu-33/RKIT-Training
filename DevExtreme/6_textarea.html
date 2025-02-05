@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <title>Text area</title>
+</head>
+
+<body>
+    <div id="textArea"></div>
+</body>
+
+<script>
+
+    $(document).ready(function () {
+
+        //$("#textArea").dxTextArea({ })
+
+        $("#textArea").dxTextArea({
+            widht: "10px", // not working
+            height: 40,
+            spellCheck: true,
+            //value: "The text that should not be edited",
+            //readOnly: true,
+            maxLength: 5, // limits the input text length
+            autoResizeEnabled: false,
+            minHeight: 20,
+            maxHeight: 200,
+            // onChange: function(e){
+            //     console.log(e);
+            // },
+            // onInput: function(e){
+            //     console.log(e);
+            // },
+        })
+    });
+
+</script>
+
+</html>
