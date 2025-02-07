@@ -35,3 +35,5 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Deb
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.Extensions.Logging.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\NLog.Web.AspNetCore.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\appsettings.Beta.json
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Debug\net7.0\appsettings.Release.json

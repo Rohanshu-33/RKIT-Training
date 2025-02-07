@@ -91,6 +91,7 @@ namespace CoreEmptyWebApplication1
             }
             else
             {
+                Console.WriteLine("else");
                 app.UseExceptionHandler(
                     options =>
                     {

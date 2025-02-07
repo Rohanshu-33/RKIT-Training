@@ -10,7 +10,7 @@
 
 //        // int, bool, datetime, double, float, min, max, minlength, maxlength, length, alpha, range(a, b) where a,b can be int, long, double
 //        [Route("{id:int:max(10)}")]
-//        [HttpGet]
+//        [HttpGet)]
 //        public string GetById(int id)
 //        {
 //            return $" Small int value: {id}";

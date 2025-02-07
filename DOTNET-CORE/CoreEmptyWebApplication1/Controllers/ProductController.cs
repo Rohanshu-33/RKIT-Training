@@ -30,6 +30,7 @@ namespace CoreEmptyWebApplication1.Controllers
             _productRepository2 = productRepository2;
 
             _logger = logger;
+            // data helper, DAL
         }
 
         [HttpPost("add")]

@@ -31,3 +31,9 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Rel
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Release\net7.0\CoreEmptyWebApplication1.MvcApplicationPartsAssemblyInfo.cs
 F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\obj\Release\net7.0\CoreEmptyWebApplication1.csproj.CopyComplete
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\nlog.config
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\NLog.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\NLog.Extensions.Logging.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\NLog.Web.AspNetCore.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\appsettings.Beta.json
+F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\CoreEmptyWebApplication1\bin\Release\net7.0\appsettings.Release.json

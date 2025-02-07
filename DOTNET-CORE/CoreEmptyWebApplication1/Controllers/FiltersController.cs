@@ -18,7 +18,7 @@ namespace CoreEmptyWebApplication1.Controllers
         [HttpGet]
         public string GetAllData()
         {
-            Debug.WriteLine("Start of action method.");
+            Debug.WriteLine("Actual execution of method.");
             int[] a = { 1,2,3};
             //return $"{a[3]}";
             return "All Data.";

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <title>Radio Validator</title>
+</head>
+
+<body>
+    <div id="radioGroup"></div>
+    <div id="radioGroup2"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        const games = ["football", "cricket", "hockey"];
+
+        const verificationMethod = [
+            { text: "Aadhar Card", value: "1111 2222 3333", disabled: true },
+            { text: "PAN Card", value: "F34562537H" },
+            { text: "License", value: "GJ15-356456", visible: true }
+        ]
+        $("#radioGroup").dxRadioGroup({
+            dataSource: verificationMethod,
+            // items: [1,2,3],
+            displayExpr: "text",
+            valueExpr: "value",
+            value: verificationMethod[2],
+            layout: "horizontal",
+            name: "radio-btn-name",
+            onValueChanged: function (e) {
+                console.log(e);
+            }
+        })
+
+        $("#radioGroup2").dxRadioGroup({
+            dataSource: [
+                { text: "Low", color: "grey" },
+                { text: "Normal", color: "green" },
+                { text: "Urgent", color: "yellow" },
+                { text: "High", color: "red" }
+            ],
+            itemTemplate: function (itemData, itemIndex, itemElement) {
+                console.log(itemData);
+                console.log(itemIndex);
+                console.log(itemElement);
+                
+                itemElement.append(
+                    $("<div />").attr("style", "color:" + itemData.color)
+                        .text(itemData.text)
+                );
+            }
+        });
+    })
+</script>
+
+</html>

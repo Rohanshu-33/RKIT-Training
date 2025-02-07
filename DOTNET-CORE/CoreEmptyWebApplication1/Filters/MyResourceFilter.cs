@@ -7,11 +7,11 @@ namespace CoreEmptyWebApplication1.Filters
     {
         public void OnResourceExecuting(ResourceExecutingContext context)
         {
-            Debug.WriteLine("Before Request is processed.");
+            Debug.WriteLine("Resource filter - Before Request is processed.");
         }
         public void OnResourceExecuted(ResourceExecutedContext context)
         {
-            Debug.WriteLine("After Request is processed.");
+            Debug.WriteLine("Resource filter - After Request is processed.");
         }
 
     }
