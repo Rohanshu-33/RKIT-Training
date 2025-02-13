@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS RBCollege;
 
 USE RBCollege;
-
+SHOW TABLES;
 CREATE TABLE Students(
 	Id INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(20) NOT NULL,
@@ -81,6 +81,8 @@ CREATE TABLE IF NOT EXISTS Users(
 );
 
 USE rbcorefulldemo;
+show tables;
+select * from ith02;
 create database if not exists rbcorefulldemo;
 
 CREATE TABLE IF NOT EXISTS USR01(

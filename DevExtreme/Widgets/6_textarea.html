@@ -35,12 +35,12 @@
             autoResizeEnabled: false,
             minHeight: 20,
             maxHeight: 200,
-            // onChange: function(e){
-            //     console.log(e);
-            // },
-            // onInput: function(e){
-            //     console.log(e);
-            // },
+            onChange: function(e){
+                console.log("change ", e);  // triggers at blur 
+            },
+            onInput: function(e){
+                console.log("input ", e);   // triggers at every character enetered
+            },
         })
     });
 
