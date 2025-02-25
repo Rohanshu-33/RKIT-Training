@@ -35,7 +35,7 @@
             uploadMode: "useButtons", // or "instantly", useForms
             uploadUrl: "https://api.escuelajs.co/api/v1/files/upload",
             allowedFileExtensions: [".html", ".png"],
-
+            accept: "image/*",
             uploadHeaders: {
                 YourHeaderName: "YourHeaderValue"
             },
@@ -74,7 +74,6 @@
             },
             // onUploadError
             // onUploadStarted
-            // progress
             readyToUploadMessage: "File can now be uploaded", // default: "ready to upload"
             selectButtonText: "Add file",
             showFileList: true,

@@ -134,7 +134,7 @@
             dataSource: pokemons,
             valueExpr: "id",
             displayExpr: "name",
-            itemTemplate: function (itemData, itemIndex, itemElement) {
+            itemTemplate: function (itemData, itemIndex, itemElement) {                
                 return $("<div />").append(
                     $("<img />").attr("src", itemData.imgSrc),
                     $("<p/ >").text(` -> ${itemData.name}`).css("display", "inline-block")
@@ -169,7 +169,8 @@
             onValueChanged: function () {
                 const inst = $("#selectBox5").dxSelectBox("instance")
                 console.log(inst.option("value"));
-            }
+            },
+            placeholder: "fruits&vegs"
         });
 
         // above requires the objects having key and items. if the data is not in that format, use the below map method.
@@ -204,6 +205,7 @@
             }),
             grouped: true,
             displayExpr: 'name',
+            placeholder: "fruits&vegs-2"
         })
 
 
@@ -234,9 +236,10 @@
             searchExpr: ["name"],  // specify where to search
             searchMode: "startswith", // 'contains'
             searchTimeout: 2000, // waits for 2 seconds after user stops typing
-            minSearchLength: 3,
+            minSearchLength: 1,  // nothing will be displayed until 3 characters are typed
             showDataBeforeSearch: false, // requires minSearchLength
-            maxLength: 10  // nothing will be displayed until 3 characters are typed
+            maxLength: 10,  
+            placeholder: "Searching"
         })
 
 
@@ -244,9 +247,9 @@
 
         const selectBoxData = new DevExpress.data.DataSource({
             store: [
-                { id: 1, firstName: "Rohanshu" },
-                { id: 2, firstName: "Meet" },
-                { id: 3, firstName: "Navneet" }
+                // { id: 1, firstName: "Rohanshu" },
+                // { id: 2, firstName: "Meet" },
+                // { id: 3, firstName: "Navneet" }
             ]
         });
 
@@ -259,7 +262,7 @@
             onCustomItemCreating: function(arg){
                 //console.log(arg.text);
                 let nextId;
-                let selectBoxContent = selectBoxData.store().totalCount().done(count => nextId = count + 1);
+                let selectBoxContent = selectBoxData.store().totalCount().done(count => nextId = count + 1); // check for duplicacy
                 arg.customItem = {id: nextId, firstName: arg.text};                
                 selectBoxData.store().insert(arg.customItem);
                 selectBoxData.reload();
@@ -268,9 +271,9 @@
             onItemClick: function(e){
                 console.log(e);
             },
-            openOnFieldClick: false,
-            wrapItemText: true
-            
+            openOnFieldClick: false,  // dialogbox
+            wrapItemText: true,
+            placeholder: "type something"
         });
 
         // const tmp = [1,2,3,4,5];

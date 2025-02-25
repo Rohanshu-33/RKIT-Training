@@ -23,12 +23,12 @@
 </body>
 
 <script>
-    // const fruits = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
+    const fruitss = ["Apples", "Oranges", "Lemons", "Pears", "Pineapples"];
 
     $(document).ready(function () {
         $("#dropDownBoxContainer").dxDropDownBox({
-            value: fruits[0],
-            dataSource: fruits,
+            value: fruitss[0],
+            dataSource: fruitss,
             contentTemplate: function (e) {                
                 const $list = $("<div>").dxList({
                     dataSource: e.component.option("dataSource"),

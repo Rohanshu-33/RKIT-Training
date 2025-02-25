@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Panel</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.light.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+
+</head>
+
+<body>
+    <div id="btnContainer"></div>
+    <div id="loadPanelContainer"></div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        const loadPanel = $("#loadPanelContainer").dxLoadPanel({
+            closeOnOutsideClick: true,
+            indicatorSrc: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg",
+            // showIndicator: false,
+            onShown: function (e) {
+                setTimeout(function () {
+                    e.component.hide();
+                }, 2000);
+            },
+            message: "Please, wait...",
+            // showPane: false,
+            shading: true,
+            shadingColor: "rgba(250, 0, 0, 0.2)",
+            height: 200,
+            width: 200,
+            deferRendering: true,
+            delay: 1000,
+            position: "top",  // Accepted Values: 'bottom' | 'center' | 'left' | 'left bottom' | 'left top' | 'right' | 'right bottom' | 'right top' | 'top'
+        }).dxLoadPanel("instance");
+
+        $("#btnContainer").dxButton({
+            text: "Show the Load Panel",
+            onClick: function () {
+                $("#loadPanelContainer").dxLoadPanel("toggle", true);
+            }
+        });
+
+        console.log("hi ", loadPanel.content() );
+        
+    })
+</script>
+
+</html>

@@ -26,15 +26,16 @@
         //$("#textArea").dxTextArea({ })
 
         $("#textArea").dxTextArea({
-            widht: "10px", // not working
+            width: "30rem",
             height: 40,
             spellCheck: true,
             //value: "The text that should not be edited",
             //readOnly: true,
-            maxLength: 5, // limits the input text length
-            autoResizeEnabled: false,
+            // maxLength: 5, // limits the input text length
+            autoResizeEnabled: true,
             minHeight: 20,
             maxHeight: 200,
+            // valueChangeEvent
             onChange: function(e){
                 console.log("change ", e);  // triggers at blur 
             },

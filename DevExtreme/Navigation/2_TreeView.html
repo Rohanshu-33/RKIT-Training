@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.light.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+
+    <title>Tree View</title>
+
+    <style>
+        .hidden {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="treeView"></div>
+
+    <div id="product-details" class="hidden">
+        <img src="" height="150" width="150" class="hidden" />
+        <div class="name"></div>
+        <div class="price"></div>
+    </div>
+
+
+    <div id="treeView2"></div>
+
+    <div id="treeView3"></div>
+</body>
+
+<script>
+    const IMAGE_URL = "https://js.devexpress.com/Demos/WidgetsGallery/JSDemos/images/products/";
+
+    const products = [
+        {
+            ID: "1",
+            name: "Stores"
+        }, {
+            ID: "1_1",
+            categoryId: "1",
+            name: "Super Mart of the West"
+        }, {
+            ID: "1_1_1",
+            categoryId: "1_1",
+            name: "Video Players"
+        }, {
+            ID: "1_1_1_1",
+            categoryId: "1_1_1",
+            name: "HD Video Player",
+            image: IMAGE_URL + "1.png",
+            price: 220
+        }, {
+            ID: "1_1_1_2",
+            categoryId: "1_1_1",
+            name: "SuperHD Video Player",
+            image: IMAGE_URL + "2.png",
+            price: 270
+        }, {
+            ID: "1_1_2",
+            categoryId: "1_1",
+            name: "Televisions"
+        }, {
+            ID: "1_1_2_1",
+            categoryId: "1_1_2",
+            name: "SuperLCD 42",
+            image: IMAGE_URL + "7.png",
+            price: 1200
+        }, {
+            ID: "1_1_2_2",
+            categoryId: "1_1_2",
+            name: "SuperLED 42",
+            image: IMAGE_URL + "5.png",
+            price: 1450
+        }, {
+            ID: "1_1_2_3",
+            categoryId: "1_1_2",
+            name: "SuperLED 50",
+            image: IMAGE_URL + "4.png",
+            price: 1600
+        }, {
+            ID: "1_1_2_4",
+            categoryId: "1_1_2",
+            name: "SuperLCD 55",
+            image: IMAGE_URL + "6.png",
+            price: 1750
+        }, {
+            ID: "1_1_2_5",
+            categoryId: "1_1_2",
+            name: "SuperLCD 70",
+            image: IMAGE_URL + "9.png",
+            price: 4000
+        }, {
+            ID: "1_1_3",
+            categoryId: "1_1",
+            name: "Monitors"
+        }, {
+            ID: "1_1_3_1",
+            categoryId: "1_1_3",
+            name: "19\"",
+        }, {
+            ID: "1_1_3_1_1",
+            categoryId: "1_1_3_1",
+            name: "DesktopLCD 19",
+            image: IMAGE_URL + "10.png",
+            price: 160
+        }, {
+            ID: "1_1_4",
+            categoryId: "1_1",
+            name: "Projectors"
+        }, {
+            ID: "1_1_4_1",
+            categoryId: "1_1_4",
+            name: "Projector Plus",
+            image: IMAGE_URL + "14.png",
+            price: 550
+        }, {
+            ID: "1_1_4_2",
+            categoryId: "1_1_4",
+            name: "Projector PlusHD",
+            image: IMAGE_URL + "15.png",
+        }
+    ];
+
+    var plainData = [
+        { key: '1', name: 'Fruits' },
+        { key: '1_1', name: 'Apples', parent: '1' },
+        { key: '1_2', name: 'Oranges', parent: '1' },
+        { key: '2', name: 'Vegetables' },
+        { key: '2_1', name: 'Cucumbers', parent: '2' },
+        { key: '2_2', name: 'Tomatoes', parent: '2' }
+    ];
+
+
+    var hierarchicalData = [{
+        id: '1',
+        text: 'Fruits',
+        items: [
+            { id: '1_1', text: 'Apples' },
+            { id: '1_2', text: 'Oranges' }
+        ]
+    }, {
+        id: '2',
+        text: 'Vegetables',
+        items: [
+            { id: '2_1', text: 'Cucumbers' },
+            { id: '2_2', text: 'Tomatoes' }
+        ],
+        isExpanded: true
+    }];
+
+
+
+
+    $(document).ready(function () {
+        $("#treeView").dxTreeView({
+            width: "20rem",
+            dataSource: products,
+            dataStructure: "plain",
+            keyExpr: "ID",
+            displayExpr: "name",
+            parentIdExpr: "categoryId",
+
+            itemTemplate: function (item) {
+                if (item.price) {
+                    return `<div> ${item.name} ($${item.price}) </div>`;
+                } else {
+                    return `<div> ${item.name} </div>`;
+                }
+            },
+
+            searchEnabled: true,
+            searchMode: "contains",
+
+            selectionMode: "single",
+            selectByClick: true,
+            showCheckBoxesMode: true,
+
+            onItemSelectionChanged: function (e) {
+                console.log(e);
+                const selectedProduct = e.itemData;
+                $("#product-details").removeClass("hidden");
+                $("#product-details > img").css("display", "none");
+                $("#product-details > .name").text(selectedProduct.name);
+                if (selectedProduct.price) {
+                    $("#product-details > img").css("display", "block");
+                    $("#product-details > img").removeClass("hidden");
+                    $("#product-details > img").attr("src", selectedProduct.image);
+                    $("#product-details > .price").text("$" + selectedProduct.price);
+                }
+            },
+
+            searchExpr: ["price", "name"],
+            searchEditorOptions: {
+                placeholder: "Type search value here...",
+                width: "30rem"
+            },
+        });
+
+        $("#treeView2").dxTreeView({
+            width: "20rem",
+            dataSource: hierarchicalData,
+            searchEnabled: true,
+            searchMode: "startswith",
+            selectByClick: true,
+            keyExpr: "id",
+            displayExpr: "text",
+            itemsExpr: "items",
+            expandedExpr: 'isExpanded',
+            expandAllEnabled: false,
+            expandEvent: "dblclick",
+            expandNodesRecursive: true
+        });
+
+        $("#treeView3").dxTreeView({
+            width: "20rem",
+            dataSource: plainData,
+            searchEnabled: true,
+            searchMode: "startswith",
+            selectByClick: true,
+            dataStructure: 'plain',
+            keyExpr: 'key',
+            displayExpr: 'name',
+            parentIdExpr: 'parent',
+
+            onItemClick: function (e) {
+                console.log(e);
+                var node = e.node;
+            },
+
+            animationEnabled: true,
+            searchTimeout: 2000,
+            selectNodesRecursive: true
+            
+            // onItemExpanded, onItemCollapsed, onItemHold
+            // performance enhancing techniques
+ 
+        });
+    });
+</script>
+
+</html>

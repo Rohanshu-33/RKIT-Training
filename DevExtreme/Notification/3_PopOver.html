@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.light.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+
+</head>
+
+<body>
+    <img id="image" src="https://js.devexpress.com/Content/data/loadingIcons/rolling.svg" />
+    <div id="popoverContainer">
+        <p>Popover content</p>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#popoverContainer").dxPopover({
+            target: "#image",
+            showEvent: 'dxhoverstart',
+            // hideEvent: 'dxhoverend',
+            contentTemplate: function (contentElement) {
+                contentElement.append(
+                    $("<p />").text("Static Content"),
+                    $("<div />").attr("id", "switchContainer").dxSwitch({
+                        // The "Switch" UI component is configured here
+                    })
+                )
+            },
+            title: "Popover Title",
+            showTitle: true,
+            showCloseButton: true,
+            width: 600,
+            toolbarItems: [{
+                text: "Toolbar title",
+                location: "after"
+            }, {
+                widget: "dxButton",
+                location: "after",
+                options: {
+                    text: "Refresh",
+                    onClick: function () {
+                        alert("refreshed")
+                    }
+                }
+            }],
+            shading: true,
+            shadingColor: "rgba(0, 0, 0, 0.2)",
+            closeOnOutsideClick: true,
+            position: "right", // or "top" | "left" | "bottom"
+            hideEvent: {
+                name: "dxdblclick mouseout",
+                delay: 700
+            }
+        });
+    })
+</script>
+
+</html>

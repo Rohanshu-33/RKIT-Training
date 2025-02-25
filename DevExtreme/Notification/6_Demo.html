@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.dark.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+
+    <title>Demo</title>
+
+</head>
+
+<body class="dx-viewport">
+    <div id="container">
+        <div id="main-menu"></div>
+        <div id="productPopup"></div>
+        <div id="categoryPopup"></div>
+        <div id="loadPanel"></div>
+    </div>
+</body>
+
+<script>
+
+    let menuItems = [
+        {
+            name: "Product",
+            items: [{ name: "Add" }]
+        },
+        {
+            name: "Categories",
+            items: []
+        }
+    ];
+
+    // Convert products into a DevExtreme DataSource
+    const productsDataSource = new DevExpress.data.DataSource({
+        store: new DevExpress.data.ArrayStore({
+            key: "id",
+            data: []
+        })
+    });
+
+    $(document).ready(function () {
+
+        const menu = $("#main-menu").dxMenu({
+            items: menuItems,
+            displayExpr: "name",
+            hideSubmenuOnMouseLeave: true,
+            closeMenuOnClick: true,
+            onItemClick: function (e) {
+                if (e.itemData.name === "Add") {
+                    popup.show();
+                }
+                else {
+                    const category = e.itemData.name;
+
+                    if (menuItems[1].items.some(cat => cat.name === category)) {
+                        loadPanel.show();
+                        setTimeout(() => {
+                            productsDataSource.filter(["category", "=", category.toLowerCase()]);
+                            productsDataSource.load().done((categoryProducts) => {
+                                let productListHtml = "<ul>";
+                                categoryProducts.forEach(prod => {
+                                    productListHtml += `<li>${prod.name} - $${prod.price}</li>`;
+                                });
+                                productListHtml += "</ul>";
+
+                                $("#categoryPopup").dxPopup("instance").option({
+                                    title: `Products in ${category}`,
+                                    contentTemplate: () => $("<div>").html(productListHtml)
+                                });
+
+                                categoryPopup.show();
+                                loadPanel.hide();
+                            });
+                        }, 3000);
+                    }
+                }
+            }
+        }).dxMenu("instance");
+
+        const popup = $("#productPopup").dxPopup({
+            closeOnOutsideClick: false,
+            showTitle: true,
+            title: "Add Product",
+            width: 400,
+            height: "auto",
+            resizeEnabled: true,
+            contentTemplate: function () {
+                const content = $("<div />");
+
+                const form = $("<div id='productForm'></div>").appendTo(content);
+
+                form.dxForm({
+                    formData: {
+                        name: "",
+                        category: "",
+                        price: null
+                    },
+                    items: [
+                        {
+                            dataField: "name",
+                            label: { text: "Product Name" },
+                            editorType: "dxTextBox",
+                            editorOptions: {
+                                placeholder: "Enter product name"
+                            }
+                        },
+                        {
+                            dataField: "category",
+                            label: { text: "Category" },
+                            editorType: "dxTextBox",
+                            editorOptions: {
+                                placeholder: "Enter category"
+                            }
+                        },
+                        {
+                            dataField: "price",
+                            label: { text: "Price" },
+                            editorType: "dxNumberBox",
+                            editorOptions: {
+                                min: 0,
+                                placeholder: "Enter price"
+                            }
+                        }
+                    ]
+                });
+
+                $("<div id='submitBtn'></div>").appendTo(content).dxButton({
+                    text: "Add",
+                    type: "success",
+                    onClick: function () {
+                        const formData = $("#productForm").dxForm("instance").option("formData");
+
+                        const newProd = {
+                            id: Date.now(),
+                            name: formData.name.trim().toLowerCase(),
+                            category: formData.category.trim().toLowerCase(),
+                            price: formData.price
+                        };
+
+                        if (!newProd.name || !newProd.category || newProd.price === null) {
+                            DevExpress.ui.notify("Please fill all fields", "error", 2000);
+                            return;
+                        }
+
+                        productsDataSource.store().insert(newProd).done(() => {
+                            productsDataSource.load();
+                        });
+
+                        // Add category to menu if it does not exist
+                        if (!menuItems[1].items.some(item => item.name === newProd.category)) {
+                            menuItems[1].items.push({ name: newProd.category });
+                            menu.option("items", menuItems);
+                        }
+
+                        DevExpress.ui.notify("Product added successfully!", "success", 2000);
+                        popup.hide();
+                    }
+                });
+
+                return content;
+            }
+        }).dxPopup("instance");
+
+        const categoryPopup = $("#categoryPopup").dxPopup({
+            closeOnOutsideClick: true,
+            showTitle: true,
+            width: 400,
+            height: "auto",
+            resizeEnabled: true
+        }).dxPopup("instance");
+
+
+        const loadPanel = $("#loadPanel").dxLoadPanel({
+            shadingColor: "rgba(0,0,0,0.4)",
+            position: { at: "center",of: "#container" },
+            visible: false,
+            showIndicator: true,
+            showPane: true,
+            shading: true,
+            message: "Loading...",
+        }).dxLoadPanel("instance");
+
+    });
+
+</script>
+
+</html>

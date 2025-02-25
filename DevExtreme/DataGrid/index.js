@@ -40,7 +40,7 @@ $(document).ready(function () {
             { dataField: "Description" }
         ],
         columnChooser: { enabled: false },
-        columnAutoWidth: true,
+        columnAutoWidth: true,  // adaptive column.. given minWidth, prevents this column for shrinking. used to prevent horizontal scrolling 
         filterRow: { visible: true }, // inside the datagrid
         searchPanel: { visible: true },  // top right side
         groupPanel: { visible: true },
@@ -63,11 +63,36 @@ $(document).ready(function () {
             })
         },
         summary: {
-            totalItems: [{  // groupItems needs groupIndex
-                summaryType: "count",
-                column: "Make"
+            totalItems: [
+                {  // groupItems needs groupIndex
+                    summaryType: "count",  // sum, min, max, avg
+                    column: "Model",
+                    alignment: "center"
+                },
+                {
+                    summaryType: "sum",
+                    column: "PricePerDay",
+                    showInColumn: "Year",
+                    alignment: "right"
+                }
+            ],
+            groupItems: [{
+                column: "PricePerDay",  // whose data need to be aggregated
+                summaryType: "avg",
+                alignByColumn: true,
+                showInGroupFooter: true,
+                showInColumn: "Location",
+                name: "Group Summary of PricePerDay",
+                customizeText: function(e){
+                    return `Avg. of PPD is : ${e.value}`;
+                }
             }]
         },
+
+        sortByGroupSummaryInfo: [{      // -------------------------- not working ----------------------------
+            summaryItem: "Group Summary of PricePerDay",  // or "avg" | 0 | "PricePerDay"
+            sortOrder: "desc" // or "asc"
+        }],
 
         masterDetail: {
             enabled: true,
@@ -102,7 +127,6 @@ $(document).ready(function () {
         columns: [
             { type: "adaptive" }, // Enables ellipsis button when columns are hidden
             { type: "drag", caption: "Drag" }, // Drag Column
-            { type: "selection", width: 50 }, // Selection Column (Checkbox)
             {
                 type: "buttons",
                 // buttons: [
@@ -169,7 +193,22 @@ $(document).ready(function () {
             },
             {
                 dataField: "OwnerContact",
-                sortIndex: 0, sortOrder: "desc"
+                sortIndex: 0, sortOrder: "desc",
+                allowFiltering: true,
+                filterOperations: ["contains", "="],  // allowed filters on ths column
+                selectedFilterOperation: "contains", // default filter to be applied
+                // filterValue: "Enter value of filter here", // undefined by-default
+
+
+                allowHeaderFiltering: true,
+                // filterType: "exclude", // or "include"
+                // filterValues: ["Value to exsclude from the header filter."],
+                headerFilter: { allowSearch: false },
+
+
+                allowSearch: false
+
+
             },
             { dataField: "Description", allowEditing: false },
             {
@@ -181,8 +220,8 @@ $(document).ready(function () {
                 hidingPriority: 0
             }
         ],
-        columnHidingEnabled: true,
-        columnChooser: {
+        columnHidingEnabled: true,  // adaptive row. if screen size is small, colunn will go in the adaptive row instead of horizontal scrolling
+        columnChooser: {  // allows to hide/show columns as per our wish
             enabled: true,
             mode: "dragAndDrop" // or "select"
         },
@@ -209,24 +248,211 @@ $(document).ready(function () {
 
         sorting: {
             mode: "multiple" // keep the shift key pressed. 'single', 'none'
-        }, 
+        },
+
+        // filterRow: { visible: true },
+        // filterRow: {
+        //     visible: true,
+        //     applyFilter: "onClick"  // auto, enterKey
+        // },
+
+        headerFilter: { visible: true, allowSearch: true },
+
+
+        // searchPanel: { visible: true },
+        // searchPanel: {
+        //     visible: true,
+        //     text: "BMW"
+        // }
+
+
+        // filterPanel: { visible: true },
+        // filterSyncEnabled: true, // If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the filter row and header filter, and vice versa. Set the filterSyncEnabled property to false to disable this synchronization
+
+        filterPanel: { visible: false },
+        filterSyncEnabled: true,
+        filterBuilder: {
+            customOperations: [{
+                name: "isBlack",
+                caption: "Is Black",
+                dataTypes: ["string"],
+                hasValue: false,
+                calculateFilterExpression: function (filterValue, field) {
+                    return [field.dataField, "=", "black"];
+                }
+            }]
+        },
+        filterBuilderPopup: {
+            width: 400,
+            title: "Synchronized Filter"
+        },
+
+
+        paging: {
+            enabled: true,
+            pageSize: 2  // Default page size
+        },
+
+        pager: {
+            showPageSizeSelector: true,
+            allowedPageSizes: [2, 5, 10],
+            showNavigationButtons: true,
+            showInfo: true,
+            infoText: "Page: {0} out of {1} ({2} items)"
+        },
+
+        // scrolling: {
+        //     mode: "standard" // or "virtual" | "infinite"  // standard not working with paging
+        // },
+
+        // scrolling: {
+        //     useNative: true
+        // }
+
+        // height: 400,
+
+
+        scrolling: {
+            useNative: false,
+            scrollByContent: true,
+            scrollByThumb: true,
+            showScrollbar: "onHover" // or "onScroll" | "always" | "never"
+        },
+
+        // grouping: {
+        //     contextMenuEnabled: true  // do right click on any column
+        // },
+
+        grouping: {
+            // ...
+            expandMode: "rowClick",  // or "buttonClick"  // click on grouped column name or on the side button which comes
+            autoExpandAll: false  // after grouping, nothing will be in expanded mode. only the grouped column name will be visible
+            // autoExpandGroup --> at column level. same as above
+        },
+
+        groupPanel: {
+            visible: true   // or "auto"
+        },
+
+        keyExpr: "CarID",
+        // selection: {
+        //     mode: "multiple" // or "single" | "none"
+        // }
+
+        selection: {
+            mode: "multiple",
+            selectAllMode: "page", // or "allPages"
+            allowSelectAll: true,
+            showCheckBoxesMode: "always"    // or "onClick" | "none" | "onLongTap"
+        },
+
+        selectedRowKeys: [1, 5, 18],  // CarID  -> it is keyExpr in my
+
+
+        onContentReady: function (e) {
+            // Selects the first visible row
+            e.component.selectRowsByIndexes([0]); // selects the row of corresponding index
+        },
+
+        onSelectionChanged: function (e) { // Handler of the "selectionChanged" event
+            var currentSelectedRowKeys = e.currentSelectedRowKeys;
+            var currentDeselectedRowKeys = e.currentDeselectedRowKeys;
+            var allSelectedRowKeys = e.selectedRowKeys;
+            var allSelectedRowsData = e.selectedRowsData;
+
+            console.log(currentSelectedRowKeys);
+            console.log(currentDeselectedRowKeys);
+            console.log(allSelectedRowKeys);
+            console.log(allSelectedRowsData);
+
+        },
+
+        loadPanel: {
+            height: 100,
+            width: 250,
+            indicatorSrc: "https://js.devexpress.com/Content/data/loadingIcons/rolling.svg"
+        },
+
+
+
+        // other options
+        // errorRowEnabled: false,
+        // focusedRowEnabled: true,
+        // keyboardNavigation: {
+        //     enabled: false  // default true
+        //     enterKeyAction: 'moveFocus',
+        //     enterKeyDirection: 'row',
+        //     editOnKeyPress: true,
+        // },
+        // noDataText: "Currently nothing to show in datagrid",
+        onCellClick: function(e){
+            console.log("click", e);
+        },
+
+        onCellDblClick: function(e){
+            console.log("dbl click", e);
+        },
+
+        // onCellHoverChanged
+        // onCellPrepared
+        repaintChangesOnly: true,
+
+        columnRenderingMode: "virtual",
+
+        onRowClick: function(){
+            console.log("row clicked");  // triggered after onCellClick
+            
+        }
+
     });
 
 
 
+    // $("#dataGridContainer").dxDataGrid("clearGrouping");  // --> to ungroup data by all columns
 
+
+
+    // var totalPageCount = $("#dataGrid2").dxDataGrid("instance").pageCount();
+    // console.log("Total pages: ", totalPageCount);  // doubt.. showing '1' only
+
+
+    // $("#dataGrid2").dxDataGrid("instance").searchByText("white");
+
+    // $("#dataGrid2").dxDataGrid("instance").filter([
+    //     [ "Price Per Day", ">", 100 ],
+    //     "and",
+    //     [ "Price Per Day", "<=", 2000 ]
+    // ]);
+
+    // var filterExpression = $("#dataGrid2").dxDataGrid("instance").getCombinedFilter(true);
+    // console.log(filterExpression);
+
+
+    // $("#dataGrid2").dxDataGrid("instance").clearFilter("search");
 
 
     var dataGrid = $("#dataGrid2").dxDataGrid("instance");
+
+    console.log("column props: ", dataGrid.columnOption(2));
+    console.log("column props: ", dataGrid.columnOption(2, "visible"));
+    console.log("column props: ", dataGrid.columnOption(2, {
+        // options here
+    }));
+
+    // dataGrid.beginCustomLoading();
+    // ...
+    
     setTimeout(() => {
         // dataGrid.columnOption("OwnerContact", "sortIndex", undefined);  // removes sorting property
+        // dataGrid.deleteColumn(5);
         dataGrid.clearSorting();  // removes all sorting
+        // dataGrid.endCustomLoading();
     }, 2000);
 
 
 
 
-    // events:
+    // -> events of crud in datagrid:
     // onRowInserting
     // onRowInserted
     // onRowUpdating
@@ -234,12 +460,19 @@ $(document).ready(function () {
     // onRowRemoving
     // onRowRemoved
 
+    // -> events of grouping
+    // onRowExpanding
+    // onRowExpanded
+    // onRowCollpasing
+    // onRowCollpased
+
+
     // onrowValidating: just before validation, you can add checks. this is triggered just before validation rule are applied.
 
 
-    setTimeout(() => {
-        $("#dataGrid2").dxDataGrid("addRow");
-    }, 4000);
+    // setTimeout(() => {
+    //     $("#dataGrid2").dxDataGrid("addRow");
+    // }, 4000);
 
 
 
@@ -270,4 +503,12 @@ $(document).ready(function () {
         }
     });
 
-})
+
+    $("#button").dxButton({
+        text: "Show Filter Builder",
+        onClick: function () {
+            dataGrid.option("filterBuilderPopup", { visible: true });
+        }
+    });
+
+}) 

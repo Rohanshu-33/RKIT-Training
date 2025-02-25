@@ -20,7 +20,6 @@
     <div id="textBox"></div>
     <div id="textBox2"></div>
     <div id="textBox3"></div>
-    <div id="textBox4"></div>
 </body>
 <script>
     $(document).ready(function () {
@@ -46,36 +45,22 @@
         $("#textBox3").dxTextBox({
             width: "20rem",
             height: "3rem",
-            mask: "SFFFFHN",
+            mask: "$FHNZZ", // Include '$' directly
             maskRules: {
-                // a single character
-                S: '$',
-
-                // a regular expression
-                H: /[0-9A-F]/,
-
-                // an array of characters
-                N: ['$', '%', '&', '@'],
-
-                // a function
-                F: function (char) {
-                    return char == char.toUpperCase();
-                }
+                // Ensure F only allows uppercase letters
+                F: /[A-Z]/,
+                H: /[0-9]/,
+                N: ['$', '%', '&', '@'] // Allowed special characters
             },
-            useMaskedValue: true,
-            showMaskMode: "onFocus", // always
+            useMaskedValue: false,
+            showMaskMode: "always", // Mask always visible
             onValueChanged: function (e) {
                 const maskedValue = $("#textBox3").dxTextBox("option", "text");
                 const unmaskedValue = $("#textBox3").dxTextBox("option", "value");
                 console.log(maskedValue, ' ', unmaskedValue);
-            },
+            }
         });
 
-        $("#textBox4").dxTextBox({
-            width: "20rem",
-            height: "3rem",
-
-        })
     });
 </script>
 

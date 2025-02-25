@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- DevExtreme theme -->
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.light.css">
+
+    <!-- DevExtreme library -->
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+
+    <title>Navigation - Menu</title>
+</head>
+
+<body>
+    <div id="menuContainer"></div>
+</body>
+
+<script>
+    var menuItems = [{
+        name: 'Video Players',
+        items: [
+            { name: 'HD Video Player', price: 220 },
+            { name: 'SuperHD Video Player', price: 270 }
+        ]
+    }, {
+        name: 'Televisions',
+        items: [
+            { name: 'SuperLCD 42', price: 1200 },
+            { name: 'SuperLED 42', price: 1450 },
+            { name: 'SuperLED 56', price: 2450 }
+        ]
+    }, {
+        name: 'Monitors',
+        items: [{
+            name: '19"',
+            items: [
+                { name: 'DesktopLCD 19', price: 160 }
+            ]
+        }, {
+            name: '21"', icon: "car", selected: false,
+            items: [
+                { name: 'DesktopLCD 21', price: 170 },
+                { name: 'DesktopLED 21', price: 175 }
+            ]
+        }]
+    }];
+
+    $(document).ready(function () {
+        $("#menuContainer").dxMenu({
+            items: menuItems,
+            displayExpr: "name",
+
+            // onItemClick: function (e) {
+            //     var itemData = e.itemData;
+            //     var itemElement = e.itemElement;
+            //     var itemIndex = e.itemIndex;
+            //     console.log(e);
+            // },
+
+            // itemTemplate: function (itemData, itemIndex, itemElement) {
+            //     itemElement.append("<i>" + itemData.name + "</i>");
+            // },
+
+            orientation: "horizontal",  // horizontal
+            // submenuDirection: "left",  // not working
+            adaptivityEnabled: true,  // works with horizontal orientation. for responsiveness
+            hideSubmenuOnMouseLeave: true,
+            closeMenuOnClick: true,
+            onItemContextMenu: function (e) {  // triggers on right click on item
+                console.log(e);
+            },
+            // onSubmenuHidden, onSubmenuHiding, onSubmenuShowing, onSubmenuShown
+            selectByClick: true,
+            // selectedExpr,
+            submenuDirection: "leftOrTop",
+
+        });
+    })
+</script>
+
+</html>
