@@ -1,0 +1,12 @@
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\bin\Debug\net7.0\MathAssemblyDemo.deps.json
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\bin\Debug\net7.0\MathAssemblyDemo.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\bin\Debug\net7.0\MathAssemblyDemo.pdb
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.csproj.AssemblyReference.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.AssemblyInfoInputs.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.AssemblyInfo.cs
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.csproj.CoreCompileInputs.cache
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\refint\MathAssemblyDemo.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\MathAssemblyDemo.pdb
+F:\Rohanshu\RKIT-Main\RKIT-Training\Week-8-Basic-C#\MathAssemblyDemo\obj\Debug\net7.0\ref\MathAssemblyDemo.dll

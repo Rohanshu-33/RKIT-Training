@@ -43,6 +43,9 @@ class Program
         // working of C# code
         // .net framework project
 
+        string str1 = null;
+        string str2 = str1 ?? "Default";
+
         Console.ReadKey();
     }
 }

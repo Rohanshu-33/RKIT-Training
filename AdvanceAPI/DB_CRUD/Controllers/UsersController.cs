@@ -14,7 +14,10 @@ namespace DB_CRUD.Controllers
     {
         private UserRepository usrRepo = new UserRepository();
 
-        // Get api/users
+        /// <summary>
+        /// Retrieves a list of all users.
+        /// </summary>
+        /// <returns>HTTP response with a list of UserDTO objects.</returns>
         [HttpGet]
         [Route("api/users")]
         public IHttpActionResult GetUsers()
@@ -23,10 +26,13 @@ namespace DB_CRUD.Controllers
             return Ok(users);
         }
 
-
-        // Get api/user/{id}
+        /// <summary>
+        /// Retrieves a user by their ID.
+        /// </summary>
+        /// <param name="id">User ID to fetch.</param>
+        /// <returns>HTTP response with UserDTO if found, otherwise NotFound.</returns>
         [HttpGet]
-        [Route("api/users/getuser")]
+        [Route("api/users/{id}")]
         public IHttpActionResult GetUserById(int id)
         {
             User user = usrRepo.GetUserById(id);
@@ -45,7 +51,11 @@ namespace DB_CRUD.Controllers
             return Ok(userDTO);
         }
 
-        // Post api/users
+        /// <summary>
+        /// Adds a new user to the database.
+        /// </summary>
+        /// <param name="user">User object containing details.</param>
+        /// <returns>HTTP response with created user details.</returns>
         [HttpPost]
         [Route("api/users/adduser")]
         public IHttpActionResult PostUser([FromBody] User user)
@@ -55,12 +65,15 @@ namespace DB_CRUD.Controllers
                 return BadRequest("Invalid user data.");
             }
 
-            // You might want to hash the password before storing it.
             usrRepo.AddUser(user);
-            return Ok( new { user.Username, user.Email });  // Created status code
+            return Ok(new { user.Username, user.Email });
         }
 
-        // PUT api/users/updateuser
+        /// <summary>
+        /// Updates an existing user in the database.
+        /// </summary>
+        /// <param name="user">User object containing updated details.</param>
+        /// <returns>HTTP response indicating success or failure.</returns>
         [HttpPut]
         [Route("api/users/updateuser")]
         public IHttpActionResult PutUser([FromBody] User user)
@@ -80,7 +93,11 @@ namespace DB_CRUD.Controllers
             return Ok($"User with id {user.Id} updated successfully.");
         }
 
-        // DELETE api/users/deleteuser
+        /// <summary>
+        /// Deletes a user from the database by ID.
+        /// </summary>
+        /// <param name="id">User ID to be deleted.</param>
+        /// <returns>HTTP response indicating success or failure.</returns>
         [HttpDelete]
         [Route("api/users/deleteuser")]
         public IHttpActionResult DeleteUser(int id)

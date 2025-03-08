@@ -1,26 +1,11 @@
 [
   {
-    "Restaurant Name": "mc donalds",
+    "Restaurant Name": "abc",
     "Menu": [
       {
-        "Name": "a",
-        "SellPrice": 1.0,
-        "CostPrice": 2.0
-      },
-      {
-        "Name": "b",
-        "SellPrice": 3.0,
-        "CostPrice": 2.0
-      }
-    ]
-  },
-  {
-    "Restaurant Name": "dominos",
-    "Menu": [
-      {
-        "Name": "r",
-        "SellPrice": 77.0,
-        "CostPrice": 77.0
+        "Name": "abcc",
+        "SellPrice": 25.0,
+        "CostPrice": 10.0
       }
     ]
   }

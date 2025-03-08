@@ -1,0 +1,633 @@
+2025-03-05 12:52:20.4667 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-05 12:52:21.0719 | DEBUG | Hosting starting 
+2025-03-05 12:52:21.6603 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-03-05 12:52:21.6603 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-05 12:52:21.6603 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-05 12:52:21.6603 | DEBUG | Hosting started 
+2025-03-05 12:52:21.7369 | DEBUG | Connection id "0HNARMPS560G3" accepted. 
+2025-03-05 12:52:21.7369 | DEBUG | Connection id "0HNARMPS560G4" accepted. 
+2025-03-05 12:52:21.7397 | DEBUG | Connection id "0HNARMPS560G3" started. 
+2025-03-05 12:52:21.7397 | DEBUG | Connection id "0HNARMPS560G4" started. 
+2025-03-05 12:52:22.2335 | DEBUG | Connection id "0HNARMPS560G5" accepted. 
+2025-03-05 12:52:22.2390 | DEBUG | Connection id "0HNARMPS560G6" accepted. 
+2025-03-05 12:52:22.2390 | DEBUG | Connection id "0HNARMPS560G5" started. 
+2025-03-05 12:52:22.2390 | DEBUG | Connection id "0HNARMPS560G6" started. 
+2025-03-05 12:52:22.3855 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-05 12:52:22.4224 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 12:52:22.4224 | DEBUG | Request did not match any endpoints 
+2025-03-05 12:52:22.6633 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 12:52:22.8837 | DEBUG | Connection id "0HNARMPS560G7" accepted. 
+2025-03-05 12:52:22.8837 | DEBUG | Connection id "0HNARMPS560G7" started. 
+2025-03-05 12:52:22.8837 | DEBUG | Connection id "0HNARMPS560G7" completed keep alive response. 
+2025-03-05 12:52:22.9536 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 12:52:22.9536 | DEBUG | Connection id "0HNARMPS560G6" completed keep alive response. 
+2025-03-05 12:52:23.0813 | DEBUG | Connection id "0HNARMPS560G5" completed keep alive response. 
+2025-03-05 12:52:23.4521 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 12:52:23.4521 | DEBUG | Request did not match any endpoints 
+2025-03-05 12:52:23.9423 | DEBUG | Connection id "0HNARMPS560G5" completed keep alive response. 
+2025-03-05 12:56:57.2674 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-05 12:56:57.4325 | DEBUG | Hosting starting 
+2025-03-05 12:56:57.6488 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-03-05 12:56:57.6488 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-05 12:56:57.6488 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-05 12:56:57.6509 | DEBUG | Hosting started 
+2025-03-05 12:56:58.1721 | DEBUG | Connection id "0HNARMSEHFF31" accepted. 
+2025-03-05 12:56:58.1721 | DEBUG | Connection id "0HNARMSEHFF31" started. 
+2025-03-05 12:56:58.1721 | DEBUG | Connection id "0HNARMSEHFF31" received FIN. 
+2025-03-05 12:56:58.2130 | DEBUG | Connection id "0HNARMSEHFF31" sending FIN because: "The client closed the connection." 
+2025-03-05 12:56:58.2130 | DEBUG | Connection id "0HNARMSEHFF31" disconnecting. 
+2025-03-05 12:56:58.2130 | DEBUG | Connection id "0HNARMSEHFF31" stopped. 
+2025-03-05 12:56:58.4166 | DEBUG | Connection id "0HNARMSEHFF32" accepted. 
+2025-03-05 12:56:58.4166 | DEBUG | Connection id "0HNARMSEHFF32" started. 
+2025-03-05 12:56:58.4166 | DEBUG | Connection id "0HNARMSEHFF33" accepted. 
+2025-03-05 12:56:58.4166 | DEBUG | Connection id "0HNARMSEHFF33" started. 
+2025-03-05 12:56:58.5263 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-05 12:56:58.5786 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 12:56:58.5786 | DEBUG | Request did not match any endpoints 
+2025-03-05 12:56:58.8245 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 12:56:58.9747 | DEBUG | Connection id "0HNARMSEHFF34" accepted. 
+2025-03-05 12:56:58.9747 | DEBUG | Connection id "0HNARMSEHFF34" started. 
+2025-03-05 12:56:59.0002 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 12:56:59.0002 | DEBUG | Connection id "0HNARMSEHFF32" completed keep alive response. 
+2025-03-05 12:56:59.0002 | DEBUG | Connection id "0HNARMSEHFF33" completed keep alive response. 
+2025-03-05 12:56:59.0356 | DEBUG | Connection id "0HNARMSEHFF34" completed keep alive response. 
+2025-03-05 12:56:59.2584 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 12:56:59.2584 | DEBUG | Request did not match any endpoints 
+2025-03-05 12:56:59.4556 | DEBUG | Connection id "0HNARMSEHFF34" completed keep alive response. 
+2025-03-05 12:57:44.3352 | DEBUG | 1 candidate(s) found for the request path '/api/Users/signup' 
+2025-03-05 12:57:44.3352 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' with route pattern 'api/Users/signup' is valid for the request path '/api/Users/signup' 
+2025-03-05 12:57:44.3352 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 12:57:44.3414 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 12:57:44.8937 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 12:57:44.8937 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 12:57:44.8937 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 12:57:44.8937 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 12:57:44.8937 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 12:57:44.8937 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 12:57:44.8937 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 12:57:44.9025 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 12:57:44.9025 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' using the name '' in request data ... 
+2025-03-05 12:57:44.9025 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 12:57:44.9191 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000003": started reading request body. 
+2025-03-05 12:57:44.9191 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000003": done reading request body. 
+2025-03-05 12:57:44.9484 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH01' 
+2025-03-05 12:57:44.9488 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 12:57:44.9488 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 12:57:44.9488 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 12:57:44.9692 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 12:57:47.6894 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 12:57:47.6894 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 12:57:47.6990 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 12:57:47.6990 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 12:57:47.6990 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 12:57:47.6990 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 12:57:47.7153 | DEBUG | Connection id "0HNARMSEHFF34" completed keep alive response. 
+2025-03-05 12:58:09.9683 | DEBUG | 1 candidate(s) found for the request path '/api/Users/login' 
+2025-03-05 12:58:09.9683 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' with route pattern 'api/Users/login' is valid for the request path '/api/Users/login' 
+2025-03-05 12:58:09.9683 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 12:58:09.9683 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 12:58:09.9829 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 12:58:09.9829 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 12:58:09.9829 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 12:58:09.9829 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 12:58:09.9829 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 12:58:09.9829 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 12:58:09.9829 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 12:58:09.9829 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 12:58:09.9829 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' using the name '' in request data ... 
+2025-03-05 12:58:09.9829 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 12:58:09.9829 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000004": started reading request body. 
+2025-03-05 12:58:09.9829 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000004": done reading request body. 
+2025-03-05 12:58:09.9829 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH02' 
+2025-03-05 12:58:09.9829 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 12:58:09.9829 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 12:58:09.9829 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 12:58:09.9829 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 12:58:10.6566 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 12:58:10.6566 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 12:58:10.6566 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 12:58:10.6566 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 12:58:10.6566 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 12:58:10.6566 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 12:58:10.6566 | DEBUG | Connection id "0HNARMSEHFF34" completed keep alive response. 
+2025-03-05 12:59:05.6563 | DEBUG | 1 candidate(s) found for the request path '/api/Items' 
+2025-03-05 12:59:05.6563 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' with route pattern 'api/Items' is valid for the request path '/api/Items' 
+2025-03-05 12:59:05.6563 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 12:59:05.6563 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 12:59:05.6563 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 12:59:05.6563 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 12:59:05.6563 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 12:59:05.6563 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 12:59:05.6563 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 12:59:05.6563 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 12:59:05.6563 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 12:59:05.7096 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 12:59:05.7096 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 12:59:05.7096 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 12:59:05.7096 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 12:59:05.7096 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 12:59:05.7096 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 12:59:05.7096 | DEBUG | Connection id "0HNARMSEHFF34" completed keep alive response. 
+2025-03-05 13:00:40.5979 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-03-05 13:00:40.5979 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-03-05 13:00:40.5979 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:00:40.5979 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:00:40.6875 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:00:40.6875 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:00:40.6875 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:00:40.6875 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:00:40.6875 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:00:40.6875 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:00:40.6875 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:00:40.6875 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:00:40.6875 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-03-05 13:00:40.6875 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:00:40.6875 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000006": started reading request body. 
+2025-03-05 13:00:40.6875 | DEBUG | Connection id "0HNARMSEHFF34", Request id "0HNARMSEHFF34:00000006": done reading request body. 
+2025-03-05 13:00:40.6875 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-03-05 13:00:40.6875 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:00:40.6875 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:00:40.6875 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:00:40.7095 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:03:01.6483 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-05 13:03:01.7815 | DEBUG | Hosting starting 
+2025-03-05 13:03:02.0724 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-03-05 13:03:02.0724 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-05 13:03:02.0724 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-05 13:03:02.0724 | DEBUG | Hosting started 
+2025-03-05 13:03:02.2784 | DEBUG | Connection id "0HNARMVR1RRSR" received FIN. 
+2025-03-05 13:03:02.2784 | DEBUG | Connection id "0HNARMVR1RRSS" received FIN. 
+2025-03-05 13:03:02.2952 | DEBUG | Connection id "0HNARMVR1RRSR" accepted. 
+2025-03-05 13:03:02.2952 | DEBUG | Connection id "0HNARMVR1RRSS" accepted. 
+2025-03-05 13:03:02.2952 | DEBUG | Connection id "0HNARMVR1RRSS" started. 
+2025-03-05 13:03:02.2952 | DEBUG | Connection id "0HNARMVR1RRSR" started. 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSS" sending FIN because: "The client closed the connection." 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSR" sending FIN because: "The client closed the connection." 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSS" disconnecting. 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSR" disconnecting. 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSR" stopped. 
+2025-03-05 13:03:02.3146 | DEBUG | Connection id "0HNARMVR1RRSS" stopped. 
+2025-03-05 13:03:02.5867 | DEBUG | Connection id "0HNARMVR1RRST" accepted. 
+2025-03-05 13:03:02.5867 | DEBUG | Connection id "0HNARMVR1RRST" started. 
+2025-03-05 13:03:02.5968 | DEBUG | Connection id "0HNARMVR1RRSU" accepted. 
+2025-03-05 13:03:02.5968 | DEBUG | Connection id "0HNARMVR1RRSU" started. 
+2025-03-05 13:03:02.7429 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-05 13:03:02.7826 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 13:03:02.7826 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:03:03.0036 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 13:03:03.1336 | DEBUG | Connection id "0HNARMVR1RRSV" accepted. 
+2025-03-05 13:03:03.1336 | DEBUG | Connection id "0HNARMVR1RRSV" started. 
+2025-03-05 13:03:03.1336 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 13:03:03.1336 | DEBUG | Connection id "0HNARMVR1RRSU" completed keep alive response. 
+2025-03-05 13:03:03.1613 | DEBUG | Connection id "0HNARMVR1RRST" completed keep alive response. 
+2025-03-05 13:03:03.2006 | DEBUG | Connection id "0HNARMVR1RRSV" completed keep alive response. 
+2025-03-05 13:03:03.2761 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 13:03:03.2761 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:03:03.4887 | DEBUG | Connection id "0HNARMVR1RRSV" completed keep alive response. 
+2025-03-05 13:03:21.3534 | DEBUG | 1 candidate(s) found for the request path '/api/Users/login' 
+2025-03-05 13:03:21.3534 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' with route pattern 'api/Users/login' is valid for the request path '/api/Users/login' 
+2025-03-05 13:03:21.3534 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:03:21.3650 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:03:21.4439 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:03:21.4439 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:03:21.4439 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:03:21.4439 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:03:21.4439 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:03:21.4439 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:03:21.4439 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:03:21.4566 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 13:03:21.4566 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' using the name '' in request data ... 
+2025-03-05 13:03:21.4566 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:03:21.4866 | DEBUG | Connection id "0HNARMVR1RRSV", Request id "0HNARMVR1RRSV:00000003": started reading request body. 
+2025-03-05 13:03:21.4866 | DEBUG | Connection id "0HNARMVR1RRSV", Request id "0HNARMVR1RRSV:00000003": done reading request body. 
+2025-03-05 13:03:21.5141 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH02' 
+2025-03-05 13:03:21.5141 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:03:21.5141 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:03:21.5141 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 13:03:21.5328 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:03:22.6431 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:03:22.6431 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:03:22.6431 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:03:22.6431 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:03:22.6431 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:03:22.6431 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:03:22.6636 | DEBUG | Connection id "0HNARMVR1RRSV" completed keep alive response. 
+2025-03-05 13:03:46.1942 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-03-05 13:03:46.1942 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-03-05 13:03:46.1942 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:03:46.1942 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:03:46.2517 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:03:46.2517 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:03:46.2517 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:03:46.2517 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:03:46.2517 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:03:46.2517 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:03:46.2517 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:03:46.2517 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:03:46.2517 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-03-05 13:03:46.2517 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:03:46.2517 | DEBUG | Connection id "0HNARMVR1RRSV", Request id "0HNARMVR1RRSV:00000004": started reading request body. 
+2025-03-05 13:03:46.2517 | DEBUG | Connection id "0HNARMVR1RRSV", Request id "0HNARMVR1RRSV:00000004": done reading request body. 
+2025-03-05 13:03:46.2740 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-03-05 13:03:46.2740 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:03:46.2740 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:03:46.2740 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:03:46.2740 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:03:47.1882 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:03:47.1882 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:03:47.1882 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:03:47.1882 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:03:47.1882 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:03:47.1882 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:03:47.1896 | DEBUG | Connection id "0HNARMVR1RRSV" completed keep alive response. 
+2025-03-05 13:06:01.6978 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-05 13:06:01.8200 | DEBUG | Hosting starting 
+2025-03-05 13:06:02.0411 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-03-05 13:06:02.0411 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-05 13:06:02.0411 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-05 13:06:02.0411 | DEBUG | Hosting started 
+2025-03-05 13:06:02.6404 | DEBUG | Connection id "0HNARN1GPU09K" received FIN. 
+2025-03-05 13:06:02.6448 | DEBUG | Connection id "0HNARN1GPU09L" received FIN. 
+2025-03-05 13:06:02.6448 | DEBUG | Connection id "0HNARN1GPU09K" accepted. 
+2025-03-05 13:06:02.6638 | DEBUG | Connection id "0HNARN1GPU09K" started. 
+2025-03-05 13:06:02.6638 | DEBUG | Connection id "0HNARN1GPU09L" accepted. 
+2025-03-05 13:06:02.6638 | DEBUG | Connection id "0HNARN1GPU09L" started. 
+2025-03-05 13:06:02.7031 | DEBUG | Connection id "0HNARN1GPU09K" sending FIN because: "The client closed the connection." 
+2025-03-05 13:06:02.7031 | DEBUG | Connection id "0HNARN1GPU09K" disconnecting. 
+2025-03-05 13:06:02.7031 | DEBUG | Connection id "0HNARN1GPU09L" sending FIN because: "The client closed the connection." 
+2025-03-05 13:06:02.7113 | DEBUG | Connection id "0HNARN1GPU09K" stopped. 
+2025-03-05 13:06:02.7113 | DEBUG | Connection id "0HNARN1GPU09L" disconnecting. 
+2025-03-05 13:06:02.7113 | DEBUG | Connection id "0HNARN1GPU09L" stopped. 
+2025-03-05 13:06:02.9713 | DEBUG | Connection id "0HNARN1GPU09M" accepted. 
+2025-03-05 13:06:02.9713 | DEBUG | Connection id "0HNARN1GPU09M" started. 
+2025-03-05 13:06:02.9777 | DEBUG | Connection id "0HNARN1GPU09N" accepted. 
+2025-03-05 13:06:02.9777 | DEBUG | Connection id "0HNARN1GPU09N" started. 
+2025-03-05 13:06:03.1242 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-05 13:06:03.1556 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 13:06:03.1556 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:06:03.3834 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 13:06:03.5170 | DEBUG | Connection id "0HNARN1GPU09O" accepted. 
+2025-03-05 13:06:03.5170 | DEBUG | Connection id "0HNARN1GPU09O" started. 
+2025-03-05 13:06:03.5315 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 13:06:03.5315 | DEBUG | Connection id "0HNARN1GPU09M" completed keep alive response. 
+2025-03-05 13:06:03.5612 | DEBUG | Connection id "0HNARN1GPU09N" completed keep alive response. 
+2025-03-05 13:06:03.6271 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:06:03.7422 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 13:06:03.7422 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:06:03.9931 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:06:51.0529 | DEBUG | 1 candidate(s) found for the request path '/api/Users/login' 
+2025-03-05 13:06:51.0529 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' with route pattern 'api/Users/login' is valid for the request path '/api/Users/login' 
+2025-03-05 13:06:51.0529 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:06:51.0529 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:06:51.1115 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:06:51.1115 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:06:51.1147 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:06:51.1147 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:06:51.1147 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:06:51.1147 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:06:51.1147 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:06:51.1147 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 13:06:51.1147 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' using the name '' in request data ... 
+2025-03-05 13:06:51.1147 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:06:51.1412 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000003": started reading request body. 
+2025-03-05 13:06:51.1412 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000003": done reading request body. 
+2025-03-05 13:06:51.1578 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH02' 
+2025-03-05 13:06:51.1578 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:06:51.1578 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:06:51.1578 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02' ... 
+2025-03-05 13:06:51.1729 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH02'. 
+2025-03-05 13:06:52.1768 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:06:52.1768 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:06:52.1768 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:06:52.1768 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:06:52.1768 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:06:52.1768 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:06:52.2154 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:07:13.4109 | DEBUG | 1 candidate(s) found for the request path '/api/Items/add' 
+2025-03-05 13:07:13.4109 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' with route pattern 'api/Items/add' is valid for the request path '/api/Items/add' 
+2025-03-05 13:07:13.4109 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:07:13.4130 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:07:13.4750 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:07:13.4750 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:07:13.4750 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:07:13.4750 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:07:13.4750 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:07:13.4750 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:13.4750 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:13.4750 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:07:13.4750 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' using the name '' in request data ... 
+2025-03-05 13:07:13.4750 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:07:13.4750 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000004": started reading request body. 
+2025-03-05 13:07:13.4750 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000004": done reading request body. 
+2025-03-05 13:07:13.4981 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH03' 
+2025-03-05 13:07:13.4981 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:07:13.4981 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:07:13.4981 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03' ... 
+2025-03-05 13:07:13.5068 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH03'. 
+2025-03-05 13:07:13.5443 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:07:13.5443 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:07:13.5443 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:07:13.5443 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:07:13.5443 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:07:13.5443 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:07:13.5443 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:07:38.4546 | DEBUG | 1 candidate(s) found for the request path '/api/Items' 
+2025-03-05 13:07:38.4546 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' with route pattern 'api/Items' is valid for the request path '/api/Items' 
+2025-03-05 13:07:38.4546 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:38.4546 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:07:38.4673 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:07:38.4673 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:07:38.4673 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:07:38.4673 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:07:38.4673 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:07:38.4673 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:38.4673 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:38.5415 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:07:38.5415 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:07:38.5415 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:07:38.5415 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:07:38.5415 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:07:38.5415 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:07:38.5548 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:07:49.0069 | DEBUG | 1 candidate(s) found for the request path '/api/Items/string' 
+2025-03-05 13:07:49.0069 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' with route pattern 'api/Items/{category}' is valid for the request path '/api/Items/string' 
+2025-03-05 13:07:49.0069 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:49.0069 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:07:49.0069 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:07:49.0069 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:07:49.0069 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:07:49.0069 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:07:49.0069 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:07:49.0069 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:49.0069 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:07:49.0069 | DEBUG | Attempting to bind parameter 'category' of type 'System.String' ... 
+2025-03-05 13:07:49.0069 | DEBUG | Attempting to bind parameter 'category' of type 'System.String' using the name 'category' in request data ... 
+2025-03-05 13:07:49.0069 | DEBUG | Done attempting to bind parameter 'category' of type 'System.String'. 
+2025-03-05 13:07:49.0069 | DEBUG | Done attempting to bind parameter 'category' of type 'System.String'. 
+2025-03-05 13:07:49.0069 | DEBUG | Attempting to validate the bound parameter 'category' of type 'System.String' ... 
+2025-03-05 13:07:49.0069 | DEBUG | Done attempting to validate the bound parameter 'category' of type 'System.String'. 
+2025-03-05 13:07:49.1348 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:07:49.1348 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:07:49.1348 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:07:49.1348 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:07:49.1348 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:07:49.1348 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:07:49.1348 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:08:13.0363 | DEBUG | 1 candidate(s) found for the request path '/api/Items/update/1' 
+2025-03-05 13:08:13.0363 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' with route pattern 'api/Items/update/{id}' is valid for the request path '/api/Items/update/1' 
+2025-03-05 13:08:13.0363 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:13.0403 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:08:13.0749 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:08:13.0749 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:08:13.0749 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:08:13.0749 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:08:13.0749 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:08:13.0749 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:13.0749 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' ... 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' using the name '' in request data ... 
+2025-03-05 13:08:13.0749 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:08:13.0749 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000007": started reading request body. 
+2025-03-05 13:08:13.0749 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000007": done reading request body. 
+2025-03-05 13:08:13.0749 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH04' 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:13.0749 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' ... 
+2025-03-05 13:08:13.0749 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:13.1233 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:08:13.1233 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:08:13.1233 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:08:13.1233 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:08:13.1233 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:08:13.1233 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:08:13.1233 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:08:20.7263 | DEBUG | 1 candidate(s) found for the request path '/api/Items/update/1' 
+2025-03-05 13:08:20.7263 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' with route pattern 'api/Items/update/{id}' is valid for the request path '/api/Items/update/1' 
+2025-03-05 13:08:20.7263 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:20.7263 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:08:20.7263 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:08:20.7263 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:08:20.7263 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:08:20.7263 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:08:20.7263 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:08:20.7263 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:20.7263 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' ... 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' using the name '' in request data ... 
+2025-03-05 13:08:20.7263 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:08:20.7263 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000008": started reading request body. 
+2025-03-05 13:08:20.7263 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:00000008": done reading request body. 
+2025-03-05 13:08:20.7263 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH04' 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to bind parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04' ... 
+2025-03-05 13:08:20.7263 | DEBUG | Done attempting to validate the bound parameter 'itm' of type 'FullDemo.Models.DTO.DTOITH04'. 
+2025-03-05 13:08:20.7263 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:08:20.7263 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:08:20.7263 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:08:20.7263 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:08:20.7263 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:08:31.3943 | DEBUG | 1 candidate(s) found for the request path '/api/Items/delete/1' 
+2025-03-05 13:08:31.3943 | DEBUG | Endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' with route pattern 'api/Items/delete/{id}' is valid for the request path '/api/Items/delete/1' 
+2025-03-05 13:08:31.3943 | DEBUG | Request matched endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-05 13:08:31.3943 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:08:31.3991 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:08:31.3991 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:08:31.3991 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:08:31.3991 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:08:31.3991 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:08:31.3991 | DEBUG | Executing controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:31.3991 | DEBUG | Executed controller factory for controller FullDemo.Controllers.ItemsController (FullDemo) 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-05 13:08:31.3991 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:31.3991 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:08:31.3991 | DEBUG | Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:08:31.3991 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:08:31.3991 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:08:31.3991 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:08:31.3991 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:08:31.3991 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:10:14.6518 | DEBUG | 1 candidate(s) found for the request path '/api/Users/update/3' 
+2025-03-05 13:10:14.6518 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' with route pattern 'api/Users/update/{id}' is valid for the request path '/api/Users/update/3' 
+2025-03-05 13:10:14.6518 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:14.6518 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:10:14.6518 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:10:14.6518 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:10:14.6518 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:10:14.6518 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:10:14.6518 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:10:14.6518 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:10:14.6518 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:10:14.6518 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:10:14.6518 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-05 13:10:14.6518 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:14.6518 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:14.6518 | DEBUG | Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:10:14.6518 | DEBUG | Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:14.6518 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 13:10:14.6518 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' using the name '' in request data ... 
+2025-03-05 13:10:14.6518 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:10:14.6650 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:0000000A": started reading request body. 
+2025-03-05 13:10:14.6650 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:0000000A": done reading request body. 
+2025-03-05 13:10:14.6650 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH01' 
+2025-03-05 13:10:14.6650 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:14.6650 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:14.6650 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 13:10:14.6650 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:14.6650 | DEBUG | The request has model state errors, returning an error response. 
+2025-03-05 13:10:14.6650 | DEBUG | Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'. 
+2025-03-05 13:10:14.6650 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:10:14.6650 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain' and explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. The content types in the accept header must be a subset of the explicitly set content types. 
+2025-03-05 13:10:14.6650 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:10:14.6650 | DEBUG | Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types 'application/problem+json, application/problem+xml, application/problem+json, application/problem+xml'. 
+2025-03-05 13:10:14.6650 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response. 
+2025-03-05 13:10:14.6867 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:10:24.9460 | DEBUG | 1 candidate(s) found for the request path '/api/Users/update/3' 
+2025-03-05 13:10:24.9460 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' with route pattern 'api/Users/update/{id}' is valid for the request path '/api/Users/update/3' 
+2025-03-05 13:10:24.9460 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:24.9460 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:10:24.9460 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 13:10:24.9460 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 13:10:24.9460 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 13:10:24.9460 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 13:10:24.9460 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 13:10:24.9460 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:10:24.9460 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ... 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to bind parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to validate the bound parameter 'id' of type 'System.Int32' ... 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to validate the bound parameter 'id' of type 'System.Int32'. 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' using the name '' in request data ... 
+2025-03-05 13:10:24.9460 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 13:10:24.9460 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:0000000B": started reading request body. 
+2025-03-05 13:10:24.9460 | DEBUG | Connection id "0HNARN1GPU09O", Request id "0HNARN1GPU09O:0000000B": done reading request body. 
+2025-03-05 13:10:24.9460 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH01' 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 13:10:24.9460 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 13:10:24.9460 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 13:10:24.9460 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 13:10:24.9460 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 13:10:24.9460 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 13:10:24.9460 | DEBUG | Connection id "0HNARN1GPU09O" completed keep alive response. 
+2025-03-05 13:11:04.5339 | DEBUG | Connection id "0HNARN1GPU09M" received FIN. 
+2025-03-05 13:11:04.5339 | DEBUG | Connection id "0HNARN1GPU09N" received FIN. 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09M" sending FIN because: "The client closed the connection." 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09M" disconnecting. 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09N" disconnecting. 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09N" stopped. 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09M" stopped. 
+2025-03-05 13:11:04.5411 | DEBUG | Connection id "0HNARN1GPU09N" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-05 13:15:37.4819 | DEBUG | Connection id "0HNARN1GPU09O" received FIN. 
+2025-03-05 13:15:37.4819 | DEBUG | Connection id "0HNARN1GPU09O" disconnecting. 
+2025-03-05 13:15:37.4819 | DEBUG | Connection id "0HNARN1GPU09O" stopped. 
+2025-03-05 13:15:37.4819 | DEBUG | Connection id "0HNARN1GPU09O" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-05 13:15:37.5010 | DEBUG | Connection id "0HNARN1GPU09P" accepted. 
+2025-03-05 13:15:37.5010 | DEBUG | Connection id "0HNARN1GPU09P" started. 
+2025-03-05 13:15:37.5010 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 13:15:37.5010 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:15:37.5247 | DEBUG | Connection id "0HNARN1GPU09Q" accepted. 
+2025-03-05 13:15:37.5247 | DEBUG | Connection id "0HNARN1GPU09Q" started. 
+2025-03-05 13:15:37.5339 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 13:15:37.6997 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 13:15:37.6997 | DEBUG | Connection id "0HNARN1GPU09P" completed keep alive response. 
+2025-03-05 13:15:37.7058 | DEBUG | Connection id "0HNARN1GPU09Q" completed keep alive response. 
+2025-03-05 13:15:37.7335 | DEBUG | Connection id "0HNARN1GPU09P" completed keep alive response. 
+2025-03-05 13:15:37.9293 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 13:15:37.9293 | DEBUG | Request did not match any endpoints 
+2025-03-05 13:15:37.9431 | DEBUG | Connection id "0HNARN1GPU09P" completed keep alive response. 
+2025-03-05 13:16:00.5349 | DEBUG | 1 candidate(s) found for the request path '/api/Users/update/3' 
+2025-03-05 13:16:00.5349 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' with route pattern 'api/Users/update/{id}' is valid for the request path '/api/Users/update/3' 
+2025-03-05 13:16:00.5349 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:16:00.5349 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 13:16:00.5349 | DEBUG | Connection id "0HNARN1GPU09P" completed keep alive response. 
+2025-03-05 13:16:00.5349 | DEBUG | Connection id "0HNARN1GPU09P", Request id "0HNARN1GPU09P:00000004": started reading request body. 
+2025-03-05 13:16:00.5349 | DEBUG | Connection id "0HNARN1GPU09P", Request id "0HNARN1GPU09P:00000004": done reading request body. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09Q" received FIN. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09P" received FIN. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09Q" sending FIN because: "The client closed the connection." 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09Q" disconnecting. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09P" disconnecting. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09P" stopped. 
+2025-03-05 13:16:09.6294 | DEBUG | Connection id "0HNARN1GPU09P" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2025-03-05 13:16:09.6413 | DEBUG | Connection id "0HNARN1GPU09Q" stopped. 
+2025-03-05 15:55:19.5094 | DEBUG | Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2025-03-05 15:55:19.8911 | DEBUG | Hosting starting 
+2025-03-05 15:55:20.1085 | DEBUG | Loaded hosting startup assembly FullDemo 
+2025-03-05 15:55:20.1085 | DEBUG | Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2025-03-05 15:55:20.1085 | DEBUG | Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2025-03-05 15:55:20.1085 | DEBUG | Hosting started 
+2025-03-05 15:55:20.5013 | DEBUG | Connection id "0HNARQ042R0M8" accepted. 
+2025-03-05 15:55:20.5013 | DEBUG | Connection id "0HNARQ042R0M7" accepted. 
+2025-03-05 15:55:20.5013 | DEBUG | Connection id "0HNARQ042R0M7" started. 
+2025-03-05 15:55:20.5013 | DEBUG | Connection id "0HNARQ042R0M8" started. 
+2025-03-05 15:55:20.8294 | DEBUG | Connection id "0HNARQ042R0M9" accepted. 
+2025-03-05 15:55:20.8294 | DEBUG | Connection id "0HNARQ042R0M9" started. 
+2025-03-05 15:55:20.8294 | DEBUG | Connection id "0HNARQ042R0MA" accepted. 
+2025-03-05 15:55:20.8294 | DEBUG | Connection id "0HNARQ042R0MA" started. 
+2025-03-05 15:55:20.9624 | DEBUG | Wildcard detected, all requests with hosts will be allowed. 
+2025-03-05 15:55:20.9984 | DEBUG | No candidates found for the request path '/swagger/index.html' 
+2025-03-05 15:55:20.9984 | DEBUG | Request did not match any endpoints 
+2025-03-05 15:55:21.2218 | DEBUG | Response markup is scheduled to include browser refresh script injection. 
+2025-03-05 15:55:21.3763 | DEBUG | Connection id "0HNARQ042R0MB" accepted. 
+2025-03-05 15:55:21.3763 | DEBUG | Connection id "0HNARQ042R0MB" started. 
+2025-03-05 15:55:21.3763 | DEBUG | Response markup was updated to include browser refresh script injection. 
+2025-03-05 15:55:21.3870 | DEBUG | Connection id "0HNARQ042R0MA" completed keep alive response. 
+2025-03-05 15:55:21.3870 | DEBUG | Connection id "0HNARQ042R0M9" completed keep alive response. 
+2025-03-05 15:55:21.4626 | DEBUG | Connection id "0HNARQ042R0MB" completed keep alive response. 
+2025-03-05 15:55:21.5246 | DEBUG | No candidates found for the request path '/swagger/v1/swagger.json' 
+2025-03-05 15:55:21.5246 | DEBUG | Request did not match any endpoints 
+2025-03-05 15:55:21.8974 | DEBUG | Connection id "0HNARQ042R0MB" completed keep alive response. 
+2025-03-05 15:55:28.9533 | DEBUG | 1 candidate(s) found for the request path '/api/Users/signup' 
+2025-03-05 15:55:28.9533 | DEBUG | Endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' with route pattern 'api/Users/signup' is valid for the request path '/api/Users/signup' 
+2025-03-05 15:55:28.9651 | DEBUG | Request matched endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 15:55:28.9651 | DEBUG | Static files was skipped as the request already matched an endpoint. 
+2025-03-05 15:55:29.5676 | DEBUG | Execution plan of authorization filters (in the following order): None 
+2025-03-05 15:55:29.5676 | DEBUG | Execution plan of resource filters (in the following order): None 
+2025-03-05 15:55:29.5676 | DEBUG | Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2025-03-05 15:55:29.5676 | DEBUG | Execution plan of exception filters (in the following order): FullDemo.Filters.CustomExceptionFilter 
+2025-03-05 15:55:29.5676 | DEBUG | Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2025-03-05 15:55:29.5676 | DEBUG | Executing controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 15:55:29.5676 | DEBUG | Executed controller factory for controller FullDemo.Controllers.UsersController (FullDemo) 
+2025-03-05 15:55:29.5786 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 15:55:29.5786 | DEBUG | Attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' using the name '' in request data ... 
+2025-03-05 15:55:29.5786 | DEBUG | Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'. 
+2025-03-05 15:55:29.5979 | DEBUG | Connection id "0HNARQ042R0MB", Request id "0HNARQ042R0MB:00000003": started reading request body. 
+2025-03-05 15:55:29.5979 | DEBUG | Connection id "0HNARQ042R0MB", Request id "0HNARQ042R0MB:00000003": done reading request body. 
+2025-03-05 15:55:29.6219 | DEBUG | JSON input formatter succeeded, deserializing to type 'FullDemo.Models.DTO.DTOITH01' 
+2025-03-05 15:55:29.6237 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 15:55:29.6237 | DEBUG | Done attempting to bind parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 15:55:29.6237 | DEBUG | Attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01' ... 
+2025-03-05 15:55:29.6432 | DEBUG | Done attempting to validate the bound parameter 'usr' of type 'FullDemo.Models.DTO.DTOITH01'. 
+2025-03-05 15:55:29.9675 | DEBUG | Request was short circuited at exception filter 'FullDemo.Filters.CustomExceptionFilter'. 
+2025-03-05 15:55:29.9675 | DEBUG | List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter 
+2025-03-05 15:55:29.9675 | DEBUG | Attempting to select an output formatter based on Accept header 'text/plain'. 
+2025-03-05 15:55:29.9675 | DEBUG | Could not find an output formatter based on content negotiation. Accepted types were (text/plain) 
+2025-03-05 15:55:29.9675 | DEBUG | Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2025-03-05 15:55:29.9675 | DEBUG | Attempting to select the first formatter in the output formatters list which can write the result. 
+2025-03-05 15:55:29.9838 | DEBUG | Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response. 
+2025-03-05 15:55:29.9995 | DEBUG | Connection id "0HNARQ042R0MB" completed keep alive response. 

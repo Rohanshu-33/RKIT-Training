@@ -11,23 +11,29 @@ namespace DB_CRUD.Repositories
     {
         private string connectionString = ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString;
 
-        // add a new user to database
+        /// <summary>
+        /// Adds a new user to the database.
+        /// </summary>
+        /// <param name="user">User object containing details to be added.</param>
         public void AddUser(User user)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
-                string query = "INSERT INTO Users (Username, Email, Password) VALUES (@Username, @Email, @Password)";  // at runtime, these @ values will be replaced
-                MySqlCommand cmd = new MySqlCommand(query, conn);  // represents an sql query to be executed in mysql server.
+                string query = "INSERT INTO Users (Username, Email, Password) VALUES (@Username, @Email, @Password)";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Username", user.Username);
                 cmd.Parameters.AddWithValue("@Email", user.Email);
                 cmd.Parameters.AddWithValue("@Password", user.Password);
 
-                conn.Open();  // establishes connection to sql server database
-                cmd.ExecuteNonQuery();  // bcoz no data is returned from this query.
+                conn.Open();
+                cmd.ExecuteNonQuery();
             }
         }
 
-        // return list of users present in the database
+        /// <summary>
+        /// Retrieves a list of all users from the database.
+        /// </summary>
+        /// <returns>List of UserDTO objects.</returns>
         public List<UserDTO> GetUsers()
         {
             List<UserDTO> users = new List<UserDTO>();
@@ -40,20 +46,22 @@ namespace DB_CRUD.Repositories
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    UserDTO user = new UserDTO   // Object Initialization Syntax
+                    UserDTO user = new UserDTO
                     {
                         Id = Convert.ToInt32(reader["Id"]),
                         Username = reader["Username"].ToString(),
                         Email = reader["Email"].ToString()
                     };
-                    // it should be in POCO.
                     users.Add(user);
                 }
             }
             return users;
         }
 
-        // update a user in the database
+        /// <summary>
+        /// Updates an existing user's information in the database.
+        /// </summary>
+        /// <param name="user">User object containing updated details.</param>
         public void UpdateUser(User user)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -70,7 +78,10 @@ namespace DB_CRUD.Repositories
             }
         }
 
-        // delete a user by it's id
+        /// <summary>
+        /// Deletes a user from the database by their ID.
+        /// </summary>
+        /// <param name="id">User ID to be deleted.</param>
         public void DeleteUser(int id)
         {
             using (MySqlConnection conn = new MySqlConnection(connectionString))
@@ -84,7 +95,11 @@ namespace DB_CRUD.Repositories
             }
         }
 
-        // get a particular user by it's id
+        /// <summary>
+        /// Retrieves a user from the database by their ID.
+        /// </summary>
+        /// <param name="id">User ID to fetch the details for.</param>
+        /// <returns>User object if found, otherwise null.</returns>
         public User GetUserById(int id)
         {
             User usr = null;

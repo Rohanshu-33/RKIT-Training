@@ -82,3 +82,28 @@ CREATE UNIQUE INDEX FirstNameIndex ON students(FirstName);
 DROP INDEX FirstNameIndex ON students;
 
 -- types of indexing: primary (primary key), unique, composite, spatial, regular, fulltext
+
+
+-- Revisit topics:
+
+use rbcollege;
+CREATE TABLE IF NOT EXISTS RBC01(
+	C01F01 int primary key,
+    C01F02 text,
+    C01F03 decimal(10, 2)
+);
+
+SELECT C01F01, C01F02, C01F03 FROM RBC01;
+
+insert into RBC01 values(1, "rohanshu", 45000.00),
+(2, "navneet", 25000.99),
+(3, "meet", null);
+
+# if, if null
+select C01F02 as username, ifnull(C01F03, 0) as C01F03 from RBC01;
+select C01F02 as username, if(C01F03 is null, 0, C01F03) as salary from RBC01;
+select C01F02 as username, if(C01F03 is not null, C01F03, 0) as salary from RBC01;
+
+# is null, is not null
+select C01F02 from RBC01 where C01F03 is null;
+select C01F02 from RBC01 where C01F03 is not null;

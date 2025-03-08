@@ -22,7 +22,7 @@ namespace FullDemo.Filters
             var exception = context.Exception;
             _objresponse.Success = false;
             _objresponse.Message = "Something went wrong.";
-
+            Console.WriteLine("Exception Filter");
             int statusCode;
 
             // Handle Specific Exception Types and write them in their corresponding log files.

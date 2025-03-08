@@ -11,8 +11,8 @@ class Program
 
         //ConditionalCompilation.ConditionalCompilationDemo();
 
-        Dummy1.Display();  // static class demo
-        Dummy1.Display2();
+        //Dummy1.Display();  // static class demo
+        //Dummy1.Display2();
 
         //Dummy2 tmp = new Dummy2();  // abstract class demo
         //tmp.GreetUser();

@@ -90,11 +90,14 @@ namespace FullDemo.BL.Services
                     }
                     if (Type == EnmType.E)
                     {
-                        //db.UpdateOnlyFields(
-                        //    _objITH01,
-                        //    onlyFields: p => new { p.T01F02, p.T01F03, p.T01F05 },
-                        //    where: p => p.T01F01 == _objITH01.T01F01);
 
+                        db.UpdateOnlyFields(new ITH01
+                        {
+                            H01F02 = _objITH01.H01F02,
+                            H01F03 = _objITH01.H01F03,
+                            H01F05 = _objITH01.H01F05
+                        },
+                         onlyFields: p => new[] { "H01F02", "H01F03", "H01F05" });
                         _objResponse.Success = true;
                         _objResponse.Message = "User data updated successfully.";
                     }

@@ -9,8 +9,9 @@ namespace ORMConsoleApp.Controllers
     {
         internal static BLUser _objBLUser = new BLUser();
 
-
-        // retrieve all users. (to be called from program.cs)
+        /// <summary>
+        /// Retrieves and displays all users from the database.
+        /// </summary>
         internal static void GetAllUsers()
         {
             var users = _objBLUser.GetAll();
@@ -28,7 +29,9 @@ namespace ORMConsoleApp.Controllers
             }
         }
 
-        // get user by id (to be called from program.cs)
+        /// <summary>
+        /// Retrieves and displays a user by their ID.
+        /// </summary>
         internal static void GetUserById()
         {
             Console.Write("Enter User ID: ");
@@ -45,7 +48,9 @@ namespace ORMConsoleApp.Controllers
             }
         }
 
-        // adding new user to db (to be called from program.cs)
+        /// <summary>
+        /// Adds a new user to the database.
+        /// </summary>
         internal static void AddNewUser()
         {
             Console.Write("Enter User ID: ");
@@ -59,7 +64,6 @@ namespace ORMConsoleApp.Controllers
                 P01F05 = DateTime.Now
             };
 
-            // Validate the DTO
             var validationResults = DTOValidateHelper.ValidateDTO(user);
             if (validationResults.Count > 0)
             {
@@ -67,12 +71,12 @@ namespace ORMConsoleApp.Controllers
                 {
                     Console.WriteLine($"Validation Error: {error}");
                 }
-                return; // Exit the method if validation fails
+                return;
             }
 
             _objBLUser.Type = EnmType.A;
             var response = _objBLUser.Validation(user);
-            if (response.IsError == true)
+            if (response.IsError)
             {
                 Console.WriteLine(response.Message);
                 return;
@@ -81,8 +85,9 @@ namespace ORMConsoleApp.Controllers
             Console.WriteLine($"Error: {response.IsError} Message: {response.Message}");
         }
 
-
-        // update a user (to be called from program.cs)
+        /// <summary>
+        /// Updates an existing user's information.
+        /// </summary>
         internal static void UpdateUser()
         {
             Console.Write("Enter User ID to update: ");
@@ -100,7 +105,6 @@ namespace ORMConsoleApp.Controllers
                     P01F05 = user.P01F05
                 };
 
-                // Validate the DTO
                 var validationResults = DTOValidateHelper.ValidateDTO(updatedUser);
                 if (validationResults.Count > 0)
                 {
@@ -108,13 +112,12 @@ namespace ORMConsoleApp.Controllers
                     {
                         Console.WriteLine($"Validation Error: {error}");
                     }
-                    return; // Exit the method if validation fails
+                    return;
                 }
-
 
                 _objBLUser.Type = EnmType.E;
                 var response = _objBLUser.Validation(updatedUser);
-                if (response.IsError == true)
+                if (response.IsError)
                 {
                     Console.WriteLine(response.Message);
                     return;
@@ -129,8 +132,9 @@ namespace ORMConsoleApp.Controllers
             }
         }
 
-
-        // delete the user
+        /// <summary>
+        /// Deletes a user from the database by ID.
+        /// </summary>
         internal static void DeleteUser()
         {
             Console.Write("Enter User ID to delete: ");
@@ -139,8 +143,9 @@ namespace ORMConsoleApp.Controllers
             Console.WriteLine(response.Message);
         }
 
-
-        // Helper methods
+        /// <summary>
+        /// Helper method to get a string input from the user.
+        /// </summary>
         static string GetStringInput(string prompt, string defaultValue = "")
         {
             Console.Write(prompt);
@@ -148,6 +153,9 @@ namespace ORMConsoleApp.Controllers
             return string.IsNullOrWhiteSpace(input) ? defaultValue : input;
         }
 
+        /// <summary>
+        /// Helper method to get an integer input from the user.
+        /// </summary>
         static int GetIntInput(string prompt, int defaultValue = 0)
         {
             Console.Write(prompt);

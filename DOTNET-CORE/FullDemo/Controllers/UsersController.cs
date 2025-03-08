@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using FullDemo.Helpers.JWT;
+using FullDemo.Helpers.Security;
 
 namespace FullDemo.Controllers
 {
@@ -34,6 +35,8 @@ namespace FullDemo.Controllers
         [Route("signup")]
         public ActionResult<Response> Signup([FromBody] DTOITH01 usr)
         {
+            //throw new Exception("exce");
+            usr.H01F04 = RjindaelEncryption.Encrypt(usr.H01F04);
             _usrServices.PreSave(usr);
             _usrServices.Type = EnmType.A;
 
@@ -50,6 +53,7 @@ namespace FullDemo.Controllers
         //[JWTGeneration]
         public ActionResult<Response> Login([FromBody] DTOITH02 usr)
         {
+            usr.H02F02 = RjindaelEncryption.Encrypt(usr.H02F02);
             bool isExists = _usrServices.CheckUserCredentials(usr);
             if (!isExists)
             {

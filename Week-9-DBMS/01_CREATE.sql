@@ -1,6 +1,7 @@
-CREATE DATABASE IF NOT EXISTS RBCollege;
-
-USE RBCollege;
+CREATE DATABASE IF NOT EXISTS RB_Backup;
+USE rb_backup2;
+SHOW DATABASES;
+USE RBCOLLEGE;
 SHOW TABLES;
 CREATE TABLE Students(
 	Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,11 +12,6 @@ CREATE TABLE Students(
     PhoneNumber VARCHAR(10) UNIQUE,
     Address VARCHAR(60) NOT NULL
 );
-
--- ALTER TABLE Students ADD UNIQUE (LastName);
-# 2 column uniqueness using distinct, pagination, index, view, cursor, stored procedure, partition, isolated table
-
-SELECT * FROM Students ORDER BY FirstName DESC, LastName DESC limit 2 offset 1;
 
 -- pagination: 
 -- FIRST 10 ROWS
@@ -79,7 +75,8 @@ CREATE TABLE IF NOT EXISTS Users(
     Email VARCHAR(30) NOT NULL UNIQUE,
     Password VARCHAR(12) NOT NULL
 );
-
+use rbcollege;
+select * from users;
 USE rbcorefulldemo;
 show tables;
 select * from ith02;

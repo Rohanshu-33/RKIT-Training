@@ -10,7 +10,7 @@ namespace CollectionsApp
             Hashtable htable = new Hashtable();
             htable.Add("name", "Rohanshu");
             htable.Add(2, 101);
-            int[] arr = [1, 2, 3];
+            int[] arr = {1, 2, 3};
             htable.Add(arr, "array");
             //htable.Add("name", "Rohan");  // raises exception
 

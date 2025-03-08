@@ -65,6 +65,7 @@ namespace FullDemo.Middlewares
                 // Validate the token and set the HttpContext user
                 var principal = tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
                 context.User = principal;  // Attach the validated principal to HttpContext.User
+                await _next(context);
             }
             catch
             {

@@ -97,3 +97,6 @@ F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\System.Memory.xml
 F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\System.Numerics.Vectors.xml
 F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\System.Runtime.CompilerServices.Unsafe.xml
 F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\System.Threading.Tasks.Extensions.xml
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\Microsoft.Web.Infrastructure.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\Swashbuckle.Core.dll
+F:\Rohanshu\RKIT-Main\RKIT-Training\AdvanceAPI\DB_CRUD\bin\WebActivatorEx.dll

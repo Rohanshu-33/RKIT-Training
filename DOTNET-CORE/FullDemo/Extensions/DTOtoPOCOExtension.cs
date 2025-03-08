@@ -25,7 +25,7 @@ namespace FullDemo.Extensions
             // Iterate through each property of DTO and find corresponding POCO properties
             foreach (PropertyInfo dtoProperty in dtoProperties)
             {
-                PropertyInfo pocoProperty = Array.Find(pocoProperties, p => p.Name == dtoProperty.Name);
+                PropertyInfo pocoProperty = Array.Find(pocoProperties, p => p.Name.Substring(3) == dtoProperty.Name.Substring(3));
 
                 // check whether matched property is found and dto property is not null
                 if (dtoProperty != null && dtoProperty.PropertyType == pocoProperty.PropertyType)

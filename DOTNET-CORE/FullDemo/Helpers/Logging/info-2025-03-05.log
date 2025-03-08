@@ -1,0 +1,206 @@
+2025-03-05 12:52:21.6603 | INFO | Now listening on: http://localhost:5115 
+2025-03-05 12:52:21.6603 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-05 12:52:21.6603 | INFO | Hosting environment: Development 
+2025-03-05 12:52:21.6603 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-05 12:52:22.3384 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 12:52:22.8837 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 12:52:22.8957 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 12:52:22.8957 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.9040ms 
+2025-03-05 12:52:22.9667 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 632.8259ms 
+2025-03-05 12:52:23.0813 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 186.5186ms 
+2025-03-05 12:52:23.4521 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 12:52:23.9423 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 490.6288ms 
+2025-03-05 12:56:57.6488 | INFO | Now listening on: http://localhost:5115 
+2025-03-05 12:56:57.6488 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-05 12:56:57.6509 | INFO | Hosting environment: Development 
+2025-03-05 12:56:57.6509 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-05 12:56:58.4848 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 12:56:58.9747 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 12:56:58.9805 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 12:56:59.0109 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 525.4493ms 
+2025-03-05 12:56:59.0109 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 29.3913ms 
+2025-03-05 12:56:59.0356 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.3061ms 
+2025-03-05 12:56:59.2584 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 12:56:59.4556 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.6056ms 
+2025-03-05 12:57:44.3153 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 180 
+2025-03-05 12:57:44.8746 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 12:57:44.8937 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 12:57:44.9692 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-05 12:57:47.6894 | INFO | Executed action method FullDemo.Controllers.UsersController.Signup (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2708.2713ms. 
+2025-03-05 12:57:47.6990 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 12:57:47.7153 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 2819.8203ms 
+2025-03-05 12:57:47.7153 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 12:57:47.7153 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 180 - 200 - application/json;+charset=utf-8 3404.3611ms 
+2025-03-05 12:58:09.9683 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-05 12:58:09.9683 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 12:58:09.9829 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 12:58:09.9829 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-05 12:58:10.6566 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 667.3641ms. 
+2025-03-05 12:58:10.6566 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 12:58:10.6566 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 675.3506ms 
+2025-03-05 12:58:10.6566 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 12:58:10.6566 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 200 - application/json;+charset=utf-8 690.6084ms 
+2025-03-05 12:59:05.6563 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-05 12:59:05.6563 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 12:59:05.6563 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 12:59:05.6563 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-05 12:59:05.7096 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 42.659ms. 
+2025-03-05 12:59:05.7096 | INFO | Executing NotFoundObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 12:59:05.7096 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 44.4274ms 
+2025-03-05 12:59:05.7096 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 12:59:05.7096 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 404 - application/json;+charset=utf-8 54.2677ms 
+2025-03-05 13:00:40.5979 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 159 
+2025-03-05 13:00:40.6860 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:00:40.6875 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:00:40.7095 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:03:02.0724 | INFO | Now listening on: http://localhost:5115 
+2025-03-05 13:03:02.0724 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-05 13:03:02.0724 | INFO | Hosting environment: Development 
+2025-03-05 13:03:02.0724 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-05 13:03:02.7006 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 13:03:03.1336 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 13:03:03.1336 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 13:03:03.1547 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 444.8793ms 
+2025-03-05 13:03:03.1613 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 26.2220ms 
+2025-03-05 13:03:03.2006 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 65.2265ms 
+2025-03-05 13:03:03.2761 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 13:03:03.4887 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 212.8551ms 
+2025-03-05 13:03:21.3434 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-05 13:03:21.4114 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:03:21.4439 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 13:03:21.5328 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-05 13:03:22.6413 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1096.2659ms. 
+2025-03-05 13:03:22.6431 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:03:22.6636 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 1217.3031ms 
+2025-03-05 13:03:22.6636 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:03:22.6636 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 200 - application/json;+charset=utf-8 1324.0745ms 
+2025-03-05 13:03:46.1942 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-03-05 13:03:46.2492 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:03:46.2517 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:03:46.2740 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:03:47.1882 | INFO | Executed action method FullDemo.Controllers.ItemsController.AddItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 906.1414ms. 
+2025-03-05 13:03:47.1882 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:03:47.1882 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 937.5898ms 
+2025-03-05 13:03:47.1882 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:03:47.1896 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 - 200 - application/json;+charset=utf-8 995.4643ms 
+2025-03-05 13:06:02.0411 | INFO | Now listening on: http://localhost:5115 
+2025-03-05 13:06:02.0411 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-05 13:06:02.0411 | INFO | Hosting environment: Development 
+2025-03-05 13:06:02.0411 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-05 13:06:03.0604 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 13:06:03.5315 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 13:06:03.5315 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 13:06:03.5378 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 479.7700ms 
+2025-03-05 13:06:03.5612 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 26.2527ms 
+2025-03-05 13:06:03.6271 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.8772ms 
+2025-03-05 13:06:03.7422 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 13:06:03.9931 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 251.3493ms 
+2025-03-05 13:06:51.0242 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-05 13:06:51.0848 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:06:51.1115 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 13:06:51.1802 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-05 13:06:52.1768 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 993.2689ms. 
+2025-03-05 13:06:52.1768 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:06:52.2154 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 1100.9406ms 
+2025-03-05 13:06:52.2154 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-05 13:06:52.2154 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 200 - application/json;+charset=utf-8 1195.9896ms 
+2025-03-05 13:07:13.3816 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-03-05 13:07:13.4750 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:07:13.4750 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:07:13.5068 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:07:13.5443 | INFO | Executed action method FullDemo.Controllers.ItemsController.AddItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 36.8274ms. 
+2025-03-05 13:07:13.5443 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:07:13.5443 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 68.3871ms 
+2025-03-05 13:07:13.5443 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-05 13:07:13.5443 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 - 200 - application/json;+charset=utf-8 164.7857ms 
+2025-03-05 13:07:38.4546 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-05 13:07:38.4546 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:38.4673 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:07:38.4673 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-05 13:07:38.5415 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73.5442ms. 
+2025-03-05 13:07:38.5415 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:07:38.5548 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 87.4405ms 
+2025-03-05 13:07:38.5548 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:38.5548 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 100.6209ms 
+2025-03-05 13:07:49.0069 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items/string - - 
+2025-03-05 13:07:49.0069 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:49.0069 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems(System.String) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:07:49.0069 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-05 13:07:49.1348 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 118.8793ms. 
+2025-03-05 13:07:49.1348 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:07:49.1348 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 125.1991ms 
+2025-03-05 13:07:49.1348 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-05 13:07:49.1348 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items/string - - - 200 - application/json;+charset=utf-8 129.6137ms 
+2025-03-05 13:08:13.0363 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Items/update/1 application/json 131 
+2025-03-05 13:08:13.0648 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:13.0749 | INFO | Route matched with {action = "UpdateItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] UpdateItem(Int32, FullDemo.Models.DTO.DTOITH04) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:08:13.0749 | INFO | Executing action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:08:13.1233 | INFO | Executed action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 38.8663ms. 
+2025-03-05 13:08:13.1233 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:08:13.1233 | INFO | Executed action FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) in 49.167ms 
+2025-03-05 13:08:13.1233 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:13.1233 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Items/update/1 application/json 131 - 400 - application/json;+charset=utf-8 88.1450ms 
+2025-03-05 13:08:20.7263 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Items/update/1 application/json 131 
+2025-03-05 13:08:20.7263 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:20.7263 | INFO | Route matched with {action = "UpdateItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] UpdateItem(Int32, FullDemo.Models.DTO.DTOITH04) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:08:20.7263 | INFO | Executing action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:08:20.7263 | INFO | Executed action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 7.7021ms. 
+2025-03-05 13:08:20.7263 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:08:20.7263 | INFO | Executed action FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) in 9.7956ms 
+2025-03-05 13:08:20.7263 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-05 13:08:20.7263 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Items/update/1 application/json 131 - 400 - application/json;+charset=utf-8 11.6879ms 
+2025-03-05 13:08:31.3943 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-05 13:08:31.3943 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-05 13:08:31.3991 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-05 13:08:31.3991 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-05 13:08:31.3991 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.7613ms. 
+2025-03-05 13:08:31.3991 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:08:31.3991 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 4.939ms 
+2025-03-05 13:08:31.3991 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-05 13:08:31.3991 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 10.0666ms 
+2025-03-05 13:10:14.6518 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 
+2025-03-05 13:10:14.6518 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:14.6518 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 13:10:14.6650 | INFO | Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-05 13:10:14.6867 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 23.3211ms 
+2025-03-05 13:10:14.6867 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:14.6867 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 - 400 - application/problem+json;+charset=utf-8 35.4864ms 
+2025-03-05 13:10:24.9460 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 
+2025-03-05 13:10:24.9460 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:24.9460 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 13:10:24.9460 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-05 13:10:24.9460 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.6951ms. 
+2025-03-05 13:10:24.9460 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 13:10:24.9460 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 13.9052ms 
+2025-03-05 13:10:24.9460 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-05 13:10:24.9460 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 - 200 - application/json;+charset=utf-8 15.1835ms 
+2025-03-05 13:15:37.5010 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 13:15:37.6997 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 196.6336ms 
+2025-03-05 13:15:37.7058 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 13:15:37.7058 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 13:15:37.7058 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.5301ms 
+2025-03-05 13:15:37.7335 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.8422ms 
+2025-03-05 13:15:37.9293 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 13:15:37.9431 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.8736ms 
+2025-03-05 13:16:00.5349 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 
+2025-03-05 13:16:00.5349 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/3 application/json 168 - 400 - - 8.4337ms 
+2025-03-05 15:55:20.1085 | INFO | Now listening on: http://localhost:5115 
+2025-03-05 15:55:20.1085 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-05 15:55:20.1085 | INFO | Hosting environment: Development 
+2025-03-05 15:55:20.1085 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-05 15:55:20.9095 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-05 15:55:21.3763 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-05 15:55:21.3763 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-05 15:55:21.4041 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 14.4753ms 
+2025-03-05 15:55:21.4041 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 485.3967ms 
+2025-03-05 15:55:21.4626 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.2000ms 
+2025-03-05 15:55:21.5246 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-05 15:55:21.8974 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 373.1202ms 
+2025-03-05 15:55:28.9533 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 168 
+2025-03-05 15:55:29.5467 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 15:55:29.5676 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-05 15:55:29.6432 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-05 15:55:29.9838 | INFO | Executing ObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-05 15:55:29.9995 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 423.5021ms 
+2025-03-05 15:55:29.9995 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-05 15:55:29.9995 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 168 - 500 - application/json;+charset=utf-8 1046.5120ms 

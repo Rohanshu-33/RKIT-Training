@@ -43,6 +43,7 @@ namespace FullDemo.Controllers
         [Route("")]
         public ActionResult<Response> GetItems()
         {
+            //throw new Exception("hi");
             List<ITH02> items = _itmServices.GetAllItems();
             if (items.Count == 0)
             {

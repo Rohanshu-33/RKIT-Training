@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace FullDemo.Helpers
+namespace FullDemo.Helpers.Security
 {
     public class RjindaelEncryption
     {
