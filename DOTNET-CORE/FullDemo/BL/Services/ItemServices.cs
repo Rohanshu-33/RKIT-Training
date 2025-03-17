@@ -63,7 +63,6 @@ namespace FullDemo.BL.Services
         public Response Validation()
         {
             _id = _objITH02.H02F01;
-            Console.WriteLine(_id);
             if (Type == EnmType.E)
             {
                 bool isITH02 = IsITH02Exists(_id);
@@ -94,10 +93,7 @@ namespace FullDemo.BL.Services
                     }
                     if (Type == EnmType.E)
                     {
-                        //db.UpdateOnlyFields(
-                        //    _objITH02,
-                        //    onlyFields: p => new { p.T01F02, p.T01F03, p.T01F05 },
-                        //    where: p => p.T01F01 == _objITH02.T01F01);
+                        db.Update(_objITH02);
 
                         _objResponse.Message = "Item data updated successfully.";
                     }
@@ -133,6 +129,9 @@ namespace FullDemo.BL.Services
                 _objResponse.Success = false;
                 _objResponse.Message = "Item Not Found";
             }
+            _objResponse.Success = true;
+            _objResponse.Message = "Validated the object.";
+
             return _objResponse;
         }
 
@@ -148,7 +147,6 @@ namespace FullDemo.BL.Services
             {
                 ITH02 objITH02 = PreDelete(id);
                 Response objResponse = ValidationOnDelete(objITH02);
-
                 if (objResponse.Success == true)
                 {
                     using (var db = _dbConnection.GetDbConnection())
@@ -192,7 +190,10 @@ namespace FullDemo.BL.Services
             }
         }
 
-
+        /// <summary>
+        /// Retrieves all items by category from the MySQL database.
+        /// </summary>
+        /// <returns>List of items of specific category</returns>
         public List<ITH02> GetAllItemsByCategory(string category)
         {
             using (var db = _dbConnection.GetDbConnection())

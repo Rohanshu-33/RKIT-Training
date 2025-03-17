@@ -12,15 +12,17 @@ namespace FullDemo.Middlewares
     public class JWTAuthenticationMiddleware
     {
         private readonly RequestDelegate _next;
-        private const string jwtKey = "thisissecuritykeyofcustomjwttokenaut"; // Secret key for token validation
+        private string jwtKey; // Secret key for token validation
 
         /// <summary>
         /// Initializes the JWTAuthenticationMiddleware with the next middleware in the pipeline.
         /// </summary>
         /// <param name="next">The next middleware in the pipeline.</param>
-        public JWTAuthenticationMiddleware(RequestDelegate next)
+        public JWTAuthenticationMiddleware(RequestDelegate next, IConfiguration configuration)
         {
             _next = next;
+            
+            jwtKey = configuration["AppSettings:SecretKey"]; // Retrieve the Secret Key from configuration
         }
 
         /// <summary>
@@ -65,6 +67,7 @@ namespace FullDemo.Middlewares
                 // Validate the token and set the HttpContext user
                 var principal = tokenHandler.ValidateToken(token, validationParameters, out var validatedToken);
                 context.User = principal;  // Attach the validated principal to HttpContext.User
+                Console.WriteLine("coming out of middleware");
                 await _next(context);
             }
             catch

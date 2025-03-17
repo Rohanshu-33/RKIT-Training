@@ -1,6 +1,7 @@
 ﻿using System;
 using FullDemo.BL.Interfaces;
 using FullDemo.Extensions;
+using FullDemo.Helpers.Security;
 using FullDemo.Models;
 using FullDemo.Models.DTO;
 using FullDemo.Models.ENUM;
@@ -45,10 +46,13 @@ namespace FullDemo.BL.Services
         /// performs validation whether user exists or not before updating the data.
         /// </summary>
         /// <returns>Response object indicating success or failure of validation.</returns>
-        public void PreSave(DTOITH01 ITH)
+        public void PreSave(DTOITH01 ITH, int id)
         {
             _objITH01 = ITH.Convert<ITH01>();
-            Console.WriteLine($"{_objITH01.H01F01} {_objITH01.H01F02}");
+            if (Type == EnmType.E)
+            {
+                _objITH01.H01F01 = id;
+            }
         }
 
         /// <summary>
@@ -64,9 +68,10 @@ namespace FullDemo.BL.Services
                 bool isITH01 = IsITH01Exists(_id);
                 if (!isITH01)
                 {
-                    _objResponse.Success = true;
+                    _objResponse.Success = false;
                     _objResponse.Message = "User Not Found";
                 }
+                _objResponse.Success = true;
             }
             return _objResponse;
         }
@@ -90,14 +95,8 @@ namespace FullDemo.BL.Services
                     }
                     if (Type == EnmType.E)
                     {
-
-                        db.UpdateOnlyFields(new ITH01
-                        {
-                            H01F02 = _objITH01.H01F02,
-                            H01F03 = _objITH01.H01F03,
-                            H01F05 = _objITH01.H01F05
-                        },
-                         onlyFields: p => new[] { "H01F02", "H01F03", "H01F05" });
+                        _objITH01.H01F04 = RjindaelEncryption.Encrypt(_objITH01.H01F04);
+                        db.Update(_objITH01);
                         _objResponse.Success = true;
                         _objResponse.Message = "User data updated successfully.";
                     }

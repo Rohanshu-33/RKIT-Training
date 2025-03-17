@@ -1,0 +1,695 @@
+2025-03-12 13:05:58.6049 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:05:58.6049 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:05:58.6049 | INFO | Hosting environment: Development 
+2025-03-12 13:05:58.6049 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:06:01.4855 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:06:02.0121 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:06:02.0281 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:06:02.0281 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 538.6069ms 
+2025-03-12 13:06:02.0453 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 8.0044ms 
+2025-03-12 13:06:02.1213 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 104.3235ms 
+2025-03-12 13:06:02.1794 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:06:02.5564 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 377.3719ms 
+2025-03-12 13:11:15.0619 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:11:15.0619 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:11:15.0619 | INFO | Hosting environment: Development 
+2025-03-12 13:11:15.0619 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:11:16.4171 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:11:17.2974 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 886.4571ms 
+2025-03-12 13:11:17.3189 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:11:17.3189 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:11:17.3189 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 4.0750ms 
+2025-03-12 13:11:17.4518 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 129.3398ms 
+2025-03-12 13:11:17.5448 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:11:17.9502 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 405.7517ms 
+2025-03-12 13:11:53.1289 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-12 13:11:53.7909 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 13:11:53.8128 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 13:11:53.8283 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 13:11:56.4812 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2649.6289ms. 
+2025-03-12 13:11:56.4845 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:11:56.5194 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 2704.2638ms 
+2025-03-12 13:11:56.5194 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 13:11:56.5194 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 3390.9611ms 
+2025-03-12 13:15:56.5619 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-03-12 13:15:56.5700 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 - 400 - - 8.2325ms 
+2025-03-12 13:17:41.2162 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:17:41.2589 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 43.1392ms 
+2025-03-12 13:17:41.3677 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:17:41.3677 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:17:41.3677 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.4865ms 
+2025-03-12 13:17:41.3881 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3884ms 
+2025-03-12 13:17:41.4745 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:17:41.4745 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.8585ms 
+2025-03-12 13:17:58.1590 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 
+2025-03-12 13:17:58.1636 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 153 - 400 - - 4.9451ms 
+2025-03-12 13:20:34.9071 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:20:34.9071 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 400 - - 7.5294ms 
+2025-03-12 13:21:26.7157 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:21:26.7340 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 18.5452ms 
+2025-03-12 13:21:26.7454 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:21:26.7454 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:21:26.7454 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2820ms 
+2025-03-12 13:21:26.7614 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.0783ms 
+2025-03-12 13:21:26.9308 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:21:26.9375 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.8538ms 
+2025-03-12 13:21:51.5550 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:21:51.5577 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 400 - - 9.0609ms 
+2025-03-12 13:22:16.0526 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:22:16.0740 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 21.5728ms 
+2025-03-12 13:22:16.0740 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:22:16.0740 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:22:16.0740 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.3467ms 
+2025-03-12 13:22:16.0981 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.9139ms 
+2025-03-12 13:22:16.1811 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:22:16.1880 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.9887ms 
+2025-03-12 13:22:30.5881 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:22:30.5891 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 400 - - 1.4068ms 
+2025-03-12 13:23:13.8513 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:23:13.8513 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:23:13.8513 | INFO | Hosting environment: Development 
+2025-03-12 13:23:13.8513 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:23:14.7756 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:23:15.4025 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:23:15.4025 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:23:15.4025 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 10.2564ms 
+2025-03-12 13:23:15.4193 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 657.6526ms 
+2025-03-12 13:23:15.4658 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.0471ms 
+2025-03-12 13:23:15.5288 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:23:15.7061 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 177.6090ms 
+2025-03-12 13:23:21.9343 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:23:21.9499 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:23:21.9795 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 13:23:22.0472 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 13:23:23.1244 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1072.4128ms. 
+2025-03-12 13:23:23.1244 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:23:23.1432 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 1162.138ms 
+2025-03-12 13:23:23.1432 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:23:23.1432 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - application/json;+charset=utf-8 1211.4477ms 
+2025-03-12 13:23:37.6110 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:23:37.6396 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 28.7943ms 
+2025-03-12 13:23:37.6574 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:23:37.6574 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:23:37.6574 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.6192ms 
+2025-03-12 13:23:37.6787 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.3861ms 
+2025-03-12 13:23:37.7225 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:23:37.7312 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.8091ms 
+2025-03-12 13:23:59.4367 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:23:59.4628 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 26.2435ms 
+2025-03-12 13:23:59.5028 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:23:59.5028 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:23:59.5028 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.3562ms 
+2025-03-12 13:23:59.5173 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.5108ms 
+2025-03-12 13:23:59.5578 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:23:59.5656 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.8664ms 
+2025-03-12 13:24:10.5094 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:24:10.5094 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:24:10.5135 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 13:24:10.5135 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 13:24:10.5135 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 6.5955ms. 
+2025-03-12 13:24:10.5135 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:24:10.5135 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 13.5984ms 
+2025-03-12 13:24:10.5135 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:24:10.5135 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - application/json;+charset=utf-8 18.0889ms 
+2025-03-12 13:24:55.1492 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:24:55.1913 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 42.3635ms 
+2025-03-12 13:24:55.2350 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:24:55.2350 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:24:55.2350 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2257ms 
+2025-03-12 13:24:55.2350 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.8047ms 
+2025-03-12 13:24:55.2936 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:24:55.3031 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.5919ms 
+2025-03-12 13:25:13.3427 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:25:13.3427 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:25:13.3427 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 13:25:13.3427 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 13:25:13.3427 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 1.935ms. 
+2025-03-12 13:25:13.3427 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:25:13.3427 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 8.3658ms 
+2025-03-12 13:25:13.3427 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:25:13.3427 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - application/json;+charset=utf-8 11.6279ms 
+2025-03-12 13:25:39.7857 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:25:39.8060 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 20.5099ms 
+2025-03-12 13:25:39.8159 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:25:39.8159 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:25:39.8159 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2320ms 
+2025-03-12 13:25:39.8326 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.7932ms 
+2025-03-12 13:25:39.8932 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:25:39.8932 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.6619ms 
+2025-03-12 13:25:53.0073 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:25:53.0073 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:25:53.0073 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 13:25:53.0073 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 13:25:53.0169 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2.5011ms. 
+2025-03-12 13:25:53.0169 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:25:53.0169 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 12.8738ms 
+2025-03-12 13:25:53.0169 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:25:53.0169 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - application/json;+charset=utf-8 16.1389ms 
+2025-03-12 13:26:08.3956 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:26:08.4136 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 18.1649ms 
+2025-03-12 13:26:08.4469 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:26:08.4469 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.5914ms 
+2025-03-12 13:26:08.4469 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:26:08.4716 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.9021ms 
+2025-03-12 13:26:08.5145 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:26:08.5201 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.6497ms 
+2025-03-12 13:26:19.7817 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:26:19.7817 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:26:19.7817 | INFO | Hosting environment: Development 
+2025-03-12 13:26:19.7817 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:26:20.9379 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:26:21.3380 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:26:21.3455 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:26:21.3693 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 13.6755ms 
+2025-03-12 13:26:21.3693 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 420.6722ms 
+2025-03-12 13:26:21.4358 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.5788ms 
+2025-03-12 13:26:21.5052 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:26:21.6872 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 182.3530ms 
+2025-03-12 13:26:28.5032 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:26:28.5517 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - - 47.0905ms 
+2025-03-12 13:26:44.0495 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:26:44.0495 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:26:44.0495 | INFO | Hosting environment: Development 
+2025-03-12 13:26:44.0495 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:26:44.7646 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:26:45.1359 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:26:45.1415 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:26:45.1415 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.8114ms 
+2025-03-12 13:26:45.1564 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 394.3407ms 
+2025-03-12 13:26:45.1910 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.3905ms 
+2025-03-12 13:26:45.2699 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:26:45.4590 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 189.7879ms 
+2025-03-12 13:26:57.5032 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:26:57.5465 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - - 41.9397ms 
+2025-03-12 13:27:13.8007 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:27:13.8007 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 400 - - 2.9446ms 
+2025-03-12 13:27:22.3594 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:27:22.3630 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 400 - - 8.1415ms 
+2025-03-12 13:28:00.1690 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:28:00.1690 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:28:00.1690 | INFO | Hosting environment: Development 
+2025-03-12 13:28:00.1690 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:28:00.8199 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:28:01.2087 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:28:01.2087 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:28:01.2087 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 397.8356ms 
+2025-03-12 13:28:01.2221 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 11.1567ms 
+2025-03-12 13:28:01.2494 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.4995ms 
+2025-03-12 13:28:01.3272 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:28:01.5009 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 174.0292ms 
+2025-03-12 13:28:08.3507 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 
+2025-03-12 13:28:08.3892 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 58 - 400 - - 37.2340ms 
+2025-03-12 13:28:22.7887 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:28:22.8166 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 28.1399ms 
+2025-03-12 13:28:22.8166 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:28:22.8166 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:28:22.8166 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.6612ms 
+2025-03-12 13:28:22.8410 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.7612ms 
+2025-03-12 13:28:22.8988 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:28:22.9099 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.1889ms 
+2025-03-12 13:28:55.4846 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 13:28:55.4846 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 13:28:55.4846 | INFO | Hosting environment: Development 
+2025-03-12 13:28:55.4869 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 13:28:56.3423 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 13:28:56.7374 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 13:28:56.7374 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 13:28:56.7922 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 9.8668ms 
+2025-03-12 13:28:56.7922 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 429.2912ms 
+2025-03-12 13:28:56.8124 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.6070ms 
+2025-03-12 13:28:56.8766 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 13:28:57.0567 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 180.2917ms 
+2025-03-12 13:29:10.1593 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 
+2025-03-12 13:29:10.1979 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:29:10.2177 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 13:29:10.2682 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 13:29:11.6575 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1382.6753ms. 
+2025-03-12 13:29:11.6592 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 13:29:11.6784 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 1459.0297ms 
+2025-03-12 13:29:11.6784 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 13:29:11.6784 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 61 - 200 - application/json;+charset=utf-8 1521.4877ms 
+2025-03-12 14:37:31.8309 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:37:31.8626 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 31.0991ms 
+2025-03-12 14:37:31.8626 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:37:31.8626 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:37:31.8626 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.5759ms 
+2025-03-12 14:37:31.8882 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.7098ms 
+2025-03-12 14:37:32.0639 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:37:32.0783 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 14.5248ms 
+2025-03-12 14:37:43.4186 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 168 
+2025-03-12 14:37:43.4186 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:37:43.4186 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:37:43.4313 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-12 14:37:43.7397 | INFO | Executing ObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:37:43.7426 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 319.2311ms 
+2025-03-12 14:37:43.7426 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:37:43.7426 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 168 - 500 - application/json;+charset=utf-8 324.5035ms 
+2025-03-12 14:38:48.5449 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 14:38:48.5449 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 14:38:48.5449 | INFO | Hosting environment: Development 
+2025-03-12 14:38:48.5449 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 14:38:49.2859 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:38:49.6557 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:38:49.6557 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:38:49.6766 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 4.7974ms 
+2025-03-12 14:38:49.6766 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 378.2795ms 
+2025-03-12 14:38:49.7084 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.7773ms 
+2025-03-12 14:38:49.8907 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:38:50.0544 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 163.8748ms 
+2025-03-12 14:41:25.3401 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 172 
+2025-03-12 14:41:25.3895 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:41:25.4100 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:41:25.4716 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-12 14:41:25.7775 | INFO | Executing ObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:41:25.7944 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 382.141ms 
+2025-03-12 14:41:25.7944 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:41:25.7944 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 172 - 500 - application/json;+charset=utf-8 449.8518ms 
+2025-03-12 14:41:46.6301 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:41:46.6645 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 34.8323ms 
+2025-03-12 14:41:46.7819 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:41:46.7819 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:41:46.7819 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.6178ms 
+2025-03-12 14:41:46.7819 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.4507ms 
+2025-03-12 14:41:46.8639 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:41:46.8753 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.5485ms 
+2025-03-12 14:42:28.7529 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 160 
+2025-03-12 14:42:28.7529 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:42:28.7663 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:42:28.7663 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-12 14:42:30.3624 | INFO | Executed action method FullDemo.Controllers.UsersController.Signup (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1586.0651ms. 
+2025-03-12 14:42:30.3624 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:42:30.3624 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 1599.2996ms 
+2025-03-12 14:42:30.3624 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:42:30.3624 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 160 - 200 - application/json;+charset=utf-8 1613.2155ms 
+2025-03-12 14:42:41.5616 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 160 
+2025-03-12 14:42:41.5616 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:42:41.5616 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:42:41.5616 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-12 14:42:41.5782 | INFO | Executed action method FullDemo.Controllers.UsersController.Signup (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.2864ms. 
+2025-03-12 14:42:41.5782 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:42:41.5782 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 21.4003ms 
+2025-03-12 14:42:41.5782 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 14:42:41.5782 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 160 - 200 - application/json;+charset=utf-8 24.3869ms 
+2025-03-12 14:42:56.0842 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 56 
+2025-03-12 14:42:56.0842 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 14:42:56.0842 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:42:56.0842 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 14:42:56.2613 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 170.4291ms. 
+2025-03-12 14:42:56.2613 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:42:56.2613 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 174.9567ms 
+2025-03-12 14:42:56.2613 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 14:42:56.2613 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 56 - 200 - application/json;+charset=utf-8 177.8653ms 
+2025-03-12 14:43:46.6343 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 160 
+2025-03-12 14:43:46.7056 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 14:43:46.7176 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:43:46.7176 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 14:43:47.5120 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 791.3732ms. 
+2025-03-12 14:43:47.5120 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:43:47.5120 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 794.7437ms 
+2025-03-12 14:43:47.5120 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 14:43:47.5120 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 160 - 200 - application/json;+charset=utf-8 878.3644ms 
+2025-03-12 14:46:34.5707 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:46:34.5884 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 17.8444ms 
+2025-03-12 14:46:34.5968 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:46:34.5968 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:46:34.5968 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2612ms 
+2025-03-12 14:46:34.6263 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.5800ms 
+2025-03-12 14:46:34.8194 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:46:34.8194 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.9337ms 
+2025-03-12 14:46:52.2132 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 56 
+2025-03-12 14:46:52.2132 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 14:46:52.2132 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:46:52.2132 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 14:46:52.2202 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.0884ms. 
+2025-03-12 14:46:52.2202 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:46:52.2202 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 11.0501ms 
+2025-03-12 14:46:52.2202 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 14:46:52.2202 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 56 - 200 - application/json;+charset=utf-8 15.3018ms 
+2025-03-12 14:48:12.6009 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 162 
+2025-03-12 14:48:12.6009 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 14:48:12.6009 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 14:48:12.6125 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 14:48:12.6125 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.9369ms. 
+2025-03-12 14:48:12.6275 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:48:12.6275 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 15.0919ms 
+2025-03-12 14:48:12.6275 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 14:48:12.6275 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 162 - 200 - application/json;+charset=utf-8 27.0492ms 
+2025-03-12 14:52:55.1664 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-12 14:52:55.1664 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:52:55.1664 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:52:55.1664 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 14:52:55.2351 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 63.895ms. 
+2025-03-12 14:52:55.2351 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:52:55.2522 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 82.3294ms 
+2025-03-12 14:52:55.2522 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:52:55.2522 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 86.9200ms 
+2025-03-12 14:54:41.9954 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 160 
+2025-03-12 14:54:41.9954 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-12 14:54:41.9954 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:54:42.0155 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-03-12 14:54:42.0350 | INFO | Executed action method FullDemo.Controllers.ItemsController.AddItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.268ms. 
+2025-03-12 14:54:42.0350 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:54:42.0350 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 28.8589ms 
+2025-03-12 14:54:42.0350 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-12 14:54:42.0350 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 160 - 200 - application/json;+charset=utf-8 40.5856ms 
+2025-03-12 14:54:50.5127 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-12 14:54:50.5127 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:54:50.5127 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:54:50.5127 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 14:54:50.5127 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.7093ms. 
+2025-03-12 14:54:50.5127 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:54:50.5127 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 3.3163ms 
+2025-03-12 14:54:50.5127 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:54:50.5127 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 4.4109ms 
+2025-03-12 14:55:28.5055 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items/vapi - - 
+2025-03-12 14:55:28.5114 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:55:28.5114 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems(System.String) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:55:28.5114 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 14:55:28.6089 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 93.9779ms. 
+2025-03-12 14:55:28.6089 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:55:28.6089 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 95.7337ms 
+2025-03-12 14:55:28.6089 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 14:55:28.6089 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items/vapi - - - 200 - application/json;+charset=utf-8 104.8681ms 
+2025-03-12 14:57:26.2993 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/update/2 application/json 144 
+2025-03-12 14:57:26.3257 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-12 14:57:26.3257 | INFO | Route matched with {action = "UpdateItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] UpdateItem(Int32, FullDemo.Models.DTO.DTOITH04) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:57:26.3257 | INFO | Executing action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) - Validation state: Valid 
+2025-03-12 14:57:26.3257 | INFO | Executed action method FullDemo.Controllers.ItemsController.UpdateItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 5.8853ms. 
+2025-03-12 14:57:26.3257 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:57:26.3401 | INFO | Executed action FullDemo.Controllers.ItemsController.UpdateItem (FullDemo) in 11.712ms 
+2025-03-12 14:57:26.3401 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.UpdateItem (FullDemo)' 
+2025-03-12 14:57:26.3401 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/update/2 application/json 144 - 400 - application/json;+charset=utf-8 40.9270ms 
+2025-03-12 14:59:01.8192 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 14:59:01.8192 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 14:59:01.8296 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:59:01.8296 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 14:59:01.8296 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.5249ms. 
+2025-03-12 14:59:01.8296 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:59:01.8296 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 3.7884ms 
+2025-03-12 14:59:01.8296 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 14:59:01.8296 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 14.4854ms 
+2025-03-12 14:59:11.4730 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 14:59:11.4730 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 14:59:11.4730 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 14:59:11.4730 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 14:59:11.4730 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.7903ms. 
+2025-03-12 14:59:11.4730 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 14:59:11.4730 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 2.8371ms 
+2025-03-12 14:59:11.4730 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 14:59:11.4730 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 4.6980ms 
+2025-03-12 14:59:35.2214 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:59:35.2741 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 55.1822ms 
+2025-03-12 14:59:35.2819 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:59:35.2819 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:59:35.2819 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 2.3430ms 
+2025-03-12 14:59:35.2961 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.3602ms 
+2025-03-12 14:59:35.5436 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:59:35.5594 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.8775ms 
+2025-03-12 14:59:46.1670 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 14:59:46.2580 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 91.1542ms 
+2025-03-12 14:59:46.2580 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 14:59:46.2580 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.1685ms 
+2025-03-12 14:59:46.2653 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 14:59:46.2843 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.9247ms 
+2025-03-12 14:59:46.3855 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 14:59:46.3927 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.3270ms 
+2025-03-12 15:00:33.6181 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 15:00:33.6181 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:00:33.6296 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 15:00:33.6296 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 15:00:33.6296 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.1499ms. 
+2025-03-12 15:00:33.6296 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:00:33.6296 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 5.0622ms 
+2025-03-12 15:00:33.6296 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:00:33.6296 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 16.8265ms 
+2025-03-12 15:01:46.1354 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:01:46.1644 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 28.7347ms 
+2025-03-12 15:01:46.1644 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:01:46.1644 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:01:46.1644 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2931ms 
+2025-03-12 15:01:46.1845 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.3040ms 
+2025-03-12 15:01:46.2580 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:01:46.2580 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.8611ms 
+2025-03-12 15:02:11.8077 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 15:02:11.8141 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:02:11.8141 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 15:02:11.8141 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 15:02:11.8141 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9605ms. 
+2025-03-12 15:02:11.8141 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:02:11.8141 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 3.9677ms 
+2025-03-12 15:02:11.8141 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:02:11.8141 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 21.9011ms 
+2025-03-12 15:02:40.4178 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:02:40.4587 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 41.0048ms 
+2025-03-12 15:02:40.5357 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:02:40.5357 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.1989ms 
+2025-03-12 15:02:40.5357 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:02:40.5729 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 37.1203ms 
+2025-03-12 15:02:40.6288 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:02:40.6288 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.9923ms 
+2025-03-12 15:02:59.7631 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 15:02:59.7754 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:02:59.7754 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 15:02:59.7754 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 15:02:59.7839 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.4671ms. 
+2025-03-12 15:02:59.7839 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:02:59.7839 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 6.5067ms 
+2025-03-12 15:02:59.7839 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:02:59.7839 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 22.4841ms 
+2025-03-12 15:03:58.1863 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:03:58.2093 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 23.1812ms 
+2025-03-12 15:03:58.2093 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:03:58.2093 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:03:58.2093 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2242ms 
+2025-03-12 15:03:58.2372 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.4880ms 
+2025-03-12 15:03:58.3031 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:03:58.3031 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.6304ms 
+2025-03-12 15:04:14.2423 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - 
+2025-03-12 15:04:14.2423 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:04:14.2423 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 15:04:14.2423 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 15:04:14.2925 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 45.3149ms. 
+2025-03-12 15:04:14.2925 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:04:14.2925 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 47.5663ms 
+2025-03-12 15:04:14.2925 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 15:04:14.2925 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/1 - - - 200 - application/json;+charset=utf-8 52.0260ms 
+2025-03-12 15:15:36.3061 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:15:36.3384 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 31.7695ms 
+2025-03-12 15:15:36.5191 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:15:36.5191 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:15:36.5191 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2356ms 
+2025-03-12 15:15:36.5368 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.7541ms 
+2025-03-12 15:15:36.5995 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:15:36.5995 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.3788ms 
+2025-03-12 15:16:44.9562 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 165 
+2025-03-12 15:16:44.9692 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:16:44.9692 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:16:44.9845 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:16:45.0285 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 42.1893ms. 
+2025-03-12 15:16:45.0285 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:16:45.0285 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 47.5524ms 
+2025-03-12 15:16:45.0285 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:16:45.0285 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 165 - 200 - application/json;+charset=utf-8 74.7917ms 
+2025-03-12 15:17:45.5744 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 165 
+2025-03-12 15:17:45.5813 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:17:45.5813 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:17:45.5813 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:27:04.0634 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 15:27:04.0634 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 15:27:04.0634 | INFO | Hosting environment: Development 
+2025-03-12 15:27:04.0634 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 15:27:05.1765 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:27:05.7137 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:27:05.7137 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:27:05.7137 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 5.3846ms 
+2025-03-12 15:27:05.7296 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 547.7358ms 
+2025-03-12 15:27:05.7557 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 41.3538ms 
+2025-03-12 15:27:05.9689 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:27:06.1631 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.5321ms 
+2025-03-12 15:27:38.0490 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:27:38.0925 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 42.7388ms 
+2025-03-12 15:27:38.1427 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:27:38.1427 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:27:38.1427 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.7124ms 
+2025-03-12 15:27:38.1619 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.3105ms 
+2025-03-12 15:27:38.2150 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:27:38.2150 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.6682ms 
+2025-03-12 15:28:54.5756 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 162 
+2025-03-12 15:28:54.8030 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:28:54.8266 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:28:54.8716 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:28:58.0647 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3175.6931ms. 
+2025-03-12 15:28:58.2840 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:28:58.3382 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 3505.71ms 
+2025-03-12 15:28:58.3957 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:29:02.5158 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 162 - 200 - application/json;+charset=utf-8 7940.2996ms 
+2025-03-12 15:29:28.6375 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:29:28.6631 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 25.7728ms 
+2025-03-12 15:29:28.7010 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:29:28.7010 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:29:28.7010 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.3519ms 
+2025-03-12 15:29:28.7010 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.6343ms 
+2025-03-12 15:29:28.7546 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:29:28.7635 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.0922ms 
+2025-03-12 15:30:24.4023 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 178 
+2025-03-12 15:30:24.4040 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:30:24.4233 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:30:24.4391 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:30:26.8787 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 2438.6242ms. 
+2025-03-12 15:30:27.0923 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:30:27.1342 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 2710.4667ms 
+2025-03-12 15:30:27.1942 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:30:28.7153 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 178 - 400 - application/json;+charset=utf-8 4313.1037ms 
+2025-03-12 15:31:05.4285 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 178 
+2025-03-12 15:31:05.4362 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:31:05.4362 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:31:05.4523 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:32:07.1516 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 61695.4022ms. 
+2025-03-12 15:32:07.4637 | INFO | Executing BadRequestObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:32:07.5360 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 62097.1768ms 
+2025-03-12 15:32:07.7156 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:32:13.4445 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 178 - 400 - application/json;+charset=utf-8 68014.3582ms 
+2025-03-12 15:36:40.8973 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 15:36:40.8973 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 15:36:40.8973 | INFO | Hosting environment: Development 
+2025-03-12 15:36:40.8973 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 15:36:42.0979 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:36:42.7670 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 674.4889ms 
+2025-03-12 15:36:42.7726 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:36:42.7726 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:36:42.7726 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 13.7020ms 
+2025-03-12 15:36:42.8621 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 82.7660ms 
+2025-03-12 15:36:42.9885 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:36:43.4584 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 470.3329ms 
+2025-03-12 15:37:33.3392 | INFO | Request starting HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 180 
+2025-03-12 15:37:33.8574 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:37:33.8981 | INFO | Route matched with {action = "Update", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Update(Int32, FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 15:37:33.9621 | INFO | Executing action method FullDemo.Controllers.UsersController.Update (FullDemo) - Validation state: Valid 
+2025-03-12 15:38:47.9443 | INFO | Executed action method FullDemo.Controllers.UsersController.Update (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73972.4158ms. 
+2025-03-12 15:38:48.1662 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 15:38:48.2135 | INFO | Executed action FullDemo.Controllers.UsersController.Update (FullDemo) in 74308.7804ms 
+2025-03-12 15:38:48.2713 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Update (FullDemo)' 
+2025-03-12 15:38:51.1567 | INFO | Request finished HTTP/1.1 PATCH http://localhost:5115/api/Users/update/5 application/json 180 - 200 - application/json;+charset=utf-8 77811.8522ms 
+2025-03-12 15:40:00.3876 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:40:00.4024 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 27.7356ms 
+2025-03-12 15:40:00.4269 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:40:00.4269 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:40:00.4269 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.9630ms 
+2025-03-12 15:40:00.4543 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.1895ms 
+2025-03-12 15:40:00.6928 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:40:00.7089 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.2221ms 
+2025-03-12 15:40:16.2942 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:40:16.3152 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 21.3422ms 
+2025-03-12 15:40:16.4405 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:40:16.4405 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2352ms 
+2025-03-12 15:40:16.4405 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:40:16.4586 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.6036ms 
+2025-03-12 15:40:16.5251 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:40:16.5372 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 12.2297ms 
+2025-03-12 15:40:45.8361 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:40:45.8874 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 51.4395ms 
+2025-03-12 15:40:45.8874 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:40:45.8874 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:40:45.8874 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.3144ms 
+2025-03-12 15:40:45.9162 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.2401ms 
+2025-03-12 15:40:46.0251 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:40:46.0351 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.1666ms 
+2025-03-12 15:41:02.5674 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:41:02.5908 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 23.6570ms 
+2025-03-12 15:41:02.5908 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:41:02.5908 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:41:02.5908 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2845ms 
+2025-03-12 15:41:02.6223 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.6438ms 
+2025-03-12 15:41:02.7123 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:41:02.7219 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.6515ms 
+2025-03-12 15:41:11.6638 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:41:11.6950 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 31.5523ms 
+2025-03-12 15:41:11.7115 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:41:11.7115 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2218ms 
+2025-03-12 15:41:11.7115 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:41:11.7321 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.4031ms 
+2025-03-12 15:41:11.8487 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:41:11.8571 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.5148ms 
+2025-03-12 15:41:18.3217 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 15:41:18.3411 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 19.6275ms 
+2025-03-12 15:41:18.3788 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 15:41:18.3788 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 15:41:18.3788 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 0.2322ms 
+2025-03-12 15:41:18.3937 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.9680ms 
+2025-03-12 15:41:18.4273 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 15:41:18.4273 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.0908ms 
+2025-03-12 17:05:53.6829 | INFO | Now listening on: http://localhost:5115 
+2025-03-12 17:05:53.6829 | INFO | Application started. Press Ctrl+C to shut down. 
+2025-03-12 17:05:53.6829 | INFO | Hosting environment: Development 
+2025-03-12 17:05:53.6829 | INFO | Content root path: F:\Rohanshu\RKIT-Main\RKIT-Training\DOTNET-CORE\FullDemo 
+2025-03-12 17:05:54.4507 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/index.html - - 
+2025-03-12 17:05:54.8406 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - 
+2025-03-12 17:05:54.8406 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-12 17:05:54.8490 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/index.html - - - 200 - text/html;charset=utf-8 398.6328ms 
+2025-03-12 17:05:54.8490 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_framework/aspnetcore-browser-refresh.js - - - 200 11986 application/javascript;+charset=utf-8 18.1084ms 
+2025-03-12 17:05:54.9126 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 70.6327ms 
+2025-03-12 17:05:54.9940 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - 
+2025-03-12 17:05:55.3980 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 404.3132ms 
+2025-03-12 17:12:21.9862 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 172 
+2025-03-12 17:12:22.5217 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 17:12:22.5406 | INFO | Route matched with {action = "Signup", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Signup(FullDemo.Models.DTO.DTOITH01) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 17:12:22.6055 | INFO | Executing action method FullDemo.Controllers.UsersController.Signup (FullDemo) - Validation state: Valid 
+2025-03-12 17:12:24.8577 | INFO | Executed action method FullDemo.Controllers.UsersController.Signup (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2248.8331ms. 
+2025-03-12 17:12:24.8577 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:12:24.8791 | INFO | Executed action FullDemo.Controllers.UsersController.Signup (FullDemo) in 2336.7451ms 
+2025-03-12 17:12:24.8791 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Signup (FullDemo)' 
+2025-03-12 17:12:24.8791 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/signup application/json 172 - 200 - application/json;+charset=utf-8 2888.2736ms 
+2025-03-12 17:12:40.8045 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 62 
+2025-03-12 17:12:40.8066 | INFO | Executing endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 17:12:40.8066 | INFO | Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] Login(FullDemo.Models.DTO.DTOITH02) on controller FullDemo.Controllers.UsersController (FullDemo). 
+2025-03-12 17:12:40.8066 | INFO | Executing action method FullDemo.Controllers.UsersController.Login (FullDemo) - Validation state: Valid 
+2025-03-12 17:12:41.4670 | INFO | Executed action method FullDemo.Controllers.UsersController.Login (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 650.1059ms. 
+2025-03-12 17:12:41.4670 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:12:41.4670 | INFO | Executed action FullDemo.Controllers.UsersController.Login (FullDemo) in 659.1709ms 
+2025-03-12 17:12:41.4670 | INFO | Executed endpoint 'FullDemo.Controllers.UsersController.Login (FullDemo)' 
+2025-03-12 17:12:41.4670 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Users/login application/json 62 - 200 - application/json;+charset=utf-8 665.2077ms 
+2025-03-12 17:13:01.0404 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-12 17:13:01.0404 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:13:01.0462 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 17:13:01.0462 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 17:13:01.1105 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 62.9568ms. 
+2025-03-12 17:13:01.1105 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:13:01.1472 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 100.891ms 
+2025-03-12 17:13:01.1472 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:13:01.1472 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 107.2531ms 
+2025-03-12 17:13:38.1711 | INFO | Request starting HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 158 
+2025-03-12 17:13:38.2450 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-12 17:13:38.2450 | INFO | Route matched with {action = "AddItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] AddItem(FullDemo.Models.DTO.DTOITH03) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 17:13:38.2450 | INFO | Executing action method FullDemo.Controllers.ItemsController.AddItem (FullDemo) - Validation state: Valid 
+2025-03-12 17:13:38.2701 | INFO | Executed action method FullDemo.Controllers.ItemsController.AddItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9477ms. 
+2025-03-12 17:13:38.2701 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:13:38.2701 | INFO | Executed action FullDemo.Controllers.ItemsController.AddItem (FullDemo) in 24.0894ms 
+2025-03-12 17:13:38.2701 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.AddItem (FullDemo)' 
+2025-03-12 17:13:38.2701 | INFO | Request finished HTTP/1.1 POST http://localhost:5115/api/Items/add application/json 158 - 200 - application/json;+charset=utf-8 99.8172ms 
+2025-03-12 17:14:01.5171 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items - - 
+2025-03-12 17:14:01.5171 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:14:01.5171 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems() on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 17:14:01.5171 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 17:14:01.5286 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4832ms. 
+2025-03-12 17:14:01.5286 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:14:01.5286 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 5.0375ms 
+2025-03-12 17:14:01.5286 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:14:01.5286 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items - - - 200 - application/json;+charset=utf-8 12.2042ms 
+2025-03-12 17:14:12.7667 | INFO | Request starting HTTP/1.1 GET http://localhost:5115/api/Items/digital - - 
+2025-03-12 17:14:12.7667 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:14:12.7667 | INFO | Route matched with {action = "GetItems", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] GetItems(System.String) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 17:14:12.7667 | INFO | Executing action method FullDemo.Controllers.ItemsController.GetItems (FullDemo) - Validation state: Valid 
+2025-03-12 17:14:12.8602 | INFO | Executed action method FullDemo.Controllers.ItemsController.GetItems (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 86.4973ms. 
+2025-03-12 17:14:12.8602 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:14:12.8602 | INFO | Executed action FullDemo.Controllers.ItemsController.GetItems (FullDemo) in 89.7041ms 
+2025-03-12 17:14:12.8602 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.GetItems (FullDemo)' 
+2025-03-12 17:14:12.8602 | INFO | Request finished HTTP/1.1 GET http://localhost:5115/api/Items/digital - - - 200 - application/json;+charset=utf-8 94.5478ms 
+2025-03-12 17:14:31.4388 | INFO | Request starting HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/2 - - 
+2025-03-12 17:14:31.4388 | INFO | Executing endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 17:14:31.4501 | INFO | Route matched with {action = "DeleteItem", controller = "Items"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[FullDemo.Models.Response] DeleteItem(Int32) on controller FullDemo.Controllers.ItemsController (FullDemo). 
+2025-03-12 17:14:31.4501 | INFO | Executing action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) - Validation state: Valid 
+2025-03-12 17:14:31.4675 | INFO | Executed action method FullDemo.Controllers.ItemsController.DeleteItem (FullDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.0232ms. 
+2025-03-12 17:14:31.4675 | INFO | Executing OkObjectResult, writing value of type 'FullDemo.Models.Response'. 
+2025-03-12 17:14:31.4675 | INFO | Executed action FullDemo.Controllers.ItemsController.DeleteItem (FullDemo) in 18.0785ms 
+2025-03-12 17:14:31.4675 | INFO | Executed endpoint 'FullDemo.Controllers.ItemsController.DeleteItem (FullDemo)' 
+2025-03-12 17:14:31.4675 | INFO | Request finished HTTP/1.1 DELETE http://localhost:5115/api/Items/delete/2 - - - 200 - application/json;+charset=utf-8 29.7377ms 

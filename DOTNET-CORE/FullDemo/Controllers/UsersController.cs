@@ -22,6 +22,7 @@ namespace FullDemo.Controllers
 
         public UsersController(IUserServices<DTOITH01> usrServices, ILogger<UsersController> logger)
         {
+            Console.WriteLine("hi");
             _objResponse = new Response();
             _usrServices = usrServices;
             _logger = logger;
@@ -37,7 +38,7 @@ namespace FullDemo.Controllers
         {
             //throw new Exception("exce");
             usr.H01F04 = RjindaelEncryption.Encrypt(usr.H01F04);
-            _usrServices.PreSave(usr);
+            _usrServices.PreSave(usr, 0);
             _usrServices.Type = EnmType.A;
 
             _objResponse = _usrServices.Save();
@@ -50,7 +51,6 @@ namespace FullDemo.Controllers
         [AllowAnonymous]
         [HttpPost]
         [Route("login")]
-        //[JWTGeneration]
         public ActionResult<Response> Login([FromBody] DTOITH02 usr)
         {
             usr.H02F02 = RjindaelEncryption.Encrypt(usr.H02F02);
@@ -73,7 +73,6 @@ namespace FullDemo.Controllers
         /// </summary> 
         [HttpPatch]
         [Route("update/{id}")]
-        //[JWTAuthorization]
         public ActionResult<Response> Update([FromRoute] int id, [FromBody] DTOITH01 usr)
         {
             ITH01 usrObj = _usrServices.Get(id);
@@ -85,8 +84,8 @@ namespace FullDemo.Controllers
                 return NotFound(_objResponse);
             }
 
-            _usrServices.PreSave(usr);
             _usrServices.Type = EnmType.E;
+            _usrServices.PreSave(usr, usrObj.H01F01);
             _objResponse = _usrServices.Validation();
 
             if (_objResponse.Success == false)

@@ -206,6 +206,8 @@ namespace LinqQueries
             // method syntax
             res = empList.GroupBy(e => e.DepartmentId);
 
+            // two parameters in groupBy
+            res = empList.GroupBy(e => new { e.DepartmentId, e.IsManager } );
 
             // to lookup  --> immediate execution (same funcionality as groupby)
             res = empList.ToLookup(e => e.DepartmentId);

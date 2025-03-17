@@ -28,7 +28,8 @@ namespace FullDemo.BL.Interfaces
         /// This method is invoked to handle any necessary preparation steps (e.g., mapping or transformation) before saving.
         /// </summary>
         /// <param name="objDTO">The data object (DTO or POCO) to be processed.</param>
-        void PreSave(TDTO objDTO);
+        /// <param name="id">The id of user to update.</param>
+        void PreSave(TDTO objDTO, int id);
 
         /// <summary>
         /// Validates the data before performing the save operation.

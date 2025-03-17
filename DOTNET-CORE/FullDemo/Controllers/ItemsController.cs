@@ -25,19 +25,23 @@ namespace FullDemo.Controllers
             _logger = logger;
         }
 
-        // add item, jwt required
+        /// <summary>
+        /// Adding new item. Requires jwt token
+        /// <param name="item">Item DTO Object</param>
+        /// </summary>
         [HttpPost]
         [Route("add")]
-        //[JWTAuthorization]
-        public ActionResult<Response> AddItem([FromBody] DTOITH03 itm)
+        public ActionResult<Response> AddItem([FromBody] DTOITH03 item)
         {
-            _itmServices.PreSave(itm);
+            _itmServices.PreSave(item);
             _itmServices.Type = EnmType.A;
             _objResponse = _itmServices.Save();
             return Ok(_objResponse);
         }
 
-        // get items
+        /// <summary>
+        /// Get all items
+        /// </summary>
         [AllowAnonymous]
         [HttpGet]
         [Route("")]
@@ -59,7 +63,9 @@ namespace FullDemo.Controllers
         }
 
 
-        // get items by category
+        /// <summary>
+        /// Get all items by category name
+        /// </summary>
         [AllowAnonymous]
         [HttpGet]
         [Route("{category}")]
@@ -79,35 +85,11 @@ namespace FullDemo.Controllers
         }
 
 
-        // update item, jwt required
-        [HttpPatch]
-        [Route("update/{id}")]
-        //[JWTAuthorization]
-        public ActionResult<Response> UpdateItem([FromRoute] int id, [FromBody] DTOITH04 itm)
-        {
-            ITH02 itmObj = _itmServices.Get(id);
 
-            if (itmObj == null)
-            {
-                _objResponse.Success = false;
-                _objResponse.Message = "No such item.";
-                return NotFound(_objResponse);
-            }
-
-            _itmServices.PreSaveForUpdate(itm);
-            _itmServices.Type = EnmType.E;
-            _objResponse = _itmServices.Validation();
-
-            if (_objResponse.Success == false)
-            {
-                return BadRequest(_objResponse);
-            }
-
-            _objResponse = _itmServices.Save();
-            return Ok(_objResponse);
-        }
-
-        // delete item, jwt required
+        /// <summary>
+        /// Delete an item
+        /// <param name="id"> Id of item to delete</param>
+        /// </summary>
         [HttpDelete]
         [Route("delete/{id}")]
         //[JWTAuthorization]
@@ -116,6 +98,5 @@ namespace FullDemo.Controllers
             _objResponse = _itmServices.Delete(id);
             return Ok(_objResponse);
         }
-
     }
 }
