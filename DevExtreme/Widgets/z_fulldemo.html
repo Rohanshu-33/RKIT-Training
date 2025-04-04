@@ -85,7 +85,7 @@
             <div id="addressContainer"></div>
         </div>
 
-        <div id="submitContainer divs"></div>
+        <div id="submitContainer"></div>
 
     </form>
 
@@ -326,6 +326,7 @@
                     sessionStorage.setItem("techs", JSON.stringify(selectedTechs));
 
                     console.log("Done storing in session.");
+                    alert("Done storing in session.");
                 } else {
                     DevExpress.ui.notify("Please fill all required fields correctly.", "error", 3000);
                 }

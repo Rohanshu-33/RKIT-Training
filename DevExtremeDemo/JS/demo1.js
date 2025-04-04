@@ -200,24 +200,16 @@
             const validationGroup = DevExpress.validationEngine.validateGroup("loginGroup");
 
             if (validationGroup.isValid) {
-                // Fetch values correctly
+                // Fetch values
                 const fullName = $("#fullNameContainer").dxTextBox("instance").option("value");
                 const email = $("#emailContainer").dxTextBox("instance").option("value");
                 const password = $("#passwordContainer").dxTextBox("instance").option("value");
                 const confirmPassword = $("#confirmPasswordContainer").dxTextBox("instance").option("value");
-                const resume = $("#resumeContainer").dxFileUploader("instance").option("value"); // Fix for FileUploader
-                const gender = $("#genderContainer").dxRadioGroup("instance").option("value"); // Fix for RadioGroup
-                const dob = $("#dobContainer").dxDateBox("instance").option("value"); // Fix for DateBox
-                const city = $("#cityContainer").dxSelectBox("instance").option("value"); // Fix for SelectBox
-                const address = $("#addressContainer").dxTextArea("instance").option("value"); // Fix for TextArea
-
-                selectedTechs = [];
-                $("#technologiesContainer .dx-checkbox").each(function () {
-                    let instance = $(this).dxCheckBox("instance");
-                    if (instance.option("value")) {
-                        selectedTechs.push(instance.option("text"));
-                    }
-                });
+                const resume = $("#resumeContainer").dxFileUploader("instance").option("value");
+                const gender = $("#genderContainer").dxRadioGroup("instance").option("value");
+                const dob = $("#dobContainer").dxDateBox("instance").option("value");
+                const city = $("#cityContainer").dxSelectBox("instance").option("value");
+                const address = $("#addressContainer").dxTextArea("instance").option("value");
 
                 // Store in session storage
                 sessionStorage.setItem("fullname", fullName);
@@ -231,7 +223,7 @@
                 sessionStorage.setItem("address", address);
                 sessionStorage.setItem("techs", JSON.stringify(selectedTechs));
 
-                console.log("Done storing in session.");
+                alert("Done storing in session.");
             } else {
                 DevExpress.ui.notify("Please fill all required fields correctly.", "error", 3000);
             }

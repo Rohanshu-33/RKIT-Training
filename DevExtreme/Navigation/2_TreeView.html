@@ -181,7 +181,7 @@
             searchEnabled: true,
             searchMode: "contains",
 
-            selectionMode: "single",
+            selectionMode: "multiple",
             selectByClick: true,
             showCheckBoxesMode: true,
 
@@ -239,11 +239,11 @@
 
             animationEnabled: true,
             searchTimeout: 2000,
-            selectNodesRecursive: true
+            selectionMode: "multiple",
+            showCheckBoxesMode: "selectAll",  // normal, none
+            selectNodesRecursive: true  // only at multiple
             
             // onItemExpanded, onItemCollapsed, onItemHold
-            // performance enhancing techniques
- 
         });
     });
 </script>

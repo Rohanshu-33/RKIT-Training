@@ -81,7 +81,7 @@
                                 categoryPopup.show();
                                 loadPanel.hide();
                             });
-                        }, 3000);
+                        }, 2000);
                     }
                 }
             }
@@ -141,7 +141,7 @@
                         const formData = $("#productForm").dxForm("instance").option("formData");
 
                         const newProd = {
-                            id: Date.now(),
+                            id: menuItems[1].items.length + 1,
                             name: formData.name.trim().toLowerCase(),
                             category: formData.category.trim().toLowerCase(),
                             price: formData.price
@@ -182,7 +182,7 @@
 
         const loadPanel = $("#loadPanel").dxLoadPanel({
             shadingColor: "rgba(0,0,0,0.4)",
-            position: { at: "center",of: "#container" },
+            position: { at: "bottom",of: "#container" },
             visible: false,
             showIndicator: true,
             showPane: true,

@@ -107,9 +107,6 @@
                 onModifying: function (e) {
                     console.log("Data is being modifying. ", e);
                 },
-                onModified: function (e) {
-                    console.log("Data is being loading. ", e);
-                },
                 useDefaultSearch: true, // true for raw, false for processed bydefault
                 // onPush, removed, removing, updated, updating
 
@@ -137,7 +134,7 @@
             });
 
             setTimeout(() => {
-                store.byKey(1).done(function (data) {
+                store.byKey(11).done(function (data) {
                     console.log("Fetched User:", data);
                 });
 

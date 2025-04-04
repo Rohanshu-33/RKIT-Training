@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExtremeDataLayer", "DevExtremeDataLayer.csproj", "{CAD0566A-DEF9-49DF-9DA6-CCAF399CF08D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExtremeDataGrid", "..\DevExtremeDataGrid\DevExtremeDataGrid.csproj", "{14D62096-587B-4C7D-BEA1-2598B4F698A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CAD0566A-DEF9-49DF-9DA6-CCAF399CF08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAD0566A-DEF9-49DF-9DA6-CCAF399CF08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAD0566A-DEF9-49DF-9DA6-CCAF399CF08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D62096-587B-4C7D-BEA1-2598B4F698A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D62096-587B-4C7D-BEA1-2598B4F698A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D62096-587B-4C7D-BEA1-2598B4F698A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D62096-587B-4C7D-BEA1-2598B4F698A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

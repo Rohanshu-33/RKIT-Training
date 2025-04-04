@@ -55,19 +55,18 @@
             items: menuItems,
             displayExpr: "name",
 
-            // onItemClick: function (e) {
-            //     var itemData = e.itemData;
-            //     var itemElement = e.itemElement;
-            //     var itemIndex = e.itemIndex;
-            //     console.log(e);
-            // },
+            onItemClick: function (e) {
+                var itemData = e.itemData;
+                var itemElement = e.itemElement;
+                var itemIndex = e.itemIndex;
+                console.log(e);
+            },
 
             // itemTemplate: function (itemData, itemIndex, itemElement) {
             //     itemElement.append("<i>" + itemData.name + "</i>");
             // },
 
-            orientation: "horizontal",  // horizontal
-            // submenuDirection: "left",  // not working
+            orientation: "horizontal",  // vertical
             adaptivityEnabled: true,  // works with horizontal orientation. for responsiveness
             hideSubmenuOnMouseLeave: true,
             closeMenuOnClick: true,
@@ -76,7 +75,6 @@
             },
             // onSubmenuHidden, onSubmenuHiding, onSubmenuShowing, onSubmenuShown
             selectByClick: true,
-            // selectedExpr,
             submenuDirection: "leftOrTop",
 
         });

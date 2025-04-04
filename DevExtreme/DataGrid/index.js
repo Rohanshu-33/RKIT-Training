@@ -20,7 +20,7 @@ $(document).ready(function () {
                 dataField: "Year",
                 // dataType: "date",
                 width: 150,
-                // visible: false
+                visible: false
             },
             { dataField: "Color" },
             {
@@ -45,11 +45,26 @@ $(document).ready(function () {
         searchPanel: { visible: true },  // top right side
         groupPanel: { visible: true },
         editing: {
-            mode: "popup",  // cell
+            mode: "popup",
             allowUpdating: true,
-            allowDeleting: true,
             allowAdding: true,
-            allowEditing: true
+            allowDeleting: true,
+            texts: {
+                editRow: "Modify",
+                saveRowChanges: "Confirm",
+                cancelRowChanges: "Undo",
+                addRow: "New Entry"
+            },
+            popup: {
+                title: "Editing a Record",
+                showTitle: true,
+                width: 500,
+                height: 400,
+                position: "center"
+            },
+            form: {
+                colCount: 2
+            }
         },
 
         selection: { mode: "single" },
@@ -57,22 +72,25 @@ $(document).ready(function () {
             console.log(e);
             e.component.byKey(e.currentSelectedRowKeys[0]).done(function (ele) {
                 console.log(ele);
-                if (ele) {
-                    alert(`Selected car: ${ele.Model}`);
-                }
+                // if (ele) {
+                //     alert(`Selected car: ${ele.Model}`);
+                // }
             })
         },
         summary: {
             totalItems: [
-                {  // groupItems needs groupIndex
+                {
                     summaryType: "count",  // sum, min, max, avg
                     column: "Model",
-                    alignment: "center"
+                    alignment: "center",
+                    customizeText: function (e) {
+                        return `Count is : ${e.value}`;
+                    }
                 },
                 {
                     summaryType: "sum",
                     column: "PricePerDay",
-                    showInColumn: "Year",
+                    showInColumn: "Owner",
                     alignment: "right"
                 }
             ],
@@ -81,15 +99,15 @@ $(document).ready(function () {
                 summaryType: "avg",
                 alignByColumn: true,
                 showInGroupFooter: true,
-                showInColumn: "Location",
+                showInColumn: "PricePerDay",
                 name: "Group Summary of PricePerDay",
-                customizeText: function(e){
+                customizeText: function (e) {
                     return `Avg. of PPD is : ${e.value}`;
                 }
             }]
         },
 
-        sortByGroupSummaryInfo: [{      // -------------------------- not working ----------------------------
+        sortByGroupSummaryInfo: [{    
             summaryItem: "Group Summary of PricePerDay",  // or "avg" | 0 | "PricePerDay"
             sortOrder: "desc" // or "asc"
         }],
@@ -108,7 +126,6 @@ $(document).ready(function () {
             columns[0].width = 60;
             columns[1].width = 210;
         }
-        // sorting, export remaining
     });
 
     $("#dataGrid2").dxDataGrid({
@@ -117,9 +134,11 @@ $(document).ready(function () {
         editing: {
             allowUpdating: true,
             allowDeleting: true,
-            confirmDelete: false,
+            confirmDelete: true,
             allowAdding: true,
-            mode: "batch"  // popup, cell, row, form
+            mode: "batch",  // popup, cell, row, form
+            startEditAction: "dblClick",
+            selectTextOnEditStart: true
         },
         columnFixing: {
             enabled: true
@@ -127,28 +146,6 @@ $(document).ready(function () {
         columns: [
             { type: "adaptive" }, // Enables ellipsis button when columns are hidden
             { type: "drag", caption: "Drag" }, // Drag Column
-            {
-                type: "buttons",
-                // buttons: [
-                //     {
-                //         hint: "Edit",
-                //         icon: "edit",
-                //         onClick: function (e) {
-                //             // write edit logic here
-                //             alert("Editing Car: " + e.row.data.Model);
-                //         }
-                //     },
-                //     {
-                //         hint: "Delete",
-                //         icon: "trash",
-                //         onClick: function (e) {
-                //             // write delete logic here
-                //             alert("Deleting Car: " + e.row.data.Model);
-                //         }
-                //     }
-                // ]
-                buttons: ["edit", "delete"]
-            },
             {
                 caption: "Details",
                 columns: ["CarID", "Model", "Color"]
@@ -196,19 +193,18 @@ $(document).ready(function () {
                 sortIndex: 0, sortOrder: "desc",
                 allowFiltering: true,
                 filterOperations: ["contains", "="],  // allowed filters on ths column
-                selectedFilterOperation: "contains", // default filter to be applied
+                selectedFilterOperation: "=", // default filter to be applied
                 // filterValue: "Enter value of filter here", // undefined by-default
 
 
-                allowHeaderFiltering: true,
                 // filterType: "exclude", // or "include"
-                // filterValues: ["Value to exsclude from the header filter."],
+                // filterValues: ["Value to exclude from the header filter."],
                 headerFilter: { allowSearch: false },
-
-
+                
+                
                 allowSearch: false
-
-
+                
+                
             },
             { dataField: "Description", allowEditing: false },
             {
@@ -246,15 +242,23 @@ $(document).ready(function () {
             e.data.Year = 2025
         },
 
+        // allowColumnSorting: true,
         sorting: {
-            mode: "multiple" // keep the shift key pressed. 'single', 'none'
+            ascendingText: "Sort A → Z",
+            descendingText: "Sort Z → A",
+            clearText: "Remove Sorting"
+        },
+
+        sorting: {
+            mode: "multiple", // keep the shift key pressed. 'single', 'none'
+            showSortIndexes: true
         },
 
         // filterRow: { visible: true },
-        // filterRow: {
-        //     visible: true,
-        //     applyFilter: "onClick"  // auto, enterKey
-        // },
+        filterRow: {
+            visible: true,
+            applyFilter: "onClick"  // auto, enterKey
+        },
 
         headerFilter: { visible: true, allowSearch: true },
 
@@ -266,19 +270,20 @@ $(document).ready(function () {
         // }
 
 
-        // filterPanel: { visible: true },
         // filterSyncEnabled: true, // If a user changes the filter expression in the filter panel or filter builder, the changes are reflected in the filter row and header filter, and vice versa. Set the filterSyncEnabled property to false to disable this synchronization
 
-        filterPanel: { visible: false },
+        filterPanel: { visible: true },  // bottom left of grid
         filterSyncEnabled: true,
         filterBuilder: {
             customOperations: [{
                 name: "isBlack",
                 caption: "Is Black",
                 dataTypes: ["string"],
-                hasValue: false,
+                hasValue: true,
                 calculateFilterExpression: function (filterValue, field) {
-                    return [field.dataField, "=", "black"];
+                    console.log("field is ", field);
+                    
+                    return [field.dataField, "=", filterValue];
                 }
             }]
         },
@@ -290,7 +295,7 @@ $(document).ready(function () {
 
         paging: {
             enabled: true,
-            pageSize: 2  // Default page size
+            pageSize: 5 // Default page size
         },
 
         pager: {
@@ -324,7 +329,7 @@ $(document).ready(function () {
         // },
 
         grouping: {
-            // ...
+            contextMenuEnabled: true,
             expandMode: "rowClick",  // or "buttonClick"  // click on grouped column name or on the side button which comes
             autoExpandAll: false  // after grouping, nothing will be in expanded mode. only the grouped column name will be visible
             // autoExpandGroup --> at column level. same as above
@@ -338,15 +343,15 @@ $(document).ready(function () {
         // selection: {
         //     mode: "multiple" // or "single" | "none"
         // }
-
+        
         selection: {
             mode: "multiple",
             selectAllMode: "page", // or "allPages"
             allowSelectAll: true,
-            showCheckBoxesMode: "always"    // or "onClick" | "none" | "onLongTap"
+            showCheckBoxesMode: "onClick"    // or "always" | "none" | "onLongTap"
         },
 
-        selectedRowKeys: [1, 5, 18],  // CarID  -> it is keyExpr in my
+        selectedRowKeys: [1, 5, 18],  // CarID  -> it is keyExpr in my grid
 
 
         onContentReady: function (e) {
@@ -385,11 +390,11 @@ $(document).ready(function () {
         //     editOnKeyPress: true,
         // },
         // noDataText: "Currently nothing to show in datagrid",
-        onCellClick: function(e){
+        onCellClick: function (e) {
             console.log("click", e);
         },
 
-        onCellDblClick: function(e){
+        onCellDblClick: function (e) {
             console.log("dbl click", e);
         },
 
@@ -399,9 +404,9 @@ $(document).ready(function () {
 
         columnRenderingMode: "virtual",
 
-        onRowClick: function(){
+        onRowClick: function () {
             console.log("row clicked");  // triggered after onCellClick
-            
+
         }
 
     });
@@ -441,7 +446,7 @@ $(document).ready(function () {
 
     // dataGrid.beginCustomLoading();
     // ...
-    
+
     setTimeout(() => {
         // dataGrid.columnOption("OwnerContact", "sortIndex", undefined);  // removes sorting property
         // dataGrid.deleteColumn(5);

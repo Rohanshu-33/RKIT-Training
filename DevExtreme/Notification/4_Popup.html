@@ -21,10 +21,14 @@
     <div id="button"></div>
 
     <div id="popupContainer"></div>
-    <!-- <div id="buttonContainer"></div> -->
+
+    <button onclick="show()">hlo</button>
 </body>
 
 <script>
+    const show = ()=>{
+        alert("hi")
+    }
     $(document).ready(function () {
         const popup = $('#popup').dxPopup({
             contentTemplate: () => {
@@ -39,15 +43,21 @@
                 });
                 return content;
             },
-            // visible: true,
-            closeOnOutsideClick: true,
+            closeOnOutsideClick: false,
             showTitle: true,
             title: "Information",
             width: 500,
             height: 300,
             resizeEnabled: true,
             dragEnabled: true,
-            position: "center",
+            position: "top",
+            // position: {
+            //     my: {x: -520, y: -400},
+            //     at: 'bottom',
+            //     of: "#popup"
+            //     // place "my" left side "at" the top "of" "#container"
+            // },
+            shading: false
         }).dxPopup("instance");
 
         const popupText = `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -102,10 +112,9 @@
             closeOnOutsideClick: true,
             // fullScreen: true,
             position: {
-                my: 'center',
+                my: {x: 120, y: 200},
                 at: 'bottom',
-                collision: 'fit',
-                // of: "#container"
+                of: "#container"
                 // place "my" left side "at" the top "of" "#container"
             },
         })

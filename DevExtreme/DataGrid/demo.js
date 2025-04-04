@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     var store = new DevExpress.data.CustomStore({
         key: "id",
+        loadMode: "processed",
         load: function () {
             let d = $.Deferred();
             $.ajax({
@@ -74,7 +75,8 @@ $(document).ready(function () {
                 dataField: "brand"
             },
             {
-                dataField: "color"
+                dataField: "color",
+                groupIndex: 4
             },
             {
                 dataField: "price",
@@ -84,6 +86,12 @@ $(document).ready(function () {
                 }]
             },
         ],
+        stateStoring: {
+            enabled: true,
+            type: "localStorage",
+            storageKey: "carsGridState",
+            savingTimeout: 1000 // specifies the delay before actually storing in the storage
+        },
         filterRow: {
             visible: true
         },
@@ -91,10 +99,11 @@ $(document).ready(function () {
             visible: true
         },
         groupPanel: {
-            visible: true
+            visible: true,
+            allowColumnDragging: true
         },
         editing: {
-            mode: "popup",  // cell
+            mode: "popup",
             allowUpdating: true,
             allowDeleting: true,
             allowAdding: true,
@@ -113,6 +122,7 @@ $(document).ready(function () {
                     alignment: "right"
                 }
             ]
+            // group summary
         },
         masterDetail: {
             enabled: true,
@@ -123,25 +133,36 @@ $(document).ready(function () {
                 return $("<div>").append(desc);
             }
         },
-        
+
         columnHidingEnabled: true,
         columnChooser: {
             enabled: true,
             mode: "dragAndDrop"
         },
 
+        selection: {
+            mode: "multiple",
+            selectAllMode: "page", // or "allPages"
+            allowSelectAll: true,
+            showCheckBoxesMode: "onClick",    // or "always" | "none" | "onLongTap"
+        },
+
+        keyExpr: "Id",
+
+        selectedRowKeys: [1, 5, 18],  // CarID  -> it is keyExpr in my grid
+
         headerFilter: { visible: true, allowSearch: true },
-        
+
         filterPanel: { visible: true },
         filterSyncEnabled: true,
         filterBuilder: {
             customOperations: [{
-                name: "isBlack",
-                caption: "Is Black",
+                name: "isCol1",
+                caption: "Is Color 1",
                 dataTypes: ["string"],
                 hasValue: false,  // No user input required
                 calculateFilterExpression: function (filterValue, field) {
-                    return [field.dataField, "=", "color 1"]; 
+                    return [field.dataField, "=", "color 1"];
                 }
             }],
             filterValue: [["color", "isColor1"]] // Preload filter in UI
@@ -237,8 +258,6 @@ $(document).ready(function () {
                     saveAs(new Blob([buffer], { type: 'application/octet-stream' }), 'Cars-DataGrid.xlsx');
                 });
             });
-
-            e.cancel = true;
         }
     });
 })
